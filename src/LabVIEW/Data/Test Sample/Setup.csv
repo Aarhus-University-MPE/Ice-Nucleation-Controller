@@ -1,0 +1,11 @@
+Ice Nucleation Version;0.0.0.1
+;
+Sample:;
+Label;Test Sample
+Operator;MRJ
+;
+Notes;
+Nothing to comment.
+;
+Temperature Gradient [°C/min];1,00
+Target Temperature [°C] ;-20,00
