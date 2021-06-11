@@ -1,0 +1,11 @@
+Ice Nucleation Version;0.0.0.1
+;
+Sample:;
+Label;Calibration_15
+Operator;MRJ
+;
+Notes;
+Initial Calibration Test
+;
+Temperature Gradient [°C/min];1,00
+Target Temperature [°C] ;-15,00
