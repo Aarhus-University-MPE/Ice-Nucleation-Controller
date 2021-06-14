@@ -17,7 +17,123 @@
 				<Item Name="Camera_Grab.vi" Type="VI" URL="../Camera_Grab.vi"/>
 			</Item>
 			<Item Name="cDAQ" Type="Folder">
+				<Item Name="Thermistor" Type="Folder">
+					<Item Name="Thermistor_Callibration.vi" Type="VI" URL="../Thermistor_Callibration.vi"/>
+					<Item Name="Thermistor_Callibration_Load.vi" Type="VI" URL="../Thermistor_Callibration_Load.vi"/>
+					<Item Name="Thermistor_Callibration_Save.vi" Type="VI" URL="../Thermistor_Callibration_Save.vi"/>
+					<Item Name="Thermistor_Conversion.vi" Type="VI" URL="../Thermistor_Conversion.vi"/>
+					<Item Name="Thermistor_Manual_Read.vi" Type="VI" URL="../Thermistor_Manual_Read.vi"/>
+				</Item>
 				<Item Name="cDAQ_Read.vi" Type="VI" URL="../cDAQ_Read.vi"/>
+				<Item Name="ThermTask" Type="NI-DAQmx Task">
+					<Property Name="\0\AI.ADCTimingMode" Type="Str">High Resolution</Property>
+					<Property Name="\0\AI.Excit.Src" Type="Str">Internal</Property>
+					<Property Name="\0\AI.Excit.Val" Type="Str">0.0005</Property>
+					<Property Name="\0\AI.Max" Type="Str">100</Property>
+					<Property Name="\0\AI.MeasType" Type="Str">Temperature:RTD</Property>
+					<Property Name="\0\AI.Min" Type="Str">0</Property>
+					<Property Name="\0\AI.ResistanceCfg" Type="Str">4-Wire</Property>
+					<Property Name="\0\AI.RTD.R0" Type="Str">2300</Property>
+					<Property Name="\0\AI.RTD.Type" Type="Str">Pt3750</Property>
+					<Property Name="\0\AI.Temp.Units" Type="Str">Deg C</Property>
+					<Property Name="\0\ChanType" Type="Str">Analog Input</Property>
+					<Property Name="\0\Name" Type="Str">ThermTask/Temperature_0</Property>
+					<Property Name="\0\PhysicalChanName" Type="Str">cDAQ1Mod1/ai0</Property>
+					<Property Name="\1\AI.ADCTimingMode" Type="Str">High Resolution</Property>
+					<Property Name="\1\AI.Excit.Src" Type="Str">Internal</Property>
+					<Property Name="\1\AI.Excit.Val" Type="Str">0.0005</Property>
+					<Property Name="\1\AI.Max" Type="Str">100</Property>
+					<Property Name="\1\AI.MeasType" Type="Str">Temperature:RTD</Property>
+					<Property Name="\1\AI.Min" Type="Str">0</Property>
+					<Property Name="\1\AI.ResistanceCfg" Type="Str">4-Wire</Property>
+					<Property Name="\1\AI.RTD.R0" Type="Str">2300</Property>
+					<Property Name="\1\AI.RTD.Type" Type="Str">Pt3750</Property>
+					<Property Name="\1\AI.Temp.Units" Type="Str">Deg C</Property>
+					<Property Name="\1\ChanType" Type="Str">Analog Input</Property>
+					<Property Name="\1\Name" Type="Str">ThermTask/Temperature_1</Property>
+					<Property Name="\1\PhysicalChanName" Type="Str">cDAQ1Mod1/ai1</Property>
+					<Property Name="\2\AI.ADCTimingMode" Type="Str">High Resolution</Property>
+					<Property Name="\2\AI.Excit.Src" Type="Str">Internal</Property>
+					<Property Name="\2\AI.Excit.Val" Type="Str">0.0005</Property>
+					<Property Name="\2\AI.Max" Type="Str">100</Property>
+					<Property Name="\2\AI.MeasType" Type="Str">Temperature:RTD</Property>
+					<Property Name="\2\AI.Min" Type="Str">0</Property>
+					<Property Name="\2\AI.ResistanceCfg" Type="Str">4-Wire</Property>
+					<Property Name="\2\AI.RTD.R0" Type="Str">2300</Property>
+					<Property Name="\2\AI.RTD.Type" Type="Str">Pt3750</Property>
+					<Property Name="\2\AI.Temp.Units" Type="Str">Deg C</Property>
+					<Property Name="\2\ChanType" Type="Str">Analog Input</Property>
+					<Property Name="\2\Name" Type="Str">ThermTask/Temperature_2</Property>
+					<Property Name="\2\PhysicalChanName" Type="Str">cDAQ1Mod1/ai2</Property>
+					<Property Name="\3\AI.ADCTimingMode" Type="Str">High Resolution</Property>
+					<Property Name="\3\AI.Excit.Src" Type="Str">Internal</Property>
+					<Property Name="\3\AI.Excit.Val" Type="Str">0.0005</Property>
+					<Property Name="\3\AI.Max" Type="Str">100</Property>
+					<Property Name="\3\AI.MeasType" Type="Str">Temperature:RTD</Property>
+					<Property Name="\3\AI.Min" Type="Str">0</Property>
+					<Property Name="\3\AI.ResistanceCfg" Type="Str">4-Wire</Property>
+					<Property Name="\3\AI.RTD.R0" Type="Str">2300</Property>
+					<Property Name="\3\AI.RTD.Type" Type="Str">Pt3750</Property>
+					<Property Name="\3\AI.Temp.Units" Type="Str">Deg C</Property>
+					<Property Name="\3\ChanType" Type="Str">Analog Input</Property>
+					<Property Name="\3\Name" Type="Str">ThermTask/Temperature_3</Property>
+					<Property Name="\3\PhysicalChanName" Type="Str">cDAQ1Mod1/ai3</Property>
+					<Property Name="\4\AI.ADCTimingMode" Type="Str">High Resolution</Property>
+					<Property Name="\4\AI.Excit.Src" Type="Str">Internal</Property>
+					<Property Name="\4\AI.Excit.Val" Type="Str">0.0005</Property>
+					<Property Name="\4\AI.Max" Type="Str">100</Property>
+					<Property Name="\4\AI.MeasType" Type="Str">Temperature:RTD</Property>
+					<Property Name="\4\AI.Min" Type="Str">0</Property>
+					<Property Name="\4\AI.ResistanceCfg" Type="Str">4-Wire</Property>
+					<Property Name="\4\AI.RTD.R0" Type="Str">2300</Property>
+					<Property Name="\4\AI.RTD.Type" Type="Str">Pt3750</Property>
+					<Property Name="\4\AI.Temp.Units" Type="Str">Deg C</Property>
+					<Property Name="\4\ChanType" Type="Str">Analog Input</Property>
+					<Property Name="\4\Name" Type="Str">ThermTask/Temperature_4</Property>
+					<Property Name="\4\PhysicalChanName" Type="Str">cDAQ1Mod2/ai0</Property>
+					<Property Name="\5\AI.ADCTimingMode" Type="Str">High Resolution</Property>
+					<Property Name="\5\AI.Excit.Src" Type="Str">Internal</Property>
+					<Property Name="\5\AI.Excit.Val" Type="Str">0.0005</Property>
+					<Property Name="\5\AI.Max" Type="Str">100</Property>
+					<Property Name="\5\AI.MeasType" Type="Str">Temperature:RTD</Property>
+					<Property Name="\5\AI.Min" Type="Str">0</Property>
+					<Property Name="\5\AI.ResistanceCfg" Type="Str">4-Wire</Property>
+					<Property Name="\5\AI.RTD.R0" Type="Str">2300</Property>
+					<Property Name="\5\AI.RTD.Type" Type="Str">Pt3750</Property>
+					<Property Name="\5\AI.Temp.Units" Type="Str">Deg C</Property>
+					<Property Name="\5\ChanType" Type="Str">Analog Input</Property>
+					<Property Name="\5\Name" Type="Str">ThermTask/Temperature_5</Property>
+					<Property Name="\5\PhysicalChanName" Type="Str">cDAQ1Mod2/ai1</Property>
+					<Property Name="\6\AI.ADCTimingMode" Type="Str">High Resolution</Property>
+					<Property Name="\6\AI.Excit.Src" Type="Str">Internal</Property>
+					<Property Name="\6\AI.Excit.Val" Type="Str">0.0005</Property>
+					<Property Name="\6\AI.Max" Type="Str">100</Property>
+					<Property Name="\6\AI.MeasType" Type="Str">Temperature:RTD</Property>
+					<Property Name="\6\AI.Min" Type="Str">0</Property>
+					<Property Name="\6\AI.ResistanceCfg" Type="Str">4-Wire</Property>
+					<Property Name="\6\AI.RTD.R0" Type="Str">2300</Property>
+					<Property Name="\6\AI.RTD.Type" Type="Str">Pt3750</Property>
+					<Property Name="\6\AI.Temp.Units" Type="Str">Deg C</Property>
+					<Property Name="\6\ChanType" Type="Str">Analog Input</Property>
+					<Property Name="\6\Name" Type="Str">ThermTask/Temperature_6</Property>
+					<Property Name="\6\PhysicalChanName" Type="Str">cDAQ1Mod2/ai2</Property>
+					<Property Name="\7\AI.ADCTimingMode" Type="Str">High Resolution</Property>
+					<Property Name="\7\AI.Excit.Src" Type="Str">Internal</Property>
+					<Property Name="\7\AI.Excit.Val" Type="Str">0.0005</Property>
+					<Property Name="\7\AI.Max" Type="Str">100</Property>
+					<Property Name="\7\AI.MeasType" Type="Str">Temperature:RTD</Property>
+					<Property Name="\7\AI.Min" Type="Str">0</Property>
+					<Property Name="\7\AI.ResistanceCfg" Type="Str">4-Wire</Property>
+					<Property Name="\7\AI.RTD.R0" Type="Str">2300</Property>
+					<Property Name="\7\AI.RTD.Type" Type="Str">Pt3750</Property>
+					<Property Name="\7\AI.Temp.Units" Type="Str">Deg C</Property>
+					<Property Name="\7\ChanType" Type="Str">Analog Input</Property>
+					<Property Name="\7\Name" Type="Str">ThermTask/Temperature_7</Property>
+					<Property Name="\7\PhysicalChanName" Type="Str">cDAQ1Mod2/ai3</Property>
+					<Property Name="Channels" Type="Str">ThermTask/Temperature_0, ThermTask/Temperature_1, ThermTask/Temperature_2, ThermTask/Temperature_3, ThermTask/Temperature_4, ThermTask/Temperature_5, ThermTask/Temperature_6, ThermTask/Temperature_7</Property>
+					<Property Name="Name" Type="Str">ThermTask</Property>
+					<Property Name="SampTimingType" Type="Str">On Demand</Property>
+				</Item>
 			</Item>
 			<Item Name="Connections" Type="Folder">
 				<Item Name="ConnectionStatus.vi" Type="VI" URL="../ConnectionStatus.vi"/>
@@ -25,143 +141,42 @@
 			<Item Name="Data Logging" Type="Folder">
 				<Property Name="NI.SortType" Type="Int">3</Property>
 				<Item Name="DataFile_Create.vi" Type="VI" URL="../DataFile_Create.vi"/>
+				<Item Name="DataFile_Append.vi" Type="VI" URL="../DataFile_Append.vi"/>
 				<Item Name="Label_Check.vi" Type="VI" URL="../Label_Check.vi"/>
 				<Item Name="Label_Increment.vi" Type="VI" URL="../Label_Increment.vi"/>
 				<Item Name="SetupFile_Create.vi" Type="VI" URL="../SetupFile_Create.vi"/>
 				<Item Name="SetupFile_Format.vi" Type="VI" URL="../SetupFile_Format.vi"/>
 				<Item Name="Buffer_Initialize.vi" Type="VI" URL="../Buffer_Initialize.vi"/>
+				<Item Name="Buffer_Append.vi" Type="VI" URL="../Buffer_Append.vi"/>
+			</Item>
+			<Item Name="Freeze" Type="Folder">
+				<Item Name="Freeze_Check.vi" Type="VI" URL="../Freeze_Check.vi"/>
+				<Item Name="Freeze_Threshold.vi" Type="VI" URL="../Freeze_Threshold.vi"/>
+			</Item>
+			<Item Name="PID" Type="Folder">
+				<Item Name="PID_Calculate.vi" Type="VI" URL="../PID_Calculate.vi"/>
+				<Item Name="PID_Control.vi" Type="VI" URL="../PID_Control.vi"/>
 			</Item>
 			<Item Name="Settings" Type="Folder">
+				<Item Name="Options.vi" Type="VI" URL="../Options.vi"/>
 				<Item Name="Settings_Config.vi" Type="VI" URL="../Settings_Config.vi"/>
 				<Item Name="Settings_Load.vi" Type="VI" URL="../Settings_Load.vi"/>
 				<Item Name="Settings_Save.vi" Type="VI" URL="../Settings_Save.vi"/>
 			</Item>
 			<Item Name="System" Type="Folder">
 				<Property Name="NI.SortType" Type="Int">3</Property>
+				<Item Name="Misc" Type="Folder">
+					<Item Name="Chart_Data_Packer.vi" Type="VI" URL="../Chart_Data_Packer.vi"/>
+					<Item Name="Read Exe Version.vi" Type="VI" URL="../Read Exe Version.vi"/>
+					<Item Name="SystemActive.vi" Type="VI" URL="../SystemActive.vi"/>
+					<Item Name="SampleRate_Convert.vi" Type="VI" URL="../SampleRate_Convert.vi"/>
+					<Item Name="Image_Folder_Path_Checker.vi" Type="VI" URL="../Image_Folder_Path_Checker.vi"/>
+				</Item>
 				<Item Name="DataCluster.ctl" Type="VI" URL="../DataCluster.ctl"/>
 				<Item Name="RunTimeMenu.rtm" Type="Document" URL="../RunTimeMenu.rtm"/>
-				<Item Name="Read Exe Version.vi" Type="VI" URL="../Read Exe Version.vi"/>
-				<Item Name="SystemActive.vi" Type="VI" URL="../SystemActive.vi"/>
-				<Item Name="SampleRate_Convert.vi" Type="VI" URL="../SampleRate_Convert.vi"/>
 			</Item>
 		</Item>
-		<Item Name="Buffer_Append.vi" Type="VI" URL="../Buffer_Append.vi"/>
-		<Item Name="DataFile_Append.vi" Type="VI" URL="../DataFile_Append.vi"/>
 		<Item Name="main.vi" Type="VI" URL="../main.vi"/>
-		<Item Name="TempTask" Type="NI-DAQmx Task">
-			<Property Name="\0\AI.ADCTimingMode" Type="Str">High Resolution</Property>
-			<Property Name="\0\AI.Excit.Src" Type="Str">Internal</Property>
-			<Property Name="\0\AI.Excit.Val" Type="Str">0.0005</Property>
-			<Property Name="\0\AI.Max" Type="Str">100</Property>
-			<Property Name="\0\AI.MeasType" Type="Str">Temperature:RTD</Property>
-			<Property Name="\0\AI.Min" Type="Str">0</Property>
-			<Property Name="\0\AI.ResistanceCfg" Type="Str">4-Wire</Property>
-			<Property Name="\0\AI.RTD.R0" Type="Str">2300</Property>
-			<Property Name="\0\AI.RTD.Type" Type="Str">Pt3750</Property>
-			<Property Name="\0\AI.Temp.Units" Type="Str">Deg C</Property>
-			<Property Name="\0\ChanType" Type="Str">Analog Input</Property>
-			<Property Name="\0\Name" Type="Str">TempTask/Temperature_0</Property>
-			<Property Name="\0\PhysicalChanName" Type="Str">cDAQ1Mod1/ai0</Property>
-			<Property Name="\1\AI.ADCTimingMode" Type="Str">High Resolution</Property>
-			<Property Name="\1\AI.Excit.Src" Type="Str">Internal</Property>
-			<Property Name="\1\AI.Excit.Val" Type="Str">0.0005</Property>
-			<Property Name="\1\AI.Max" Type="Str">100</Property>
-			<Property Name="\1\AI.MeasType" Type="Str">Temperature:RTD</Property>
-			<Property Name="\1\AI.Min" Type="Str">0</Property>
-			<Property Name="\1\AI.ResistanceCfg" Type="Str">4-Wire</Property>
-			<Property Name="\1\AI.RTD.R0" Type="Str">2300</Property>
-			<Property Name="\1\AI.RTD.Type" Type="Str">Pt3750</Property>
-			<Property Name="\1\AI.Temp.Units" Type="Str">Deg C</Property>
-			<Property Name="\1\ChanType" Type="Str">Analog Input</Property>
-			<Property Name="\1\Name" Type="Str">TempTask/Temperature_1</Property>
-			<Property Name="\1\PhysicalChanName" Type="Str">cDAQ1Mod1/ai1</Property>
-			<Property Name="\2\AI.ADCTimingMode" Type="Str">High Resolution</Property>
-			<Property Name="\2\AI.Excit.Src" Type="Str">Internal</Property>
-			<Property Name="\2\AI.Excit.Val" Type="Str">0.0005</Property>
-			<Property Name="\2\AI.Max" Type="Str">100</Property>
-			<Property Name="\2\AI.MeasType" Type="Str">Temperature:RTD</Property>
-			<Property Name="\2\AI.Min" Type="Str">0</Property>
-			<Property Name="\2\AI.ResistanceCfg" Type="Str">4-Wire</Property>
-			<Property Name="\2\AI.RTD.R0" Type="Str">2300</Property>
-			<Property Name="\2\AI.RTD.Type" Type="Str">Pt3750</Property>
-			<Property Name="\2\AI.Temp.Units" Type="Str">Deg C</Property>
-			<Property Name="\2\ChanType" Type="Str">Analog Input</Property>
-			<Property Name="\2\Name" Type="Str">TempTask/Temperature_2</Property>
-			<Property Name="\2\PhysicalChanName" Type="Str">cDAQ1Mod1/ai2</Property>
-			<Property Name="\3\AI.ADCTimingMode" Type="Str">High Resolution</Property>
-			<Property Name="\3\AI.Excit.Src" Type="Str">Internal</Property>
-			<Property Name="\3\AI.Excit.Val" Type="Str">0.0005</Property>
-			<Property Name="\3\AI.Max" Type="Str">100</Property>
-			<Property Name="\3\AI.MeasType" Type="Str">Temperature:RTD</Property>
-			<Property Name="\3\AI.Min" Type="Str">0</Property>
-			<Property Name="\3\AI.ResistanceCfg" Type="Str">4-Wire</Property>
-			<Property Name="\3\AI.RTD.R0" Type="Str">2300</Property>
-			<Property Name="\3\AI.RTD.Type" Type="Str">Pt3750</Property>
-			<Property Name="\3\AI.Temp.Units" Type="Str">Deg C</Property>
-			<Property Name="\3\ChanType" Type="Str">Analog Input</Property>
-			<Property Name="\3\Name" Type="Str">TempTask/Temperature_3</Property>
-			<Property Name="\3\PhysicalChanName" Type="Str">cDAQ1Mod1/ai3</Property>
-			<Property Name="\4\AI.ADCTimingMode" Type="Str">High Resolution</Property>
-			<Property Name="\4\AI.Excit.Src" Type="Str">Internal</Property>
-			<Property Name="\4\AI.Excit.Val" Type="Str">0.0005</Property>
-			<Property Name="\4\AI.Max" Type="Str">100</Property>
-			<Property Name="\4\AI.MeasType" Type="Str">Temperature:RTD</Property>
-			<Property Name="\4\AI.Min" Type="Str">0</Property>
-			<Property Name="\4\AI.ResistanceCfg" Type="Str">4-Wire</Property>
-			<Property Name="\4\AI.RTD.R0" Type="Str">2300</Property>
-			<Property Name="\4\AI.RTD.Type" Type="Str">Pt3750</Property>
-			<Property Name="\4\AI.Temp.Units" Type="Str">Deg C</Property>
-			<Property Name="\4\ChanType" Type="Str">Analog Input</Property>
-			<Property Name="\4\Name" Type="Str">TempTask/Temperature_4</Property>
-			<Property Name="\4\PhysicalChanName" Type="Str">cDAQ1Mod2/ai0</Property>
-			<Property Name="\5\AI.ADCTimingMode" Type="Str">High Resolution</Property>
-			<Property Name="\5\AI.Excit.Src" Type="Str">Internal</Property>
-			<Property Name="\5\AI.Excit.Val" Type="Str">0.0005</Property>
-			<Property Name="\5\AI.Max" Type="Str">100</Property>
-			<Property Name="\5\AI.MeasType" Type="Str">Temperature:RTD</Property>
-			<Property Name="\5\AI.Min" Type="Str">0</Property>
-			<Property Name="\5\AI.ResistanceCfg" Type="Str">4-Wire</Property>
-			<Property Name="\5\AI.RTD.R0" Type="Str">2300</Property>
-			<Property Name="\5\AI.RTD.Type" Type="Str">Pt3750</Property>
-			<Property Name="\5\AI.Temp.Units" Type="Str">Deg C</Property>
-			<Property Name="\5\ChanType" Type="Str">Analog Input</Property>
-			<Property Name="\5\Name" Type="Str">TempTask/Temperature_5</Property>
-			<Property Name="\5\PhysicalChanName" Type="Str">cDAQ1Mod2/ai1</Property>
-			<Property Name="\6\AI.ADCTimingMode" Type="Str">High Resolution</Property>
-			<Property Name="\6\AI.Excit.Src" Type="Str">Internal</Property>
-			<Property Name="\6\AI.Excit.Val" Type="Str">0.0005</Property>
-			<Property Name="\6\AI.Max" Type="Str">100</Property>
-			<Property Name="\6\AI.MeasType" Type="Str">Temperature:RTD</Property>
-			<Property Name="\6\AI.Min" Type="Str">0</Property>
-			<Property Name="\6\AI.ResistanceCfg" Type="Str">4-Wire</Property>
-			<Property Name="\6\AI.RTD.R0" Type="Str">2300</Property>
-			<Property Name="\6\AI.RTD.Type" Type="Str">Pt3750</Property>
-			<Property Name="\6\AI.Temp.Units" Type="Str">Deg C</Property>
-			<Property Name="\6\ChanType" Type="Str">Analog Input</Property>
-			<Property Name="\6\Name" Type="Str">TempTask/Temperature_6</Property>
-			<Property Name="\6\PhysicalChanName" Type="Str">cDAQ1Mod2/ai2</Property>
-			<Property Name="\7\AI.ADCTimingMode" Type="Str">High Resolution</Property>
-			<Property Name="\7\AI.Excit.Src" Type="Str">Internal</Property>
-			<Property Name="\7\AI.Excit.Val" Type="Str">0.0005</Property>
-			<Property Name="\7\AI.Max" Type="Str">100</Property>
-			<Property Name="\7\AI.MeasType" Type="Str">Temperature:RTD</Property>
-			<Property Name="\7\AI.Min" Type="Str">0</Property>
-			<Property Name="\7\AI.ResistanceCfg" Type="Str">4-Wire</Property>
-			<Property Name="\7\AI.RTD.R0" Type="Str">2300</Property>
-			<Property Name="\7\AI.RTD.Type" Type="Str">Pt3750</Property>
-			<Property Name="\7\AI.Temp.Units" Type="Str">Deg C</Property>
-			<Property Name="\7\ChanType" Type="Str">Analog Input</Property>
-			<Property Name="\7\Name" Type="Str">TempTask/Temperature_7</Property>
-			<Property Name="\7\PhysicalChanName" Type="Str">cDAQ1Mod2/ai3</Property>
-			<Property Name="Channels" Type="Str">TempTask/Temperature_0, TempTask/Temperature_1, TempTask/Temperature_2, TempTask/Temperature_3, TempTask/Temperature_4, TempTask/Temperature_5, TempTask/Temperature_6, TempTask/Temperature_7</Property>
-			<Property Name="Name" Type="Str">TempTask</Property>
-			<Property Name="SampTimingType" Type="Str">On Demand</Property>
-		</Item>
-		<Item Name="Thermistor_Callibration.vi" Type="VI" URL="../Thermistor_Callibration.vi"/>
-		<Item Name="Thermistor_Callibration_Load.vi" Type="VI" URL="../Thermistor_Callibration_Load.vi"/>
-		<Item Name="Thermistor_Callibration_Save.vi" Type="VI" URL="../Thermistor_Callibration_Save.vi"/>
-		<Item Name="Thermistor_Conversion.vi" Type="VI" URL="../Thermistor_Conversion.vi"/>
-		<Item Name="Thermistor_Manual_Read.vi" Type="VI" URL="../Thermistor_Manual_Read.vi"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="vi.lib" Type="Folder">
 				<Item Name="Add State(s) to Queue__JKI_lib_State_Machine.vi" Type="VI" URL="/&lt;vilib&gt;/addons/_JKI Toolkits/State Machine/_JKI_lib_State_Machine.llb/Add State(s) to Queue__JKI_lib_State_Machine.vi"/>
@@ -313,9 +328,59 @@
 				<Item Name="DAQmx Read.vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/read.llb/DAQmx Read.vi"/>
 				<Item Name="DAQmx Start Task.vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/configure/task.llb/DAQmx Start Task.vi"/>
 				<Item Name="DAQmx Stop Task.vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/configure/task.llb/DAQmx Stop Task.vi"/>
+				<Item Name="DAQmx Write (Analog 1D DBL 1Chan NSamp).vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/write.llb/DAQmx Write (Analog 1D DBL 1Chan NSamp).vi"/>
+				<Item Name="DAQmx Write (Analog 1D DBL NChan 1Samp).vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/write.llb/DAQmx Write (Analog 1D DBL NChan 1Samp).vi"/>
+				<Item Name="DAQmx Write (Analog 1D Wfm NChan 1Samp).vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/write.llb/DAQmx Write (Analog 1D Wfm NChan 1Samp).vi"/>
+				<Item Name="DAQmx Write (Analog 1D Wfm NChan NSamp).vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/write.llb/DAQmx Write (Analog 1D Wfm NChan NSamp).vi"/>
+				<Item Name="DAQmx Write (Analog 2D DBL NChan NSamp).vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/write.llb/DAQmx Write (Analog 2D DBL NChan NSamp).vi"/>
+				<Item Name="DAQmx Write (Analog 2D I16 NChan NSamp).vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/write.llb/DAQmx Write (Analog 2D I16 NChan NSamp).vi"/>
+				<Item Name="DAQmx Write (Analog 2D I32 NChan NSamp).vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/write.llb/DAQmx Write (Analog 2D I32 NChan NSamp).vi"/>
+				<Item Name="DAQmx Write (Analog 2D U16 NChan NSamp).vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/write.llb/DAQmx Write (Analog 2D U16 NChan NSamp).vi"/>
+				<Item Name="DAQmx Write (Analog DBL 1Chan 1Samp).vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/write.llb/DAQmx Write (Analog DBL 1Chan 1Samp).vi"/>
+				<Item Name="DAQmx Write (Analog Wfm 1Chan 1Samp).vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/write.llb/DAQmx Write (Analog Wfm 1Chan 1Samp).vi"/>
+				<Item Name="DAQmx Write (Analog Wfm 1Chan NSamp).vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/write.llb/DAQmx Write (Analog Wfm 1Chan NSamp).vi"/>
+				<Item Name="DAQmx Write (Counter 1D Frequency 1Chan NSamp).vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/write.llb/DAQmx Write (Counter 1D Frequency 1Chan NSamp).vi"/>
+				<Item Name="DAQmx Write (Counter 1D Frequency NChan 1Samp).vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/write.llb/DAQmx Write (Counter 1D Frequency NChan 1Samp).vi"/>
+				<Item Name="DAQmx Write (Counter 1D Ticks 1Chan NSamp).vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/write.llb/DAQmx Write (Counter 1D Ticks 1Chan NSamp).vi"/>
+				<Item Name="DAQmx Write (Counter 1D Time 1Chan NSamp).vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/write.llb/DAQmx Write (Counter 1D Time 1Chan NSamp).vi"/>
+				<Item Name="DAQmx Write (Counter 1D Time NChan 1Samp).vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/write.llb/DAQmx Write (Counter 1D Time NChan 1Samp).vi"/>
+				<Item Name="DAQmx Write (Counter 1DTicks NChan 1Samp).vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/write.llb/DAQmx Write (Counter 1DTicks NChan 1Samp).vi"/>
+				<Item Name="DAQmx Write (Counter Frequency 1Chan 1Samp).vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/write.llb/DAQmx Write (Counter Frequency 1Chan 1Samp).vi"/>
+				<Item Name="DAQmx Write (Counter Ticks 1Chan 1Samp).vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/write.llb/DAQmx Write (Counter Ticks 1Chan 1Samp).vi"/>
+				<Item Name="DAQmx Write (Counter Time 1Chan 1Samp).vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/write.llb/DAQmx Write (Counter Time 1Chan 1Samp).vi"/>
+				<Item Name="DAQmx Write (Digital 1D Bool 1Chan 1Samp).vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/write.llb/DAQmx Write (Digital 1D Bool 1Chan 1Samp).vi"/>
+				<Item Name="DAQmx Write (Digital 1D Bool NChan 1Samp 1Line).vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/write.llb/DAQmx Write (Digital 1D Bool NChan 1Samp 1Line).vi"/>
+				<Item Name="DAQmx Write (Digital 1D U8 1Chan NSamp).vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/write.llb/DAQmx Write (Digital 1D U8 1Chan NSamp).vi"/>
+				<Item Name="DAQmx Write (Digital 1D U8 NChan 1Samp).vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/write.llb/DAQmx Write (Digital 1D U8 NChan 1Samp).vi"/>
+				<Item Name="DAQmx Write (Digital 1D U16 1Chan NSamp).vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/write.llb/DAQmx Write (Digital 1D U16 1Chan NSamp).vi"/>
+				<Item Name="DAQmx Write (Digital 1D U16 NChan 1Samp).vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/write.llb/DAQmx Write (Digital 1D U16 NChan 1Samp).vi"/>
+				<Item Name="DAQmx Write (Digital 1D U32 1Chan NSamp).vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/write.llb/DAQmx Write (Digital 1D U32 1Chan NSamp).vi"/>
+				<Item Name="DAQmx Write (Digital 1D U32 NChan 1Samp).vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/write.llb/DAQmx Write (Digital 1D U32 NChan 1Samp).vi"/>
+				<Item Name="DAQmx Write (Digital 1D Wfm NChan 1Samp).vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/write.llb/DAQmx Write (Digital 1D Wfm NChan 1Samp).vi"/>
+				<Item Name="DAQmx Write (Digital 1D Wfm NChan NSamp).vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/write.llb/DAQmx Write (Digital 1D Wfm NChan NSamp).vi"/>
+				<Item Name="DAQmx Write (Digital 2D Bool NChan 1Samp NLine).vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/write.llb/DAQmx Write (Digital 2D Bool NChan 1Samp NLine).vi"/>
+				<Item Name="DAQmx Write (Digital 2D U8 NChan NSamp).vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/write.llb/DAQmx Write (Digital 2D U8 NChan NSamp).vi"/>
+				<Item Name="DAQmx Write (Digital 2D U16 NChan NSamp).vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/write.llb/DAQmx Write (Digital 2D U16 NChan NSamp).vi"/>
+				<Item Name="DAQmx Write (Digital 2D U32 NChan NSamp).vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/write.llb/DAQmx Write (Digital 2D U32 NChan NSamp).vi"/>
+				<Item Name="DAQmx Write (Digital Bool 1Line 1Point).vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/write.llb/DAQmx Write (Digital Bool 1Line 1Point).vi"/>
+				<Item Name="DAQmx Write (Digital U8 1Chan 1Samp).vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/write.llb/DAQmx Write (Digital U8 1Chan 1Samp).vi"/>
+				<Item Name="DAQmx Write (Digital U16 1Chan 1Samp).vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/write.llb/DAQmx Write (Digital U16 1Chan 1Samp).vi"/>
+				<Item Name="DAQmx Write (Digital U32 1Chan 1Samp).vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/write.llb/DAQmx Write (Digital U32 1Chan 1Samp).vi"/>
+				<Item Name="DAQmx Write (Digital Wfm 1Chan 1Samp).vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/write.llb/DAQmx Write (Digital Wfm 1Chan 1Samp).vi"/>
+				<Item Name="DAQmx Write (Digital Wfm 1Chan NSamp).vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/write.llb/DAQmx Write (Digital Wfm 1Chan NSamp).vi"/>
+				<Item Name="DAQmx Write (Raw 1D I8).vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/write.llb/DAQmx Write (Raw 1D I8).vi"/>
+				<Item Name="DAQmx Write (Raw 1D I16).vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/write.llb/DAQmx Write (Raw 1D I16).vi"/>
+				<Item Name="DAQmx Write (Raw 1D I32).vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/write.llb/DAQmx Write (Raw 1D I32).vi"/>
+				<Item Name="DAQmx Write (Raw 1D U8).vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/write.llb/DAQmx Write (Raw 1D U8).vi"/>
+				<Item Name="DAQmx Write (Raw 1D U16).vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/write.llb/DAQmx Write (Raw 1D U16).vi"/>
+				<Item Name="DAQmx Write (Raw 1D U32).vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/write.llb/DAQmx Write (Raw 1D U32).vi"/>
+				<Item Name="DAQmx Write.vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/write.llb/DAQmx Write.vi"/>
 				<Item Name="Details Display Dialog.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Details Display Dialog.vi"/>
 				<Item Name="DialogType.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/DialogType.ctl"/>
 				<Item Name="DialogTypeEnum.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/DialogTypeEnum.ctl"/>
+				<Item Name="DTbl Digital Size.vi" Type="VI" URL="/&lt;vilib&gt;/Waveform/DTblOps.llb/DTbl Digital Size.vi"/>
+				<Item Name="DTbl Uncompress Digital.vi" Type="VI" URL="/&lt;vilib&gt;/Waveform/DTblOps.llb/DTbl Uncompress Digital.vi"/>
+				<Item Name="DWDT Uncompress Digital.vi" Type="VI" URL="/&lt;vilib&gt;/Waveform/DWDTOps.llb/DWDT Uncompress Digital.vi"/>
 				<Item Name="Error Cluster From Error Code.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Error Cluster From Error Code.vi"/>
 				<Item Name="Error Code Database.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Error Code Database.vi"/>
 				<Item Name="ErrWarn.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/ErrWarn.ctl"/>
@@ -345,6 +410,7 @@
 				<Item Name="IMAQ Create" Type="VI" URL="/&lt;vilib&gt;/vision/Basics.llb/IMAQ Create"/>
 				<Item Name="IMAQ Dispose" Type="VI" URL="/&lt;vilib&gt;/vision/Basics.llb/IMAQ Dispose"/>
 				<Item Name="IMAQ Image.ctl" Type="VI" URL="/&lt;vilib&gt;/vision/Image Controls.llb/IMAQ Image.ctl"/>
+				<Item Name="IMAQ ReadFile 2" Type="VI" URL="/&lt;vilib&gt;/vision/Files.llb/IMAQ ReadFile 2"/>
 				<Item Name="IMAQ Write BMP File 2" Type="VI" URL="/&lt;vilib&gt;/vision/Files.llb/IMAQ Write BMP File 2"/>
 				<Item Name="IMAQ Write File 2" Type="VI" URL="/&lt;vilib&gt;/vision/Files.llb/IMAQ Write File 2"/>
 				<Item Name="IMAQ Write Image And Vision Info File 2" Type="VI" URL="/&lt;vilib&gt;/vision/Files.llb/IMAQ Write Image And Vision Info File 2"/>
@@ -352,15 +418,19 @@
 				<Item Name="IMAQ Write JPEG2000 File 2" Type="VI" URL="/&lt;vilib&gt;/vision/Files.llb/IMAQ Write JPEG2000 File 2"/>
 				<Item Name="IMAQ Write PNG File 2" Type="VI" URL="/&lt;vilib&gt;/vision/Files.llb/IMAQ Write PNG File 2"/>
 				<Item Name="IMAQ Write TIFF File 2" Type="VI" URL="/&lt;vilib&gt;/vision/Files.llb/IMAQ Write TIFF File 2"/>
-				<Item Name="IMAQdx.ctl" Type="VI" URL="/&lt;vilib&gt;/userDefined/High Color/IMAQdx.ctl"/>
+				<Item Name="IMAQdx.ctl" Type="VI" URL="/&lt;vilib&gt;/userdefined/High Color/IMAQdx.ctl"/>
 				<Item Name="Longest Line Length in Pixels.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Longest Line Length in Pixels.vi"/>
 				<Item Name="LVBoundsTypeDef.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/miscctls.llb/LVBoundsTypeDef.ctl"/>
+				<Item Name="lvpidtkt.dll" Type="Document" URL="/&lt;vilib&gt;/addons/control/pid/lvpidtkt.dll"/>
 				<Item Name="LVRectTypeDef.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/miscctls.llb/LVRectTypeDef.ctl"/>
 				<Item Name="MoveMemory.vi" Type="VI" URL="/&lt;vilib&gt;/Platform/fileVersionInfo.llb/MoveMemory.vi"/>
 				<Item Name="NI_AALBase.lvlib" Type="Library" URL="/&lt;vilib&gt;/Analysis/NI_AALBase.lvlib"/>
 				<Item Name="NI_FileType.lvlib" Type="Library" URL="/&lt;vilib&gt;/Utility/lvfile.llb/NI_FileType.lvlib"/>
 				<Item Name="NI_PackedLibraryUtility.lvlib" Type="Library" URL="/&lt;vilib&gt;/Utility/LVLibp/NI_PackedLibraryUtility.lvlib"/>
+				<Item Name="NI_PID__prctrl compat.lvlib" Type="Library" URL="/&lt;vilib&gt;/addons/control/pid/NI_PID__prctrl compat.lvlib"/>
+				<Item Name="NI_PID_pid.lvlib" Type="Library" URL="/&lt;vilib&gt;/addons/control/pid/NI_PID_pid.lvlib"/>
 				<Item Name="NI_Vision_Acquisition_Software.lvlib" Type="Library" URL="/&lt;vilib&gt;/vision/driver/NI_Vision_Acquisition_Software.lvlib"/>
+				<Item Name="NI_Vision_Development_Module.lvlib" Type="Library" URL="/&lt;vilib&gt;/vision/NI_Vision_Development_Module.lvlib"/>
 				<Item Name="Not Found Dialog.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Not Found Dialog.vi"/>
 				<Item Name="Open_Create_Replace File.vi" Type="VI" URL="/&lt;vilib&gt;/_oldvers/_oldvers.llb/Open_Create_Replace File.vi"/>
 				<Item Name="Parse State Queue__JKI_lib_State_Machine.vi" Type="VI" URL="/&lt;vilib&gt;/addons/_JKI Toolkits/State Machine/_JKI_lib_State_Machine.llb/Parse State Queue__JKI_lib_State_Machine.vi"/>
