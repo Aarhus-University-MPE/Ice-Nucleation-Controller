@@ -1,0 +1,12 @@
+Ice Nucleation Version;0.0.0.1
+;
+Sample:;
+Label;Test Sample_9
+Operator;MRJ
+Date;2021_06_18-11-01-25-276
+;
+Notes;
+Testing cooling of ethanol
+;
+Temperature Gradient [°C/min];1,00
+Target Temperature [°C] ;30,00
