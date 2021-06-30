@@ -23,6 +23,7 @@
 					<Item Name="Thermistor_Callibration_Save.vi" Type="VI" URL="../Thermistor_Callibration_Save.vi"/>
 					<Item Name="Thermistor_Conversion.vi" Type="VI" URL="../Thermistor_Conversion.vi"/>
 					<Item Name="Thermistor_Manual_Read.vi" Type="VI" URL="../Thermistor_Manual_Read.vi"/>
+					<Item Name="Thermistor_Temp_Stamp.vi" Type="VI" URL="../Thermistor_Temp_Stamp.vi"/>
 				</Item>
 				<Item Name="Voltage Out" Type="Folder">
 					<Item Name="Manual_Cool_Heat.vi" Type="VI" URL="../Manual_Cool_Heat.vi"/>
@@ -30,111 +31,79 @@
 				</Item>
 				<Item Name="cDAQ_Read.vi" Type="VI" URL="../cDAQ_Read.vi"/>
 				<Item Name="ThermTask" Type="NI-DAQmx Task">
-					<Property Name="\0\AI.ADCTimingMode" Type="Str">High Resolution</Property>
-					<Property Name="\0\AI.Excit.Src" Type="Str">Internal</Property>
-					<Property Name="\0\AI.Excit.Val" Type="Str">0.0005</Property>
-					<Property Name="\0\AI.Max" Type="Str">100</Property>
-					<Property Name="\0\AI.MeasType" Type="Str">Temperature:RTD</Property>
-					<Property Name="\0\AI.Min" Type="Str">0</Property>
-					<Property Name="\0\AI.ResistanceCfg" Type="Str">4-Wire</Property>
-					<Property Name="\0\AI.RTD.R0" Type="Str">2300</Property>
-					<Property Name="\0\AI.RTD.Type" Type="Str">Pt3750</Property>
-					<Property Name="\0\AI.Temp.Units" Type="Str">Deg C</Property>
+					<Property Name="\0\AI.ADCTimingMode" Type="Str">Best 50 Hz Rejection</Property>
+					<Property Name="\0\AI.Max" Type="Str">60</Property>
+					<Property Name="\0\AI.MeasType" Type="Str">Voltage</Property>
+					<Property Name="\0\AI.Min" Type="Str">-60</Property>
+					<Property Name="\0\AI.TermCfg" Type="Str">Differential</Property>
+					<Property Name="\0\AI.Voltage.Units" Type="Str">Volts</Property>
 					<Property Name="\0\ChanType" Type="Str">Analog Input</Property>
-					<Property Name="\0\Name" Type="Str">ThermTask/Temperature_0</Property>
-					<Property Name="\0\PhysicalChanName" Type="Str">cDAQ1Mod1/ai0</Property>
-					<Property Name="\1\AI.ADCTimingMode" Type="Str">High Resolution</Property>
-					<Property Name="\1\AI.Excit.Src" Type="Str">Internal</Property>
-					<Property Name="\1\AI.Excit.Val" Type="Str">0.0005</Property>
-					<Property Name="\1\AI.Max" Type="Str">100</Property>
-					<Property Name="\1\AI.MeasType" Type="Str">Temperature:RTD</Property>
-					<Property Name="\1\AI.Min" Type="Str">0</Property>
-					<Property Name="\1\AI.ResistanceCfg" Type="Str">4-Wire</Property>
-					<Property Name="\1\AI.RTD.R0" Type="Str">2300</Property>
-					<Property Name="\1\AI.RTD.Type" Type="Str">Pt3750</Property>
-					<Property Name="\1\AI.Temp.Units" Type="Str">Deg C</Property>
+					<Property Name="\0\Name" Type="Str">ThermTask/Voltage_0</Property>
+					<Property Name="\0\PhysicalChanName" Type="Str">cDAQ1Mod2/ai0</Property>
+					<Property Name="\1\AI.ADCTimingMode" Type="Str">Best 50 Hz Rejection</Property>
+					<Property Name="\1\AI.Max" Type="Str">60</Property>
+					<Property Name="\1\AI.MeasType" Type="Str">Voltage</Property>
+					<Property Name="\1\AI.Min" Type="Str">-60</Property>
+					<Property Name="\1\AI.TermCfg" Type="Str">Differential</Property>
+					<Property Name="\1\AI.Voltage.Units" Type="Str">Volts</Property>
 					<Property Name="\1\ChanType" Type="Str">Analog Input</Property>
-					<Property Name="\1\Name" Type="Str">ThermTask/Temperature_1</Property>
-					<Property Name="\1\PhysicalChanName" Type="Str">cDAQ1Mod1/ai1</Property>
-					<Property Name="\2\AI.ADCTimingMode" Type="Str">High Resolution</Property>
-					<Property Name="\2\AI.Excit.Src" Type="Str">Internal</Property>
-					<Property Name="\2\AI.Excit.Val" Type="Str">0.0005</Property>
-					<Property Name="\2\AI.Max" Type="Str">100</Property>
-					<Property Name="\2\AI.MeasType" Type="Str">Temperature:RTD</Property>
-					<Property Name="\2\AI.Min" Type="Str">0</Property>
-					<Property Name="\2\AI.ResistanceCfg" Type="Str">4-Wire</Property>
-					<Property Name="\2\AI.RTD.R0" Type="Str">2300</Property>
-					<Property Name="\2\AI.RTD.Type" Type="Str">Pt3750</Property>
-					<Property Name="\2\AI.Temp.Units" Type="Str">Deg C</Property>
+					<Property Name="\1\Name" Type="Str">ThermTask/Voltage_1</Property>
+					<Property Name="\1\PhysicalChanName" Type="Str">cDAQ1Mod2/ai1</Property>
+					<Property Name="\2\AI.ADCTimingMode" Type="Str">Best 50 Hz Rejection</Property>
+					<Property Name="\2\AI.Max" Type="Str">60</Property>
+					<Property Name="\2\AI.MeasType" Type="Str">Voltage</Property>
+					<Property Name="\2\AI.Min" Type="Str">-60</Property>
+					<Property Name="\2\AI.TermCfg" Type="Str">Differential</Property>
+					<Property Name="\2\AI.Voltage.Units" Type="Str">Volts</Property>
 					<Property Name="\2\ChanType" Type="Str">Analog Input</Property>
-					<Property Name="\2\Name" Type="Str">ThermTask/Temperature_2</Property>
-					<Property Name="\2\PhysicalChanName" Type="Str">cDAQ1Mod1/ai2</Property>
-					<Property Name="\3\AI.ADCTimingMode" Type="Str">High Resolution</Property>
-					<Property Name="\3\AI.Excit.Src" Type="Str">Internal</Property>
-					<Property Name="\3\AI.Excit.Val" Type="Str">0.0005</Property>
-					<Property Name="\3\AI.Max" Type="Str">100</Property>
-					<Property Name="\3\AI.MeasType" Type="Str">Temperature:RTD</Property>
-					<Property Name="\3\AI.Min" Type="Str">0</Property>
-					<Property Name="\3\AI.ResistanceCfg" Type="Str">4-Wire</Property>
-					<Property Name="\3\AI.RTD.R0" Type="Str">2300</Property>
-					<Property Name="\3\AI.RTD.Type" Type="Str">Pt3750</Property>
-					<Property Name="\3\AI.Temp.Units" Type="Str">Deg C</Property>
+					<Property Name="\2\Name" Type="Str">ThermTask/Voltage_2</Property>
+					<Property Name="\2\PhysicalChanName" Type="Str">cDAQ1Mod2/ai2</Property>
+					<Property Name="\3\AI.ADCTimingMode" Type="Str">Best 50 Hz Rejection</Property>
+					<Property Name="\3\AI.Max" Type="Str">60</Property>
+					<Property Name="\3\AI.MeasType" Type="Str">Voltage</Property>
+					<Property Name="\3\AI.Min" Type="Str">-60</Property>
+					<Property Name="\3\AI.TermCfg" Type="Str">Differential</Property>
+					<Property Name="\3\AI.Voltage.Units" Type="Str">Volts</Property>
 					<Property Name="\3\ChanType" Type="Str">Analog Input</Property>
-					<Property Name="\3\Name" Type="Str">ThermTask/Temperature_3</Property>
-					<Property Name="\3\PhysicalChanName" Type="Str">cDAQ1Mod1/ai3</Property>
-					<Property Name="\4\AI.ADCTimingMode" Type="Str">High Resolution</Property>
-					<Property Name="\4\AI.Excit.Src" Type="Str">Internal</Property>
-					<Property Name="\4\AI.Excit.Val" Type="Str">0.0005</Property>
-					<Property Name="\4\AI.Max" Type="Str">100</Property>
-					<Property Name="\4\AI.MeasType" Type="Str">Temperature:RTD</Property>
-					<Property Name="\4\AI.Min" Type="Str">0</Property>
-					<Property Name="\4\AI.ResistanceCfg" Type="Str">4-Wire</Property>
-					<Property Name="\4\AI.RTD.R0" Type="Str">2300</Property>
-					<Property Name="\4\AI.RTD.Type" Type="Str">Pt3750</Property>
-					<Property Name="\4\AI.Temp.Units" Type="Str">Deg C</Property>
+					<Property Name="\3\Name" Type="Str">ThermTask/Voltage_3</Property>
+					<Property Name="\3\PhysicalChanName" Type="Str">cDAQ1Mod2/ai3</Property>
+					<Property Name="\4\AI.ADCTimingMode" Type="Str">Best 50 Hz Rejection</Property>
+					<Property Name="\4\AI.Max" Type="Str">60</Property>
+					<Property Name="\4\AI.MeasType" Type="Str">Voltage</Property>
+					<Property Name="\4\AI.Min" Type="Str">-60</Property>
+					<Property Name="\4\AI.TermCfg" Type="Str">Differential</Property>
+					<Property Name="\4\AI.Voltage.Units" Type="Str">Volts</Property>
 					<Property Name="\4\ChanType" Type="Str">Analog Input</Property>
-					<Property Name="\4\Name" Type="Str">ThermTask/Temperature_4</Property>
-					<Property Name="\4\PhysicalChanName" Type="Str">cDAQ1Mod2/ai0</Property>
-					<Property Name="\5\AI.ADCTimingMode" Type="Str">High Resolution</Property>
-					<Property Name="\5\AI.Excit.Src" Type="Str">Internal</Property>
-					<Property Name="\5\AI.Excit.Val" Type="Str">0.0005</Property>
-					<Property Name="\5\AI.Max" Type="Str">100</Property>
-					<Property Name="\5\AI.MeasType" Type="Str">Temperature:RTD</Property>
-					<Property Name="\5\AI.Min" Type="Str">0</Property>
-					<Property Name="\5\AI.ResistanceCfg" Type="Str">4-Wire</Property>
-					<Property Name="\5\AI.RTD.R0" Type="Str">2300</Property>
-					<Property Name="\5\AI.RTD.Type" Type="Str">Pt3750</Property>
-					<Property Name="\5\AI.Temp.Units" Type="Str">Deg C</Property>
+					<Property Name="\4\Name" Type="Str">ThermTask/Voltage_4</Property>
+					<Property Name="\4\PhysicalChanName" Type="Str">cDAQ1Mod3/ai0</Property>
+					<Property Name="\5\AI.ADCTimingMode" Type="Str">Best 50 Hz Rejection</Property>
+					<Property Name="\5\AI.Max" Type="Str">60</Property>
+					<Property Name="\5\AI.MeasType" Type="Str">Voltage</Property>
+					<Property Name="\5\AI.Min" Type="Str">-60</Property>
+					<Property Name="\5\AI.TermCfg" Type="Str">Differential</Property>
+					<Property Name="\5\AI.Voltage.Units" Type="Str">Volts</Property>
 					<Property Name="\5\ChanType" Type="Str">Analog Input</Property>
-					<Property Name="\5\Name" Type="Str">ThermTask/Temperature_5</Property>
-					<Property Name="\5\PhysicalChanName" Type="Str">cDAQ1Mod2/ai1</Property>
-					<Property Name="\6\AI.ADCTimingMode" Type="Str">High Resolution</Property>
-					<Property Name="\6\AI.Excit.Src" Type="Str">Internal</Property>
-					<Property Name="\6\AI.Excit.Val" Type="Str">0.0005</Property>
-					<Property Name="\6\AI.Max" Type="Str">100</Property>
-					<Property Name="\6\AI.MeasType" Type="Str">Temperature:RTD</Property>
-					<Property Name="\6\AI.Min" Type="Str">0</Property>
-					<Property Name="\6\AI.ResistanceCfg" Type="Str">4-Wire</Property>
-					<Property Name="\6\AI.RTD.R0" Type="Str">2300</Property>
-					<Property Name="\6\AI.RTD.Type" Type="Str">Pt3750</Property>
-					<Property Name="\6\AI.Temp.Units" Type="Str">Deg C</Property>
+					<Property Name="\5\Name" Type="Str">ThermTask/Voltage_5</Property>
+					<Property Name="\5\PhysicalChanName" Type="Str">cDAQ1Mod3/ai1</Property>
+					<Property Name="\6\AI.ADCTimingMode" Type="Str">Best 50 Hz Rejection</Property>
+					<Property Name="\6\AI.Max" Type="Str">60</Property>
+					<Property Name="\6\AI.MeasType" Type="Str">Voltage</Property>
+					<Property Name="\6\AI.Min" Type="Str">-60</Property>
+					<Property Name="\6\AI.TermCfg" Type="Str">Differential</Property>
+					<Property Name="\6\AI.Voltage.Units" Type="Str">Volts</Property>
 					<Property Name="\6\ChanType" Type="Str">Analog Input</Property>
-					<Property Name="\6\Name" Type="Str">ThermTask/Temperature_6</Property>
-					<Property Name="\6\PhysicalChanName" Type="Str">cDAQ1Mod2/ai2</Property>
-					<Property Name="\7\AI.ADCTimingMode" Type="Str">High Resolution</Property>
-					<Property Name="\7\AI.Excit.Src" Type="Str">Internal</Property>
-					<Property Name="\7\AI.Excit.Val" Type="Str">0.0005</Property>
-					<Property Name="\7\AI.Max" Type="Str">100</Property>
-					<Property Name="\7\AI.MeasType" Type="Str">Temperature:RTD</Property>
-					<Property Name="\7\AI.Min" Type="Str">0</Property>
-					<Property Name="\7\AI.ResistanceCfg" Type="Str">4-Wire</Property>
-					<Property Name="\7\AI.RTD.R0" Type="Str">2300</Property>
-					<Property Name="\7\AI.RTD.Type" Type="Str">Pt3750</Property>
-					<Property Name="\7\AI.Temp.Units" Type="Str">Deg C</Property>
+					<Property Name="\6\Name" Type="Str">ThermTask/Voltage_6</Property>
+					<Property Name="\6\PhysicalChanName" Type="Str">cDAQ1Mod3/ai2</Property>
+					<Property Name="\7\AI.ADCTimingMode" Type="Str">Best 50 Hz Rejection</Property>
+					<Property Name="\7\AI.Max" Type="Str">60</Property>
+					<Property Name="\7\AI.MeasType" Type="Str">Voltage</Property>
+					<Property Name="\7\AI.Min" Type="Str">-60</Property>
+					<Property Name="\7\AI.TermCfg" Type="Str">Differential</Property>
+					<Property Name="\7\AI.Voltage.Units" Type="Str">Volts</Property>
 					<Property Name="\7\ChanType" Type="Str">Analog Input</Property>
-					<Property Name="\7\Name" Type="Str">ThermTask/Temperature_7</Property>
-					<Property Name="\7\PhysicalChanName" Type="Str">cDAQ1Mod2/ai3</Property>
-					<Property Name="Channels" Type="Str">ThermTask/Temperature_0, ThermTask/Temperature_1, ThermTask/Temperature_2, ThermTask/Temperature_3, ThermTask/Temperature_4, ThermTask/Temperature_5, ThermTask/Temperature_6, ThermTask/Temperature_7</Property>
+					<Property Name="\7\Name" Type="Str">ThermTask/Voltage_7</Property>
+					<Property Name="\7\PhysicalChanName" Type="Str">cDAQ1Mod3/ai3</Property>
+					<Property Name="Channels" Type="Str">ThermTask/Voltage_0, ThermTask/Voltage_1, ThermTask/Voltage_2, ThermTask/Voltage_3, ThermTask/Voltage_4, ThermTask/Voltage_5, ThermTask/Voltage_6, ThermTask/Voltage_7</Property>
 					<Property Name="Name" Type="Str">ThermTask</Property>
 					<Property Name="SampTimingType" Type="Str">On Demand</Property>
 				</Item>
@@ -163,6 +132,7 @@
 			</Item>
 			<Item Name="Settings" Type="Folder">
 				<Item Name="Options.vi" Type="VI" URL="../Options.vi"/>
+				<Item Name="Partition_Setup.vi" Type="VI" URL="../Partition_Setup.vi"/>
 				<Item Name="Settings_Config.vi" Type="VI" URL="../Settings_Config.vi"/>
 				<Item Name="Settings_Load.vi" Type="VI" URL="../Settings_Load.vi"/>
 				<Item Name="Settings_Save.vi" Type="VI" URL="../Settings_Save.vi"/>
@@ -178,10 +148,10 @@
 				</Item>
 				<Item Name="DataCluster.ctl" Type="VI" URL="../DataCluster.ctl"/>
 				<Item Name="RunTimeMenu.rtm" Type="Document" URL="../RunTimeMenu.rtm"/>
+				<Item Name="RunTimeMenu_Partition.rtm" Type="Document" URL="../RunTimeMenu_Partition.rtm"/>
 			</Item>
 		</Item>
 		<Item Name="main.vi" Type="VI" URL="../main.vi"/>
-		<Item Name="Partition_Setup.vi" Type="VI" URL="../Partition_Setup.vi"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="vi.lib" Type="Folder">
 				<Item Name="Add State(s) to Queue__JKI_lib_State_Machine.vi" Type="VI" URL="/&lt;vilib&gt;/addons/_JKI Toolkits/State Machine/_JKI_lib_State_Machine.llb/Add State(s) to Queue__JKI_lib_State_Machine.vi"/>
@@ -390,6 +360,7 @@
 				<Item Name="Error Code Database.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Error Code Database.vi"/>
 				<Item Name="ErrWarn.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/ErrWarn.ctl"/>
 				<Item Name="eventvkey.ctl" Type="VI" URL="/&lt;vilib&gt;/event_ctls.llb/eventvkey.ctl"/>
+				<Item Name="ex_CorrectErrorChain.vi" Type="VI" URL="/&lt;vilib&gt;/express/express shared/ex_CorrectErrorChain.vi"/>
 				<Item Name="FileVersionInfo.vi" Type="VI" URL="/&lt;vilib&gt;/Platform/fileVersionInfo.llb/FileVersionInfo.vi"/>
 				<Item Name="FileVersionInformation.ctl" Type="VI" URL="/&lt;vilib&gt;/Platform/fileVersionInfo.llb/FileVersionInformation.ctl"/>
 				<Item Name="Find Tag.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Find Tag.vi"/>
@@ -451,6 +422,8 @@
 				<Item Name="Set Cursor (Icon Pict).vi" Type="VI" URL="/&lt;vilib&gt;/Utility/cursorutil.llb/Set Cursor (Icon Pict).vi"/>
 				<Item Name="Set Cursor.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/cursorutil.llb/Set Cursor.vi"/>
 				<Item Name="Set String Value.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Set String Value.vi"/>
+				<Item Name="subFile Dialog.vi" Type="VI" URL="/&lt;vilib&gt;/express/express input/FileDialogBlock.llb/subFile Dialog.vi"/>
+				<Item Name="System Exec.vi" Type="VI" URL="/&lt;vilib&gt;/Platform/system.llb/System Exec.vi"/>
 				<Item Name="TagReturnType.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/TagReturnType.ctl"/>
 				<Item Name="Three Button Dialog CORE.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Three Button Dialog CORE.vi"/>
 				<Item Name="Three Button Dialog.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Three Button Dialog.vi"/>
@@ -486,6 +459,7 @@
 			<Item Name="nivissvc.dll" Type="Document" URL="nivissvc.dll">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
+			<Item Name="Partition_Format.vi" Type="VI" URL="../Partition_Format.vi"/>
 			<Item Name="Tag-bool.lvlib" Type="Library" URL="/&lt;extravilib&gt;/ChannelInstances/Tag-bool.lvlib"/>
 			<Item Name="Tag-t&apos;DataCluster.ctl&apos;.lvlib" Type="Library" URL="/&lt;extravilib&gt;/ChannelInstances/Tag-t&apos;DataCluster.ctl&apos;.lvlib"/>
 			<Item Name="version.dll" Type="Document" URL="version.dll">
