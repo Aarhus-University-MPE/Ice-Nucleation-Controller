@@ -23,7 +23,7 @@ for sample in sub_folders:
     axes.set_ylabel('Measured Voltage [V]', fontsize = 25)
     axes.set_xlabel('Time [HH:mm]', fontsize = 25)
 
-    axes.legend(fontsize=30,bbox_to_anchor=(1.01, 1))
+    axes.legend(fontsize=30,bbox_tgithubo_anchor=(1.01, 1))
     axes.minorticks_on()
     axes.grid(True,which='minor',axis='x')
 
