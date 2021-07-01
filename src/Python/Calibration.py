@@ -5,27 +5,46 @@ import matplotlib.cbook as cbook
 
 import numpy as np
 import pandas as pd
-
-rootlocation = 'C:\\Users\\au540322\\Documents\\Projects\\Ice-Nucleation\\src\\LabVIEW\\Data\\'
-fileName = 'Sensor3Calibration_0'
-file_location = rootlocation + fileName + '\\Data.csv'
+import os
 
 #%%
+folder = 'C:\\Users\\au540322\\Documents\\Projects\\Ice-Nucleation\\Builds\\Data\\'
+sub_folders = [name for name in os.listdir(folder) if os.path.isdir(os.path.join(folder, name))]
+
+for sample in sub_folders:
+    file_location = folder + sample + '\\Data.csv'
+    msft = pd.read_csv(file_location,delimiter=';',decimal=',')
+    msft['Time [MM:SS]']=pd.to_datetime(msft['Time [MM:SS]'],format='%H-%M-%S_%f').dt.strftime('%H:%M')
+
+    axes = msft.plot(0,['V1','V2','V3','V4','V5','V6','V7','V8'],figsize = (30,10), grid = True, fontsize = 25,
+        sharey=True, lw = 1)
+
+    axes.set_title(str(sample),fontsize = 30)
+    axes.set_ylabel('Measured Voltage [V]', fontsize = 25)
+    axes.set_xlabel('Time [HH:mm]', fontsize = 25)
+
+    axes.legend(fontsize=30,bbox_to_anchor=(1.01, 1))
+    axes.minorticks_on()
+    axes.grid(True,which='minor',axis='x')
+
+
+#%%
+sample = 'Calibration_1'
+file_location = folder + sample + '\\Data.csv'
 msft = pd.read_csv(file_location,delimiter=';',decimal=',')
 msft['Time [MM:SS]']=pd.to_datetime(msft['Time [MM:SS]'],format='%H-%M-%S_%f').dt.strftime('%H:%M')
 
-axes = msft.plot(0,[10,11,12],figsize = (30,10), grid = True, fontsize = 25,
+axes = msft.plot(0,['V2', 'V5'],figsize = (30,10), grid = True, fontsize = 25,
     sharey=True, lw = 1)
 
-axes.set_title('Calibration Data',fontsize = 30)
+axes.set_title(str(sample),fontsize = 30)
 axes.set_ylabel('Measured Voltage [V]', fontsize = 25)
 axes.set_xlabel('Time [HH:mm]', fontsize = 25)
 
-axes.legend(['Dryblock calibrated','Reference (dk.rs)','Reference (China)'],
-    fontsize=30,bbox_to_anchor=(1.01, 1))
+axes.legend(fontsize=30,bbox_to_anchor=(1.01, 1))
 axes.minorticks_on()
 axes.grid(True,which='minor',axis='x')
-    
+
 #%%
 fig = axes[0].get_figure()
 
