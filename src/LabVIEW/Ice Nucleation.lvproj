@@ -42,6 +42,8 @@
 				<Item Name="Label_Increment.vi" Type="VI" URL="../Label_Increment.vi"/>
 				<Item Name="SetupFile_Create.vi" Type="VI" URL="../SetupFile_Create.vi"/>
 				<Item Name="SetupFile_Format.vi" Type="VI" URL="../SetupFile_Format.vi"/>
+				<Item Name="SetupFile_Stamp.vi" Type="VI" URL="../SetupFile_Stamp.vi"/>
+				<Item Name="SetupFile_GetElapsedDuration.vi" Type="VI" URL="../SetupFile_GetElapsedDuration.vi"/>
 				<Item Name="Buffer_Initialize.vi" Type="VI" URL="../Buffer_Initialize.vi"/>
 				<Item Name="Buffer_Append.vi" Type="VI" URL="../Buffer_Append.vi"/>
 			</Item>
@@ -68,6 +70,7 @@
 					<Item Name="SystemActive.vi" Type="VI" URL="../SystemActive.vi"/>
 					<Item Name="SampleRate_Convert.vi" Type="VI" URL="../SampleRate_Convert.vi"/>
 					<Item Name="Image_Folder_Path_Checker.vi" Type="VI" URL="../Image_Folder_Path_Checker.vi"/>
+					<Item Name="Calibration_Converter.vi" Type="VI" URL="../Calibration_Converter.vi"/>
 				</Item>
 				<Item Name="DataCluster.ctl" Type="VI" URL="../DataCluster.ctl"/>
 				<Item Name="RunTimeMenu.rtm" Type="Document" URL="../RunTimeMenu.rtm"/>
@@ -84,10 +87,12 @@
 				<Item Name="Check if File or Folder Exists.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/libraryn.llb/Check if File or Folder Exists.vi"/>
 				<Item Name="Check Special Tags.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Check Special Tags.vi"/>
 				<Item Name="Clear Errors.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Clear Errors.vi"/>
+				<Item Name="Close File+.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/file.llb/Close File+.vi"/>
 				<Item Name="Color (U64)" Type="VI" URL="/&lt;vilib&gt;/vision/Image Controls.llb/Color (U64)"/>
 				<Item Name="compatCalcOffset.vi" Type="VI" URL="/&lt;vilib&gt;/_oldvers/_oldvers.llb/compatCalcOffset.vi"/>
 				<Item Name="compatFileDialog.vi" Type="VI" URL="/&lt;vilib&gt;/_oldvers/_oldvers.llb/compatFileDialog.vi"/>
 				<Item Name="compatOpenFileOperation.vi" Type="VI" URL="/&lt;vilib&gt;/_oldvers/_oldvers.llb/compatOpenFileOperation.vi"/>
+				<Item Name="compatReadText.vi" Type="VI" URL="/&lt;vilib&gt;/_oldvers/_oldvers.llb/compatReadText.vi"/>
 				<Item Name="Convert property node font to graphics font.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Convert property node font to graphics font.vi"/>
 				<Item Name="DAQmx Clear Task.vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/configure/task.llb/DAQmx Clear Task.vi"/>
 				<Item Name="DAQmx Create Channel (AI-Acceleration-4 Wire DC Voltage).vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/create/channels.llb/DAQmx Create Channel (AI-Acceleration-4 Wire DC Voltage).vi"/>
@@ -286,6 +291,7 @@
 				<Item Name="ex_CorrectErrorChain.vi" Type="VI" URL="/&lt;vilib&gt;/express/express shared/ex_CorrectErrorChain.vi"/>
 				<Item Name="FileVersionInfo.vi" Type="VI" URL="/&lt;vilib&gt;/Platform/fileVersionInfo.llb/FileVersionInfo.vi"/>
 				<Item Name="FileVersionInformation.ctl" Type="VI" URL="/&lt;vilib&gt;/Platform/fileVersionInfo.llb/FileVersionInformation.ctl"/>
+				<Item Name="Find First Error.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Find First Error.vi"/>
 				<Item Name="Find Tag.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Find Tag.vi"/>
 				<Item Name="FindCloseTagByName.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/xml.llb/FindCloseTagByName.vi"/>
 				<Item Name="FindElement.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/xml.llb/FindElement.vi"/>
@@ -332,12 +338,19 @@
 				<Item Name="NI_Vision_Acquisition_Software.lvlib" Type="Library" URL="/&lt;vilib&gt;/vision/driver/NI_Vision_Acquisition_Software.lvlib"/>
 				<Item Name="NI_Vision_Development_Module.lvlib" Type="Library" URL="/&lt;vilib&gt;/vision/NI_Vision_Development_Module.lvlib"/>
 				<Item Name="Not Found Dialog.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Not Found Dialog.vi"/>
+				<Item Name="Open File+.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/file.llb/Open File+.vi"/>
 				<Item Name="Open_Create_Replace File.vi" Type="VI" URL="/&lt;vilib&gt;/_oldvers/_oldvers.llb/Open_Create_Replace File.vi"/>
 				<Item Name="Parse State Queue__JKI_lib_State_Machine.vi" Type="VI" URL="/&lt;vilib&gt;/addons/_JKI Toolkits/State Machine/_JKI_lib_State_Machine.llb/Parse State Queue__JKI_lib_State_Machine.vi"/>
 				<Item Name="ParseXMLFragments.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/xml.llb/ParseXMLFragments.vi"/>
+				<Item Name="Read Delimited Spreadsheet (DBL).vi" Type="VI" URL="/&lt;vilib&gt;/Utility/file.llb/Read Delimited Spreadsheet (DBL).vi"/>
+				<Item Name="Read Delimited Spreadsheet (I64).vi" Type="VI" URL="/&lt;vilib&gt;/Utility/file.llb/Read Delimited Spreadsheet (I64).vi"/>
+				<Item Name="Read Delimited Spreadsheet (string).vi" Type="VI" URL="/&lt;vilib&gt;/Utility/file.llb/Read Delimited Spreadsheet (string).vi"/>
+				<Item Name="Read Delimited Spreadsheet.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/file.llb/Read Delimited Spreadsheet.vi"/>
+				<Item Name="Read File+ (string).vi" Type="VI" URL="/&lt;vilib&gt;/Utility/file.llb/Read File+ (string).vi"/>
 				<Item Name="Read From XML File(array).vi" Type="VI" URL="/&lt;vilib&gt;/Utility/xml.llb/Read From XML File(array).vi"/>
 				<Item Name="Read From XML File(string).vi" Type="VI" URL="/&lt;vilib&gt;/Utility/xml.llb/Read From XML File(string).vi"/>
 				<Item Name="Read From XML File.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/xml.llb/Read From XML File.vi"/>
+				<Item Name="Read Lines From File (with error IO).vi" Type="VI" URL="/&lt;vilib&gt;/Utility/file.llb/Read Lines From File (with error IO).vi"/>
 				<Item Name="Search and Replace Pattern.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Search and Replace Pattern.vi"/>
 				<Item Name="Set Bold Text.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Set Bold Text.vi"/>
 				<Item Name="Set Busy.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/cursorutil.llb/Set Busy.vi"/>
@@ -402,20 +415,23 @@
 				<Property Name="Bld_excludeInlineSubVIs" Type="Bool">true</Property>
 				<Property Name="Bld_excludeLibraryItems" Type="Bool">true</Property>
 				<Property Name="Bld_excludePolymorphicVIs" Type="Bool">true</Property>
-				<Property Name="Bld_localDestDir" Type="Path">/C/Users/au540322/Documents/Projects/Ice-Nucleation/Builds</Property>
+				<Property Name="Bld_localDestDir" Type="Path">/C/Users/au540322/Documents/Projects/Ice-Nucleation/Builds/Full Build</Property>
 				<Property Name="Bld_modifyLibraryFile" Type="Bool">true</Property>
 				<Property Name="Bld_previewCacheID" Type="Str">{27D8B2BC-76A3-474D-8C11-FD95C8E7081D}</Property>
-				<Property Name="Bld_version.build" Type="Int">18</Property>
+				<Property Name="Bld_version.build" Type="Int">35</Property>
+				<Property Name="Bld_version.major" Type="Int">1</Property>
+				<Property Name="Bld_version.minor" Type="Int">4</Property>
+				<Property Name="Bld_version.patch" Type="Int">8</Property>
 				<Property Name="Destination[0].destName" Type="Str">Ice Nucleation.exe</Property>
-				<Property Name="Destination[0].path" Type="Path">/C/Users/au540322/Documents/Projects/Ice-Nucleation/Builds/NI_AB_PROJECTNAME.exe</Property>
+				<Property Name="Destination[0].path" Type="Path">/C/Users/au540322/Documents/Projects/Ice-Nucleation/Builds/Full Build/NI_AB_PROJECTNAME.exe</Property>
 				<Property Name="Destination[0].path.type" Type="Str">&lt;none&gt;</Property>
 				<Property Name="Destination[0].preserveHierarchy" Type="Bool">true</Property>
 				<Property Name="Destination[0].type" Type="Str">App</Property>
 				<Property Name="Destination[1].destName" Type="Str">Support Directory</Property>
-				<Property Name="Destination[1].path" Type="Path">/C/Users/au540322/Documents/Projects/Ice-Nucleation/Builds/data</Property>
+				<Property Name="Destination[1].path" Type="Path">/C/Users/au540322/Documents/Projects/Ice-Nucleation/Builds/Full Build/data</Property>
 				<Property Name="Destination[1].path.type" Type="Str">&lt;none&gt;</Property>
 				<Property Name="DestinationCount" Type="Int">2</Property>
-				<Property Name="Source[0].itemID" Type="Str">{B776CF24-C488-4719-A128-EB14EF7D9210}</Property>
+				<Property Name="Source[0].itemID" Type="Str">{96289530-BEE2-454A-94F7-595C9A33F695}</Property>
 				<Property Name="Source[0].type" Type="Str">Container</Property>
 				<Property Name="Source[1].destinationIndex" Type="Int">0</Property>
 				<Property Name="Source[1].itemID" Type="Ref">/My Computer/main.vi</Property>
@@ -498,12 +514,12 @@
 				<Property Name="DistPartCount" Type="Int">5</Property>
 				<Property Name="INST_author" Type="Str">Aarhus University</Property>
 				<Property Name="INST_autoIncrement" Type="Bool">true</Property>
-				<Property Name="INST_buildLocation" Type="Path">/C/Users/au540322/Documents/Projects/Ice-Nucleation/Installer</Property>
+				<Property Name="INST_buildLocation" Type="Path">/C/Users/au540322/Documents/Projects/Ice-Nucleation/Builds/Installer</Property>
 				<Property Name="INST_buildSpecName" Type="Str">Installer</Property>
 				<Property Name="INST_defaultDir" Type="Str">{4B7C7F5D-6E6D-4786-BBED-E06C37A5A212}</Property>
 				<Property Name="INST_installerName" Type="Str">install.exe</Property>
 				<Property Name="INST_productName" Type="Str">Ice Nucleation</Property>
-				<Property Name="INST_productVersion" Type="Str">1.0.0</Property>
+				<Property Name="INST_productVersion" Type="Str">1.0.1</Property>
 				<Property Name="InstSpecBitness" Type="Str">32-bit</Property>
 				<Property Name="InstSpecVersion" Type="Str">20008014</Property>
 				<Property Name="MSI_arpCompany" Type="Str">Aarhus University</Property>

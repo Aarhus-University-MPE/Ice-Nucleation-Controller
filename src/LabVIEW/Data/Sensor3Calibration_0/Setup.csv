@@ -1,0 +1,22 @@
+Ice Nucleation Version;0.0.0.1;;Partition;Description;; ;1;2;3;4;5;6;7;8;9;10;11;12;13;14;15;16;17;18;19;20;21;22;23;24
+;;;A;20%;;A;X;X;X;X;X;X;X;A;A;A;A;A;X;X;X;X;X;X;X;X;X;X;X;X
+Sample:;;;B;30;;B;X;X;X;X;X;X;X;A;A;A;A;A;X;X;X;X;X;X;X;X;X;X;X;X
+Label;Sensor3Calibration_0;;C;5%;;C;X;X;X;X;X;X;X;A;A;A;A;A;X;X;X;X;X;X;X;X;X;X;X;X
+Operator;MRJ;;D;35%;;D;X;X;X;X;X;X;X;A;A;A;A;A;X;X;X;X;X;X;X;X;X;X;X;X
+Date;2021_07_12-12-47-03-819;;E;...;;E;X;X;X;X;X;X;X;A;A;A;A;A;X;C;C;C;C;C;X;X;X;X;X;X
+PCR type;24x16;;F;...;;F;X;X;X;X;X;X;X;X;X;X;X;X;X;C;C;C;C;C;X;X;X;X;X;X
+;;;G;...;;G;X;X;X;X;G;G;G;G;G;G;G;G;X;C;C;C;C;C;X;X;X;X;X;X
+Sample volume [µL];1,00;;X;Empty;;H;X;X;X;X;G;G;G;G;G;G;G;G;X;X;X;X;X;X;X;X;X;X;X;X
+Temperature Gradient [°C/min];1,00;;;;;I;X;X;X;X;G;G;G;G;G;G;G;G;X;X;X;E;E;E;X;X;X;X;X;X
+Target Temperature [°C] ;5,00;;;;;J;X;X;X;X;C;C;C;C;C;X;X;X;X;X;X;E;E;E;X;X;X;X;X;X
+Starting Temp [°C];0,000000;;;;;K;X;X;X;X;C;C;C;C;C;X;X;X;X;X;X;E;E;E;X;X;X;X;X;X
+Ending Temp [°C];Ending_Temp;;;;;L;X;X;X;X;C;C;C;C;C;X;X;X;X;X;X;E;E;E;X;X;X;X;X;X
+Test Duration [mm:ss];Test_Duration;;;;;M;X;X;X;X;X;X;X;X;X;X;X;X;X;X;X;X;X;X;X;X;X;X;X;X
+;;;;;;N;X;X;X;X;X;X;X;X;X;X;X;X;X;X;X;X;X;X;X;X;X;X;X;X
+Notes;
+;;;;;O;X;X;X;X;X;X;X;X;X;X;X;X;X;X;X;X;X;X;X;X;X;X;X;X
+;;;;;;P;X;X;X;X;X;X;X;X;X;X;X;X;X;X;X;X;X;X;X;X;X;X;X;X
+PID setup:;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+Proportional Gain;1,000000;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+Integral time (min);0,010000;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+Derivative time (min);0,000000;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
