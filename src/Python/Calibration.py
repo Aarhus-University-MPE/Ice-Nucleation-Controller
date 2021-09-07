@@ -8,7 +8,7 @@ import pandas as pd
 import os
 
 #%%
-sensorList = [5, 6, 7]
+sensorList = [0]
 folder = 'C:\\Users\\au540322\\Documents\\Projects\\Ice-Nucleation\\Builds\\Full Build\\Data\\'
 sub_folders = [name for name in os.listdir(folder) if os.path.isdir(os.path.join(folder, name))]
 
@@ -20,6 +20,16 @@ for i in sensorList:
     for idx, val in enumerate(calibrationValues):
         fullArray[i][idx].append(val)
 
+#%%
+axes = plt.axes()
+axes.legend(fontsize=30,bbox_to_anchor=(1.01, 1))
+axes.minorticks_on()
+axes.grid(True,which='minor',axis='x')
+
+axes.set_title('Calibration',fontsize = 30)
+axes.set_ylabel('Measured Voltage [V]', fontsize = 25)
+axes.set_xlabel('Time [HH:mm]', fontsize = 25)
+
 for sample in sub_folders:
     file_location = folder + sample + '\\Data.csv'
     file_location_setup = folder + sample + '\\Setup.csv'
@@ -30,16 +40,8 @@ for sample in sub_folders:
         pass
     msft['Time [MM:SS]']=pd.to_datetime(msft['Time [MM:SS]'],format='%H-%M-%S_%f').dt.strftime('%H:%M')
 
-    axes = msft.plot(0,['V1','V5','V6','V7','V8'],figsize = (30,10), grid = True, fontsize = 25,
-    sharey=True, lw = 1)
-
-    axes.set_title(str(sample),fontsize = 30)
-    axes.set_ylabel('Measured Voltage [V]', fontsize = 25)
-    axes.set_xlabel('Time [HH:mm]', fontsize = 25)
-
-    axes.legend(fontsize=30,bbox_to_anchor=(1.01, 1))
-    axes.minorticks_on()
-    axes.grid(True,which='minor',axis='x')
+    msft.plot(0,['V1'],figsize = (30,10), grid = True, fontsize = 25,
+    sharey=True, sharex=True, lw = 1,ax = axes)
     
     for i in sensorList:
         calibrationValue = int(float(setupData.iloc[9,1].replace(',', '.')))
@@ -52,11 +54,9 @@ for i in sensorList:
     print('\n'.join(['\t'.join(['{:4}'.format(item) for item in row]) 
         for row in fullArray[i]]))
 
-#%%
 sizeArray = 0
-for element in averages[0]:
+for element in averages[sensorList[0]]:
     sizeArray += len(element)
-
 
 for i in sensorList:
     print("Sensor: " + str(i +1))
@@ -65,36 +65,27 @@ for i in sensorList:
         for row in averages[i]]))     
     print(")")
 #%%
-for i in range(1):
-    print("Sensor " + str(i+1) + ":")
-    print("(@MATRIX " + str(averages[0].__len__()+1) + " 1 ")
-    print(' '.join([' '.join(['{:4}'.format(item) for item in row]) 
-        for row in averages[i]]))     
-    print(")")
+# for i in range(1):
+#     print("Sensor " + str(i+1) + ":")
+#     print("(@MATRIX " + str(averages[0].__len__()+1) + " 1 ")
+#     print(' '.join([' '.join(['{:4}'.format(item) for item in row]) 
+#         for row in averages[i]]))     
+#     print(")")
 
 #%%
-sample = 'Calibration_30'
+sample = 'System Test_2'
 file_location = folder + sample + '\\Data.csv'
 msft = pd.read_csv(file_location,delimiter=';',decimal=',')
 msft['Time [MM:SS]']=pd.to_datetime(msft['Time [MM:SS]'],format='%H-%M-%S_%f').dt.strftime('%H:%M')
 
-axes = msft.plot(0,['V6','V8'],figsize = (30,10), grid = True, fontsize = 25,
+axes = msft.plot(0,['T2'],figsize = (30,10), grid = True, fontsize = 25,
     sharey=True, lw = 1)
 
 axes.set_title(str(sample),fontsize = 30)
-axes.set_ylabel('Measured Voltage [V]', fontsize = 25)
+axes.set_ylabel('Measured Temperature [°C]', fontsize = 25)
 axes.set_xlabel('Time [HH:mm]', fontsize = 25)
+
 
 axes.legend(fontsize=30,bbox_to_anchor=(1.01, 1))
 axes.minorticks_on()
 axes.grid(True,which='minor',axis='x')
-
-#%%
-fig = axes[0].get_figure()
-
-fig.savefig('figure.pdf')
-# %%
-msft.iloc[:,0].dt.strftime('%H:%M:%S:%f')
-#%%
-msft.dtypes
-#iloc[:,0].to_datetime

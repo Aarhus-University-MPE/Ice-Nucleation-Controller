@@ -77,6 +77,7 @@
 				<Item Name="RunTimeMenu_Partition.rtm" Type="Document" URL="../RunTimeMenu_Partition.rtm"/>
 			</Item>
 		</Item>
+		<Item Name="Chart_Updater.vi" Type="VI" URL="../Chart_Updater.vi"/>
 		<Item Name="main.vi" Type="VI" URL="../main.vi"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="vi.lib" Type="Folder">
@@ -403,26 +404,28 @@
 			</Item>
 		</Item>
 		<Item Name="Build Specifications" Type="Build">
-			<Item Name="Ice Nucleation" Type="EXE">
+			<Item Name="INC" Type="EXE">
 				<Property Name="App_copyErrors" Type="Bool">true</Property>
 				<Property Name="App_INI_aliasGUID" Type="Str">{3618DAED-42DC-4E68-88A6-01E191E81E60}</Property>
 				<Property Name="App_INI_GUID" Type="Str">{BD6AEBFB-191F-424A-B98F-B2609A5B1AAB}</Property>
 				<Property Name="App_serverConfig.httpPort" Type="Int">8002</Property>
 				<Property Name="App_serverType" Type="Int">0</Property>
+				<Property Name="Bld_autoIncrement" Type="Bool">true</Property>
 				<Property Name="Bld_buildCacheID" Type="Str">{33F274C5-765A-4CC4-96AB-55991902EFC2}</Property>
-				<Property Name="Bld_buildSpecName" Type="Str">Ice Nucleation</Property>
+				<Property Name="Bld_buildSpecDescription" Type="Str">Ice Nucleation Control</Property>
+				<Property Name="Bld_buildSpecName" Type="Str">INC</Property>
 				<Property Name="Bld_excludeInlineSubVIs" Type="Bool">true</Property>
 				<Property Name="Bld_excludeLibraryItems" Type="Bool">true</Property>
 				<Property Name="Bld_excludePolymorphicVIs" Type="Bool">true</Property>
 				<Property Name="Bld_localDestDir" Type="Path">/C/Users/au540322/Documents/Projects/Ice-Nucleation/Builds/Full Build</Property>
 				<Property Name="Bld_modifyLibraryFile" Type="Bool">true</Property>
 				<Property Name="Bld_previewCacheID" Type="Str">{27D8B2BC-76A3-474D-8C11-FD95C8E7081D}</Property>
-				<Property Name="Bld_version.build" Type="Int">87</Property>
+				<Property Name="Bld_version.build" Type="Int">16</Property>
 				<Property Name="Bld_version.major" Type="Int">1</Property>
-				<Property Name="Bld_version.minor" Type="Int">4</Property>
-				<Property Name="Bld_version.patch" Type="Int">11</Property>
-				<Property Name="Destination[0].destName" Type="Str">Ice Nucleation.exe</Property>
-				<Property Name="Destination[0].path" Type="Path">/C/Users/au540322/Documents/Projects/Ice-Nucleation/Builds/Full Build/NI_AB_PROJECTNAME.exe</Property>
+				<Property Name="Bld_version.minor" Type="Int">7</Property>
+				<Property Name="Bld_version.patch" Type="Int">4</Property>
+				<Property Name="Destination[0].destName" Type="Str">INC.exe</Property>
+				<Property Name="Destination[0].path" Type="Path">/C/Users/au540322/Documents/Projects/Ice-Nucleation/Builds/Full Build/INC.exe</Property>
 				<Property Name="Destination[0].path.type" Type="Str">&lt;none&gt;</Property>
 				<Property Name="Destination[0].preserveHierarchy" Type="Bool">true</Property>
 				<Property Name="Destination[0].type" Type="Str">App</Property>
@@ -430,7 +433,7 @@
 				<Property Name="Destination[1].path" Type="Path">/C/Users/au540322/Documents/Projects/Ice-Nucleation/Builds/Full Build/data</Property>
 				<Property Name="Destination[1].path.type" Type="Str">&lt;none&gt;</Property>
 				<Property Name="DestinationCount" Type="Int">2</Property>
-				<Property Name="Source[0].itemID" Type="Str">{7D6D7502-077B-40D5-991E-D493B3751B99}</Property>
+				<Property Name="Source[0].itemID" Type="Str">{BFFD873E-B944-4929-90F1-15FB81ED8A49}</Property>
 				<Property Name="Source[0].type" Type="Str">Container</Property>
 				<Property Name="Source[1].destinationIndex" Type="Int">0</Property>
 				<Property Name="Source[1].itemID" Type="Ref">/My Computer/main.vi</Property>
@@ -438,12 +441,12 @@
 				<Property Name="Source[1].type" Type="Str">VI</Property>
 				<Property Name="SourceCount" Type="Int">2</Property>
 				<Property Name="TgtF_companyName" Type="Str">Aarhus University</Property>
-				<Property Name="TgtF_fileDescription" Type="Str">Ice Nucleation</Property>
-				<Property Name="TgtF_internalName" Type="Str">Ice Nucleation</Property>
+				<Property Name="TgtF_fileDescription" Type="Str">Ice Nucleation Control</Property>
+				<Property Name="TgtF_internalName" Type="Str">INC</Property>
 				<Property Name="TgtF_legalCopyright" Type="Str">Copyright © 2021 Aarhus University</Property>
-				<Property Name="TgtF_productName" Type="Str">Ice Nucleation</Property>
+				<Property Name="TgtF_productName" Type="Str">INC</Property>
 				<Property Name="TgtF_targetfileGUID" Type="Str">{58C928C1-8473-4CEF-96B2-F9CFB2EAA16B}</Property>
-				<Property Name="TgtF_targetfileName" Type="Str">Ice Nucleation.exe</Property>
+				<Property Name="TgtF_targetfileName" Type="Str">INC.exe</Property>
 				<Property Name="TgtF_versionIndependent" Type="Bool">true</Property>
 			</Item>
 			<Item Name="Installer" Type="Installer">
@@ -541,7 +544,7 @@
 				<Property Name="Source[0].File[0].tag" Type="Str">{58C928C1-8473-4CEF-96B2-F9CFB2EAA16B}</Property>
 				<Property Name="Source[0].FileCount" Type="Int">1</Property>
 				<Property Name="Source[0].name" Type="Str">Ice Nucleation</Property>
-				<Property Name="Source[0].tag" Type="Ref">/My Computer/Build Specifications/Ice Nucleation</Property>
+				<Property Name="Source[0].tag" Type="Ref">/My Computer/Build Specifications/INC</Property>
 				<Property Name="Source[0].type" Type="Str">EXE</Property>
 				<Property Name="SourceCount" Type="Int">1</Property>
 			</Item>
