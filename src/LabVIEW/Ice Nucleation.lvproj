@@ -65,8 +65,6 @@
 			<Item Name="System" Type="Folder">
 				<Property Name="NI.SortType" Type="Int">3</Property>
 				<Item Name="Misc" Type="Folder">
-					<Item Name="Chart_Data_Packer.vi" Type="VI" URL="../Chart_Data_Packer.vi"/>
-					<Item Name="Read Exe Version.vi" Type="VI" URL="../Read Exe Version.vi"/>
 					<Item Name="SystemActive.vi" Type="VI" URL="../SystemActive.vi"/>
 					<Item Name="SampleRate_Convert.vi" Type="VI" URL="../SampleRate_Convert.vi"/>
 					<Item Name="Image_Folder_Path_Checker.vi" Type="VI" URL="../Image_Folder_Path_Checker.vi"/>
@@ -76,8 +74,12 @@
 				<Item Name="RunTimeMenu.rtm" Type="Document" URL="../RunTimeMenu.rtm"/>
 				<Item Name="RunTimeMenu_Partition.rtm" Type="Document" URL="../RunTimeMenu_Partition.rtm"/>
 			</Item>
+			<Item Name="UI" Type="Folder">
+				<Item Name="Chart_Data_Packer.vi" Type="VI" URL="../Chart_Data_Packer.vi"/>
+				<Item Name="Chart_Updater.vi" Type="VI" URL="../Chart_Updater.vi"/>
+				<Item Name="Read Exe Version.vi" Type="VI" URL="../Read Exe Version.vi"/>
+			</Item>
 		</Item>
-		<Item Name="Chart_Updater.vi" Type="VI" URL="../Chart_Updater.vi"/>
 		<Item Name="main.vi" Type="VI" URL="../main.vi"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="vi.lib" Type="Folder">
@@ -324,7 +326,7 @@
 				<Item Name="IMAQ Write JPEG2000 File 2" Type="VI" URL="/&lt;vilib&gt;/vision/Files.llb/IMAQ Write JPEG2000 File 2"/>
 				<Item Name="IMAQ Write PNG File 2" Type="VI" URL="/&lt;vilib&gt;/vision/Files.llb/IMAQ Write PNG File 2"/>
 				<Item Name="IMAQ Write TIFF File 2" Type="VI" URL="/&lt;vilib&gt;/vision/Files.llb/IMAQ Write TIFF File 2"/>
-				<Item Name="IMAQdx.ctl" Type="VI" URL="/&lt;vilib&gt;/userDefined/High Color/IMAQdx.ctl"/>
+				<Item Name="IMAQdx.ctl" Type="VI" URL="/&lt;vilib&gt;/userdefined/High Color/IMAQdx.ctl"/>
 				<Item Name="Longest Line Length in Pixels.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Longest Line Length in Pixels.vi"/>
 				<Item Name="LVBoundsTypeDef.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/miscctls.llb/LVBoundsTypeDef.ctl"/>
 				<Item Name="lvpidtkt.dll" Type="Document" URL="/&lt;vilib&gt;/addons/control/pid/lvpidtkt.dll"/>
