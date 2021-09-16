@@ -65,8 +65,6 @@
 			<Item Name="System" Type="Folder">
 				<Property Name="NI.SortType" Type="Int">3</Property>
 				<Item Name="Misc" Type="Folder">
-					<Item Name="Chart_Data_Packer.vi" Type="VI" URL="../Chart_Data_Packer.vi"/>
-					<Item Name="Read Exe Version.vi" Type="VI" URL="../Read Exe Version.vi"/>
 					<Item Name="SystemActive.vi" Type="VI" URL="../SystemActive.vi"/>
 					<Item Name="SampleRate_Convert.vi" Type="VI" URL="../SampleRate_Convert.vi"/>
 					<Item Name="Image_Folder_Path_Checker.vi" Type="VI" URL="../Image_Folder_Path_Checker.vi"/>
@@ -75,7 +73,11 @@
 				<Item Name="DataCluster.ctl" Type="VI" URL="../DataCluster.ctl"/>
 				<Item Name="RunTimeMenu.rtm" Type="Document" URL="../RunTimeMenu.rtm"/>
 				<Item Name="RunTimeMenu_Partition.rtm" Type="Document" URL="../RunTimeMenu_Partition.rtm"/>
+			</Item>
+			<Item Name="UI" Type="Folder">
+				<Item Name="Chart_Data_Packer.vi" Type="VI" URL="../Chart_Data_Packer.vi"/>
 				<Item Name="Chart_Updater.vi" Type="VI" URL="../Chart_Updater.vi"/>
+				<Item Name="Read Exe Version.vi" Type="VI" URL="../Read Exe Version.vi"/>
 			</Item>
 		</Item>
 		<Item Name="main.vi" Type="VI" URL="../main.vi"/>
@@ -324,8 +326,7 @@
 				<Item Name="IMAQ Write JPEG2000 File 2" Type="VI" URL="/&lt;vilib&gt;/vision/Files.llb/IMAQ Write JPEG2000 File 2"/>
 				<Item Name="IMAQ Write PNG File 2" Type="VI" URL="/&lt;vilib&gt;/vision/Files.llb/IMAQ Write PNG File 2"/>
 				<Item Name="IMAQ Write TIFF File 2" Type="VI" URL="/&lt;vilib&gt;/vision/Files.llb/IMAQ Write TIFF File 2"/>
-				<Item Name="IMAQdx.ctl" Type="VI" URL="/&lt;vilib&gt;/userDefined/High Color/IMAQdx.ctl"/>
-				<Item Name="Is Value Changed.vim" Type="VI" URL="/&lt;vilib&gt;/Utility/Is Value Changed.vim"/>
+				<Item Name="IMAQdx.ctl" Type="VI" URL="/&lt;vilib&gt;/userdefined/High Color/IMAQdx.ctl"/>
 				<Item Name="Longest Line Length in Pixels.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Longest Line Length in Pixels.vi"/>
 				<Item Name="LVBoundsTypeDef.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/miscctls.llb/LVBoundsTypeDef.ctl"/>
 				<Item Name="lvpidtkt.dll" Type="Document" URL="/&lt;vilib&gt;/addons/control/pid/lvpidtkt.dll"/>
@@ -421,10 +422,10 @@
 				<Property Name="Bld_localDestDir" Type="Path">/C/Users/au540322/Documents/Projects/Ice-Nucleation/Builds/Full Build</Property>
 				<Property Name="Bld_modifyLibraryFile" Type="Bool">true</Property>
 				<Property Name="Bld_previewCacheID" Type="Str">{27D8B2BC-76A3-474D-8C11-FD95C8E7081D}</Property>
-				<Property Name="Bld_version.build" Type="Int">25</Property>
+				<Property Name="Bld_version.build" Type="Int">16</Property>
 				<Property Name="Bld_version.major" Type="Int">1</Property>
-				<Property Name="Bld_version.minor" Type="Int">14</Property>
-				<Property Name="Bld_version.patch" Type="Int">3</Property>
+				<Property Name="Bld_version.minor" Type="Int">7</Property>
+				<Property Name="Bld_version.patch" Type="Int">4</Property>
 				<Property Name="Destination[0].destName" Type="Str">INC.exe</Property>
 				<Property Name="Destination[0].path" Type="Path">/C/Users/au540322/Documents/Projects/Ice-Nucleation/Builds/Full Build/INC.exe</Property>
 				<Property Name="Destination[0].path.type" Type="Str">&lt;none&gt;</Property>
@@ -434,7 +435,7 @@
 				<Property Name="Destination[1].path" Type="Path">/C/Users/au540322/Documents/Projects/Ice-Nucleation/Builds/Full Build/data</Property>
 				<Property Name="Destination[1].path.type" Type="Str">&lt;none&gt;</Property>
 				<Property Name="DestinationCount" Type="Int">2</Property>
-				<Property Name="Source[0].itemID" Type="Str">{41997D95-51B2-4D69-BDCD-8B8E49371F5C}</Property>
+				<Property Name="Source[0].itemID" Type="Str">{BFFD873E-B944-4929-90F1-15FB81ED8A49}</Property>
 				<Property Name="Source[0].type" Type="Str">Container</Property>
 				<Property Name="Source[1].destinationIndex" Type="Int">0</Property>
 				<Property Name="Source[1].itemID" Type="Ref">/My Computer/main.vi</Property>
