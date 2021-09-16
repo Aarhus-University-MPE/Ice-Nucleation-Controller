@@ -13,6 +13,9 @@
 		<Item Name="Functions" Type="Folder">
 			<Item Name="Camera" Type="Folder">
 				<Property Name="NI.SortType" Type="Int">3</Property>
+				<Item Name="Camera_Feed.vi" Type="VI" URL="../../../../BioDiscover/src/LabVIEW/Camera_Feed.vi"/>
+				<Item Name="CameraAttributeTest.vi" Type="VI" URL="../CameraAttributeTest.vi"/>
+				<Item Name="CameraAttributeSearch.vi" Type="VI" URL="../CameraAttributeSearch.vi"/>
 				<Item Name="Camera_Config.vi" Type="VI" URL="../Camera_Config.vi"/>
 				<Item Name="Camera_Grab.vi" Type="VI" URL="../Camera_Grab.vi"/>
 			</Item>
@@ -46,6 +49,7 @@
 				<Item Name="SetupFile_GetElapsedDuration.vi" Type="VI" URL="../SetupFile_GetElapsedDuration.vi"/>
 				<Item Name="Buffer_Initialize.vi" Type="VI" URL="../Buffer_Initialize.vi"/>
 				<Item Name="Buffer_Append.vi" Type="VI" URL="../Buffer_Append.vi"/>
+				<Item Name="Save_Frequency.vi" Type="VI" URL="../../../../BioDiscover/src/LabVIEW/Save_Frequency.vi"/>
 			</Item>
 			<Item Name="Freeze" Type="Folder">
 				<Item Name="Freeze_Check.vi" Type="VI" URL="../Freeze_Check.vi"/>
@@ -422,10 +426,17 @@
 				<Property Name="Bld_localDestDir" Type="Path">/C/Users/au540322/Documents/Projects/Ice-Nucleation/Builds/Full Build</Property>
 				<Property Name="Bld_modifyLibraryFile" Type="Bool">true</Property>
 				<Property Name="Bld_previewCacheID" Type="Str">{27D8B2BC-76A3-474D-8C11-FD95C8E7081D}</Property>
+<<<<<<< Updated upstream
 				<Property Name="Bld_version.build" Type="Int">16</Property>
 				<Property Name="Bld_version.major" Type="Int">1</Property>
 				<Property Name="Bld_version.minor" Type="Int">7</Property>
 				<Property Name="Bld_version.patch" Type="Int">4</Property>
+=======
+				<Property Name="Bld_version.build" Type="Int">26</Property>
+				<Property Name="Bld_version.major" Type="Int">1</Property>
+				<Property Name="Bld_version.minor" Type="Int">15</Property>
+				<Property Name="Bld_version.patch" Type="Int">6</Property>
+>>>>>>> Stashed changes
 				<Property Name="Destination[0].destName" Type="Str">INC.exe</Property>
 				<Property Name="Destination[0].path" Type="Path">/C/Users/au540322/Documents/Projects/Ice-Nucleation/Builds/Full Build/INC.exe</Property>
 				<Property Name="Destination[0].path.type" Type="Str">&lt;none&gt;</Property>
@@ -435,7 +446,11 @@
 				<Property Name="Destination[1].path" Type="Path">/C/Users/au540322/Documents/Projects/Ice-Nucleation/Builds/Full Build/data</Property>
 				<Property Name="Destination[1].path.type" Type="Str">&lt;none&gt;</Property>
 				<Property Name="DestinationCount" Type="Int">2</Property>
+<<<<<<< Updated upstream
 				<Property Name="Source[0].itemID" Type="Str">{BFFD873E-B944-4929-90F1-15FB81ED8A49}</Property>
+=======
+				<Property Name="Source[0].itemID" Type="Str">{567805B6-8829-4AEE-9D8C-04CCA79842EB}</Property>
+>>>>>>> Stashed changes
 				<Property Name="Source[0].type" Type="Str">Container</Property>
 				<Property Name="Source[1].destinationIndex" Type="Int">0</Property>
 				<Property Name="Source[1].itemID" Type="Ref">/My Computer/main.vi</Property>

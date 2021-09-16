@@ -8,7 +8,7 @@ import pandas as pd
 import os
 
 #%%
-sensorList = [0]
+sensorList = [6]
 folder = 'C:\\Users\\au540322\\Documents\\Projects\\Ice-Nucleation\\Builds\\Full Build\\Data\\'
 sub_folders = [name for name in os.listdir(folder) if os.path.isdir(os.path.join(folder, name))]
 
@@ -73,13 +73,18 @@ for i in sensorList:
 #     print(")")
 
 #%%
-sample = 'System Test_2'
+sample = 'System Test_14'
 file_location = folder + sample + '\\Data.csv'
 msft = pd.read_csv(file_location,delimiter=';',decimal=',')
 msft['Time [MM:SS]']=pd.to_datetime(msft['Time [MM:SS]'],format='%H-%M-%S_%f').dt.strftime('%H:%M')
 
-axes = msft.plot(0,['T2'],figsize = (30,10), grid = True, fontsize = 25,
+#axes = msft.plot(0,['Average'],figsize = (30,10), grid = True, fontsize = 25,
+#    sharey=True, lw = 1)
+
+axes = msft.plot(0,['Lat_dev'],figsize = (30,10), grid = True, fontsize = 25,
     sharey=True, lw = 1)
+
+print(msft['Lat_dev'].mean())
 
 axes.set_title(str(sample),fontsize = 30)
 axes.set_ylabel('Measured Temperature [°C]', fontsize = 25)
