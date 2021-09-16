@@ -427,15 +427,21 @@
 				<Property Name="Bld_modifyLibraryFile" Type="Bool">true</Property>
 				<Property Name="Bld_previewCacheID" Type="Str">{27D8B2BC-76A3-474D-8C11-FD95C8E7081D}</Property>
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 				<Property Name="Bld_version.build" Type="Int">16</Property>
 				<Property Name="Bld_version.major" Type="Int">1</Property>
 				<Property Name="Bld_version.minor" Type="Int">7</Property>
 				<Property Name="Bld_version.patch" Type="Int">4</Property>
 =======
+=======
+>>>>>>> Stashed changes
 				<Property Name="Bld_version.build" Type="Int">26</Property>
 				<Property Name="Bld_version.major" Type="Int">1</Property>
 				<Property Name="Bld_version.minor" Type="Int">15</Property>
 				<Property Name="Bld_version.patch" Type="Int">6</Property>
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
 				<Property Name="Destination[0].destName" Type="Str">INC.exe</Property>
 				<Property Name="Destination[0].path" Type="Path">/C/Users/au540322/Documents/Projects/Ice-Nucleation/Builds/Full Build/INC.exe</Property>
@@ -447,7 +453,11 @@
 				<Property Name="Destination[1].path.type" Type="Str">&lt;none&gt;</Property>
 				<Property Name="DestinationCount" Type="Int">2</Property>
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 				<Property Name="Source[0].itemID" Type="Str">{BFFD873E-B944-4929-90F1-15FB81ED8A49}</Property>
+=======
+				<Property Name="Source[0].itemID" Type="Str">{567805B6-8829-4AEE-9D8C-04CCA79842EB}</Property>
+>>>>>>> Stashed changes
 =======
 				<Property Name="Source[0].itemID" Type="Str">{567805B6-8829-4AEE-9D8C-04CCA79842EB}</Property>
 >>>>>>> Stashed changes
