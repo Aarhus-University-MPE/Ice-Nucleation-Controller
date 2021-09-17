@@ -15,6 +15,9 @@
 				<Property Name="NI.SortType" Type="Int">3</Property>
 				<Item Name="Camera_Config.vi" Type="VI" URL="../Camera_Config.vi"/>
 				<Item Name="Camera_Grab.vi" Type="VI" URL="../Camera_Grab.vi"/>
+				<Item Name="Camera_Feed.vi" Type="VI" URL="../Camera_Feed.vi"/>
+				<Item Name="CameraAttributeTest.vi" Type="VI" URL="../CameraAttributeTest.vi"/>
+				<Item Name="CameraAttributeSearch.vi" Type="VI" URL="../CameraAttributeSearch.vi"/>
 			</Item>
 			<Item Name="cDAQ" Type="Folder">
 				<Item Name="Thermistor" Type="Folder">
@@ -66,6 +69,7 @@
 				<Property Name="NI.SortType" Type="Int">3</Property>
 				<Item Name="Misc" Type="Folder">
 					<Item Name="SystemActive.vi" Type="VI" URL="../SystemActive.vi"/>
+					<Item Name="Camera_Frequency.vi" Type="VI" URL="../Camera_Frequency.vi"/>
 					<Item Name="SampleRate_Convert.vi" Type="VI" URL="../SampleRate_Convert.vi"/>
 					<Item Name="Image_Folder_Path_Checker.vi" Type="VI" URL="../Image_Folder_Path_Checker.vi"/>
 					<Item Name="Calibration_Converter.vi" Type="VI" URL="../Calibration_Converter.vi"/>
@@ -327,6 +331,7 @@
 				<Item Name="IMAQ Write PNG File 2" Type="VI" URL="/&lt;vilib&gt;/vision/Files.llb/IMAQ Write PNG File 2"/>
 				<Item Name="IMAQ Write TIFF File 2" Type="VI" URL="/&lt;vilib&gt;/vision/Files.llb/IMAQ Write TIFF File 2"/>
 				<Item Name="IMAQdx.ctl" Type="VI" URL="/&lt;vilib&gt;/userdefined/High Color/IMAQdx.ctl"/>
+				<Item Name="Is Value Changed.vim" Type="VI" URL="/&lt;vilib&gt;/Utility/Is Value Changed.vim"/>
 				<Item Name="Longest Line Length in Pixels.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Longest Line Length in Pixels.vi"/>
 				<Item Name="LVBoundsTypeDef.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/miscctls.llb/LVBoundsTypeDef.ctl"/>
 				<Item Name="lvpidtkt.dll" Type="Document" URL="/&lt;vilib&gt;/addons/control/pid/lvpidtkt.dll"/>
