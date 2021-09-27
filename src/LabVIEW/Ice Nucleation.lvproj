@@ -18,6 +18,8 @@
 				<Item Name="Camera_Feed.vi" Type="VI" URL="../Camera_Feed.vi"/>
 				<Item Name="CameraAttributeTest.vi" Type="VI" URL="../CameraAttributeTest.vi"/>
 				<Item Name="CameraAttributeSearch.vi" Type="VI" URL="../CameraAttributeSearch.vi"/>
+				<Item Name="Camera_Rectangle_To_ROI.vi" Type="VI" URL="../Camera_Rectangle_To_ROI.vi"/>
+				<Item Name="Camera_ROI_To_Rectangle.vi" Type="VI" URL="../Camera_ROI_To_Rectangle.vi"/>
 				<Item Name="Camera_ROI_Extract.vi" Type="VI" URL="../Camera_ROI_Extract.vi"/>
 			</Item>
 			<Item Name="cDAQ" Type="Folder">
@@ -33,7 +35,10 @@
 					<Item Name="Manual_Cool_Heat.vi" Type="VI" URL="../Manual_Cool_Heat.vi"/>
 					<Item Name="Manual_Cool_Heat_Converter.vi" Type="VI" URL="../Manual_Cool_Heat_Converter.vi"/>
 				</Item>
+				<Item Name="cDAQ_Channels.vi" Type="VI" URL="../cDAQ_Channels.vi"/>
 				<Item Name="cDAQ_Read.vi" Type="VI" URL="../cDAQ_Read.vi"/>
+				<Item Name="CDAQ_Scan.vi" Type="VI" URL="../CDAQ_Scan.vi"/>
+				<Item Name="Channel_Detect.vi" Type="VI" URL="../Channel_Detect.vi"/>
 			</Item>
 			<Item Name="Connections" Type="Folder">
 				<Item Name="ConnectionStatus.vi" Type="VI" URL="../ConnectionStatus.vi"/>
@@ -51,6 +56,7 @@
 				<Item Name="SetupFile_GetElapsedDuration.vi" Type="VI" URL="../SetupFile_GetElapsedDuration.vi"/>
 				<Item Name="Buffer_Initialize.vi" Type="VI" URL="../Buffer_Initialize.vi"/>
 				<Item Name="Buffer_Append.vi" Type="VI" URL="../Buffer_Append.vi"/>
+				<Item Name="DAQ_Status_Read.vi" Type="VI" URL="../DAQ_Status_Read.vi"/>
 			</Item>
 			<Item Name="Freeze" Type="Folder">
 				<Item Name="Freeze_Check.vi" Type="VI" URL="../Freeze_Check.vi"/>
@@ -85,12 +91,26 @@
 				<Item Name="Chart_Updater.vi" Type="VI" URL="../Chart_Updater.vi"/>
 				<Item Name="Read Exe Version.vi" Type="VI" URL="../Read Exe Version.vi"/>
 			</Item>
+			<Item Name="DAQ_Package.vi" Type="VI" URL="../DAQ_Package.vi"/>
+		</Item>
+		<Item Name="Setup files" Type="Folder">
+			<Item Name="Partitions" Type="Folder">
+				<Item Name="32Setup.prt" Type="Document" URL="../../../../../../Desktop/Partitions/32Setup.prt"/>
+				<Item Name="Big Setup.prt" Type="Document" URL="../../../../../../Desktop/Partitions/Big Setup.prt"/>
+				<Item Name="CentralWater.prt" Type="Document" URL="../../../../../../Desktop/Partitions/CentralWater.prt"/>
+				<Item Name="dfhsfdh.prt" Type="Document" URL="../../../../../../Desktop/Partitions/dfhsfdh.prt"/>
+				<Item Name="Partition Setup.prt" Type="Document" URL="../../../../../../Desktop/Partitions/Partition Setup.prt"/>
+				<Item Name="Small Setup.prt" Type="Document" URL="../../../../../../Desktop/Partitions/Small Setup.prt"/>
+				<Item Name="test.prt" Type="Document" URL="../../../../../../Desktop/Partitions/test.prt"/>
+			</Item>
+			<Item Name="Calibration.ini" Type="Document" URL="../../../../../../Desktop/Calibration.ini"/>
 		</Item>
 		<Item Name="main.vi" Type="VI" URL="../main.vi"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="vi.lib" Type="Folder">
 				<Item Name="Add State(s) to Queue__JKI_lib_State_Machine.vi" Type="VI" URL="/&lt;vilib&gt;/addons/_JKI Toolkits/State Machine/_JKI_lib_State_Machine.llb/Add State(s) to Queue__JKI_lib_State_Machine.vi"/>
 				<Item Name="Application Directory.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/file.llb/Application Directory.vi"/>
+				<Item Name="Beep.vi" Type="VI" URL="/&lt;vilib&gt;/Platform/system.llb/Beep.vi"/>
 				<Item Name="BuildErrorSource.vi" Type="VI" URL="/&lt;vilib&gt;/Platform/fileVersionInfo.llb/BuildErrorSource.vi"/>
 				<Item Name="BuildHelpPath.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/BuildHelpPath.vi"/>
 				<Item Name="Check if File or Folder Exists.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/libraryn.llb/Check if File or Folder Exists.vi"/>
@@ -341,6 +361,7 @@
 				<Item Name="Is Value Changed.vim" Type="VI" URL="/&lt;vilib&gt;/Utility/Is Value Changed.vim"/>
 				<Item Name="Longest Line Length in Pixels.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Longest Line Length in Pixels.vi"/>
 				<Item Name="LVBoundsTypeDef.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/miscctls.llb/LVBoundsTypeDef.ctl"/>
+				<Item Name="LVPositionTypeDef.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/miscctls.llb/LVPositionTypeDef.ctl"/>
 				<Item Name="LVRectTypeDef.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/miscctls.llb/LVRectTypeDef.ctl"/>
 				<Item Name="LVRowAndColumnTypeDef.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/miscctls.llb/LVRowAndColumnTypeDef.ctl"/>
 				<Item Name="MoveMemory.vi" Type="VI" URL="/&lt;vilib&gt;/Platform/fileVersionInfo.llb/MoveMemory.vi"/>
@@ -378,6 +399,7 @@
 				<Item Name="Set Cursor (Icon Pict).vi" Type="VI" URL="/&lt;vilib&gt;/Utility/cursorutil.llb/Set Cursor (Icon Pict).vi"/>
 				<Item Name="Set Cursor.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/cursorutil.llb/Set Cursor.vi"/>
 				<Item Name="Set String Value.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Set String Value.vi"/>
+				<Item Name="Stall Data Flow.vim" Type="VI" URL="/&lt;vilib&gt;/Utility/Stall Data Flow.vim"/>
 				<Item Name="subFile Dialog.vi" Type="VI" URL="/&lt;vilib&gt;/express/express input/FileDialogBlock.llb/subFile Dialog.vi"/>
 				<Item Name="System Exec.vi" Type="VI" URL="/&lt;vilib&gt;/Platform/system.llb/System Exec.vi"/>
 				<Item Name="TagReturnType.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/TagReturnType.ctl"/>
@@ -415,15 +437,60 @@
 			<Item Name="nivissvc.dll" Type="Document" URL="nivissvc.dll">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
+			<Item Name="PipeLogic.lvclass" Type="LVClass" URL="/&lt;resource&gt;/ChannelSupport/_ChannelSupport/PipeLogic/PipeLogic.lvclass"/>
+			<Item Name="ProbeFormatting.vi" Type="VI" URL="/&lt;resource&gt;/ChannelSupport/_ChannelSupport/ProbeSupport/ProbeFormatting.vi"/>
+			<Item Name="Stream-str.lvlib" Type="Library" URL="/&lt;extravilib&gt;/ChannelInstances/Stream-str.lvlib"/>
 			<Item Name="Tag-bool.lvlib" Type="Library" URL="/&lt;extravilib&gt;/ChannelInstances/Tag-bool.lvlib"/>
 			<Item Name="Tag-c(a[.](dbl),a[.](dbl)).lvlib" Type="Library" URL="/&lt;extravilib&gt;/ChannelInstances/Tag-c(a[.](dbl),a[.](dbl)).lvlib"/>
-			<Item Name="Tag-str.lvlib" Type="Library" URL="/&lt;extravilib&gt;/ChannelInstances/Tag-str.lvlib"/>
 			<Item Name="Tag-t&apos;DataCluster.ctl&apos;.lvlib" Type="Library" URL="/&lt;extravilib&gt;/ChannelInstances/Tag-t&apos;DataCluster.ctl&apos;.lvlib"/>
+			<Item Name="Update Probe Details String.vi" Type="VI" URL="/&lt;resource&gt;/ChannelSupport/_ChannelSupport/ProbeSupport/Update Probe Details String.vi"/>
 			<Item Name="version.dll" Type="Document" URL="version.dll">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
 		</Item>
 		<Item Name="Build Specifications" Type="Build">
+			<Item Name="DAQ Connect" Type="EXE">
+				<Property Name="App_copyErrors" Type="Bool">true</Property>
+				<Property Name="App_INI_aliasGUID" Type="Str">{133DEE2D-25E0-4D5C-AFA8-FBAC58219E70}</Property>
+				<Property Name="App_INI_GUID" Type="Str">{2371448C-2926-49F4-AF61-65B9E8BA6053}</Property>
+				<Property Name="App_serverConfig.httpPort" Type="Int">8002</Property>
+				<Property Name="App_serverType" Type="Int">0</Property>
+				<Property Name="Bld_autoIncrement" Type="Bool">true</Property>
+				<Property Name="Bld_buildCacheID" Type="Str">{EE763C36-9BF9-4CD7-A37B-13E56CF7A790}</Property>
+				<Property Name="Bld_buildSpecName" Type="Str">DAQ Connect</Property>
+				<Property Name="Bld_excludeInlineSubVIs" Type="Bool">true</Property>
+				<Property Name="Bld_excludeLibraryItems" Type="Bool">true</Property>
+				<Property Name="Bld_excludePolymorphicVIs" Type="Bool">true</Property>
+				<Property Name="Bld_localDestDir" Type="Path">/C/Users/au540322/Documents/Projects/Ice-Nucleation/Builds/DAQ Connect</Property>
+				<Property Name="Bld_modifyLibraryFile" Type="Bool">true</Property>
+				<Property Name="Bld_previewCacheID" Type="Str">{1FB44150-314A-49DE-BF23-36CC637AEA5B}</Property>
+				<Property Name="Bld_version.build" Type="Int">1</Property>
+				<Property Name="Bld_version.major" Type="Int">1</Property>
+				<Property Name="Destination[0].destName" Type="Str">DAQ Connect.exe</Property>
+				<Property Name="Destination[0].path" Type="Path">/C/Users/au540322/Documents/Projects/Ice-Nucleation/Builds/DAQ Connect/DAQ Connect.exe</Property>
+				<Property Name="Destination[0].path.type" Type="Str">&lt;none&gt;</Property>
+				<Property Name="Destination[0].preserveHierarchy" Type="Bool">true</Property>
+				<Property Name="Destination[0].type" Type="Str">App</Property>
+				<Property Name="Destination[1].destName" Type="Str">Support Directory</Property>
+				<Property Name="Destination[1].path" Type="Path">/C/Users/au540322/Documents/Projects/Ice-Nucleation/Builds/DAQ Connect/data</Property>
+				<Property Name="Destination[1].path.type" Type="Str">&lt;none&gt;</Property>
+				<Property Name="DestinationCount" Type="Int">2</Property>
+				<Property Name="Source[0].itemID" Type="Str">{7F9D1975-8500-475F-91A0-D000882D91A4}</Property>
+				<Property Name="Source[0].type" Type="Str">Container</Property>
+				<Property Name="Source[1].destinationIndex" Type="Int">0</Property>
+				<Property Name="Source[1].itemID" Type="Ref">/My Computer/Functions/cDAQ/Channel_Detect.vi</Property>
+				<Property Name="Source[1].sourceInclusion" Type="Str">TopLevel</Property>
+				<Property Name="Source[1].type" Type="Str">VI</Property>
+				<Property Name="SourceCount" Type="Int">2</Property>
+				<Property Name="TgtF_companyName" Type="Str">Aarhus University</Property>
+				<Property Name="TgtF_fileDescription" Type="Str">DAQ Connect</Property>
+				<Property Name="TgtF_internalName" Type="Str">DAQ Connect</Property>
+				<Property Name="TgtF_legalCopyright" Type="Str">Copyright © 2021 Aarhus University</Property>
+				<Property Name="TgtF_productName" Type="Str">DAQ Connect</Property>
+				<Property Name="TgtF_targetfileGUID" Type="Str">{BE028F6F-4FA8-42A6-90E5-8D3AF224E2D9}</Property>
+				<Property Name="TgtF_targetfileName" Type="Str">DAQ Connect.exe</Property>
+				<Property Name="TgtF_versionIndependent" Type="Bool">true</Property>
+			</Item>
 			<Item Name="INC" Type="EXE">
 				<Property Name="App_copyErrors" Type="Bool">true</Property>
 				<Property Name="App_INI_aliasGUID" Type="Str">{3618DAED-42DC-4E68-88A6-01E191E81E60}</Property>
@@ -440,10 +507,9 @@
 				<Property Name="Bld_localDestDir" Type="Path">/C/Users/au540322/Documents/Projects/Ice-Nucleation/Builds/Full Build</Property>
 				<Property Name="Bld_modifyLibraryFile" Type="Bool">true</Property>
 				<Property Name="Bld_previewCacheID" Type="Str">{27D8B2BC-76A3-474D-8C11-FD95C8E7081D}</Property>
-				<Property Name="Bld_version.build" Type="Int">17</Property>
+				<Property Name="Bld_version.build" Type="Int">22</Property>
 				<Property Name="Bld_version.major" Type="Int">1</Property>
-				<Property Name="Bld_version.minor" Type="Int">7</Property>
-				<Property Name="Bld_version.patch" Type="Int">5</Property>
+				<Property Name="Bld_version.patch" Type="Int">34</Property>
 				<Property Name="Destination[0].destName" Type="Str">INC.exe</Property>
 				<Property Name="Destination[0].path" Type="Path">/C/Users/au540322/Documents/Projects/Ice-Nucleation/Builds/Full Build/INC.exe</Property>
 				<Property Name="Destination[0].path.type" Type="Str">&lt;none&gt;</Property>
@@ -453,7 +519,7 @@
 				<Property Name="Destination[1].path" Type="Path">/C/Users/au540322/Documents/Projects/Ice-Nucleation/Builds/Full Build/data</Property>
 				<Property Name="Destination[1].path.type" Type="Str">&lt;none&gt;</Property>
 				<Property Name="DestinationCount" Type="Int">2</Property>
-				<Property Name="Source[0].itemID" Type="Str">{AEB84911-4471-401C-970F-35BBA482B741}</Property>
+				<Property Name="Source[0].itemID" Type="Str">{1363DCB0-B646-411E-9D96-AF25BCD12221}</Property>
 				<Property Name="Source[0].type" Type="Str">Container</Property>
 				<Property Name="Source[1].destinationIndex" Type="Int">0</Property>
 				<Property Name="Source[1].itemID" Type="Ref">/My Computer/main.vi</Property>
@@ -470,12 +536,22 @@
 				<Property Name="TgtF_versionIndependent" Type="Bool">true</Property>
 			</Item>
 			<Item Name="Installer" Type="Installer">
-				<Property Name="Destination[0].name" Type="Str">Ice Nucleation</Property>
+				<Property Name="Destination[0].name" Type="Str">Ice Nucleation Controller</Property>
 				<Property Name="Destination[0].parent" Type="Str">{3912416A-D2E5-411B-AFEE-B63654D690C0}</Property>
 				<Property Name="Destination[0].tag" Type="Str">{4B7C7F5D-6E6D-4786-BBED-E06C37A5A212}</Property>
 				<Property Name="Destination[0].type" Type="Str">userFolder</Property>
 				<Property Name="Destination[0].unlock" Type="Bool">true</Property>
-				<Property Name="DestinationCount" Type="Int">1</Property>
+				<Property Name="Destination[1].name" Type="Str">Data</Property>
+				<Property Name="Destination[1].parent" Type="Str">{4B7C7F5D-6E6D-4786-BBED-E06C37A5A212}</Property>
+				<Property Name="Destination[1].tag" Type="Str">{91FD325C-AAB7-491E-AB64-7BBBE922D8DB}</Property>
+				<Property Name="Destination[1].type" Type="Str">userFolder</Property>
+				<Property Name="Destination[1].unlock" Type="Bool">true</Property>
+				<Property Name="Destination[2].name" Type="Str">Partitions</Property>
+				<Property Name="Destination[2].parent" Type="Str">{4B7C7F5D-6E6D-4786-BBED-E06C37A5A212}</Property>
+				<Property Name="Destination[2].tag" Type="Str">{09B5634D-F4F6-46D8-8877-756072EA0D65}</Property>
+				<Property Name="Destination[2].type" Type="Str">userFolder</Property>
+				<Property Name="Destination[2].unlock" Type="Bool">true</Property>
+				<Property Name="DestinationCount" Type="Int">3</Property>
 				<Property Name="DistPart[0].flavorID" Type="Str">DefaultFull</Property>
 				<Property Name="DistPart[0].productID" Type="Str">{57C41B25-A232-4945-B942-D7EC8ECBE6EF}</Property>
 				<Property Name="DistPart[0].productName" Type="Str">NI Vision Common Resources 2020</Property>
@@ -540,33 +616,49 @@
 				<Property Name="INST_buildSpecName" Type="Str">Installer</Property>
 				<Property Name="INST_defaultDir" Type="Str">{4B7C7F5D-6E6D-4786-BBED-E06C37A5A212}</Property>
 				<Property Name="INST_installerName" Type="Str">install.exe</Property>
-				<Property Name="INST_productName" Type="Str">Ice Nucleation</Property>
-				<Property Name="INST_productVersion" Type="Str">1.0.1</Property>
+				<Property Name="INST_productName" Type="Str">Ice Nucleation Controller</Property>
+				<Property Name="INST_productVersion" Type="Str">1.0.7</Property>
 				<Property Name="InstSpecBitness" Type="Str">32-bit</Property>
 				<Property Name="InstSpecVersion" Type="Str">20008014</Property>
 				<Property Name="MSI_arpCompany" Type="Str">Aarhus University</Property>
+				<Property Name="MSI_arpContact" Type="Str">Mads Rosenhøj Jeppesen</Property>
+				<Property Name="MSI_arpPhone" Type="Str">+45 20 89 43 32</Property>
 				<Property Name="MSI_autoselectDrivers" Type="Bool">true</Property>
 				<Property Name="MSI_distID" Type="Str">{B3E4038C-2A2E-4E0E-86D8-B675F0C63136}</Property>
 				<Property Name="MSI_hideNonRuntimes" Type="Bool">true</Property>
 				<Property Name="MSI_osCheck" Type="Int">0</Property>
 				<Property Name="MSI_upgradeCode" Type="Str">{0BC65F53-DFD0-44CF-9605-7A37A91BB8CA}</Property>
+				<Property Name="MSI_windowMessage" Type="Str">Install INC software</Property>
+				<Property Name="MSI_windowTitle" Type="Str">INC Installer</Property>
 				<Property Name="RegDest[0].dirName" Type="Str">Software</Property>
 				<Property Name="RegDest[0].dirTag" Type="Str">{DDFAFC8B-E728-4AC8-96DE-B920EBB97A86}</Property>
 				<Property Name="RegDest[0].parentTag" Type="Str">2</Property>
 				<Property Name="RegDestCount" Type="Int">1</Property>
 				<Property Name="Source[0].dest" Type="Str">{4B7C7F5D-6E6D-4786-BBED-E06C37A5A212}</Property>
 				<Property Name="Source[0].File[0].dest" Type="Str">{4B7C7F5D-6E6D-4786-BBED-E06C37A5A212}</Property>
-				<Property Name="Source[0].File[0].name" Type="Str">Ice Nucleation.exe</Property>
+				<Property Name="Source[0].File[0].name" Type="Str">INC.exe</Property>
 				<Property Name="Source[0].File[0].Shortcut[0].destIndex" Type="Int">0</Property>
-				<Property Name="Source[0].File[0].Shortcut[0].name" Type="Str">Ice Nucleation</Property>
-				<Property Name="Source[0].File[0].Shortcut[0].subDir" Type="Str">Ice Nucleation</Property>
+				<Property Name="Source[0].File[0].Shortcut[0].name" Type="Str">Ice Nucleation Controller</Property>
+				<Property Name="Source[0].File[0].Shortcut[0].subDir" Type="Str">Ice Nucleation Controller</Property>
 				<Property Name="Source[0].File[0].ShortcutCount" Type="Int">1</Property>
 				<Property Name="Source[0].File[0].tag" Type="Str">{58C928C1-8473-4CEF-96B2-F9CFB2EAA16B}</Property>
 				<Property Name="Source[0].FileCount" Type="Int">1</Property>
-				<Property Name="Source[0].name" Type="Str">Ice Nucleation</Property>
+				<Property Name="Source[0].name" Type="Str">INC</Property>
 				<Property Name="Source[0].tag" Type="Ref">/My Computer/Build Specifications/INC</Property>
 				<Property Name="Source[0].type" Type="Str">EXE</Property>
-				<Property Name="SourceCount" Type="Int">1</Property>
+				<Property Name="Source[1].dest" Type="Str">{4B7C7F5D-6E6D-4786-BBED-E06C37A5A212}</Property>
+				<Property Name="Source[1].name" Type="Str">Calibration.ini</Property>
+				<Property Name="Source[1].tag" Type="Ref">/My Computer/Setup files/Calibration.ini</Property>
+				<Property Name="Source[1].type" Type="Str">File</Property>
+				<Property Name="Source[2].dest" Type="Str">{09B5634D-F4F6-46D8-8877-756072EA0D65}</Property>
+				<Property Name="Source[2].name" Type="Str">Big Setup.prt</Property>
+				<Property Name="Source[2].tag" Type="Ref">/My Computer/Setup files/Partitions/Big Setup.prt</Property>
+				<Property Name="Source[2].type" Type="Str">File</Property>
+				<Property Name="Source[3].dest" Type="Str">{09B5634D-F4F6-46D8-8877-756072EA0D65}</Property>
+				<Property Name="Source[3].name" Type="Str">Small Setup.prt</Property>
+				<Property Name="Source[3].tag" Type="Ref">/My Computer/Setup files/Partitions/Small Setup.prt</Property>
+				<Property Name="Source[3].type" Type="Str">File</Property>
+				<Property Name="SourceCount" Type="Int">4</Property>
 			</Item>
 		</Item>
 	</Item>

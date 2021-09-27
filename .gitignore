@@ -1,1 +1,6 @@
 /Builds/Installer
+/Builds/Full Build/Data
+/Builds/*
+
+/src/LabVIEW/Data
+.zip
