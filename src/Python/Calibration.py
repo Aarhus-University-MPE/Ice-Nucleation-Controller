@@ -8,7 +8,7 @@ import pandas as pd
 import os
 
 sensorList = [6]
-folder = 'C:\\Users\\au540322\\Documents\\Projects\\Ice-Nucleation\\Builds\\Full Build\\Data\\'
+folder = 'C:\\Users\\au540322\\Desktop\\Data\\'
 sub_folders = [name for name in os.listdir(folder) if os.path.isdir(os.path.join(folder, name))]
 
 numSamples = sub_folders.__len__()
@@ -72,7 +72,7 @@ for i in sensorList:
 #     print(")")
 
 #%%
-sample = 'PID System Test_1'
+sample = 'System Test_1'
 file_location = folder + sample + '\\Data.csv'
 msft = pd.read_csv(file_location,delimiter=';',decimal=',')
 msft['Time [MM:SS]']=pd.to_datetime(msft['Time [MM:SS]'],format='%H-%M-%S_%f').dt.strftime('%H:%M')
@@ -80,7 +80,7 @@ msft['Time [MM:SS]']=pd.to_datetime(msft['Time [MM:SS]'],format='%H-%M-%S_%f').d
 #axes = msft.plot(0,['Average'],figsize = (30,10), grid = True, fontsize = 25,
 #    sharey=True, lw = 1)
 
-axes = msft.plot(0,'T1',figsize = (30,10), grid = True, fontsize = 25,
+axes = msft.plot(0,['Temp Gradient','Target Gradient'],figsize = (30,10), grid = True, fontsize = 25,
     sharey=True, lw = 1)
 
 #print(msft['Lat_dev'].mean())
@@ -88,7 +88,7 @@ axes = msft.plot(0,'T1',figsize = (30,10), grid = True, fontsize = 25,
 axes.set_title(str(sample),fontsize = 30)
 axes.set_ylabel('Measured Temperature [°C]', fontsize = 25)
 axes.set_xlabel('Time [HH:mm]', fontsize = 25)
-#axes.set_ylim(-1.2,-0.6)
+axes.set_ylim(-1.2,-0.6)
 
 
 axes.legend(fontsize=30,bbox_to_anchor=(1.01, 1))
