@@ -1,6 +1,7 @@
 ﻿<?xml version='1.0' encoding='UTF-8'?>
 <Project Type="Project" LVVersion="20008000">
 	<Item Name="My Computer" Type="My Computer">
+		<Property Name="NI.SortType" Type="Int">3</Property>
 		<Property Name="server.app.propertiesEnabled" Type="Bool">true</Property>
 		<Property Name="server.control.propertiesEnabled" Type="Bool">true</Property>
 		<Property Name="server.tcp.enabled" Type="Bool">false</Property>
@@ -23,16 +24,27 @@
 			<Item Name="Calibration.ini" Type="Document" URL="../../../Builds/Calibration.ini"/>
 		</Item>
 		<Item Name="Functions" Type="Folder">
+			<Property Name="NI.SortType" Type="Int">3</Property>
 			<Item Name="Camera" Type="Folder">
 				<Property Name="NI.SortType" Type="Int">3</Property>
 				<Item Name="Camera_Config.vi" Type="VI" URL="../Camera_Config.vi"/>
 				<Item Name="Camera_Grab.vi" Type="VI" URL="../Camera_Grab.vi"/>
 				<Item Name="Camera_Feed.vi" Type="VI" URL="../Camera_Feed.vi"/>
-				<Item Name="CameraAttributeTest.vi" Type="VI" URL="../CameraAttributeTest.vi"/>
-				<Item Name="CameraAttributeSearch.vi" Type="VI" URL="../CameraAttributeSearch.vi"/>
 				<Item Name="Camera_Rectangle_To_ROI.vi" Type="VI" URL="../Camera_Rectangle_To_ROI.vi"/>
 				<Item Name="Camera_ROI_To_Rectangle.vi" Type="VI" URL="../Camera_ROI_To_Rectangle.vi"/>
 				<Item Name="Camera_ROI_Extract.vi" Type="VI" URL="../Camera_ROI_Extract.vi"/>
+			</Item>
+			<Item Name="Thermal Camera" Type="Folder">
+				<Item Name="TCam_ArrayTempExtract.vi" Type="VI" URL="../TCam_ArrayTempExtract.vi"/>
+				<Item Name="TCam_IMGTempExtract.vi" Type="VI" URL="../TCam_IMGTempExtract.vi"/>
+				<Item Name="TCam_CenterArray.vi" Type="VI" URL="../TCam_CenterArray.vi"/>
+				<Item Name="TCam_HorizontalLines.vi" Type="VI" URL="../TCam_HorizontalLines.vi"/>
+				<Item Name="TCam_PointCalculator.vi" Type="VI" URL="../TCam_PointCalculator.vi"/>
+				<Item Name="TCam_VerticalLines.vi" Type="VI" URL="../TCam_VerticalLines.vi"/>
+				<Item Name="TCam_WellCalculater.vi" Type="VI" URL="../TCam_WellCalculater.vi"/>
+				<Item Name="TCam_WellTemp.vi" Type="VI" URL="../TCam_WellTemp.vi"/>
+				<Item Name="TCam_Scan.vi" Type="VI" URL="../TCam_Scan.vi"/>
+				<Item Name="TCam_Config.vi" Type="VI" URL="../TCam_Config.vi"/>
 			</Item>
 			<Item Name="cDAQ" Type="Folder">
 				<Item Name="Thermistor" Type="Folder">
@@ -78,6 +90,7 @@
 			<Item Name="PSU" Type="Folder">
 				<Item Name="PSU_Command.vi" Type="VI" URL="../PSU_Command.vi"/>
 				<Item Name="PSU_Output.vi" Type="VI" URL="../PSU_Output.vi"/>
+				<Item Name="PSU_State.vi" Type="VI" URL="../PSU_State.vi"/>
 				<Item Name="PSU_VOUT_Converter.vi" Type="VI" URL="../PSU_VOUT_Converter.vi"/>
 				<Item Name="VISA_Scan.vi" Type="VI" URL="../VISA_Scan.vi"/>
 			</Item>
@@ -96,6 +109,7 @@
 					<Item Name="SampleRate_Convert.vi" Type="VI" URL="../SampleRate_Convert.vi"/>
 					<Item Name="Image_Folder_Path_Checker.vi" Type="VI" URL="../Image_Folder_Path_Checker.vi"/>
 					<Item Name="Calibration_Converter.vi" Type="VI" URL="../Calibration_Converter.vi"/>
+					<Item Name="Points to Oval.vi" Type="VI" URL="../Points to Oval.vi"/>
 				</Item>
 				<Item Name="DataCluster.ctl" Type="VI" URL="../DataCluster.ctl"/>
 				<Item Name="RunTimeMenu.rtm" Type="Document" URL="../RunTimeMenu.rtm"/>
@@ -155,11 +169,13 @@
 			<Item Name="ThermoCouple_Logger.vi" Type="VI" URL="../ThermoCouple_Logger.vi"/>
 			<Item Name="Channel_Detect.vi" Type="VI" URL="../Channel_Detect.vi"/>
 			<Item Name="PSU_Command_Test.vi" Type="VI" URL="../PSU_Command_Test.vi"/>
-			<Item Name="Thermal_Camera.vi" Type="VI" URL="../Thermal_Camera.vi"/>
+			<Item Name="Thermal_Camera_Stream.vi" Type="VI" URL="../Thermal_Camera_Stream.vi"/>
+			<Item Name="CameraAttributeTest.vi" Type="VI" URL="../CameraAttributeTest.vi"/>
+			<Item Name="CameraAttributeSearch.vi" Type="VI" URL="../CameraAttributeSearch.vi"/>
 		</Item>
 		<Item Name="main.vi" Type="VI" URL="../main.vi"/>
-		<Item Name="Thermal_Camera_ArrayTempExtract.vi" Type="VI" URL="../Thermal_Camera_ArrayTempExtract.vi"/>
-		<Item Name="Thermal_Camera_IMGTempExtract.vi" Type="VI" URL="../Thermal_Camera_IMGTempExtract.vi"/>
+		<Item Name="LoadingWindow.vi" Type="VI" URL="../LoadingWindow.vi"/>
+		<Item Name="Thermal_Camera.vi" Type="VI" URL="../Thermal_Camera.vi"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="vi.lib" Type="Folder">
 				<Item Name="Add State(s) to Queue__JKI_lib_State_Machine.vi" Type="VI" URL="/&lt;vilib&gt;/addons/_JKI Toolkits/State Machine/_JKI_lib_State_Machine.llb/Add State(s) to Queue__JKI_lib_State_Machine.vi"/>
@@ -403,14 +419,20 @@
 				<Item Name="IMAQ ArrayToColorImage" Type="VI" URL="/&lt;vilib&gt;/vision/Basics.llb/IMAQ ArrayToColorImage"/>
 				<Item Name="IMAQ Clear Overlay" Type="VI" URL="/&lt;vilib&gt;/vision/Overlay.llb/IMAQ Clear Overlay"/>
 				<Item Name="IMAQ ColorImageToArray" Type="VI" URL="/&lt;vilib&gt;/vision/Basics.llb/IMAQ ColorImageToArray"/>
+				<Item Name="IMAQ Convert Point to ROI" Type="VI" URL="/&lt;vilib&gt;/vision/ROI Conversion.llb/IMAQ Convert Point to ROI"/>
 				<Item Name="IMAQ Convert Rectangle to ROI" Type="VI" URL="/&lt;vilib&gt;/vision/ROI Conversion.llb/IMAQ Convert Rectangle to ROI"/>
+				<Item Name="IMAQ Convert ROI to Point" Type="VI" URL="/&lt;vilib&gt;/vision/ROI Conversion.llb/IMAQ Convert ROI to Point"/>
 				<Item Name="IMAQ Convert ROI to Rectangle" Type="VI" URL="/&lt;vilib&gt;/vision/ROI Conversion.llb/IMAQ Convert ROI to Rectangle"/>
 				<Item Name="IMAQ Create" Type="VI" URL="/&lt;vilib&gt;/vision/Basics.llb/IMAQ Create"/>
 				<Item Name="IMAQ Dispose" Type="VI" URL="/&lt;vilib&gt;/vision/Basics.llb/IMAQ Dispose"/>
 				<Item Name="IMAQ Image.ctl" Type="VI" URL="/&lt;vilib&gt;/vision/Image Controls.llb/IMAQ Image.ctl"/>
 				<Item Name="IMAQ ImageToArray" Type="VI" URL="/&lt;vilib&gt;/vision/Basics.llb/IMAQ ImageToArray"/>
+				<Item Name="IMAQ Overlay Multiple Lines 2" Type="VI" URL="/&lt;vilib&gt;/vision/Overlay.llb/IMAQ Overlay Multiple Lines 2"/>
+				<Item Name="IMAQ Overlay Oval" Type="VI" URL="/&lt;vilib&gt;/vision/Overlay.llb/IMAQ Overlay Oval"/>
+				<Item Name="IMAQ Overlay Points" Type="VI" URL="/&lt;vilib&gt;/vision/Overlay.llb/IMAQ Overlay Points"/>
 				<Item Name="IMAQ Overlay ROI" Type="VI" URL="/&lt;vilib&gt;/vision/Overlay.llb/IMAQ Overlay ROI"/>
 				<Item Name="IMAQ Overlay Text" Type="VI" URL="/&lt;vilib&gt;/vision/Overlay.llb/IMAQ Overlay Text"/>
+				<Item Name="IMAQ Point" Type="VI" URL="/&lt;vilib&gt;/vision/Image Controls.llb/IMAQ Point"/>
 				<Item Name="IMAQ ReadFile 2" Type="VI" URL="/&lt;vilib&gt;/vision/Files.llb/IMAQ ReadFile 2"/>
 				<Item Name="IMAQ Rectangle" Type="VI" URL="/&lt;vilib&gt;/vision/Image Controls.llb/IMAQ Rectangle"/>
 				<Item Name="IMAQ Write BMP File 2" Type="VI" URL="/&lt;vilib&gt;/vision/Files.llb/IMAQ Write BMP File 2"/>
@@ -571,7 +593,7 @@
 				<Property Name="Bld_localDestDir" Type="Path">/C/Users/au540322/Documents/Projects/Ice-Nucleation/Builds/Full Build</Property>
 				<Property Name="Bld_modifyLibraryFile" Type="Bool">true</Property>
 				<Property Name="Bld_previewCacheID" Type="Str">{27D8B2BC-76A3-474D-8C11-FD95C8E7081D}</Property>
-				<Property Name="Bld_version.build" Type="Int">22</Property>
+				<Property Name="Bld_version.build" Type="Int">25</Property>
 				<Property Name="Bld_version.major" Type="Int">1</Property>
 				<Property Name="Bld_version.patch" Type="Int">34</Property>
 				<Property Name="Destination[0].destName" Type="Str">INC.exe</Property>
