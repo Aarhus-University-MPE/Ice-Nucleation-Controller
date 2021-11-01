@@ -45,6 +45,8 @@
 				<Item Name="TCam_WellTemp.vi" Type="VI" URL="../TCam_WellTemp.vi"/>
 				<Item Name="TCam_Scan.vi" Type="VI" URL="../TCam_Scan.vi"/>
 				<Item Name="TCam_Config.vi" Type="VI" URL="../TCam_Config.vi"/>
+				<Item Name="TCam_CalibrationLoad.vi" Type="VI" URL="../TCam_CalibrationLoad.vi"/>
+				<Item Name="TCam_WellPixels.vi" Type="VI" URL="../TCam_WellPixels.vi"/>
 			</Item>
 			<Item Name="cDAQ" Type="Folder">
 				<Item Name="Thermistor" Type="Folder">
@@ -123,6 +125,8 @@
 				<Item Name="Chart_Updater.vi" Type="VI" URL="../Chart_Updater.vi"/>
 				<Item Name="Read Exe Version.vi" Type="VI" URL="../Read Exe Version.vi"/>
 				<Item Name="RunTimeMenu_ThermoCouple.rtm" Type="Document" URL="../RunTimeMenu_ThermoCouple.rtm"/>
+				<Item Name="LoadingWindow_Stream.vi" Type="VI" URL="../LoadingWindow_Stream.vi"/>
+				<Item Name="LoadingWindow.vi" Type="VI" URL="../LoadingWindow.vi"/>
 			</Item>
 		</Item>
 		<Item Name="Test Functions" Type="Folder">
@@ -174,7 +178,6 @@
 			<Item Name="CameraAttributeSearch.vi" Type="VI" URL="../CameraAttributeSearch.vi"/>
 		</Item>
 		<Item Name="main.vi" Type="VI" URL="../main.vi"/>
-		<Item Name="LoadingWindow.vi" Type="VI" URL="../LoadingWindow.vi"/>
 		<Item Name="Thermal_Camera.vi" Type="VI" URL="../Thermal_Camera.vi"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="vi.lib" Type="Folder">
