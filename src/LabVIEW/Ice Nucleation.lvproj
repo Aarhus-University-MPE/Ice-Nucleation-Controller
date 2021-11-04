@@ -176,6 +176,7 @@
 			<Item Name="Thermal_Camera_Stream.vi" Type="VI" URL="../Thermal_Camera_Stream.vi"/>
 			<Item Name="CameraAttributeTest.vi" Type="VI" URL="../CameraAttributeTest.vi"/>
 			<Item Name="CameraAttributeSearch.vi" Type="VI" URL="../CameraAttributeSearch.vi"/>
+			<Item Name="ThermalVideoStream.vi" Type="VI" URL="../ThermalVideoStream.vi"/>
 		</Item>
 		<Item Name="main.vi" Type="VI" URL="../main.vi"/>
 		<Item Name="Thermal_Camera.vi" Type="VI" URL="../Thermal_Camera.vi"/>
