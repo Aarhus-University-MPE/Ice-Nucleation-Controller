@@ -21,7 +21,10 @@
 				<Item Name="Small Setup.prt" Type="Document" URL="../../../Builds/Partitions/Small Setup.prt"/>
 				<Item Name="test.prt" Type="Document" URL="../../../Builds/Partitions/test.prt"/>
 			</Item>
+			<Item Name="TCam.ini" Type="Document" URL="../TCam.ini"/>
+			<Item Name="settings.ini" Type="Document" URL="../settings.ini"/>
 			<Item Name="Calibration.ini" Type="Document" URL="../../../Builds/Calibration.ini"/>
+			<Item Name="camera_placeholder.png" Type="Document" URL="../resources/camera_placeholder.png"/>
 		</Item>
 		<Item Name="Functions" Type="Folder">
 			<Property Name="NI.SortType" Type="Int">3</Property>
@@ -44,9 +47,14 @@
 				<Item Name="TCam_WellCalculater.vi" Type="VI" URL="../TCam_WellCalculater.vi"/>
 				<Item Name="TCam_WellTemp.vi" Type="VI" URL="../TCam_WellTemp.vi"/>
 				<Item Name="TCam_Scan.vi" Type="VI" URL="../TCam_Scan.vi"/>
+				<Item Name="TCam_Focus.vi" Type="VI" URL="../TCam_Focus.vi"/>
 				<Item Name="TCam_Config.vi" Type="VI" URL="../TCam_Config.vi"/>
 				<Item Name="TCam_CalibrationLoad.vi" Type="VI" URL="../TCam_CalibrationLoad.vi"/>
 				<Item Name="TCam_WellPixels.vi" Type="VI" URL="../TCam_WellPixels.vi"/>
+				<Item Name="TCam_Calibration.vi" Type="VI" URL="../TCam_Calibration.vi"/>
+				<Item Name="TCam_Calibration_LoadSettings.vi" Type="VI" URL="../TCam_Calibration_LoadSettings.vi"/>
+				<Item Name="TCam_Overlay_Fixedpoint.vi" Type="VI" URL="../TCam_Overlay_Fixedpoint.vi"/>
+				<Item Name="DataCluster_TCAL.ctl" Type="VI" URL="../DataCluster_TCAL.ctl"/>
 			</Item>
 			<Item Name="cDAQ" Type="Folder">
 				<Item Name="Thermistor" Type="Folder">
@@ -127,6 +135,7 @@
 				<Item Name="RunTimeMenu_ThermoCouple.rtm" Type="Document" URL="../RunTimeMenu_ThermoCouple.rtm"/>
 				<Item Name="LoadingWindow_Stream.vi" Type="VI" URL="../LoadingWindow_Stream.vi"/>
 				<Item Name="LoadingWindow.vi" Type="VI" URL="../LoadingWindow.vi"/>
+				<Item Name="TCam_Overlay.vi" Type="VI" URL="../TCam_Overlay.vi"/>
 			</Item>
 		</Item>
 		<Item Name="Test Functions" Type="Folder">
@@ -169,6 +178,21 @@
 					<Property Name="Name" Type="Str">ProjectTemperatureChannel_1</Property>
 					<Property Name="PhysicalChanName" Type="Str">cDAQ2Mod1/ai1</Property>
 				</Item>
+				<Item Name="ThermoCoupleSingle" Type="NI-DAQmx Channel">
+					<Property Name="AI.AutoZeroMode" Type="Str">Every Sample</Property>
+					<Property Name="AI.Max" Type="Str">100</Property>
+					<Property Name="AI.MeasType" Type="Str">Temperature:Thermocouple</Property>
+					<Property Name="AI.Min" Type="Str">0</Property>
+					<Property Name="AI.Temp.Units" Type="Str">Deg C</Property>
+					<Property Name="AI.Thrmcpl.CJCChan" Type="Str"></Property>
+					<Property Name="AI.Thrmcpl.CJCSrc" Type="Str">Built-In</Property>
+					<Property Name="AI.Thrmcpl.CJCVal" Type="Str">25</Property>
+					<Property Name="AI.Thrmcpl.Type" Type="Str">J</Property>
+					<Property Name="ChanType" Type="Str">Analog Input</Property>
+					<Property Name="Descr" Type="Str"></Property>
+					<Property Name="Name" Type="Str">ThermoCoupleSingle</Property>
+					<Property Name="PhysicalChanName" Type="Str">cDAQ2Mod1/ai0</Property>
+				</Item>
 			</Item>
 			<Item Name="ThermoCouple_Logger.vi" Type="VI" URL="../ThermoCouple_Logger.vi"/>
 			<Item Name="Channel_Detect.vi" Type="VI" URL="../Channel_Detect.vi"/>
@@ -177,9 +201,11 @@
 			<Item Name="CameraAttributeTest.vi" Type="VI" URL="../CameraAttributeTest.vi"/>
 			<Item Name="CameraAttributeSearch.vi" Type="VI" URL="../CameraAttributeSearch.vi"/>
 			<Item Name="ThermalVideoStream.vi" Type="VI" URL="../ThermalVideoStream.vi"/>
+			<Item Name="Thermal_Camera.vi" Type="VI" URL="../Thermal_Camera.vi"/>
 		</Item>
 		<Item Name="main.vi" Type="VI" URL="../main.vi"/>
-		<Item Name="Thermal_Camera.vi" Type="VI" URL="../Thermal_Camera.vi"/>
+		<Item Name="Tag-t&apos;DataCluster.ctl&apos;.lvlib" Type="Library" URL="/&lt;extravilib&gt;/ChannelInstances/Tag-t&apos;DataCluster.ctl&apos;.lvlib"/>
+		<Item Name="timeleft_stamp.vi" Type="VI" URL="../timeleft_stamp.vi"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="vi.lib" Type="Folder">
 				<Item Name="Add State(s) to Queue__JKI_lib_State_Machine.vi" Type="VI" URL="/&lt;vilib&gt;/addons/_JKI Toolkits/State Machine/_JKI_lib_State_Machine.llb/Add State(s) to Queue__JKI_lib_State_Machine.vi"/>
@@ -195,7 +221,6 @@
 				<Item Name="Check Special Tags.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Check Special Tags.vi"/>
 				<Item Name="Clear Errors.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Clear Errors.vi"/>
 				<Item Name="Close File+.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/file.llb/Close File+.vi"/>
-				<Item Name="Color (U64)" Type="VI" URL="/&lt;vilib&gt;/vision/Image Controls.llb/Color (U64)"/>
 				<Item Name="Color to RGB.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/colorconv.llb/Color to RGB.vi"/>
 				<Item Name="compatCalcOffset.vi" Type="VI" URL="/&lt;vilib&gt;/_oldvers/_oldvers.llb/compatCalcOffset.vi"/>
 				<Item Name="compatFileDialog.vi" Type="VI" URL="/&lt;vilib&gt;/_oldvers/_oldvers.llb/compatFileDialog.vi"/>
@@ -420,9 +445,7 @@
 				<Item Name="GetHelpDir.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/GetHelpDir.vi"/>
 				<Item Name="GetRTHostConnectedProp.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/GetRTHostConnectedProp.vi"/>
 				<Item Name="Image Type" Type="VI" URL="/&lt;vilib&gt;/vision/Image Controls.llb/Image Type"/>
-				<Item Name="IMAQ ArrayToColorImage" Type="VI" URL="/&lt;vilib&gt;/vision/Basics.llb/IMAQ ArrayToColorImage"/>
 				<Item Name="IMAQ Clear Overlay" Type="VI" URL="/&lt;vilib&gt;/vision/Overlay.llb/IMAQ Clear Overlay"/>
-				<Item Name="IMAQ ColorImageToArray" Type="VI" URL="/&lt;vilib&gt;/vision/Basics.llb/IMAQ ColorImageToArray"/>
 				<Item Name="IMAQ Convert Point to ROI" Type="VI" URL="/&lt;vilib&gt;/vision/ROI Conversion.llb/IMAQ Convert Point to ROI"/>
 				<Item Name="IMAQ Convert Rectangle to ROI" Type="VI" URL="/&lt;vilib&gt;/vision/ROI Conversion.llb/IMAQ Convert Rectangle to ROI"/>
 				<Item Name="IMAQ Convert ROI to Point" Type="VI" URL="/&lt;vilib&gt;/vision/ROI Conversion.llb/IMAQ Convert ROI to Point"/>
@@ -506,6 +529,7 @@
 				<Item Name="Write to XML File(array).vi" Type="VI" URL="/&lt;vilib&gt;/Utility/xml.llb/Write to XML File(array).vi"/>
 				<Item Name="Write to XML File(string).vi" Type="VI" URL="/&lt;vilib&gt;/Utility/xml.llb/Write to XML File(string).vi"/>
 				<Item Name="Write to XML File.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/xml.llb/Write to XML File.vi"/>
+				<Item Name="IMAQ ArrayToImage" Type="VI" URL="/&lt;vilib&gt;/vision/Basics.llb/IMAQ ArrayToImage"/>
 			</Item>
 			<Item Name="_ChannelSupport.lvlib" Type="Library" URL="/&lt;resource&gt;/ChannelSupport/_ChannelSupport/_ChannelSupport.lvlib"/>
 			<Item Name="ChannelProbePositionAndTitle.vi" Type="VI" URL="/&lt;resource&gt;/ChannelSupport/_ChannelSupport/ChannelProbePositionAndTitle.vi"/>
@@ -532,7 +556,6 @@
 			<Item Name="Tag-bool.lvlib" Type="Library" URL="/&lt;extravilib&gt;/ChannelInstances/Tag-bool.lvlib"/>
 			<Item Name="Tag-c(a[.](dbl),a[.](dbl)).lvlib" Type="Library" URL="/&lt;extravilib&gt;/ChannelInstances/Tag-c(a[.](dbl),a[.](dbl)).lvlib"/>
 			<Item Name="Tag-c(bool,ref(UserDefinedRefnumTag),bool,path,bool).lvlib" Type="Library" URL="/&lt;extravilib&gt;/ChannelInstances/Tag-c(bool,ref(UserDefinedRefnumTag),bool,path,bool).lvlib"/>
-			<Item Name="Tag-t&apos;DataCluster.ctl&apos;.lvlib" Type="Library" URL="/&lt;extravilib&gt;/ChannelInstances/Tag-t&apos;DataCluster.ctl&apos;.lvlib"/>
 			<Item Name="Update Probe Details String.vi" Type="VI" URL="/&lt;resource&gt;/ChannelSupport/_ChannelSupport/ProbeSupport/Update Probe Details String.vi"/>
 			<Item Name="version.dll" Type="Document" URL="version.dll">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
@@ -583,6 +606,7 @@
 			</Item>
 			<Item Name="INC" Type="EXE">
 				<Property Name="App_copyErrors" Type="Bool">true</Property>
+				<Property Name="App_includeHWConfig" Type="Bool">true</Property>
 				<Property Name="App_INI_aliasGUID" Type="Str">{3618DAED-42DC-4E68-88A6-01E191E81E60}</Property>
 				<Property Name="App_INI_GUID" Type="Str">{BD6AEBFB-191F-424A-B98F-B2609A5B1AAB}</Property>
 				<Property Name="App_serverConfig.httpPort" Type="Int">8002</Property>
@@ -597,9 +621,10 @@
 				<Property Name="Bld_localDestDir" Type="Path">/C/Users/au540322/Documents/Projects/Ice-Nucleation/Builds/Full Build</Property>
 				<Property Name="Bld_modifyLibraryFile" Type="Bool">true</Property>
 				<Property Name="Bld_previewCacheID" Type="Str">{27D8B2BC-76A3-474D-8C11-FD95C8E7081D}</Property>
-				<Property Name="Bld_version.build" Type="Int">31</Property>
+				<Property Name="Bld_version.build" Type="Int">28</Property>
 				<Property Name="Bld_version.major" Type="Int">1</Property>
-				<Property Name="Bld_version.patch" Type="Int">34</Property>
+				<Property Name="Bld_version.minor" Type="Int">1</Property>
+				<Property Name="Bld_version.patch" Type="Int">12</Property>
 				<Property Name="Destination[0].destName" Type="Str">INC.exe</Property>
 				<Property Name="Destination[0].path" Type="Path">/C/Users/au540322/Documents/Projects/Ice-Nucleation/Builds/Full Build/INC.exe</Property>
 				<Property Name="Destination[0].path.type" Type="Str">&lt;none&gt;</Property>
@@ -609,7 +634,7 @@
 				<Property Name="Destination[1].path" Type="Path">/C/Users/au540322/Documents/Projects/Ice-Nucleation/Builds/Full Build/data</Property>
 				<Property Name="Destination[1].path.type" Type="Str">&lt;none&gt;</Property>
 				<Property Name="DestinationCount" Type="Int">2</Property>
-				<Property Name="Source[0].itemID" Type="Str">{1363DCB0-B646-411E-9D96-AF25BCD12221}</Property>
+				<Property Name="Source[0].itemID" Type="Str">{CD8229E9-9D4D-416F-96CA-E3BB42242A0D}</Property>
 				<Property Name="Source[0].type" Type="Str">Container</Property>
 				<Property Name="Source[1].destinationIndex" Type="Int">0</Property>
 				<Property Name="Source[1].itemID" Type="Ref">/My Computer/main.vi</Property>
@@ -719,7 +744,7 @@
 				<Property Name="INST_defaultDir" Type="Str">{4B7C7F5D-6E6D-4786-BBED-E06C37A5A212}</Property>
 				<Property Name="INST_installerName" Type="Str">install.exe</Property>
 				<Property Name="INST_productName" Type="Str">Ice Nucleation Controller</Property>
-				<Property Name="INST_productVersion" Type="Str">1.0.7</Property>
+				<Property Name="INST_productVersion" Type="Str">1.0.9</Property>
 				<Property Name="InstSpecBitness" Type="Str">32-bit</Property>
 				<Property Name="InstSpecVersion" Type="Str">20008014</Property>
 				<Property Name="MSI_arpCompany" Type="Str">Aarhus University</Property>
@@ -752,15 +777,32 @@
 				<Property Name="Source[1].name" Type="Str">Calibration.ini</Property>
 				<Property Name="Source[1].tag" Type="Ref">/My Computer/Build files/Calibration.ini</Property>
 				<Property Name="Source[1].type" Type="Str">File</Property>
+				<Property Name="Source[1].unlock" Type="Bool">true</Property>
 				<Property Name="Source[2].dest" Type="Str">{09B5634D-F4F6-46D8-8877-756072EA0D65}</Property>
 				<Property Name="Source[2].name" Type="Str">Big Setup.prt</Property>
 				<Property Name="Source[2].tag" Type="Ref">/My Computer/Build files/Partitions/Big Setup.prt</Property>
 				<Property Name="Source[2].type" Type="Str">File</Property>
+				<Property Name="Source[2].unlock" Type="Bool">true</Property>
 				<Property Name="Source[3].dest" Type="Str">{09B5634D-F4F6-46D8-8877-756072EA0D65}</Property>
 				<Property Name="Source[3].name" Type="Str">Small Setup.prt</Property>
 				<Property Name="Source[3].tag" Type="Ref">/My Computer/Build files/Partitions/Small Setup.prt</Property>
 				<Property Name="Source[3].type" Type="Str">File</Property>
-				<Property Name="SourceCount" Type="Int">4</Property>
+				<Property Name="Source[3].unlock" Type="Bool">true</Property>
+				<Property Name="Source[4].dest" Type="Str">{4B7C7F5D-6E6D-4786-BBED-E06C37A5A212}</Property>
+				<Property Name="Source[4].name" Type="Str">TCam.ini</Property>
+				<Property Name="Source[4].tag" Type="Ref">/My Computer/Build files/TCam.ini</Property>
+				<Property Name="Source[4].type" Type="Str">File</Property>
+				<Property Name="Source[4].unlock" Type="Bool">true</Property>
+				<Property Name="Source[5].dest" Type="Str">{4B7C7F5D-6E6D-4786-BBED-E06C37A5A212}</Property>
+				<Property Name="Source[5].name" Type="Str">settings.ini</Property>
+				<Property Name="Source[5].tag" Type="Ref">/My Computer/Build files/settings.ini</Property>
+				<Property Name="Source[5].type" Type="Str">File</Property>
+				<Property Name="Source[5].unlock" Type="Bool">true</Property>
+				<Property Name="Source[6].dest" Type="Str">{4B7C7F5D-6E6D-4786-BBED-E06C37A5A212}</Property>
+				<Property Name="Source[6].name" Type="Str">camera_placeholder.png</Property>
+				<Property Name="Source[6].tag" Type="Ref">/My Computer/Build files/camera_placeholder.png</Property>
+				<Property Name="Source[6].type" Type="Str">File</Property>
+				<Property Name="SourceCount" Type="Int">7</Property>
 			</Item>
 			<Item Name="ThermoCouple Logger" Type="EXE">
 				<Property Name="App_copyErrors" Type="Bool">true</Property>
