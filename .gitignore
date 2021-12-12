@@ -2,6 +2,7 @@
 /Builds/Full Build/Data
 /Builds/*
 /Data/*
+/src/LabVIEW/Data/*
 
 /src/LabVIEW/Data
 .zip
