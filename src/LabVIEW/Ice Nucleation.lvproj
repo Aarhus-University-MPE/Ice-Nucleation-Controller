@@ -55,6 +55,7 @@
 				<Item Name="TCam_Calibration_LoadSettings.vi" Type="VI" URL="../TCam_Calibration_LoadSettings.vi"/>
 				<Item Name="TCam_Overlay_Fixedpoint.vi" Type="VI" URL="../TCam_Overlay_Fixedpoint.vi"/>
 				<Item Name="DataCluster_TCAL.ctl" Type="VI" URL="../DataCluster_TCAL.ctl"/>
+				<Item Name="Thermal_Camera.vi" Type="VI" URL="../Thermal_Camera.vi"/>
 			</Item>
 			<Item Name="cDAQ" Type="Folder">
 				<Item Name="Thermistor" Type="Folder">
@@ -121,6 +122,13 @@
 					<Item Name="Calibration_Converter.vi" Type="VI" URL="../Calibration_Converter.vi"/>
 					<Item Name="Points to Oval.vi" Type="VI" URL="../Points to Oval.vi"/>
 					<Item Name="timeleft_stamp.vi" Type="VI" URL="../timeleft_stamp.vi"/>
+					<Item Name="IntToLetter.vi" Type="VI" URL="../IntToLetter.vi"/>
+					<Item Name="Letter2Number.vi" Type="VI" URL="../Letter2Number.vi"/>
+					<Item Name="PCRNameArray.vi" Type="VI" URL="../PCRNameArray.vi"/>
+					<Item Name="Partition_Extract.vi" Type="VI" URL="../Partition_Extract.vi"/>
+					<Item Name="DataArray_Formatter.vi" Type="VI" URL="../DataArray_Formatter.vi"/>
+					<Item Name="ResultSavePrompt.vi" Type="VI" URL="../ResultSavePrompt.vi"/>
+					<Item Name="PCRSize.vi" Type="VI" URL="../PCRSize.vi"/>
 				</Item>
 				<Item Name="DataCluster.ctl" Type="VI" URL="../DataCluster.ctl"/>
 				<Item Name="RunTimeMenu.rtm" Type="Document" URL="../RunTimeMenu.rtm"/>
@@ -202,9 +210,10 @@
 			<Item Name="CameraAttributeTest.vi" Type="VI" URL="../CameraAttributeTest.vi"/>
 			<Item Name="CameraAttributeSearch.vi" Type="VI" URL="../CameraAttributeSearch.vi"/>
 			<Item Name="ThermalVideoStream.vi" Type="VI" URL="../ThermalVideoStream.vi"/>
-			<Item Name="Thermal_Camera.vi" Type="VI" URL="../Thermal_Camera.vi"/>
 		</Item>
 		<Item Name="main.vi" Type="VI" URL="../main.vi"/>
+		<Item Name="TCam_FixpointTemps.vi" Type="VI" URL="../TCam_FixpointTemps.vi"/>
+		<Item Name="Thermistor_Extract.vi" Type="VI" URL="../Thermistor_Extract.vi"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="vi.lib" Type="Folder">
 				<Item Name="Add State(s) to Queue__JKI_lib_State_Machine.vi" Type="VI" URL="/&lt;vilib&gt;/addons/_JKI Toolkits/State Machine/_JKI_lib_State_Machine.llb/Add State(s) to Queue__JKI_lib_State_Machine.vi"/>
