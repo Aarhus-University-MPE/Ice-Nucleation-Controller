@@ -38,24 +38,33 @@
 				<Item Name="Camera_ROI_Extract.vi" Type="VI" URL="../Camera_ROI_Extract.vi"/>
 			</Item>
 			<Item Name="Thermal Camera" Type="Folder">
-				<Item Name="TCam_ArrayTempExtract.vi" Type="VI" URL="../TCam_ArrayTempExtract.vi"/>
-				<Item Name="TCam_IMGTempExtract.vi" Type="VI" URL="../TCam_IMGTempExtract.vi"/>
-				<Item Name="TCam_CenterArray.vi" Type="VI" URL="../TCam_CenterArray.vi"/>
-				<Item Name="TCam_HorizontalLines.vi" Type="VI" URL="../TCam_HorizontalLines.vi"/>
-				<Item Name="TCam_PointCalculator.vi" Type="VI" URL="../TCam_PointCalculator.vi"/>
-				<Item Name="TCam_VerticalLines.vi" Type="VI" URL="../TCam_VerticalLines.vi"/>
-				<Item Name="TCam_WellCalculater.vi" Type="VI" URL="../TCam_WellCalculater.vi"/>
-				<Item Name="TCam_WellTemp.vi" Type="VI" URL="../TCam_WellTemp.vi"/>
-				<Item Name="TCam_Scan.vi" Type="VI" URL="../TCam_Scan.vi"/>
-				<Item Name="TCam_Focus.vi" Type="VI" URL="../TCam_Focus.vi"/>
-				<Item Name="TCam_Config.vi" Type="VI" URL="../TCam_Config.vi"/>
-				<Item Name="TCam_CalibrationLoad.vi" Type="VI" URL="../TCam_CalibrationLoad.vi"/>
-				<Item Name="TCam_WellPixels.vi" Type="VI" URL="../TCam_WellPixels.vi"/>
-				<Item Name="TCam_Calibration.vi" Type="VI" URL="../TCam_Calibration.vi"/>
-				<Item Name="TCam_Calibration_LoadSettings.vi" Type="VI" URL="../TCam_Calibration_LoadSettings.vi"/>
-				<Item Name="TCam_Overlay_Fixedpoint.vi" Type="VI" URL="../TCam_Overlay_Fixedpoint.vi"/>
+				<Item Name="Processing" Type="Folder">
+					<Item Name="TCam_IMGTempExtract.vi" Type="VI" URL="../TCam_IMGTempExtract.vi"/>
+					<Item Name="TCam_ArrayTempExtract.vi" Type="VI" URL="../TCam_ArrayTempExtract.vi"/>
+					<Item Name="TCam_PointCalculator.vi" Type="VI" URL="../TCam_PointCalculator.vi"/>
+					<Item Name="TCam_WellCalculater.vi" Type="VI" URL="../TCam_WellCalculater.vi"/>
+					<Item Name="TCam_WellTemp.vi" Type="VI" URL="../TCam_WellTemp.vi"/>
+					<Item Name="TCam_WellPixels.vi" Type="VI" URL="../TCam_WellPixels.vi"/>
+					<Item Name="TCam_FixpointTemps.vi" Type="VI" URL="../TCam_FixpointTemps.vi"/>
+				</Item>
+				<Item Name="UI" Type="Folder">
+					<Item Name="TCam_CenterArray.vi" Type="VI" URL="../TCam_CenterArray.vi"/>
+					<Item Name="TCam_HorizontalLines.vi" Type="VI" URL="../TCam_HorizontalLines.vi"/>
+					<Item Name="TCam_VerticalLines.vi" Type="VI" URL="../TCam_VerticalLines.vi"/>
+					<Item Name="TCam_Overlay_Fixedpoint.vi" Type="VI" URL="../TCam_Overlay_Fixedpoint.vi"/>
+				</Item>
+				<Item Name="Hardware" Type="Folder">
+					<Item Name="TCam_Scan.vi" Type="VI" URL="../TCam_Scan.vi"/>
+					<Item Name="TCam_Focus.vi" Type="VI" URL="../TCam_Focus.vi"/>
+					<Item Name="TCam_Config.vi" Type="VI" URL="../TCam_Config.vi"/>
+				</Item>
+				<Item Name="System" Type="Folder">
+					<Item Name="TCam_CalibrationLoad.vi" Type="VI" URL="../TCam_CalibrationLoad.vi"/>
+					<Item Name="TCam_Calibration_LoadSettings.vi" Type="VI" URL="../TCam_Calibration_LoadSettings.vi"/>
+				</Item>
+				<Item Name="Thermal_Camera_Calibration.vi" Type="VI" URL="../Thermal_Camera_Calibration.vi"/>
+				<Item Name="Thermal_Camera_Evaluation.vi" Type="VI" URL="../Thermal_Camera_Evaluation.vi"/>
 				<Item Name="DataCluster_TCAL.ctl" Type="VI" URL="../DataCluster_TCAL.ctl"/>
-				<Item Name="Thermal_Camera.vi" Type="VI" URL="../Thermal_Camera.vi"/>
 			</Item>
 			<Item Name="cDAQ" Type="Folder">
 				<Item Name="Thermistor" Type="Folder">
@@ -129,6 +138,9 @@
 					<Item Name="DataArray_Formatter.vi" Type="VI" URL="../DataArray_Formatter.vi"/>
 					<Item Name="ResultSavePrompt.vi" Type="VI" URL="../ResultSavePrompt.vi"/>
 					<Item Name="PCRSize.vi" Type="VI" URL="../PCRSize.vi"/>
+					<Item Name="Thermistor_Extract.vi" Type="VI" URL="../Thermistor_Extract.vi"/>
+					<Item Name="Read Exe WriteDate.vi" Type="VI" URL="../Read Exe WriteDate.vi"/>
+					<Item Name="VersionCheck.vi" Type="VI" URL="../VersionCheck.vi"/>
 				</Item>
 				<Item Name="DataCluster.ctl" Type="VI" URL="../DataCluster.ctl"/>
 				<Item Name="RunTimeMenu.rtm" Type="Document" URL="../RunTimeMenu.rtm"/>
@@ -212,8 +224,6 @@
 			<Item Name="ThermalVideoStream.vi" Type="VI" URL="../ThermalVideoStream.vi"/>
 		</Item>
 		<Item Name="main.vi" Type="VI" URL="../main.vi"/>
-		<Item Name="TCam_FixpointTemps.vi" Type="VI" URL="../TCam_FixpointTemps.vi"/>
-		<Item Name="Thermistor_Extract.vi" Type="VI" URL="../Thermistor_Extract.vi"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="vi.lib" Type="Folder">
 				<Item Name="Add State(s) to Queue__JKI_lib_State_Machine.vi" Type="VI" URL="/&lt;vilib&gt;/addons/_JKI Toolkits/State Machine/_JKI_lib_State_Machine.llb/Add State(s) to Queue__JKI_lib_State_Machine.vi"/>
@@ -477,7 +487,7 @@
 				<Item Name="IMAQ Write JPEG2000 File 2" Type="VI" URL="/&lt;vilib&gt;/vision/Files.llb/IMAQ Write JPEG2000 File 2"/>
 				<Item Name="IMAQ Write PNG File 2" Type="VI" URL="/&lt;vilib&gt;/vision/Files.llb/IMAQ Write PNG File 2"/>
 				<Item Name="IMAQ Write TIFF File 2" Type="VI" URL="/&lt;vilib&gt;/vision/Files.llb/IMAQ Write TIFF File 2"/>
-				<Item Name="IMAQdx.ctl" Type="VI" URL="/&lt;vilib&gt;/userDefined/High Color/IMAQdx.ctl"/>
+				<Item Name="IMAQdx.ctl" Type="VI" URL="/&lt;vilib&gt;/userdefined/High Color/IMAQdx.ctl"/>
 				<Item Name="Is Value Changed.vim" Type="VI" URL="/&lt;vilib&gt;/Utility/Is Value Changed.vim"/>
 				<Item Name="Longest Line Length in Pixels.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Longest Line Length in Pixels.vi"/>
 				<Item Name="LVBoundsTypeDef.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/miscctls.llb/LVBoundsTypeDef.ctl"/>
@@ -538,6 +548,15 @@
 				<Item Name="Write to XML File(string).vi" Type="VI" URL="/&lt;vilib&gt;/Utility/xml.llb/Write to XML File(string).vi"/>
 				<Item Name="Write to XML File.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/xml.llb/Write to XML File.vi"/>
 				<Item Name="IMAQ ArrayToImage" Type="VI" URL="/&lt;vilib&gt;/vision/Basics.llb/IMAQ ArrayToImage"/>
+				<Item Name="LV70DateRecToTimeStamp.vi" Type="VI" URL="/&lt;vilib&gt;/_oldvers/_oldvers.llb/LV70DateRecToTimeStamp.vi"/>
+				<Item Name="LV70DateRecToU32.vi" Type="VI" URL="/&lt;vilib&gt;/_oldvers/_oldvers.llb/LV70DateRecToU32.vi"/>
+				<Item Name="Open URL in Default Browser core.vi" Type="VI" URL="/&lt;vilib&gt;/Platform/browser.llb/Open URL in Default Browser core.vi"/>
+				<Item Name="Escape Characters for HTTP.vi" Type="VI" URL="/&lt;vilib&gt;/printing/PathToURL.llb/Escape Characters for HTTP.vi"/>
+				<Item Name="Path to URL inner.vi" Type="VI" URL="/&lt;vilib&gt;/printing/PathToURL.llb/Path to URL inner.vi"/>
+				<Item Name="Path to URL.vi" Type="VI" URL="/&lt;vilib&gt;/printing/PathToURL.llb/Path to URL.vi"/>
+				<Item Name="Open URL in Default Browser (path).vi" Type="VI" URL="/&lt;vilib&gt;/Platform/browser.llb/Open URL in Default Browser (path).vi"/>
+				<Item Name="Open URL in Default Browser (string).vi" Type="VI" URL="/&lt;vilib&gt;/Platform/browser.llb/Open URL in Default Browser (string).vi"/>
+				<Item Name="Open URL in Default Browser.vi" Type="VI" URL="/&lt;vilib&gt;/Platform/browser.llb/Open URL in Default Browser.vi"/>
 			</Item>
 			<Item Name="_ChannelSupport.lvlib" Type="Library" URL="/&lt;resource&gt;/ChannelSupport/_ChannelSupport/_ChannelSupport.lvlib"/>
 			<Item Name="ChannelProbePositionAndTitle.vi" Type="VI" URL="/&lt;resource&gt;/ChannelSupport/_ChannelSupport/ChannelProbePositionAndTitle.vi"/>
@@ -563,14 +582,331 @@
 			<Item Name="Stream-str.lvlib" Type="Library" URL="/&lt;extravilib&gt;/ChannelInstances/Stream-str.lvlib"/>
 			<Item Name="Tag-bool.lvlib" Type="Library" URL="/&lt;extravilib&gt;/ChannelInstances/Tag-bool.lvlib"/>
 			<Item Name="Tag-c(a[.](dbl),a[.](dbl)).lvlib" Type="Library" URL="/&lt;extravilib&gt;/ChannelInstances/Tag-c(a[.](dbl),a[.](dbl)).lvlib"/>
-			<Item Name="Tag-c(bool,ref(UserDefinedRefnumTag),bool,path,bool).lvlib" Type="Library" URL="/&lt;extravilib&gt;/ChannelInstances/Tag-c(bool,ref(UserDefinedRefnumTag),bool,path,bool).lvlib"/>
 			<Item Name="Update Probe Details String.vi" Type="VI" URL="/&lt;resource&gt;/ChannelSupport/_ChannelSupport/ProbeSupport/Update Probe Details String.vi"/>
 			<Item Name="version.dll" Type="Document" URL="version.dll">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
 			<Item Name="Tag-t&apos;DataCluster.ctl&apos;.lvlib" Type="Library" URL="/&lt;extravilib&gt;/ChannelInstances/Tag-t&apos;DataCluster.ctl&apos;.lvlib"/>
+			<Item Name="Read.vi" Type="VI" URL="/&lt;extravilib&gt;/ChannelInstances/Tag-c(bool,ref(UserDefinedRefnumTag),bool,path,bool)/Read.vi"/>
+			<Item Name="Write.vi" Type="VI" URL="/&lt;extravilib&gt;/ChannelInstances/Tag-c(bool,ref(UserDefinedRefnumTag),bool,path,bool)/Write.vi"/>
+			<Item Name="Read With Abort.vi" Type="VI" URL="/&lt;extravilib&gt;/ChannelInstances/Tag-c(bool,ref(UserDefinedRefnumTag),bool,path,bool)/Read With Abort.vi"/>
+			<Item Name="Write With Abort.vi" Type="VI" URL="/&lt;extravilib&gt;/ChannelInstances/Tag-c(bool,ref(UserDefinedRefnumTag),bool,path,bool)/Write With Abort.vi"/>
+			<Item Name="Instantiate.vi" Type="VI" URL="/&lt;extravilib&gt;/ChannelInstances/Tag-c(bool,ref(UserDefinedRefnumTag),bool,path,bool)/Instantiate.vi"/>
+			<Item Name="EndpointRead.vi" Type="VI" URL="/&lt;extravilib&gt;/ChannelInstances/Tag-c(bool,ref(UserDefinedRefnumTag),bool,path,bool)/EndpointRead.vi"/>
+			<Item Name="Endpoint.vi" Type="VI" URL="/&lt;extravilib&gt;/ChannelInstances/Tag-c(bool,ref(UserDefinedRefnumTag),bool,path,bool)/Endpoint.vi"/>
+			<Item Name="Windows SYSTEMTIME to String.vi" Type="VI" URL="../Windows SYSTEMTIME to String.vi"/>
+			<Item Name="Get File Info.vi" Type="VI" URL="../Get File Info.vi"/>
 		</Item>
 		<Item Name="Build Specifications" Type="Build">
+			<Item Name="Thermal Camera Evaluation" Type="EXE">
+				<Property Name="App_copyErrors" Type="Bool">true</Property>
+				<Property Name="App_includeHWConfig" Type="Bool">true</Property>
+				<Property Name="App_INI_aliasGUID" Type="Str">{70A65245-F323-49E4-9FAC-5F38AC01EAE3}</Property>
+				<Property Name="App_INI_GUID" Type="Str">{7848AB33-9735-4E85-9F55-B9B72F777C01}</Property>
+				<Property Name="App_serverConfig.httpPort" Type="Int">8002</Property>
+				<Property Name="App_serverType" Type="Int">0</Property>
+				<Property Name="Bld_autoIncrement" Type="Bool">true</Property>
+				<Property Name="Bld_buildCacheID" Type="Str">{17DCC4A0-8985-414C-8CB5-944BE4DFA469}</Property>
+				<Property Name="Bld_buildSpecName" Type="Str">Thermal Camera Evaluation</Property>
+				<Property Name="Bld_excludeInlineSubVIs" Type="Bool">true</Property>
+				<Property Name="Bld_excludeLibraryItems" Type="Bool">true</Property>
+				<Property Name="Bld_excludePolymorphicVIs" Type="Bool">true</Property>
+				<Property Name="Bld_localDestDir" Type="Path">/D/Projects/Ice-Nucleation/Builds/Full Build</Property>
+				<Property Name="Bld_modifyLibraryFile" Type="Bool">true</Property>
+				<Property Name="Bld_previewCacheID" Type="Str">{95EEF059-8F91-49DB-A57E-FF38AF6547AD}</Property>
+				<Property Name="Bld_version.build" Type="Int">13</Property>
+				<Property Name="Bld_version.major" Type="Int">1</Property>
+				<Property Name="Destination[0].destName" Type="Str">TCE.exe</Property>
+				<Property Name="Destination[0].path" Type="Path">/D/Projects/Ice-Nucleation/Builds/Full Build/TCE.exe</Property>
+				<Property Name="Destination[0].path.type" Type="Str">&lt;none&gt;</Property>
+				<Property Name="Destination[0].preserveHierarchy" Type="Bool">true</Property>
+				<Property Name="Destination[0].type" Type="Str">App</Property>
+				<Property Name="Destination[1].destName" Type="Str">Support Directory</Property>
+				<Property Name="Destination[1].path" Type="Path">/D/Projects/Ice-Nucleation/Builds/Full Build/data</Property>
+				<Property Name="Destination[1].path.type" Type="Str">&lt;none&gt;</Property>
+				<Property Name="DestinationCount" Type="Int">2</Property>
+				<Property Name="Source[0].itemID" Type="Str">{B4448606-778F-4C86-89EA-BC8AADEDF76D}</Property>
+				<Property Name="Source[0].type" Type="Str">Container</Property>
+				<Property Name="Source[1].destinationIndex" Type="Int">0</Property>
+				<Property Name="Source[1].itemID" Type="Ref">/My Computer/Functions/Thermal Camera/Thermal_Camera_Evaluation.vi</Property>
+				<Property Name="Source[1].sourceInclusion" Type="Str">TopLevel</Property>
+				<Property Name="Source[1].type" Type="Str">VI</Property>
+				<Property Name="SourceCount" Type="Int">2</Property>
+				<Property Name="TgtF_companyName" Type="Str">Aarhus University</Property>
+				<Property Name="TgtF_fileDescription" Type="Str">Thermal Camera Evaluation</Property>
+				<Property Name="TgtF_internalName" Type="Str">Thermal Camera Evaluation</Property>
+				<Property Name="TgtF_legalCopyright" Type="Str">Copyright © 2022 Aarhus University</Property>
+				<Property Name="TgtF_productName" Type="Str">Thermal Camera Evaluation</Property>
+				<Property Name="TgtF_targetfileGUID" Type="Str">{765937FA-2BBA-4638-A757-5D4AB3FD30F3}</Property>
+				<Property Name="TgtF_targetfileName" Type="Str">TCE.exe</Property>
+				<Property Name="TgtF_versionIndependent" Type="Bool">true</Property>
+			</Item>
+			<Item Name="Thermal Camera Calibration" Type="EXE">
+				<Property Name="App_copyErrors" Type="Bool">true</Property>
+				<Property Name="App_INI_aliasGUID" Type="Str">{2334B61B-6B3E-4D24-A9C0-96B39E498EB5}</Property>
+				<Property Name="App_INI_GUID" Type="Str">{C85F06F1-1A3D-4FB7-9985-975313B408B5}</Property>
+				<Property Name="App_serverConfig.httpPort" Type="Int">8002</Property>
+				<Property Name="App_serverType" Type="Int">0</Property>
+				<Property Name="Bld_autoIncrement" Type="Bool">true</Property>
+				<Property Name="Bld_buildCacheID" Type="Str">{8DA6213A-A7F3-4600-85FC-E0D98D0D85A9}</Property>
+				<Property Name="Bld_buildSpecName" Type="Str">Thermal Camera Calibration</Property>
+				<Property Name="Bld_excludeInlineSubVIs" Type="Bool">true</Property>
+				<Property Name="Bld_excludeLibraryItems" Type="Bool">true</Property>
+				<Property Name="Bld_excludePolymorphicVIs" Type="Bool">true</Property>
+				<Property Name="Bld_localDestDir" Type="Path">/D/Projects/Ice-Nucleation/Builds/Full Build</Property>
+				<Property Name="Bld_modifyLibraryFile" Type="Bool">true</Property>
+				<Property Name="Bld_previewCacheID" Type="Str">{6FD33856-2380-4F94-8CB7-5581C7931DF6}</Property>
+				<Property Name="Bld_version.build" Type="Int">9</Property>
+				<Property Name="Bld_version.major" Type="Int">1</Property>
+				<Property Name="Destination[0].destName" Type="Str">TCC.exe</Property>
+				<Property Name="Destination[0].path" Type="Path">/D/Projects/Ice-Nucleation/Builds/Full Build/TCC.exe</Property>
+				<Property Name="Destination[0].path.type" Type="Str">&lt;none&gt;</Property>
+				<Property Name="Destination[0].preserveHierarchy" Type="Bool">true</Property>
+				<Property Name="Destination[0].type" Type="Str">App</Property>
+				<Property Name="Destination[1].destName" Type="Str">Support Directory</Property>
+				<Property Name="Destination[1].path" Type="Path">/D/Projects/Ice-Nucleation/Builds/Full Build/data</Property>
+				<Property Name="Destination[1].path.type" Type="Str">&lt;none&gt;</Property>
+				<Property Name="DestinationCount" Type="Int">2</Property>
+				<Property Name="Source[0].itemID" Type="Str">{B4448606-778F-4C86-89EA-BC8AADEDF76D}</Property>
+				<Property Name="Source[0].type" Type="Str">Container</Property>
+				<Property Name="Source[1].destinationIndex" Type="Int">0</Property>
+				<Property Name="Source[1].itemID" Type="Ref">/My Computer/Functions/Thermal Camera/Thermal_Camera_Calibration.vi</Property>
+				<Property Name="Source[1].sourceInclusion" Type="Str">TopLevel</Property>
+				<Property Name="Source[1].type" Type="Str">VI</Property>
+				<Property Name="SourceCount" Type="Int">2</Property>
+				<Property Name="TgtF_companyName" Type="Str">Aarhus University</Property>
+				<Property Name="TgtF_fileDescription" Type="Str">Thermal Camera Calibration</Property>
+				<Property Name="TgtF_internalName" Type="Str">Thermal Camera Calibration</Property>
+				<Property Name="TgtF_legalCopyright" Type="Str">Copyright © 2022 Aarhus University</Property>
+				<Property Name="TgtF_productName" Type="Str">Thermal Camera Calibration</Property>
+				<Property Name="TgtF_targetfileGUID" Type="Str">{4ECC90C8-5AFA-4E65-8969-5270033137DC}</Property>
+				<Property Name="TgtF_targetfileName" Type="Str">TCC.exe</Property>
+				<Property Name="TgtF_versionIndependent" Type="Bool">true</Property>
+			</Item>
+			<Item Name="Ice Nucleation Controller" Type="EXE">
+				<Property Name="App_copyErrors" Type="Bool">true</Property>
+				<Property Name="App_includeHWConfig" Type="Bool">true</Property>
+				<Property Name="App_INI_aliasGUID" Type="Str">{3618DAED-42DC-4E68-88A6-01E191E81E60}</Property>
+				<Property Name="App_INI_GUID" Type="Str">{BD6AEBFB-191F-424A-B98F-B2609A5B1AAB}</Property>
+				<Property Name="App_serverConfig.httpPort" Type="Int">8002</Property>
+				<Property Name="App_serverType" Type="Int">0</Property>
+				<Property Name="Bld_autoIncrement" Type="Bool">true</Property>
+				<Property Name="Bld_buildCacheID" Type="Str">{33F274C5-765A-4CC4-96AB-55991902EFC2}</Property>
+				<Property Name="Bld_buildSpecDescription" Type="Str">Ice Nucleation Controller</Property>
+				<Property Name="Bld_buildSpecName" Type="Str">Ice Nucleation Controller</Property>
+				<Property Name="Bld_excludeInlineSubVIs" Type="Bool">true</Property>
+				<Property Name="Bld_excludeLibraryItems" Type="Bool">true</Property>
+				<Property Name="Bld_excludePolymorphicVIs" Type="Bool">true</Property>
+				<Property Name="Bld_localDestDir" Type="Path">/D/Projects/Ice-Nucleation/Builds/Full Build</Property>
+				<Property Name="Bld_modifyLibraryFile" Type="Bool">true</Property>
+				<Property Name="Bld_previewCacheID" Type="Str">{27D8B2BC-76A3-474D-8C11-FD95C8E7081D}</Property>
+				<Property Name="Bld_version.build" Type="Int">53</Property>
+				<Property Name="Bld_version.major" Type="Int">1</Property>
+				<Property Name="Bld_version.minor" Type="Int">1</Property>
+				<Property Name="Bld_version.patch" Type="Int">12</Property>
+				<Property Name="Destination[0].destName" Type="Str">INC.exe</Property>
+				<Property Name="Destination[0].path" Type="Path">/D/Projects/Ice-Nucleation/Builds/Full Build/Ice Nucleation Controller.exe</Property>
+				<Property Name="Destination[0].path.type" Type="Str">&lt;none&gt;</Property>
+				<Property Name="Destination[0].preserveHierarchy" Type="Bool">true</Property>
+				<Property Name="Destination[0].type" Type="Str">App</Property>
+				<Property Name="Destination[1].destName" Type="Str">Support Directory</Property>
+				<Property Name="Destination[1].path" Type="Path">/D/Projects/Ice-Nucleation/Builds/Full Build/data</Property>
+				<Property Name="Destination[1].path.type" Type="Str">&lt;none&gt;</Property>
+				<Property Name="DestinationCount" Type="Int">2</Property>
+				<Property Name="Source[0].itemID" Type="Str">{B4448606-778F-4C86-89EA-BC8AADEDF76D}</Property>
+				<Property Name="Source[0].type" Type="Str">Container</Property>
+				<Property Name="Source[1].destinationIndex" Type="Int">0</Property>
+				<Property Name="Source[1].itemID" Type="Ref">/My Computer/main.vi</Property>
+				<Property Name="Source[1].sourceInclusion" Type="Str">TopLevel</Property>
+				<Property Name="Source[1].type" Type="Str">VI</Property>
+				<Property Name="SourceCount" Type="Int">2</Property>
+				<Property Name="TgtF_companyName" Type="Str">Aarhus University</Property>
+				<Property Name="TgtF_fileDescription" Type="Str">Ice Nucleation Control</Property>
+				<Property Name="TgtF_internalName" Type="Str">Ice Nucleation Controller</Property>
+				<Property Name="TgtF_legalCopyright" Type="Str">Copyright © 2021 Aarhus University</Property>
+				<Property Name="TgtF_productName" Type="Str">Ice Nucleation Controller</Property>
+				<Property Name="TgtF_targetfileGUID" Type="Str">{58C928C1-8473-4CEF-96B2-F9CFB2EAA16B}</Property>
+				<Property Name="TgtF_targetfileName" Type="Str">INC.exe</Property>
+				<Property Name="TgtF_versionIndependent" Type="Bool">true</Property>
+			</Item>
+			<Item Name="Installer" Type="Installer">
+				<Property Name="Destination[0].name" Type="Str">Ice Nucleation Controller</Property>
+				<Property Name="Destination[0].parent" Type="Str">{3912416A-D2E5-411B-AFEE-B63654D690C0}</Property>
+				<Property Name="Destination[0].tag" Type="Str">{4B7C7F5D-6E6D-4786-BBED-E06C37A5A212}</Property>
+				<Property Name="Destination[0].type" Type="Str">userFolder</Property>
+				<Property Name="Destination[0].unlock" Type="Bool">true</Property>
+				<Property Name="Destination[1].name" Type="Str">Data</Property>
+				<Property Name="Destination[1].parent" Type="Str">{4B7C7F5D-6E6D-4786-BBED-E06C37A5A212}</Property>
+				<Property Name="Destination[1].tag" Type="Str">{91FD325C-AAB7-491E-AB64-7BBBE922D8DB}</Property>
+				<Property Name="Destination[1].type" Type="Str">userFolder</Property>
+				<Property Name="Destination[1].unlock" Type="Bool">true</Property>
+				<Property Name="Destination[2].name" Type="Str">Partitions</Property>
+				<Property Name="Destination[2].parent" Type="Str">{4B7C7F5D-6E6D-4786-BBED-E06C37A5A212}</Property>
+				<Property Name="Destination[2].tag" Type="Str">{09B5634D-F4F6-46D8-8877-756072EA0D65}</Property>
+				<Property Name="Destination[2].type" Type="Str">userFolder</Property>
+				<Property Name="Destination[2].unlock" Type="Bool">true</Property>
+				<Property Name="DestinationCount" Type="Int">3</Property>
+				<Property Name="DistPart[0].flavorID" Type="Str">DefaultFull</Property>
+				<Property Name="DistPart[0].productID" Type="Str">{9D67591A-4B74-4CD1-87CF-976FD6F6C484}</Property>
+				<Property Name="DistPart[0].productName" Type="Str">NI Vision Common Resources 2020 SP2</Property>
+				<Property Name="DistPart[0].upgradeCode" Type="Str">{409BEFA9-EB3E-472F-AD77-271A4A1D5927}</Property>
+				<Property Name="DistPart[1].flavorID" Type="Str">DefaultFull</Property>
+				<Property Name="DistPart[1].productID" Type="Str">{13B38F6E-AF24-442E-8326-9B8B085C4992}</Property>
+				<Property Name="DistPart[1].productName" Type="Str">NI Vision Runtime 2020 SP1</Property>
+				<Property Name="DistPart[1].upgradeCode" Type="Str">{63DF74E5-A5C9-11D4-814E-005004D6CDD6}</Property>
+				<Property Name="DistPart[2].flavorID" Type="Str">_full_</Property>
+				<Property Name="DistPart[2].productID" Type="Str">{CB6C2533-4926-42B8-AC21-04BB9679F818}</Property>
+				<Property Name="DistPart[2].productName" Type="Str">NI-488.2 Runtime 20.0</Property>
+				<Property Name="DistPart[2].upgradeCode" Type="Str">{357F6618-C660-41A2-A185-5578CC876D1D}</Property>
+				<Property Name="DistPart[3].flavorID" Type="Str">_full_</Property>
+				<Property Name="DistPart[3].productID" Type="Str">{B1A6D301-109F-4899-85D2-BA79C10034D4}</Property>
+				<Property Name="DistPart[3].productName" Type="Str">NI-DAQmx Runtime 20.7</Property>
+				<Property Name="DistPart[3].upgradeCode" Type="Str">{923C9CD5-A0D8-4147-9A8D-998780E30763}</Property>
+				<Property Name="DistPart[4].flavorID" Type="Str">DefaultFull</Property>
+				<Property Name="DistPart[4].productID" Type="Str">{06CE04CA-A6D6-4353-B169-328BE6B7046C}</Property>
+				<Property Name="DistPart[4].productName" Type="Str">NI-IMAQdx Runtime 20.6</Property>
+				<Property Name="DistPart[4].upgradeCode" Type="Str">{3D104AB3-CE10-43C0-B647-07600754072C}</Property>
+				<Property Name="DistPart[5].flavorID" Type="Str">_full_</Property>
+				<Property Name="DistPart[5].productID" Type="Str">{F12C6F92-5B1C-4EAB-9364-96026CE1920D}</Property>
+				<Property Name="DistPart[5].productName" Type="Str">NI-Serial Runtime 20.0</Property>
+				<Property Name="DistPart[5].upgradeCode" Type="Str">{01D82F43-B48D-46FF-8601-FC4FAAE20F41}</Property>
+				<Property Name="DistPart[6].flavorID" Type="Str">_deployment_</Property>
+				<Property Name="DistPart[6].productID" Type="Str">{944CC86F-BDFB-4850-878C-370B9A7FF12C}</Property>
+				<Property Name="DistPart[6].productName" Type="Str">NI-VISA Runtime 20.0</Property>
+				<Property Name="DistPart[6].upgradeCode" Type="Str">{8627993A-3F66-483C-A562-0D3BA3F267B1}</Property>
+				<Property Name="DistPart[7].flavorID" Type="Str">DefaultFull</Property>
+				<Property Name="DistPart[7].productID" Type="Str">{6B440D80-3B0D-43B2-8A06-E2E939AA1006}</Property>
+				<Property Name="DistPart[7].productName" Type="Str">NI LabVIEW Runtime 2020 SP1</Property>
+				<Property Name="DistPart[7].SoftDep[0].exclude" Type="Bool">false</Property>
+				<Property Name="DistPart[7].SoftDep[0].productName" Type="Str">NI ActiveX Container</Property>
+				<Property Name="DistPart[7].SoftDep[0].upgradeCode" Type="Str">{1038A887-23E1-4289-B0BD-0C4B83C6BA21}</Property>
+				<Property Name="DistPart[7].SoftDep[1].exclude" Type="Bool">false</Property>
+				<Property Name="DistPart[7].SoftDep[1].productName" Type="Str">NI Deployment Framework 2020</Property>
+				<Property Name="DistPart[7].SoftDep[1].upgradeCode" Type="Str">{838942E4-B73C-492E-81A3-AA1E291FD0DC}</Property>
+				<Property Name="DistPart[7].SoftDep[10].exclude" Type="Bool">false</Property>
+				<Property Name="DistPart[7].SoftDep[10].productName" Type="Str">NI VC2015 Runtime</Property>
+				<Property Name="DistPart[7].SoftDep[10].upgradeCode" Type="Str">{D42E7BAE-6589-4570-B6A3-3E28889392E7}</Property>
+				<Property Name="DistPart[7].SoftDep[11].exclude" Type="Bool">false</Property>
+				<Property Name="DistPart[7].SoftDep[11].productName" Type="Str">NI TDM Streaming 19.0</Property>
+				<Property Name="DistPart[7].SoftDep[11].upgradeCode" Type="Str">{4CD11BE6-6BB7-4082-8A27-C13771BC309B}</Property>
+				<Property Name="DistPart[7].SoftDep[2].exclude" Type="Bool">false</Property>
+				<Property Name="DistPart[7].SoftDep[2].productName" Type="Str">NI Error Reporting 2020</Property>
+				<Property Name="DistPart[7].SoftDep[2].upgradeCode" Type="Str">{42E818C6-2B08-4DE7-BD91-B0FD704C119A}</Property>
+				<Property Name="DistPart[7].SoftDep[3].exclude" Type="Bool">false</Property>
+				<Property Name="DistPart[7].SoftDep[3].productName" Type="Str">NI LabVIEW Real-Time NBFifo 2020</Property>
+				<Property Name="DistPart[7].SoftDep[3].upgradeCode" Type="Str">{00D0B680-F876-4E42-A25F-52B65418C2A6}</Property>
+				<Property Name="DistPart[7].SoftDep[4].exclude" Type="Bool">false</Property>
+				<Property Name="DistPart[7].SoftDep[4].productName" Type="Str">NI LabVIEW Runtime 2020 SP1 Non-English Support.</Property>
+				<Property Name="DistPart[7].SoftDep[4].upgradeCode" Type="Str">{61FCC73D-8092-457D-8905-27C0060D88E1}</Property>
+				<Property Name="DistPart[7].SoftDep[5].exclude" Type="Bool">false</Property>
+				<Property Name="DistPart[7].SoftDep[5].productName" Type="Str">NI Logos 20.0</Property>
+				<Property Name="DistPart[7].SoftDep[5].upgradeCode" Type="Str">{5E4A4CE3-4D06-11D4-8B22-006008C16337}</Property>
+				<Property Name="DistPart[7].SoftDep[6].exclude" Type="Bool">false</Property>
+				<Property Name="DistPart[7].SoftDep[6].productName" Type="Str">NI LabVIEW Web Server 2020</Property>
+				<Property Name="DistPart[7].SoftDep[6].upgradeCode" Type="Str">{0960380B-EA86-4E0C-8B57-14CD8CCF2C15}</Property>
+				<Property Name="DistPart[7].SoftDep[7].exclude" Type="Bool">false</Property>
+				<Property Name="DistPart[7].SoftDep[7].productName" Type="Str">NI mDNS Responder 19.0</Property>
+				<Property Name="DistPart[7].SoftDep[7].upgradeCode" Type="Str">{9607874B-4BB3-42CB-B450-A2F5EF60BA3B}</Property>
+				<Property Name="DistPart[7].SoftDep[8].exclude" Type="Bool">false</Property>
+				<Property Name="DistPart[7].SoftDep[8].productName" Type="Str">Math Kernel Libraries 2017</Property>
+				<Property Name="DistPart[7].SoftDep[8].upgradeCode" Type="Str">{699C1AC5-2CF2-4745-9674-B19536EBA8A3}</Property>
+				<Property Name="DistPart[7].SoftDep[9].exclude" Type="Bool">false</Property>
+				<Property Name="DistPart[7].SoftDep[9].productName" Type="Str">Math Kernel Libraries 2020</Property>
+				<Property Name="DistPart[7].SoftDep[9].upgradeCode" Type="Str">{9872BBBA-FB96-42A4-80A2-9605AC5CBCF1}</Property>
+				<Property Name="DistPart[7].SoftDepCount" Type="Int">12</Property>
+				<Property Name="DistPart[7].upgradeCode" Type="Str">{D84FC73F-D1E0-4C05-A30C-DB882CD1ABD8}</Property>
+				<Property Name="DistPartCount" Type="Int">8</Property>
+				<Property Name="INST_author" Type="Str">Aarhus University</Property>
+				<Property Name="INST_autoIncrement" Type="Bool">true</Property>
+				<Property Name="INST_buildLocation" Type="Path">/C/Users/au540322/Documents/Projects/Ice-Nucleation/Builds/Installer</Property>
+				<Property Name="INST_buildSpecName" Type="Str">Installer</Property>
+				<Property Name="INST_defaultDir" Type="Str">{4B7C7F5D-6E6D-4786-BBED-E06C37A5A212}</Property>
+				<Property Name="INST_installerName" Type="Str">install.exe</Property>
+				<Property Name="INST_productName" Type="Str">Ice Nucleation Controller</Property>
+				<Property Name="INST_productVersion" Type="Str">1.0.9</Property>
+				<Property Name="InstSpecBitness" Type="Str">32-bit</Property>
+				<Property Name="InstSpecVersion" Type="Str">20018000</Property>
+				<Property Name="MSI_arpCompany" Type="Str">Aarhus University</Property>
+				<Property Name="MSI_arpContact" Type="Str">Mads Rosenhøj Jeppesen</Property>
+				<Property Name="MSI_arpPhone" Type="Str">+45 20 89 43 32</Property>
+				<Property Name="MSI_autoselectDrivers" Type="Bool">true</Property>
+				<Property Name="MSI_distID" Type="Str">{B3E4038C-2A2E-4E0E-86D8-B675F0C63136}</Property>
+				<Property Name="MSI_hideNonRuntimes" Type="Bool">true</Property>
+				<Property Name="MSI_osCheck" Type="Int">0</Property>
+				<Property Name="MSI_upgradeCode" Type="Str">{0BC65F53-DFD0-44CF-9605-7A37A91BB8CA}</Property>
+				<Property Name="MSI_windowMessage" Type="Str">Install INC software</Property>
+				<Property Name="MSI_windowTitle" Type="Str">INC Installer</Property>
+				<Property Name="RegDest[0].dirName" Type="Str">Software</Property>
+				<Property Name="RegDest[0].dirTag" Type="Str">{DDFAFC8B-E728-4AC8-96DE-B920EBB97A86}</Property>
+				<Property Name="RegDest[0].parentTag" Type="Str">2</Property>
+				<Property Name="RegDestCount" Type="Int">1</Property>
+				<Property Name="Source[0].dest" Type="Str">{4B7C7F5D-6E6D-4786-BBED-E06C37A5A212}</Property>
+				<Property Name="Source[0].File[0].dest" Type="Str">{4B7C7F5D-6E6D-4786-BBED-E06C37A5A212}</Property>
+				<Property Name="Source[0].File[0].name" Type="Str">INC.exe</Property>
+				<Property Name="Source[0].File[0].Shortcut[0].destIndex" Type="Int">0</Property>
+				<Property Name="Source[0].File[0].Shortcut[0].name" Type="Str">Ice Nucleation Controller</Property>
+				<Property Name="Source[0].File[0].Shortcut[0].subDir" Type="Str">Ice Nucleation Controller</Property>
+				<Property Name="Source[0].File[0].ShortcutCount" Type="Int">1</Property>
+				<Property Name="Source[0].File[0].tag" Type="Str">{58C928C1-8473-4CEF-96B2-F9CFB2EAA16B}</Property>
+				<Property Name="Source[0].FileCount" Type="Int">1</Property>
+				<Property Name="Source[0].name" Type="Str">Ice Nucleation Controller</Property>
+				<Property Name="Source[0].tag" Type="Ref">/My Computer/Build Specifications/Ice Nucleation Controller</Property>
+				<Property Name="Source[0].type" Type="Str">EXE</Property>
+				<Property Name="Source[1].dest" Type="Str">{4B7C7F5D-6E6D-4786-BBED-E06C37A5A212}</Property>
+				<Property Name="Source[1].name" Type="Str">Calibration.ini</Property>
+				<Property Name="Source[1].tag" Type="Ref">/My Computer/Build files/Calibration.ini</Property>
+				<Property Name="Source[1].type" Type="Str">File</Property>
+				<Property Name="Source[1].unlock" Type="Bool">true</Property>
+				<Property Name="Source[2].dest" Type="Str">{09B5634D-F4F6-46D8-8877-756072EA0D65}</Property>
+				<Property Name="Source[2].name" Type="Str">Big Setup.prt</Property>
+				<Property Name="Source[2].tag" Type="Ref">/My Computer/Build files/Partitions/Big Setup.prt</Property>
+				<Property Name="Source[2].type" Type="Str">File</Property>
+				<Property Name="Source[2].unlock" Type="Bool">true</Property>
+				<Property Name="Source[3].dest" Type="Str">{09B5634D-F4F6-46D8-8877-756072EA0D65}</Property>
+				<Property Name="Source[3].name" Type="Str">Small Setup.prt</Property>
+				<Property Name="Source[3].tag" Type="Ref">/My Computer/Build files/Partitions/Small Setup.prt</Property>
+				<Property Name="Source[3].type" Type="Str">File</Property>
+				<Property Name="Source[3].unlock" Type="Bool">true</Property>
+				<Property Name="Source[4].dest" Type="Str">{4B7C7F5D-6E6D-4786-BBED-E06C37A5A212}</Property>
+				<Property Name="Source[4].name" Type="Str">TCam.ini</Property>
+				<Property Name="Source[4].tag" Type="Ref">/My Computer/Build files/TCam.ini</Property>
+				<Property Name="Source[4].type" Type="Str">File</Property>
+				<Property Name="Source[4].unlock" Type="Bool">true</Property>
+				<Property Name="Source[5].dest" Type="Str">{4B7C7F5D-6E6D-4786-BBED-E06C37A5A212}</Property>
+				<Property Name="Source[5].name" Type="Str">settings.ini</Property>
+				<Property Name="Source[5].tag" Type="Ref">/My Computer/Build files/settings.ini</Property>
+				<Property Name="Source[5].type" Type="Str">File</Property>
+				<Property Name="Source[5].unlock" Type="Bool">true</Property>
+				<Property Name="Source[6].dest" Type="Str">{4B7C7F5D-6E6D-4786-BBED-E06C37A5A212}</Property>
+				<Property Name="Source[6].name" Type="Str">camera_placeholder.png</Property>
+				<Property Name="Source[6].tag" Type="Ref">/My Computer/Build files/camera_placeholder.png</Property>
+				<Property Name="Source[6].type" Type="Str">File</Property>
+				<Property Name="Source[7].dest" Type="Str">{4B7C7F5D-6E6D-4786-BBED-E06C37A5A212}</Property>
+				<Property Name="Source[7].File[0].dest" Type="Str">{4B7C7F5D-6E6D-4786-BBED-E06C37A5A212}</Property>
+				<Property Name="Source[7].File[0].name" Type="Str">TCE.exe</Property>
+				<Property Name="Source[7].File[0].Shortcut[0].destIndex" Type="Int">0</Property>
+				<Property Name="Source[7].File[0].Shortcut[0].name" Type="Str">TCE</Property>
+				<Property Name="Source[7].File[0].Shortcut[0].subDir" Type="Str">Ice Nucleation Controller</Property>
+				<Property Name="Source[7].File[0].ShortcutCount" Type="Int">1</Property>
+				<Property Name="Source[7].File[0].tag" Type="Str">{765937FA-2BBA-4638-A757-5D4AB3FD30F3}</Property>
+				<Property Name="Source[7].FileCount" Type="Int">1</Property>
+				<Property Name="Source[7].name" Type="Str">Thermal Camera Evaluation</Property>
+				<Property Name="Source[7].tag" Type="Ref">/My Computer/Build Specifications/Thermal Camera Evaluation</Property>
+				<Property Name="Source[7].type" Type="Str">EXE</Property>
+				<Property Name="Source[8].dest" Type="Str">{4B7C7F5D-6E6D-4786-BBED-E06C37A5A212}</Property>
+				<Property Name="Source[8].File[0].dest" Type="Str">{4B7C7F5D-6E6D-4786-BBED-E06C37A5A212}</Property>
+				<Property Name="Source[8].File[0].name" Type="Str">TCC.exe</Property>
+				<Property Name="Source[8].File[0].Shortcut[0].destIndex" Type="Int">0</Property>
+				<Property Name="Source[8].File[0].Shortcut[0].name" Type="Str">TCC</Property>
+				<Property Name="Source[8].File[0].Shortcut[0].subDir" Type="Str">Ice Nucleation Controller</Property>
+				<Property Name="Source[8].File[0].ShortcutCount" Type="Int">1</Property>
+				<Property Name="Source[8].File[0].tag" Type="Str">{4ECC90C8-5AFA-4E65-8969-5270033137DC}</Property>
+				<Property Name="Source[8].FileCount" Type="Int">1</Property>
+				<Property Name="Source[8].name" Type="Str">Thermal Camera Calibration</Property>
+				<Property Name="Source[8].tag" Type="Ref">/My Computer/Build Specifications/Thermal Camera Calibration</Property>
+				<Property Name="Source[8].type" Type="Str">EXE</Property>
+				<Property Name="SourceCount" Type="Int">9</Property>
+			</Item>
 			<Item Name="DAQ Connect" Type="EXE">
 				<Property Name="App_copyErrors" Type="Bool">true</Property>
 				<Property Name="App_INI_aliasGUID" Type="Str">{133DEE2D-25E0-4D5C-AFA8-FBAC58219E70}</Property>
@@ -612,206 +948,6 @@
 				<Property Name="TgtF_targetfileGUID" Type="Str">{BE028F6F-4FA8-42A6-90E5-8D3AF224E2D9}</Property>
 				<Property Name="TgtF_targetfileName" Type="Str">DAQ Connect.exe</Property>
 				<Property Name="TgtF_versionIndependent" Type="Bool">true</Property>
-			</Item>
-			<Item Name="INC" Type="EXE">
-				<Property Name="App_copyErrors" Type="Bool">true</Property>
-				<Property Name="App_includeHWConfig" Type="Bool">true</Property>
-				<Property Name="App_INI_aliasGUID" Type="Str">{3618DAED-42DC-4E68-88A6-01E191E81E60}</Property>
-				<Property Name="App_INI_GUID" Type="Str">{BD6AEBFB-191F-424A-B98F-B2609A5B1AAB}</Property>
-				<Property Name="App_serverConfig.httpPort" Type="Int">8002</Property>
-				<Property Name="App_serverType" Type="Int">0</Property>
-				<Property Name="Bld_autoIncrement" Type="Bool">true</Property>
-				<Property Name="Bld_buildCacheID" Type="Str">{33F274C5-765A-4CC4-96AB-55991902EFC2}</Property>
-				<Property Name="Bld_buildSpecDescription" Type="Str">Ice Nucleation Control</Property>
-				<Property Name="Bld_buildSpecName" Type="Str">INC</Property>
-				<Property Name="Bld_excludeInlineSubVIs" Type="Bool">true</Property>
-				<Property Name="Bld_excludeLibraryItems" Type="Bool">true</Property>
-				<Property Name="Bld_excludePolymorphicVIs" Type="Bool">true</Property>
-				<Property Name="Bld_localDestDir" Type="Path">/C/Users/au540322/Documents/Projects/Ice-Nucleation/Builds/Full Build</Property>
-				<Property Name="Bld_modifyLibraryFile" Type="Bool">true</Property>
-				<Property Name="Bld_previewCacheID" Type="Str">{27D8B2BC-76A3-474D-8C11-FD95C8E7081D}</Property>
-				<Property Name="Bld_version.build" Type="Int">40</Property>
-				<Property Name="Bld_version.major" Type="Int">1</Property>
-				<Property Name="Bld_version.minor" Type="Int">1</Property>
-				<Property Name="Bld_version.patch" Type="Int">12</Property>
-				<Property Name="Destination[0].destName" Type="Str">INC.exe</Property>
-				<Property Name="Destination[0].path" Type="Path">/C/Users/au540322/Documents/Projects/Ice-Nucleation/Builds/Full Build/INC.exe</Property>
-				<Property Name="Destination[0].path.type" Type="Str">&lt;none&gt;</Property>
-				<Property Name="Destination[0].preserveHierarchy" Type="Bool">true</Property>
-				<Property Name="Destination[0].type" Type="Str">App</Property>
-				<Property Name="Destination[1].destName" Type="Str">Support Directory</Property>
-				<Property Name="Destination[1].path" Type="Path">/C/Users/au540322/Documents/Projects/Ice-Nucleation/Builds/Full Build/data</Property>
-				<Property Name="Destination[1].path.type" Type="Str">&lt;none&gt;</Property>
-				<Property Name="DestinationCount" Type="Int">2</Property>
-				<Property Name="Source[0].itemID" Type="Str">{CD8229E9-9D4D-416F-96CA-E3BB42242A0D}</Property>
-				<Property Name="Source[0].type" Type="Str">Container</Property>
-				<Property Name="Source[1].destinationIndex" Type="Int">0</Property>
-				<Property Name="Source[1].itemID" Type="Ref">/My Computer/main.vi</Property>
-				<Property Name="Source[1].sourceInclusion" Type="Str">TopLevel</Property>
-				<Property Name="Source[1].type" Type="Str">VI</Property>
-				<Property Name="SourceCount" Type="Int">2</Property>
-				<Property Name="TgtF_companyName" Type="Str">Aarhus University</Property>
-				<Property Name="TgtF_fileDescription" Type="Str">Ice Nucleation Control</Property>
-				<Property Name="TgtF_internalName" Type="Str">INC</Property>
-				<Property Name="TgtF_legalCopyright" Type="Str">Copyright © 2021 Aarhus University</Property>
-				<Property Name="TgtF_productName" Type="Str">INC</Property>
-				<Property Name="TgtF_targetfileGUID" Type="Str">{58C928C1-8473-4CEF-96B2-F9CFB2EAA16B}</Property>
-				<Property Name="TgtF_targetfileName" Type="Str">INC.exe</Property>
-				<Property Name="TgtF_versionIndependent" Type="Bool">true</Property>
-			</Item>
-			<Item Name="Installer" Type="Installer">
-				<Property Name="Destination[0].name" Type="Str">Ice Nucleation Controller</Property>
-				<Property Name="Destination[0].parent" Type="Str">{3912416A-D2E5-411B-AFEE-B63654D690C0}</Property>
-				<Property Name="Destination[0].tag" Type="Str">{4B7C7F5D-6E6D-4786-BBED-E06C37A5A212}</Property>
-				<Property Name="Destination[0].type" Type="Str">userFolder</Property>
-				<Property Name="Destination[0].unlock" Type="Bool">true</Property>
-				<Property Name="Destination[1].name" Type="Str">Data</Property>
-				<Property Name="Destination[1].parent" Type="Str">{4B7C7F5D-6E6D-4786-BBED-E06C37A5A212}</Property>
-				<Property Name="Destination[1].tag" Type="Str">{91FD325C-AAB7-491E-AB64-7BBBE922D8DB}</Property>
-				<Property Name="Destination[1].type" Type="Str">userFolder</Property>
-				<Property Name="Destination[1].unlock" Type="Bool">true</Property>
-				<Property Name="Destination[2].name" Type="Str">Partitions</Property>
-				<Property Name="Destination[2].parent" Type="Str">{4B7C7F5D-6E6D-4786-BBED-E06C37A5A212}</Property>
-				<Property Name="Destination[2].tag" Type="Str">{09B5634D-F4F6-46D8-8877-756072EA0D65}</Property>
-				<Property Name="Destination[2].type" Type="Str">userFolder</Property>
-				<Property Name="Destination[2].unlock" Type="Bool">true</Property>
-				<Property Name="DestinationCount" Type="Int">3</Property>
-				<Property Name="DistPart[0].flavorID" Type="Str">DefaultFull</Property>
-				<Property Name="DistPart[0].productID" Type="Str">{57C41B25-A232-4945-B942-D7EC8ECBE6EF}</Property>
-				<Property Name="DistPart[0].productName" Type="Str">NI Vision Common Resources 2020</Property>
-				<Property Name="DistPart[0].upgradeCode" Type="Str">{409BEFA9-EB3E-472F-AD77-271A4A1D5927}</Property>
-				<Property Name="DistPart[1].flavorID" Type="Str">DefaultFull</Property>
-				<Property Name="DistPart[1].productID" Type="Str">{633A1550-642D-4DAB-A449-234FEFC53097}</Property>
-				<Property Name="DistPart[1].productName" Type="Str">NI Vision Runtime 2020</Property>
-				<Property Name="DistPart[1].upgradeCode" Type="Str">{63DF74E5-A5C9-11D4-814E-005004D6CDD6}</Property>
-				<Property Name="DistPart[2].flavorID" Type="Str">_full_</Property>
-				<Property Name="DistPart[2].productID" Type="Str">{CB6C2533-4926-42B8-AC21-04BB9679F818}</Property>
-				<Property Name="DistPart[2].productName" Type="Str">NI-488.2 Runtime 20.0</Property>
-				<Property Name="DistPart[2].upgradeCode" Type="Str">{357F6618-C660-41A2-A185-5578CC876D1D}</Property>
-				<Property Name="DistPart[3].flavorID" Type="Str">_full_</Property>
-				<Property Name="DistPart[3].productID" Type="Str">{990D2361-0AD6-4071-B4CB-E32698D4FC64}</Property>
-				<Property Name="DistPart[3].productName" Type="Str">NI-DAQmx Runtime 20.0</Property>
-				<Property Name="DistPart[3].upgradeCode" Type="Str">{923C9CD5-A0D8-4147-9A8D-998780E30763}</Property>
-				<Property Name="DistPart[4].flavorID" Type="Str">DefaultFull</Property>
-				<Property Name="DistPart[4].productID" Type="Str">{2A34BA62-42F5-4FA3-BE08-862AC6C2F628}</Property>
-				<Property Name="DistPart[4].productName" Type="Str">NI-IMAQdx Runtime 20.0</Property>
-				<Property Name="DistPart[4].upgradeCode" Type="Str">{3D104AB3-CE10-43C0-B647-07600754072C}</Property>
-				<Property Name="DistPart[5].flavorID" Type="Str">_full_</Property>
-				<Property Name="DistPart[5].productID" Type="Str">{F12C6F92-5B1C-4EAB-9364-96026CE1920D}</Property>
-				<Property Name="DistPart[5].productName" Type="Str">NI-Serial Runtime 20.0</Property>
-				<Property Name="DistPart[5].upgradeCode" Type="Str">{01D82F43-B48D-46FF-8601-FC4FAAE20F41}</Property>
-				<Property Name="DistPart[6].flavorID" Type="Str">_deployment_</Property>
-				<Property Name="DistPart[6].productID" Type="Str">{944CC86F-BDFB-4850-878C-370B9A7FF12C}</Property>
-				<Property Name="DistPart[6].productName" Type="Str">NI-VISA Runtime 20.0</Property>
-				<Property Name="DistPart[6].upgradeCode" Type="Str">{8627993A-3F66-483C-A562-0D3BA3F267B1}</Property>
-				<Property Name="DistPart[7].flavorID" Type="Str">DefaultFull</Property>
-				<Property Name="DistPart[7].productID" Type="Str">{CED05116-2329-4D0D-92CA-CEC520182EB0}</Property>
-				<Property Name="DistPart[7].productName" Type="Str">NI LabVIEW Runtime 2020 f1</Property>
-				<Property Name="DistPart[7].SoftDep[0].exclude" Type="Bool">false</Property>
-				<Property Name="DistPart[7].SoftDep[0].productName" Type="Str">NI ActiveX Container</Property>
-				<Property Name="DistPart[7].SoftDep[0].upgradeCode" Type="Str">{1038A887-23E1-4289-B0BD-0C4B83C6BA21}</Property>
-				<Property Name="DistPart[7].SoftDep[1].exclude" Type="Bool">false</Property>
-				<Property Name="DistPart[7].SoftDep[1].productName" Type="Str">NI Deployment Framework 2020</Property>
-				<Property Name="DistPart[7].SoftDep[1].upgradeCode" Type="Str">{838942E4-B73C-492E-81A3-AA1E291FD0DC}</Property>
-				<Property Name="DistPart[7].SoftDep[10].exclude" Type="Bool">false</Property>
-				<Property Name="DistPart[7].SoftDep[10].productName" Type="Str">NI VC2015 Runtime</Property>
-				<Property Name="DistPart[7].SoftDep[10].upgradeCode" Type="Str">{D42E7BAE-6589-4570-B6A3-3E28889392E7}</Property>
-				<Property Name="DistPart[7].SoftDep[11].exclude" Type="Bool">false</Property>
-				<Property Name="DistPart[7].SoftDep[11].productName" Type="Str">NI TDM Streaming 19.0</Property>
-				<Property Name="DistPart[7].SoftDep[11].upgradeCode" Type="Str">{4CD11BE6-6BB7-4082-8A27-C13771BC309B}</Property>
-				<Property Name="DistPart[7].SoftDep[2].exclude" Type="Bool">false</Property>
-				<Property Name="DistPart[7].SoftDep[2].productName" Type="Str">NI Error Reporting 2020</Property>
-				<Property Name="DistPart[7].SoftDep[2].upgradeCode" Type="Str">{42E818C6-2B08-4DE7-BD91-B0FD704C119A}</Property>
-				<Property Name="DistPart[7].SoftDep[3].exclude" Type="Bool">false</Property>
-				<Property Name="DistPart[7].SoftDep[3].productName" Type="Str">NI LabVIEW Real-Time NBFifo 2020</Property>
-				<Property Name="DistPart[7].SoftDep[3].upgradeCode" Type="Str">{00D0B680-F876-4E42-A25F-52B65418C2A6}</Property>
-				<Property Name="DistPart[7].SoftDep[4].exclude" Type="Bool">false</Property>
-				<Property Name="DistPart[7].SoftDep[4].productName" Type="Str">NI LabVIEW Runtime 2020 Non-English Support.</Property>
-				<Property Name="DistPart[7].SoftDep[4].upgradeCode" Type="Str">{61FCC73D-8092-457D-8905-27C0060D88E1}</Property>
-				<Property Name="DistPart[7].SoftDep[5].exclude" Type="Bool">false</Property>
-				<Property Name="DistPart[7].SoftDep[5].productName" Type="Str">NI Logos 20.0</Property>
-				<Property Name="DistPart[7].SoftDep[5].upgradeCode" Type="Str">{5E4A4CE3-4D06-11D4-8B22-006008C16337}</Property>
-				<Property Name="DistPart[7].SoftDep[6].exclude" Type="Bool">false</Property>
-				<Property Name="DistPart[7].SoftDep[6].productName" Type="Str">NI LabVIEW Web Server 2020</Property>
-				<Property Name="DistPart[7].SoftDep[6].upgradeCode" Type="Str">{0960380B-EA86-4E0C-8B57-14CD8CCF2C15}</Property>
-				<Property Name="DistPart[7].SoftDep[7].exclude" Type="Bool">false</Property>
-				<Property Name="DistPart[7].SoftDep[7].productName" Type="Str">NI mDNS Responder 19.0</Property>
-				<Property Name="DistPart[7].SoftDep[7].upgradeCode" Type="Str">{9607874B-4BB3-42CB-B450-A2F5EF60BA3B}</Property>
-				<Property Name="DistPart[7].SoftDep[8].exclude" Type="Bool">false</Property>
-				<Property Name="DistPart[7].SoftDep[8].productName" Type="Str">Math Kernel Libraries 2017</Property>
-				<Property Name="DistPart[7].SoftDep[8].upgradeCode" Type="Str">{699C1AC5-2CF2-4745-9674-B19536EBA8A3}</Property>
-				<Property Name="DistPart[7].SoftDep[9].exclude" Type="Bool">false</Property>
-				<Property Name="DistPart[7].SoftDep[9].productName" Type="Str">Math Kernel Libraries 2020</Property>
-				<Property Name="DistPart[7].SoftDep[9].upgradeCode" Type="Str">{9872BBBA-FB96-42A4-80A2-9605AC5CBCF1}</Property>
-				<Property Name="DistPart[7].SoftDepCount" Type="Int">12</Property>
-				<Property Name="DistPart[7].upgradeCode" Type="Str">{D84FC73F-D1E0-4C05-A30C-DB882CD1ABD8}</Property>
-				<Property Name="DistPartCount" Type="Int">8</Property>
-				<Property Name="INST_author" Type="Str">Aarhus University</Property>
-				<Property Name="INST_autoIncrement" Type="Bool">true</Property>
-				<Property Name="INST_buildLocation" Type="Path">/C/Users/au540322/Documents/Projects/Ice-Nucleation/Builds/Installer</Property>
-				<Property Name="INST_buildSpecName" Type="Str">Installer</Property>
-				<Property Name="INST_defaultDir" Type="Str">{4B7C7F5D-6E6D-4786-BBED-E06C37A5A212}</Property>
-				<Property Name="INST_installerName" Type="Str">install.exe</Property>
-				<Property Name="INST_productName" Type="Str">Ice Nucleation Controller</Property>
-				<Property Name="INST_productVersion" Type="Str">1.0.9</Property>
-				<Property Name="InstSpecBitness" Type="Str">32-bit</Property>
-				<Property Name="InstSpecVersion" Type="Str">20008014</Property>
-				<Property Name="MSI_arpCompany" Type="Str">Aarhus University</Property>
-				<Property Name="MSI_arpContact" Type="Str">Mads Rosenhøj Jeppesen</Property>
-				<Property Name="MSI_arpPhone" Type="Str">+45 20 89 43 32</Property>
-				<Property Name="MSI_autoselectDrivers" Type="Bool">true</Property>
-				<Property Name="MSI_distID" Type="Str">{B3E4038C-2A2E-4E0E-86D8-B675F0C63136}</Property>
-				<Property Name="MSI_hideNonRuntimes" Type="Bool">true</Property>
-				<Property Name="MSI_osCheck" Type="Int">0</Property>
-				<Property Name="MSI_upgradeCode" Type="Str">{0BC65F53-DFD0-44CF-9605-7A37A91BB8CA}</Property>
-				<Property Name="MSI_windowMessage" Type="Str">Install INC software</Property>
-				<Property Name="MSI_windowTitle" Type="Str">INC Installer</Property>
-				<Property Name="RegDest[0].dirName" Type="Str">Software</Property>
-				<Property Name="RegDest[0].dirTag" Type="Str">{DDFAFC8B-E728-4AC8-96DE-B920EBB97A86}</Property>
-				<Property Name="RegDest[0].parentTag" Type="Str">2</Property>
-				<Property Name="RegDestCount" Type="Int">1</Property>
-				<Property Name="Source[0].dest" Type="Str">{4B7C7F5D-6E6D-4786-BBED-E06C37A5A212}</Property>
-				<Property Name="Source[0].File[0].dest" Type="Str">{4B7C7F5D-6E6D-4786-BBED-E06C37A5A212}</Property>
-				<Property Name="Source[0].File[0].name" Type="Str">INC.exe</Property>
-				<Property Name="Source[0].File[0].Shortcut[0].destIndex" Type="Int">0</Property>
-				<Property Name="Source[0].File[0].Shortcut[0].name" Type="Str">Ice Nucleation Controller</Property>
-				<Property Name="Source[0].File[0].Shortcut[0].subDir" Type="Str">Ice Nucleation Controller</Property>
-				<Property Name="Source[0].File[0].ShortcutCount" Type="Int">1</Property>
-				<Property Name="Source[0].File[0].tag" Type="Str">{58C928C1-8473-4CEF-96B2-F9CFB2EAA16B}</Property>
-				<Property Name="Source[0].FileCount" Type="Int">1</Property>
-				<Property Name="Source[0].name" Type="Str">INC</Property>
-				<Property Name="Source[0].tag" Type="Ref">/My Computer/Build Specifications/INC</Property>
-				<Property Name="Source[0].type" Type="Str">EXE</Property>
-				<Property Name="Source[1].dest" Type="Str">{4B7C7F5D-6E6D-4786-BBED-E06C37A5A212}</Property>
-				<Property Name="Source[1].name" Type="Str">Calibration.ini</Property>
-				<Property Name="Source[1].tag" Type="Ref">/My Computer/Build files/Calibration.ini</Property>
-				<Property Name="Source[1].type" Type="Str">File</Property>
-				<Property Name="Source[1].unlock" Type="Bool">true</Property>
-				<Property Name="Source[2].dest" Type="Str">{09B5634D-F4F6-46D8-8877-756072EA0D65}</Property>
-				<Property Name="Source[2].name" Type="Str">Big Setup.prt</Property>
-				<Property Name="Source[2].tag" Type="Ref">/My Computer/Build files/Partitions/Big Setup.prt</Property>
-				<Property Name="Source[2].type" Type="Str">File</Property>
-				<Property Name="Source[2].unlock" Type="Bool">true</Property>
-				<Property Name="Source[3].dest" Type="Str">{09B5634D-F4F6-46D8-8877-756072EA0D65}</Property>
-				<Property Name="Source[3].name" Type="Str">Small Setup.prt</Property>
-				<Property Name="Source[3].tag" Type="Ref">/My Computer/Build files/Partitions/Small Setup.prt</Property>
-				<Property Name="Source[3].type" Type="Str">File</Property>
-				<Property Name="Source[3].unlock" Type="Bool">true</Property>
-				<Property Name="Source[4].dest" Type="Str">{4B7C7F5D-6E6D-4786-BBED-E06C37A5A212}</Property>
-				<Property Name="Source[4].name" Type="Str">TCam.ini</Property>
-				<Property Name="Source[4].tag" Type="Ref">/My Computer/Build files/TCam.ini</Property>
-				<Property Name="Source[4].type" Type="Str">File</Property>
-				<Property Name="Source[4].unlock" Type="Bool">true</Property>
-				<Property Name="Source[5].dest" Type="Str">{4B7C7F5D-6E6D-4786-BBED-E06C37A5A212}</Property>
-				<Property Name="Source[5].name" Type="Str">settings.ini</Property>
-				<Property Name="Source[5].tag" Type="Ref">/My Computer/Build files/settings.ini</Property>
-				<Property Name="Source[5].type" Type="Str">File</Property>
-				<Property Name="Source[5].unlock" Type="Bool">true</Property>
-				<Property Name="Source[6].dest" Type="Str">{4B7C7F5D-6E6D-4786-BBED-E06C37A5A212}</Property>
-				<Property Name="Source[6].name" Type="Str">camera_placeholder.png</Property>
-				<Property Name="Source[6].tag" Type="Ref">/My Computer/Build files/camera_placeholder.png</Property>
-				<Property Name="Source[6].type" Type="Str">File</Property>
-				<Property Name="SourceCount" Type="Int">7</Property>
 			</Item>
 			<Item Name="ThermoCouple Logger" Type="EXE">
 				<Property Name="App_copyErrors" Type="Bool">true</Property>
