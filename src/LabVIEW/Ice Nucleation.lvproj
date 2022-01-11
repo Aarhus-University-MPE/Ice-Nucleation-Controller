@@ -65,9 +65,10 @@
 					<Item Name="TCam_CalibrationLoad.vi" Type="VI" URL="../TCam_CalibrationLoad.vi"/>
 					<Item Name="TCam_Calibration_LoadSettings.vi" Type="VI" URL="../TCam_Calibration_LoadSettings.vi"/>
 					<Item Name="DataArray_Reformatter.vi" Type="VI" URL="../DataArray_Reformatter.vi"/>
+					<Item Name="SingleTempUpdater.vi" Type="VI" URL="../SingleTempUpdater.vi"/>
+					<Item Name="SingleWellUpdater.vi" Type="VI" URL="../SingleWellUpdater.vi"/>
+					<Item Name="WellCoordinateChecker.vi" Type="VI" URL="../WellCoordinateChecker.vi"/>
 				</Item>
-				<Item Name="Thermal_Camera_Calibration.vi" Type="VI" URL="../Thermal_Camera_Calibration.vi"/>
-				<Item Name="Thermal_Camera_Evaluation.vi" Type="VI" URL="../Thermal_Camera_Evaluation.vi"/>
 				<Item Name="DataCluster_TCAL.ctl" Type="VI" URL="../DataCluster_TCAL.ctl"/>
 			</Item>
 			<Item Name="cDAQ" Type="Folder">
@@ -165,6 +166,7 @@
 				<Item Name="ResultLoadPrompt.vi" Type="VI" URL="../ResultLoadPrompt.vi"/>
 				<Item Name="CalibrationSavePrompt.vi" Type="VI" URL="../CalibrationSavePrompt.vi"/>
 				<Item Name="CalibrationLoadPrompt.vi" Type="VI" URL="../CalibrationLoadPrompt.vi"/>
+				<Item Name="ShowHideSplit.vi" Type="VI" URL="../ShowHideSplit.vi"/>
 			</Item>
 		</Item>
 		<Item Name="Test Functions" Type="Folder">
@@ -232,10 +234,9 @@
 			<Item Name="ThermalVideoStream.vi" Type="VI" URL="../ThermalVideoStream.vi"/>
 		</Item>
 		<Item Name="main.vi" Type="VI" URL="../main.vi"/>
-		<Item Name="ShowHideSplit.vi" Type="VI" URL="../ShowHideSplit.vi"/>
-		<Item Name="SingleTempUpdater.vi" Type="VI" URL="../SingleTempUpdater.vi"/>
-		<Item Name="WellCoordinateChecker.vi" Type="VI" URL="../WellCoordinateChecker.vi"/>
-		<Item Name="SingleWellUpdater.vi" Type="VI" URL="../SingleWellUpdater.vi"/>
+		<Item Name="Thermal_Camera_Calibration.vi" Type="VI" URL="../Thermal_Camera_Calibration.vi"/>
+		<Item Name="Thermal_Camera_Evaluation.vi" Type="VI" URL="../Thermal_Camera_Evaluation.vi"/>
+		<Item Name="RunTimeMenu_TCE_RecentInsert.vi" Type="VI" URL="../RunTimeMenu_TCE_RecentInsert.vi"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="vi.lib" Type="Folder">
 				<Item Name="Add State(s) to Queue__JKI_lib_State_Machine.vi" Type="VI" URL="/&lt;vilib&gt;/addons/_JKI Toolkits/State Machine/_JKI_lib_State_Machine.llb/Add State(s) to Queue__JKI_lib_State_Machine.vi"/>
@@ -623,8 +624,9 @@
 				<Property Name="Bld_localDestDir" Type="Path">/C/Users/au540322/Documents/Projects/Ice-Nucleation/Builds/Full Build</Property>
 				<Property Name="Bld_modifyLibraryFile" Type="Bool">true</Property>
 				<Property Name="Bld_previewCacheID" Type="Str">{95EEF059-8F91-49DB-A57E-FF38AF6547AD}</Property>
-				<Property Name="Bld_version.build" Type="Int">14</Property>
-				<Property Name="Bld_version.major" Type="Int">1</Property>
+				<Property Name="Bld_version.build" Type="Int">15</Property>
+				<Property Name="Bld_version.minor" Type="Int">8</Property>
+				<Property Name="Bld_version.patch" Type="Int">3</Property>
 				<Property Name="Destination[0].destName" Type="Str">TCE.exe</Property>
 				<Property Name="Destination[0].path" Type="Path">/C/Users/au540322/Documents/Projects/Ice-Nucleation/Builds/Full Build/TCE.exe</Property>
 				<Property Name="Destination[0].path.type" Type="Str">&lt;none&gt;</Property>
@@ -634,10 +636,10 @@
 				<Property Name="Destination[1].path" Type="Path">/C/Users/au540322/Documents/Projects/Ice-Nucleation/Builds/Full Build/data</Property>
 				<Property Name="Destination[1].path.type" Type="Str">&lt;none&gt;</Property>
 				<Property Name="DestinationCount" Type="Int">2</Property>
-				<Property Name="Source[0].itemID" Type="Str">{2D61BCBF-3697-48AD-A9B5-C3D5E74F8871}</Property>
+				<Property Name="Source[0].itemID" Type="Str">{385896D5-D019-4FF9-BF35-FBCB5C28EC75}</Property>
 				<Property Name="Source[0].type" Type="Str">Container</Property>
 				<Property Name="Source[1].destinationIndex" Type="Int">0</Property>
-				<Property Name="Source[1].itemID" Type="Ref">/My Computer/Functions/Thermal Camera/Thermal_Camera_Evaluation.vi</Property>
+				<Property Name="Source[1].itemID" Type="Ref">/My Computer/Thermal_Camera_Evaluation.vi</Property>
 				<Property Name="Source[1].sourceInclusion" Type="Str">TopLevel</Property>
 				<Property Name="Source[1].type" Type="Str">VI</Property>
 				<Property Name="SourceCount" Type="Int">2</Property>
@@ -665,8 +667,9 @@
 				<Property Name="Bld_localDestDir" Type="Path">/C/Users/au540322/Documents/Projects/Ice-Nucleation/Builds/Full Build</Property>
 				<Property Name="Bld_modifyLibraryFile" Type="Bool">true</Property>
 				<Property Name="Bld_previewCacheID" Type="Str">{6FD33856-2380-4F94-8CB7-5581C7931DF6}</Property>
-				<Property Name="Bld_version.build" Type="Int">10</Property>
+				<Property Name="Bld_version.build" Type="Int">17</Property>
 				<Property Name="Bld_version.major" Type="Int">1</Property>
+				<Property Name="Bld_version.patch" Type="Int">2</Property>
 				<Property Name="Destination[0].destName" Type="Str">TCC.exe</Property>
 				<Property Name="Destination[0].path" Type="Path">/C/Users/au540322/Documents/Projects/Ice-Nucleation/Builds/Full Build/TCC.exe</Property>
 				<Property Name="Destination[0].path.type" Type="Str">&lt;none&gt;</Property>
@@ -676,10 +679,10 @@
 				<Property Name="Destination[1].path" Type="Path">/C/Users/au540322/Documents/Projects/Ice-Nucleation/Builds/Full Build/data</Property>
 				<Property Name="Destination[1].path.type" Type="Str">&lt;none&gt;</Property>
 				<Property Name="DestinationCount" Type="Int">2</Property>
-				<Property Name="Source[0].itemID" Type="Str">{2D61BCBF-3697-48AD-A9B5-C3D5E74F8871}</Property>
+				<Property Name="Source[0].itemID" Type="Str">{385896D5-D019-4FF9-BF35-FBCB5C28EC75}</Property>
 				<Property Name="Source[0].type" Type="Str">Container</Property>
 				<Property Name="Source[1].destinationIndex" Type="Int">0</Property>
-				<Property Name="Source[1].itemID" Type="Ref">/My Computer/Functions/Thermal Camera/Thermal_Camera_Calibration.vi</Property>
+				<Property Name="Source[1].itemID" Type="Ref">/My Computer/Thermal_Camera_Calibration.vi</Property>
 				<Property Name="Source[1].sourceInclusion" Type="Str">TopLevel</Property>
 				<Property Name="Source[1].type" Type="Str">VI</Property>
 				<Property Name="SourceCount" Type="Int">2</Property>
@@ -709,10 +712,10 @@
 				<Property Name="Bld_localDestDir" Type="Path">/C/Users/au540322/Documents/Projects/Ice-Nucleation/Builds/Full Build</Property>
 				<Property Name="Bld_modifyLibraryFile" Type="Bool">true</Property>
 				<Property Name="Bld_previewCacheID" Type="Str">{27D8B2BC-76A3-474D-8C11-FD95C8E7081D}</Property>
-				<Property Name="Bld_version.build" Type="Int">54</Property>
+				<Property Name="Bld_version.build" Type="Int">56</Property>
 				<Property Name="Bld_version.major" Type="Int">1</Property>
-				<Property Name="Bld_version.minor" Type="Int">1</Property>
-				<Property Name="Bld_version.patch" Type="Int">12</Property>
+				<Property Name="Bld_version.minor" Type="Int">2</Property>
+				<Property Name="Bld_version.patch" Type="Int">3</Property>
 				<Property Name="Destination[0].destName" Type="Str">INC.exe</Property>
 				<Property Name="Destination[0].path" Type="Path">/C/Users/au540322/Documents/Projects/Ice-Nucleation/Builds/Full Build/Ice Nucleation Controller.exe</Property>
 				<Property Name="Destination[0].path.type" Type="Str">&lt;none&gt;</Property>
@@ -722,7 +725,7 @@
 				<Property Name="Destination[1].path" Type="Path">/C/Users/au540322/Documents/Projects/Ice-Nucleation/Builds/Full Build/data</Property>
 				<Property Name="Destination[1].path.type" Type="Str">&lt;none&gt;</Property>
 				<Property Name="DestinationCount" Type="Int">2</Property>
-				<Property Name="Source[0].itemID" Type="Str">{2D61BCBF-3697-48AD-A9B5-C3D5E74F8871}</Property>
+				<Property Name="Source[0].itemID" Type="Str">{385896D5-D019-4FF9-BF35-FBCB5C28EC75}</Property>
 				<Property Name="Source[0].type" Type="Str">Container</Property>
 				<Property Name="Source[1].destinationIndex" Type="Int">0</Property>
 				<Property Name="Source[1].itemID" Type="Ref">/My Computer/main.vi</Property>
