@@ -39,6 +39,7 @@
 			</Item>
 			<Item Name="Arduino" Type="Folder">
 				<Item Name="Arduino_Initialize.vi" Type="VI" URL="../Arduino_Initialize.vi"/>
+				<Item Name="Arduino_Mode.vi" Type="VI" URL="../Arduino_Mode.vi"/>
 			</Item>
 			<Item Name="Thermal Camera" Type="Folder">
 				<Item Name="Processing" Type="Folder">
@@ -83,10 +84,6 @@
 					<Item Name="Thermistor_Conversion.vi" Type="VI" URL="../Thermistor_Conversion.vi"/>
 					<Item Name="Thermistor_Manual_Read.vi" Type="VI" URL="../Thermistor_Manual_Read.vi"/>
 					<Item Name="Thermistor_Temp_Stamp.vi" Type="VI" URL="../Thermistor_Temp_Stamp.vi"/>
-				</Item>
-				<Item Name="Voltage Out" Type="Folder">
-					<Item Name="Manual_Cool_Heat.vi" Type="VI" URL="../Manual_Cool_Heat.vi"/>
-					<Item Name="Manual_Cool_Heat_Converter.vi" Type="VI" URL="../Manual_Cool_Heat_Converter.vi"/>
 				</Item>
 				<Item Name="cDAQ_Channels.vi" Type="VI" URL="../cDAQ_Channels.vi"/>
 				<Item Name="cDAQ_Read.vi" Type="VI" URL="../cDAQ_Read.vi"/>
@@ -172,6 +169,12 @@
 				<Item Name="CalibrationLoadPrompt.vi" Type="VI" URL="../CalibrationLoadPrompt.vi"/>
 				<Item Name="ShowHideSplit.vi" Type="VI" URL="../ShowHideSplit.vi"/>
 			</Item>
+			<Item Name="Temperature Control" Type="Folder">
+				<Item Name="Manual_Cool_Control.vi" Type="VI" URL="../Manual_Cool_Control.vi"/>
+				<Item Name="Manual_Cool_Heat_V2.vi" Type="VI" URL="../Manual_Cool_Heat_V2.vi"/>
+				<Item Name="Manual_Cool_Heat.vi" Type="VI" URL="../Manual_Cool_Heat.vi"/>
+				<Item Name="Manual_Cool_Heat_Converter.vi" Type="VI" URL="../Manual_Cool_Heat_Converter.vi"/>
+			</Item>
 		</Item>
 		<Item Name="Test Functions" Type="Folder">
 			<Property Name="NI.SortType" Type="Int">3</Property>
@@ -237,10 +240,14 @@
 			<Item Name="CameraAttributeSearch.vi" Type="VI" URL="../CameraAttributeSearch.vi"/>
 			<Item Name="ThermalVideoStream.vi" Type="VI" URL="../ThermalVideoStream.vi"/>
 		</Item>
+		<Item Name="Resources" Type="Folder">
+			<Item Name="Logo.ico" Type="Document" URL="../resources/Logo.ico"/>
+			<Item Name="Logo_TCC.ico" Type="Document" URL="../resources/Logo_TCC.ico"/>
+			<Item Name="Logo_TCE.ico" Type="Document" URL="../resources/Logo_TCE.ico"/>
+		</Item>
 		<Item Name="main.vi" Type="VI" URL="../main.vi"/>
-		<Item Name="Thermal_Camera_Calibration.vi" Type="VI" URL="../Thermal_Camera_Calibration.vi"/>
-		<Item Name="Thermal_Camera_Evaluation.vi" Type="VI" URL="../Thermal_Camera_Evaluation.vi"/>
-		<Item Name="Arduino_Mode.vi" Type="VI" URL="../Arduino_Mode.vi"/>
+		<Item Name="TCC.vi" Type="VI" URL="../TCC.vi"/>
+		<Item Name="TCE.vi" Type="VI" URL="../TCE.vi"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="vi.lib" Type="Folder">
 				<Item Name="Add State(s) to Queue__JKI_lib_State_Machine.vi" Type="VI" URL="/&lt;vilib&gt;/addons/_JKI Toolkits/State Machine/_JKI_lib_State_Machine.llb/Add State(s) to Queue__JKI_lib_State_Machine.vi"/>
@@ -564,6 +571,8 @@
 			<Item Name="Get File Info.vi" Type="VI" URL="../Get File Info.vi"/>
 			<Item Name="Tag-c(bool,ref(UserDefinedRefnumTag),bool,path,bool).lvlib" Type="Library" URL="/&lt;extravilib&gt;/ChannelInstances/Tag-c(bool,ref(UserDefinedRefnumTag),bool,path,bool).lvlib"/>
 			<Item Name="ColorRamp.vi" Type="VI" URL="../ColorRamp.vi"/>
+			<Item Name="Stream-bool.lvlib" Type="Library" URL="/&lt;extravilib&gt;/ChannelInstances/Stream-bool.lvlib"/>
+			<Item Name="Tag-c(c(ref(LVObjVI()),bool),bool,bool,u32[Cool,Heat]).lvlib" Type="Library" URL="/&lt;extravilib&gt;/ChannelInstances/Tag-c(c(ref(LVObjVI()),bool),bool,bool,u32[Cool,Heat]).lvlib"/>
 		</Item>
 		<Item Name="Build Specifications" Type="Build">
 			<Item Name="Thermal Camera Evaluation" Type="EXE">
@@ -582,7 +591,7 @@
 				<Property Name="Bld_localDestDir" Type="Path">/C/Users/au540322/Documents/Projects/Ice-Nucleation/Builds/Full Build</Property>
 				<Property Name="Bld_modifyLibraryFile" Type="Bool">true</Property>
 				<Property Name="Bld_previewCacheID" Type="Str">{95EEF059-8F91-49DB-A57E-FF38AF6547AD}</Property>
-				<Property Name="Bld_version.build" Type="Int">15</Property>
+				<Property Name="Bld_version.build" Type="Int">16</Property>
 				<Property Name="Bld_version.minor" Type="Int">8</Property>
 				<Property Name="Bld_version.patch" Type="Int">3</Property>
 				<Property Name="Destination[0].destName" Type="Str">TCE.exe</Property>
@@ -594,10 +603,11 @@
 				<Property Name="Destination[1].path" Type="Path">/C/Users/au540322/Documents/Projects/Ice-Nucleation/Builds/Full Build/data</Property>
 				<Property Name="Destination[1].path.type" Type="Str">&lt;none&gt;</Property>
 				<Property Name="DestinationCount" Type="Int">2</Property>
-				<Property Name="Source[0].itemID" Type="Str">{385896D5-D019-4FF9-BF35-FBCB5C28EC75}</Property>
+				<Property Name="Exe_iconItemID" Type="Ref">/My Computer/Resources/Logo_TCE.ico</Property>
+				<Property Name="Source[0].itemID" Type="Str">{EB8110A8-89CA-4BBF-BBDD-EB538C76165C}</Property>
 				<Property Name="Source[0].type" Type="Str">Container</Property>
 				<Property Name="Source[1].destinationIndex" Type="Int">0</Property>
-				<Property Name="Source[1].itemID" Type="Ref">/My Computer/Thermal_Camera_Evaluation.vi</Property>
+				<Property Name="Source[1].itemID" Type="Ref">/My Computer/TCE.vi</Property>
 				<Property Name="Source[1].sourceInclusion" Type="Str">TopLevel</Property>
 				<Property Name="Source[1].type" Type="Str">VI</Property>
 				<Property Name="SourceCount" Type="Int">2</Property>
@@ -625,7 +635,7 @@
 				<Property Name="Bld_localDestDir" Type="Path">/C/Users/au540322/Documents/Projects/Ice-Nucleation/Builds/Full Build</Property>
 				<Property Name="Bld_modifyLibraryFile" Type="Bool">true</Property>
 				<Property Name="Bld_previewCacheID" Type="Str">{6FD33856-2380-4F94-8CB7-5581C7931DF6}</Property>
-				<Property Name="Bld_version.build" Type="Int">17</Property>
+				<Property Name="Bld_version.build" Type="Int">18</Property>
 				<Property Name="Bld_version.major" Type="Int">1</Property>
 				<Property Name="Bld_version.patch" Type="Int">2</Property>
 				<Property Name="Destination[0].destName" Type="Str">TCC.exe</Property>
@@ -637,10 +647,11 @@
 				<Property Name="Destination[1].path" Type="Path">/C/Users/au540322/Documents/Projects/Ice-Nucleation/Builds/Full Build/data</Property>
 				<Property Name="Destination[1].path.type" Type="Str">&lt;none&gt;</Property>
 				<Property Name="DestinationCount" Type="Int">2</Property>
-				<Property Name="Source[0].itemID" Type="Str">{385896D5-D019-4FF9-BF35-FBCB5C28EC75}</Property>
+				<Property Name="Exe_iconItemID" Type="Ref">/My Computer/Resources/Logo_TCC.ico</Property>
+				<Property Name="Source[0].itemID" Type="Str">{EB8110A8-89CA-4BBF-BBDD-EB538C76165C}</Property>
 				<Property Name="Source[0].type" Type="Str">Container</Property>
 				<Property Name="Source[1].destinationIndex" Type="Int">0</Property>
-				<Property Name="Source[1].itemID" Type="Ref">/My Computer/Thermal_Camera_Calibration.vi</Property>
+				<Property Name="Source[1].itemID" Type="Ref">/My Computer/TCC.vi</Property>
 				<Property Name="Source[1].sourceInclusion" Type="Str">TopLevel</Property>
 				<Property Name="Source[1].type" Type="Str">VI</Property>
 				<Property Name="SourceCount" Type="Int">2</Property>
@@ -682,7 +693,8 @@
 				<Property Name="Destination[1].path" Type="Path">/C/Users/au540322/Documents/Projects/Ice-Nucleation/Builds/Full Build/data</Property>
 				<Property Name="Destination[1].path.type" Type="Str">&lt;none&gt;</Property>
 				<Property Name="DestinationCount" Type="Int">2</Property>
-				<Property Name="Source[0].itemID" Type="Str">{B9314787-C07E-4326-B8F6-C1B421E517ED}</Property>
+				<Property Name="Exe_iconItemID" Type="Ref">/My Computer/Resources/Logo.ico</Property>
+				<Property Name="Source[0].itemID" Type="Str">{EB8110A8-89CA-4BBF-BBDD-EB538C76165C}</Property>
 				<Property Name="Source[0].type" Type="Str">Container</Property>
 				<Property Name="Source[1].destinationIndex" Type="Int">0</Property>
 				<Property Name="Source[1].itemID" Type="Ref">/My Computer/main.vi</Property>
