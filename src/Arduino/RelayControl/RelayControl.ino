@@ -13,10 +13,10 @@
 //--------------------------------------//
 
 // Request ID's
-#define CMD_COOL      101               // Switch to Relays to Cooling Position (POS1)
+#define CMD_COOL      101               // Switch to Relays to Cooling Position (POS1) - Default
 #define CMD_HEAT      102               // Switch to Relays to Heating Position (POS2)
 
-#define RELAY_PIN     8
+#define RELAY_PIN     7
 
 //--------------------------------------//
 //                SETUP                 //

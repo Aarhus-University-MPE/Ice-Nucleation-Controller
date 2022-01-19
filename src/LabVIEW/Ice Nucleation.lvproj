@@ -671,6 +671,8 @@
 				<Property Name="App_INI_GUID" Type="Str">{BD6AEBFB-191F-424A-B98F-B2609A5B1AAB}</Property>
 				<Property Name="App_serverConfig.httpPort" Type="Int">8002</Property>
 				<Property Name="App_serverType" Type="Int">0</Property>
+				<Property Name="App_winsec.certificate" Type="Str">au540322</Property>
+				<Property Name="Bld_autoIncrement" Type="Bool">true</Property>
 				<Property Name="Bld_buildCacheID" Type="Str">{33F274C5-765A-4CC4-96AB-55991902EFC2}</Property>
 				<Property Name="Bld_buildSpecDescription" Type="Str">Ice Nucleation Controller</Property>
 				<Property Name="Bld_buildSpecName" Type="Str">Ice Nucleation Controller</Property>
@@ -680,10 +682,10 @@
 				<Property Name="Bld_localDestDir" Type="Path">/C/Users/au540322/Documents/Projects/Ice-Nucleation/Builds/Full Build</Property>
 				<Property Name="Bld_modifyLibraryFile" Type="Bool">true</Property>
 				<Property Name="Bld_previewCacheID" Type="Str">{27D8B2BC-76A3-474D-8C11-FD95C8E7081D}</Property>
-				<Property Name="Bld_version.build" Type="Int">69</Property>
+				<Property Name="Bld_version.build" Type="Int">21</Property>
 				<Property Name="Bld_version.major" Type="Int">1</Property>
 				<Property Name="Bld_version.minor" Type="Int">2</Property>
-				<Property Name="Bld_version.patch" Type="Int">3</Property>
+				<Property Name="Bld_version.patch" Type="Int">4</Property>
 				<Property Name="Destination[0].destName" Type="Str">INC.exe</Property>
 				<Property Name="Destination[0].path" Type="Path">/C/Users/au540322/Documents/Projects/Ice-Nucleation/Builds/Full Build/Ice Nucleation Controller.exe</Property>
 				<Property Name="Destination[0].path.type" Type="Str">&lt;none&gt;</Property>
@@ -694,7 +696,7 @@
 				<Property Name="Destination[1].path.type" Type="Str">&lt;none&gt;</Property>
 				<Property Name="DestinationCount" Type="Int">2</Property>
 				<Property Name="Exe_iconItemID" Type="Ref">/My Computer/Resources/Logo.ico</Property>
-				<Property Name="Source[0].itemID" Type="Str">{EB8110A8-89CA-4BBF-BBDD-EB538C76165C}</Property>
+				<Property Name="Source[0].itemID" Type="Str">{C2487A9F-5D6B-4079-9423-EE6EF5E72947}</Property>
 				<Property Name="Source[0].type" Type="Str">Container</Property>
 				<Property Name="Source[1].destinationIndex" Type="Int">0</Property>
 				<Property Name="Source[1].itemID" Type="Ref">/My Computer/main.vi</Property>
@@ -728,24 +730,24 @@
 				<Property Name="Destination[2].unlock" Type="Bool">true</Property>
 				<Property Name="DestinationCount" Type="Int">3</Property>
 				<Property Name="DistPart[0].flavorID" Type="Str">DefaultFull</Property>
-				<Property Name="DistPart[0].productID" Type="Str">{9D67591A-4B74-4CD1-87CF-976FD6F6C484}</Property>
-				<Property Name="DistPart[0].productName" Type="Str">NI Vision Common Resources 2020 SP2</Property>
+				<Property Name="DistPart[0].productID" Type="Str">{57C41B25-A232-4945-B942-D7EC8ECBE6EF}</Property>
+				<Property Name="DistPart[0].productName" Type="Str">NI Vision Common Resources 2020</Property>
 				<Property Name="DistPart[0].upgradeCode" Type="Str">{409BEFA9-EB3E-472F-AD77-271A4A1D5927}</Property>
 				<Property Name="DistPart[1].flavorID" Type="Str">DefaultFull</Property>
-				<Property Name="DistPart[1].productID" Type="Str">{13B38F6E-AF24-442E-8326-9B8B085C4992}</Property>
-				<Property Name="DistPart[1].productName" Type="Str">NI Vision Runtime 2020 SP1</Property>
+				<Property Name="DistPart[1].productID" Type="Str">{633A1550-642D-4DAB-A449-234FEFC53097}</Property>
+				<Property Name="DistPart[1].productName" Type="Str">NI Vision Runtime 2020</Property>
 				<Property Name="DistPart[1].upgradeCode" Type="Str">{63DF74E5-A5C9-11D4-814E-005004D6CDD6}</Property>
 				<Property Name="DistPart[2].flavorID" Type="Str">_full_</Property>
 				<Property Name="DistPart[2].productID" Type="Str">{CB6C2533-4926-42B8-AC21-04BB9679F818}</Property>
 				<Property Name="DistPart[2].productName" Type="Str">NI-488.2 Runtime 20.0</Property>
 				<Property Name="DistPart[2].upgradeCode" Type="Str">{357F6618-C660-41A2-A185-5578CC876D1D}</Property>
 				<Property Name="DistPart[3].flavorID" Type="Str">_full_</Property>
-				<Property Name="DistPart[3].productID" Type="Str">{B1A6D301-109F-4899-85D2-BA79C10034D4}</Property>
-				<Property Name="DistPart[3].productName" Type="Str">NI-DAQmx Runtime 20.7</Property>
+				<Property Name="DistPart[3].productID" Type="Str">{990D2361-0AD6-4071-B4CB-E32698D4FC64}</Property>
+				<Property Name="DistPart[3].productName" Type="Str">NI-DAQmx Runtime 20.0</Property>
 				<Property Name="DistPart[3].upgradeCode" Type="Str">{923C9CD5-A0D8-4147-9A8D-998780E30763}</Property>
 				<Property Name="DistPart[4].flavorID" Type="Str">DefaultFull</Property>
-				<Property Name="DistPart[4].productID" Type="Str">{06CE04CA-A6D6-4353-B169-328BE6B7046C}</Property>
-				<Property Name="DistPart[4].productName" Type="Str">NI-IMAQdx Runtime 20.6</Property>
+				<Property Name="DistPart[4].productID" Type="Str">{2A34BA62-42F5-4FA3-BE08-862AC6C2F628}</Property>
+				<Property Name="DistPart[4].productName" Type="Str">NI-IMAQdx Runtime 20.0</Property>
 				<Property Name="DistPart[4].upgradeCode" Type="Str">{3D104AB3-CE10-43C0-B647-07600754072C}</Property>
 				<Property Name="DistPart[5].flavorID" Type="Str">_full_</Property>
 				<Property Name="DistPart[5].productID" Type="Str">{F12C6F92-5B1C-4EAB-9364-96026CE1920D}</Property>
@@ -756,8 +758,8 @@
 				<Property Name="DistPart[6].productName" Type="Str">NI-VISA Runtime 20.0</Property>
 				<Property Name="DistPart[6].upgradeCode" Type="Str">{8627993A-3F66-483C-A562-0D3BA3F267B1}</Property>
 				<Property Name="DistPart[7].flavorID" Type="Str">DefaultFull</Property>
-				<Property Name="DistPart[7].productID" Type="Str">{6B440D80-3B0D-43B2-8A06-E2E939AA1006}</Property>
-				<Property Name="DistPart[7].productName" Type="Str">NI LabVIEW Runtime 2020 SP1</Property>
+				<Property Name="DistPart[7].productID" Type="Str">{CED05116-2329-4D0D-92CA-CEC520182EB0}</Property>
+				<Property Name="DistPart[7].productName" Type="Str">NI LabVIEW Runtime 2020 f1</Property>
 				<Property Name="DistPart[7].SoftDep[0].exclude" Type="Bool">false</Property>
 				<Property Name="DistPart[7].SoftDep[0].productName" Type="Str">NI ActiveX Container</Property>
 				<Property Name="DistPart[7].SoftDep[0].upgradeCode" Type="Str">{1038A887-23E1-4289-B0BD-0C4B83C6BA21}</Property>
@@ -777,7 +779,7 @@
 				<Property Name="DistPart[7].SoftDep[3].productName" Type="Str">NI LabVIEW Real-Time NBFifo 2020</Property>
 				<Property Name="DistPart[7].SoftDep[3].upgradeCode" Type="Str">{00D0B680-F876-4E42-A25F-52B65418C2A6}</Property>
 				<Property Name="DistPart[7].SoftDep[4].exclude" Type="Bool">false</Property>
-				<Property Name="DistPart[7].SoftDep[4].productName" Type="Str">NI LabVIEW Runtime 2020 SP1 Non-English Support.</Property>
+				<Property Name="DistPart[7].SoftDep[4].productName" Type="Str">NI LabVIEW Runtime 2020 Non-English Support.</Property>
 				<Property Name="DistPart[7].SoftDep[4].upgradeCode" Type="Str">{61FCC73D-8092-457D-8905-27C0060D88E1}</Property>
 				<Property Name="DistPart[7].SoftDep[5].exclude" Type="Bool">false</Property>
 				<Property Name="DistPart[7].SoftDep[5].productName" Type="Str">NI Logos 20.0</Property>
@@ -806,7 +808,7 @@
 				<Property Name="INST_productName" Type="Str">Ice Nucleation Controller</Property>
 				<Property Name="INST_productVersion" Type="Str">1.0.9</Property>
 				<Property Name="InstSpecBitness" Type="Str">32-bit</Property>
-				<Property Name="InstSpecVersion" Type="Str">20018000</Property>
+				<Property Name="InstSpecVersion" Type="Str">20008014</Property>
 				<Property Name="MSI_arpCompany" Type="Str">Aarhus University</Property>
 				<Property Name="MSI_arpContact" Type="Str">Mads Rosenhøj Jeppesen</Property>
 				<Property Name="MSI_arpPhone" Type="Str">+45 20 89 43 32</Property>
@@ -866,7 +868,7 @@
 				<Property Name="Source[7].File[0].dest" Type="Str">{4B7C7F5D-6E6D-4786-BBED-E06C37A5A212}</Property>
 				<Property Name="Source[7].File[0].name" Type="Str">TCE.exe</Property>
 				<Property Name="Source[7].File[0].Shortcut[0].destIndex" Type="Int">0</Property>
-				<Property Name="Source[7].File[0].Shortcut[0].name" Type="Str">TCE</Property>
+				<Property Name="Source[7].File[0].Shortcut[0].name" Type="Str">Thermal Camera Evaluation</Property>
 				<Property Name="Source[7].File[0].Shortcut[0].subDir" Type="Str">Ice Nucleation Controller</Property>
 				<Property Name="Source[7].File[0].ShortcutCount" Type="Int">1</Property>
 				<Property Name="Source[7].File[0].tag" Type="Str">{765937FA-2BBA-4638-A757-5D4AB3FD30F3}</Property>
@@ -878,7 +880,7 @@
 				<Property Name="Source[8].File[0].dest" Type="Str">{4B7C7F5D-6E6D-4786-BBED-E06C37A5A212}</Property>
 				<Property Name="Source[8].File[0].name" Type="Str">TCC.exe</Property>
 				<Property Name="Source[8].File[0].Shortcut[0].destIndex" Type="Int">0</Property>
-				<Property Name="Source[8].File[0].Shortcut[0].name" Type="Str">TCC</Property>
+				<Property Name="Source[8].File[0].Shortcut[0].name" Type="Str">Thermal Camera Calibration</Property>
 				<Property Name="Source[8].File[0].Shortcut[0].subDir" Type="Str">Ice Nucleation Controller</Property>
 				<Property Name="Source[8].File[0].ShortcutCount" Type="Int">1</Property>
 				<Property Name="Source[8].File[0].tag" Type="Str">{4ECC90C8-5AFA-4E65-8969-5270033137DC}</Property>
