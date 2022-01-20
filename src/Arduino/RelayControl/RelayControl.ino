@@ -56,9 +56,5 @@ void loop() {
       digitalWrite(RELAY_PIN, HIGH);
       Serial.println("OK");
     }
-
-    else{
-      Serial.println("NACK");
-    }
   }
 }
