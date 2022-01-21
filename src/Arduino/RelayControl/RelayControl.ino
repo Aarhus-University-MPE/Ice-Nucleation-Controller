@@ -18,6 +18,10 @@
 
 #define RELAY_PIN     7
 
+bool HEATING =        false;
+long HEAT_STARTTIME = 0;
+const long  TIMEOUT = 60000;              // Timeout period in ms
+
 //--------------------------------------//
 //                SETUP                 //
 //--------------------------------------//
@@ -54,7 +58,14 @@ void loop() {
     else if (CMD == CMD_HEAT)
     {
       digitalWrite(RELAY_PIN, HIGH);
+      HEATING = true;
+      HEAT_STARTTIME = millis();
       Serial.println("OK");
     }
+  }
+  if(HEATING && millis() - HEAT_STARTTIME > TIMEOUT){
+    digitalWrite(RELAY_PIN, LOW);
+    HEATING = false;
+    Serial.println("TIMEOUT");
   }
 }
