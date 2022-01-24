@@ -1,8 +1,4 @@
-/Builds/Installer
-/Builds/Full Build/Data
-/Builds/*
+/Builds/
 /Data/*
-/src/LabVIEW/Data/*
-
 /src/LabVIEW/Data
 .zip
