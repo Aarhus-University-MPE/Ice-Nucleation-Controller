@@ -13,19 +13,14 @@
 		<Property Name="specify.custom.address" Type="Bool">false</Property>
 		<Item Name="Build files" Type="Folder">
 			<Item Name="Partitions" Type="Folder">
-				<Item Name="32Setup.prt" Type="Document" URL="../../../Builds/Partitions/32Setup.prt"/>
-				<Item Name="Big Setup.prt" Type="Document" URL="../../../Builds/Partitions/Big Setup.prt"/>
-				<Item Name="CentralWater.prt" Type="Document" URL="../../../Builds/Partitions/CentralWater.prt"/>
-				<Item Name="dfhsfdh.prt" Type="Document" URL="../../../Builds/Partitions/dfhsfdh.prt"/>
-				<Item Name="Partition Setup.prt" Type="Document" URL="../../../Builds/Partitions/Partition Setup.prt"/>
-				<Item Name="Small Setup.prt" Type="Document" URL="../../../Builds/Partitions/Small Setup.prt"/>
-				<Item Name="test.prt" Type="Document" URL="../../../Builds/Partitions/test.prt"/>
+				<Item Name="Big Setup.prt" Type="Document" URL="../Partitions/Big Setup.prt"/>
+				<Item Name="Small Setup.prt" Type="Document" URL="../Partitions/Small Setup.prt"/>
 			</Item>
 			<Item Name="TCam.ini" Type="Document" URL="../TCam.ini"/>
-			<Item Name="settings.ini" Type="Document" URL="../settings.ini"/>
-			<Item Name="camera_placeholder.png" Type="Document" URL="../resources/camera_placeholder.png"/>
-			<Item Name="Calibration.ini" Type="Document" URL="../Calibration.ini"/>
 			<Item Name="TCC.ini" Type="Document" URL="../TCC.ini"/>
+			<Item Name="settings.ini" Type="Document" URL="../settings.ini"/>
+			<Item Name="Calibration.ini" Type="Document" URL="../Calibration.ini"/>
+			<Item Name="camera_placeholder.png" Type="Document" URL="../resources/camera_placeholder.png"/>
 		</Item>
 		<Item Name="Functions" Type="Folder">
 			<Property Name="NI.SortType" Type="Int">3</Property>
@@ -815,7 +810,7 @@
 				<Property Name="INST_defaultDir" Type="Str">{4B7C7F5D-6E6D-4786-BBED-E06C37A5A212}</Property>
 				<Property Name="INST_installerName" Type="Str">install.exe</Property>
 				<Property Name="INST_productName" Type="Str">Ice Nucleation Controller</Property>
-				<Property Name="INST_productVersion" Type="Str">1.0.9</Property>
+				<Property Name="INST_productVersion" Type="Str">1.0.10</Property>
 				<Property Name="InstSpecBitness" Type="Str">32-bit</Property>
 				<Property Name="InstSpecVersion" Type="Str">20018000</Property>
 				<Property Name="MSI_arpCompany" Type="Str">Aarhus University</Property>
@@ -845,58 +840,67 @@
 				<Property Name="Source[0].tag" Type="Ref">/My Computer/Build Specifications/Ice Nucleation Controller</Property>
 				<Property Name="Source[0].type" Type="Str">EXE</Property>
 				<Property Name="Source[1].dest" Type="Str">{4B7C7F5D-6E6D-4786-BBED-E06C37A5A212}</Property>
-				<Property Name="Source[1].name" Type="Str">Calibration.ini</Property>
-				<Property Name="Source[1].tag" Type="Ref"></Property>
+				<Property Name="Source[1].name" Type="Str">TCam.ini</Property>
+				<Property Name="Source[1].tag" Type="Ref">/My Computer/Build files/TCam.ini</Property>
 				<Property Name="Source[1].type" Type="Str">File</Property>
 				<Property Name="Source[1].unlock" Type="Bool">true</Property>
-				<Property Name="Source[2].dest" Type="Str">{09B5634D-F4F6-46D8-8877-756072EA0D65}</Property>
-				<Property Name="Source[2].name" Type="Str">Big Setup.prt</Property>
-				<Property Name="Source[2].tag" Type="Ref">/My Computer/Build files/Partitions/Big Setup.prt</Property>
+				<Property Name="Source[2].dest" Type="Str">{4B7C7F5D-6E6D-4786-BBED-E06C37A5A212}</Property>
+				<Property Name="Source[2].name" Type="Str">settings.ini</Property>
+				<Property Name="Source[2].tag" Type="Ref">/My Computer/Build files/settings.ini</Property>
 				<Property Name="Source[2].type" Type="Str">File</Property>
 				<Property Name="Source[2].unlock" Type="Bool">true</Property>
-				<Property Name="Source[3].dest" Type="Str">{09B5634D-F4F6-46D8-8877-756072EA0D65}</Property>
-				<Property Name="Source[3].name" Type="Str">Small Setup.prt</Property>
-				<Property Name="Source[3].tag" Type="Ref">/My Computer/Build files/Partitions/Small Setup.prt</Property>
+				<Property Name="Source[3].dest" Type="Str">{4B7C7F5D-6E6D-4786-BBED-E06C37A5A212}</Property>
+				<Property Name="Source[3].name" Type="Str">camera_placeholder.png</Property>
+				<Property Name="Source[3].tag" Type="Ref">/My Computer/Build files/camera_placeholder.png</Property>
 				<Property Name="Source[3].type" Type="Str">File</Property>
-				<Property Name="Source[3].unlock" Type="Bool">true</Property>
 				<Property Name="Source[4].dest" Type="Str">{4B7C7F5D-6E6D-4786-BBED-E06C37A5A212}</Property>
-				<Property Name="Source[4].name" Type="Str">TCam.ini</Property>
-				<Property Name="Source[4].tag" Type="Ref">/My Computer/Build files/TCam.ini</Property>
-				<Property Name="Source[4].type" Type="Str">File</Property>
-				<Property Name="Source[4].unlock" Type="Bool">true</Property>
+				<Property Name="Source[4].File[0].dest" Type="Str">{4B7C7F5D-6E6D-4786-BBED-E06C37A5A212}</Property>
+				<Property Name="Source[4].File[0].name" Type="Str">TCE.exe</Property>
+				<Property Name="Source[4].File[0].Shortcut[0].destIndex" Type="Int">0</Property>
+				<Property Name="Source[4].File[0].Shortcut[0].name" Type="Str">Thermal Camera Evaluation</Property>
+				<Property Name="Source[4].File[0].Shortcut[0].subDir" Type="Str">Ice Nucleation Controller</Property>
+				<Property Name="Source[4].File[0].ShortcutCount" Type="Int">1</Property>
+				<Property Name="Source[4].File[0].tag" Type="Str">{765937FA-2BBA-4638-A757-5D4AB3FD30F3}</Property>
+				<Property Name="Source[4].FileCount" Type="Int">1</Property>
+				<Property Name="Source[4].name" Type="Str">Thermal Camera Evaluation</Property>
+				<Property Name="Source[4].tag" Type="Ref">/My Computer/Build Specifications/Thermal Camera Evaluation</Property>
+				<Property Name="Source[4].type" Type="Str">EXE</Property>
 				<Property Name="Source[5].dest" Type="Str">{4B7C7F5D-6E6D-4786-BBED-E06C37A5A212}</Property>
-				<Property Name="Source[5].name" Type="Str">settings.ini</Property>
-				<Property Name="Source[5].tag" Type="Ref">/My Computer/Build files/settings.ini</Property>
-				<Property Name="Source[5].type" Type="Str">File</Property>
-				<Property Name="Source[5].unlock" Type="Bool">true</Property>
+				<Property Name="Source[5].File[0].dest" Type="Str">{4B7C7F5D-6E6D-4786-BBED-E06C37A5A212}</Property>
+				<Property Name="Source[5].File[0].name" Type="Str">TCC.exe</Property>
+				<Property Name="Source[5].File[0].Shortcut[0].destIndex" Type="Int">0</Property>
+				<Property Name="Source[5].File[0].Shortcut[0].name" Type="Str">Thermal Camera Calibration</Property>
+				<Property Name="Source[5].File[0].Shortcut[0].subDir" Type="Str">Ice Nucleation Controller</Property>
+				<Property Name="Source[5].File[0].ShortcutCount" Type="Int">1</Property>
+				<Property Name="Source[5].File[0].tag" Type="Str">{4ECC90C8-5AFA-4E65-8969-5270033137DC}</Property>
+				<Property Name="Source[5].FileCount" Type="Int">1</Property>
+				<Property Name="Source[5].name" Type="Str">Thermal Camera Calibration</Property>
+				<Property Name="Source[5].tag" Type="Ref">/My Computer/Build Specifications/Thermal Camera Calibration</Property>
+				<Property Name="Source[5].type" Type="Str">EXE</Property>
 				<Property Name="Source[6].dest" Type="Str">{4B7C7F5D-6E6D-4786-BBED-E06C37A5A212}</Property>
-				<Property Name="Source[6].name" Type="Str">camera_placeholder.png</Property>
-				<Property Name="Source[6].tag" Type="Ref">/My Computer/Build files/camera_placeholder.png</Property>
+				<Property Name="Source[6].File[0].dest" Type="Str">{4B7C7F5D-6E6D-4786-BBED-E06C37A5A212}</Property>
+				<Property Name="Source[6].File[0].name" Type="Str">TCE.exe</Property>
+				<Property Name="Source[6].File[0].tag" Type="Str">{765937FA-2BBA-4638-A757-5D4AB3FD30F3}</Property>
+				<Property Name="Source[6].name" Type="Str">Calibration.ini</Property>
+				<Property Name="Source[6].tag" Type="Ref">/My Computer/Build files/Calibration.ini</Property>
 				<Property Name="Source[6].type" Type="Str">File</Property>
-				<Property Name="Source[7].dest" Type="Str">{4B7C7F5D-6E6D-4786-BBED-E06C37A5A212}</Property>
+				<Property Name="Source[6].unlock" Type="Bool">true</Property>
+				<Property Name="Source[7].dest" Type="Str">{09B5634D-F4F6-46D8-8877-756072EA0D65}</Property>
 				<Property Name="Source[7].File[0].dest" Type="Str">{4B7C7F5D-6E6D-4786-BBED-E06C37A5A212}</Property>
-				<Property Name="Source[7].File[0].name" Type="Str">TCE.exe</Property>
-				<Property Name="Source[7].File[0].Shortcut[0].destIndex" Type="Int">0</Property>
-				<Property Name="Source[7].File[0].Shortcut[0].name" Type="Str">Thermal Camera Evaluation</Property>
-				<Property Name="Source[7].File[0].Shortcut[0].subDir" Type="Str">Ice Nucleation Controller</Property>
-				<Property Name="Source[7].File[0].ShortcutCount" Type="Int">1</Property>
-				<Property Name="Source[7].File[0].tag" Type="Str">{765937FA-2BBA-4638-A757-5D4AB3FD30F3}</Property>
-				<Property Name="Source[7].FileCount" Type="Int">1</Property>
-				<Property Name="Source[7].name" Type="Str">Thermal Camera Evaluation</Property>
-				<Property Name="Source[7].tag" Type="Ref">/My Computer/Build Specifications/Thermal Camera Evaluation</Property>
-				<Property Name="Source[7].type" Type="Str">EXE</Property>
-				<Property Name="Source[8].dest" Type="Str">{4B7C7F5D-6E6D-4786-BBED-E06C37A5A212}</Property>
+				<Property Name="Source[7].File[0].name" Type="Str">TCC.exe</Property>
+				<Property Name="Source[7].File[0].tag" Type="Str">{4ECC90C8-5AFA-4E65-8969-5270033137DC}</Property>
+				<Property Name="Source[7].name" Type="Str">Big Setup.prt</Property>
+				<Property Name="Source[7].tag" Type="Ref">/My Computer/Build files/Partitions/Big Setup.prt</Property>
+				<Property Name="Source[7].type" Type="Str">File</Property>
+				<Property Name="Source[7].unlock" Type="Bool">true</Property>
+				<Property Name="Source[8].dest" Type="Str">{09B5634D-F4F6-46D8-8877-756072EA0D65}</Property>
 				<Property Name="Source[8].File[0].dest" Type="Str">{4B7C7F5D-6E6D-4786-BBED-E06C37A5A212}</Property>
 				<Property Name="Source[8].File[0].name" Type="Str">TCC.exe</Property>
-				<Property Name="Source[8].File[0].Shortcut[0].destIndex" Type="Int">0</Property>
-				<Property Name="Source[8].File[0].Shortcut[0].name" Type="Str">Thermal Camera Calibration</Property>
-				<Property Name="Source[8].File[0].Shortcut[0].subDir" Type="Str">Ice Nucleation Controller</Property>
-				<Property Name="Source[8].File[0].ShortcutCount" Type="Int">1</Property>
 				<Property Name="Source[8].File[0].tag" Type="Str">{4ECC90C8-5AFA-4E65-8969-5270033137DC}</Property>
-				<Property Name="Source[8].FileCount" Type="Int">1</Property>
-				<Property Name="Source[8].name" Type="Str">Thermal Camera Calibration</Property>
-				<Property Name="Source[8].tag" Type="Ref">/My Computer/Build Specifications/Thermal Camera Calibration</Property>
-				<Property Name="Source[8].type" Type="Str">EXE</Property>
+				<Property Name="Source[8].name" Type="Str">Small Setup.prt</Property>
+				<Property Name="Source[8].tag" Type="Ref">/My Computer/Build files/Partitions/Small Setup.prt</Property>
+				<Property Name="Source[8].type" Type="Str">File</Property>
+				<Property Name="Source[8].unlock" Type="Bool">true</Property>
 				<Property Name="SourceCount" Type="Int">9</Property>
 			</Item>
 			<Item Name="DAQ Connect" Type="EXE">
