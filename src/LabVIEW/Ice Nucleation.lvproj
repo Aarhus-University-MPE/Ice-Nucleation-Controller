@@ -458,7 +458,7 @@
 				<Item Name="IMAQ Write JPEG2000 File 2" Type="VI" URL="/&lt;vilib&gt;/vision/Files.llb/IMAQ Write JPEG2000 File 2"/>
 				<Item Name="IMAQ Write PNG File 2" Type="VI" URL="/&lt;vilib&gt;/vision/Files.llb/IMAQ Write PNG File 2"/>
 				<Item Name="IMAQ Write TIFF File 2" Type="VI" URL="/&lt;vilib&gt;/vision/Files.llb/IMAQ Write TIFF File 2"/>
-				<Item Name="IMAQdx.ctl" Type="VI" URL="/&lt;vilib&gt;/userDefined/High Color/IMAQdx.ctl"/>
+				<Item Name="IMAQdx.ctl" Type="VI" URL="/&lt;vilib&gt;/userdefined/High Color/IMAQdx.ctl"/>
 				<Item Name="Is Value Changed.vim" Type="VI" URL="/&lt;vilib&gt;/Utility/Is Value Changed.vim"/>
 				<Item Name="Longest Line Length in Pixels.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Longest Line Length in Pixels.vi"/>
 				<Item Name="LVBoundsTypeDef.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/miscctls.llb/LVBoundsTypeDef.ctl"/>
@@ -571,7 +571,13 @@
 			<Item Name="Stream-bool.lvlib" Type="Library" URL="/&lt;extravilib&gt;/ChannelInstances/Stream-bool.lvlib"/>
 			<Item Name="Tag-c(c(ref(LVObjVI()),bool),bool,bool,u32[Cool,Heat]).lvlib" Type="Library" URL="/&lt;extravilib&gt;/ChannelInstances/Tag-c(c(ref(LVObjVI()),bool),bool,bool,u32[Cool,Heat]).lvlib"/>
 			<Item Name="CalibrationImageLoadPrompt.vi" Type="VI" URL="../CalibrationImageLoadPrompt.vi"/>
-			<Item Name="Tag-c(bool,ref(UserDefinedRefnumTag),bool,path,bool).lvlib" Type="Library" URL="/&lt;extravilib&gt;/ChannelInstances/Tag-c(bool,ref(UserDefinedRefnumTag),bool,path,bool).lvlib"/>
+			<Item Name="Read.vi" Type="VI" URL="/&lt;extravilib&gt;/ChannelInstances/Tag-c(bool,ref(UserDefinedRefnumTag),bool,path,bool)/Read.vi"/>
+			<Item Name="Write.vi" Type="VI" URL="/&lt;extravilib&gt;/ChannelInstances/Tag-c(bool,ref(UserDefinedRefnumTag),bool,path,bool)/Write.vi"/>
+			<Item Name="Read With Abort.vi" Type="VI" URL="/&lt;extravilib&gt;/ChannelInstances/Tag-c(bool,ref(UserDefinedRefnumTag),bool,path,bool)/Read With Abort.vi"/>
+			<Item Name="Write With Abort.vi" Type="VI" URL="/&lt;extravilib&gt;/ChannelInstances/Tag-c(bool,ref(UserDefinedRefnumTag),bool,path,bool)/Write With Abort.vi"/>
+			<Item Name="Instantiate.vi" Type="VI" URL="/&lt;extravilib&gt;/ChannelInstances/Tag-c(bool,ref(UserDefinedRefnumTag),bool,path,bool)/Instantiate.vi"/>
+			<Item Name="EndpointRead.vi" Type="VI" URL="/&lt;extravilib&gt;/ChannelInstances/Tag-c(bool,ref(UserDefinedRefnumTag),bool,path,bool)/EndpointRead.vi"/>
+			<Item Name="Endpoint.vi" Type="VI" URL="/&lt;extravilib&gt;/ChannelInstances/Tag-c(bool,ref(UserDefinedRefnumTag),bool,path,bool)/Endpoint.vi"/>
 		</Item>
 		<Item Name="Build Specifications" Type="Build">
 			<Item Name="Thermal Camera Evaluation" Type="EXE">
@@ -587,23 +593,23 @@
 				<Property Name="Bld_excludeInlineSubVIs" Type="Bool">true</Property>
 				<Property Name="Bld_excludeLibraryItems" Type="Bool">true</Property>
 				<Property Name="Bld_excludePolymorphicVIs" Type="Bool">true</Property>
-				<Property Name="Bld_localDestDir" Type="Path">/C/Users/au540322/Documents/Projects/Ice-Nucleation/Builds/Full Build</Property>
+				<Property Name="Bld_localDestDir" Type="Path">/D/Projects/Ice-Nucleation/Builds/Full Build</Property>
 				<Property Name="Bld_modifyLibraryFile" Type="Bool">true</Property>
 				<Property Name="Bld_previewCacheID" Type="Str">{95EEF059-8F91-49DB-A57E-FF38AF6547AD}</Property>
 				<Property Name="Bld_version.build" Type="Int">20</Property>
 				<Property Name="Bld_version.minor" Type="Int">8</Property>
 				<Property Name="Bld_version.patch" Type="Int">3</Property>
 				<Property Name="Destination[0].destName" Type="Str">TCE.exe</Property>
-				<Property Name="Destination[0].path" Type="Path">/C/Users/au540322/Documents/Projects/Ice-Nucleation/Builds/Full Build/TCE.exe</Property>
+				<Property Name="Destination[0].path" Type="Path">/D/Projects/Ice-Nucleation/Builds/Full Build/TCE.exe</Property>
 				<Property Name="Destination[0].path.type" Type="Str">&lt;none&gt;</Property>
 				<Property Name="Destination[0].preserveHierarchy" Type="Bool">true</Property>
 				<Property Name="Destination[0].type" Type="Str">App</Property>
 				<Property Name="Destination[1].destName" Type="Str">Support Directory</Property>
-				<Property Name="Destination[1].path" Type="Path">/C/Users/au540322/Documents/Projects/Ice-Nucleation/Builds/Full Build/data</Property>
+				<Property Name="Destination[1].path" Type="Path">/D/Projects/Ice-Nucleation/Builds/Full Build/data</Property>
 				<Property Name="Destination[1].path.type" Type="Str">&lt;none&gt;</Property>
 				<Property Name="DestinationCount" Type="Int">2</Property>
 				<Property Name="Exe_iconItemID" Type="Ref">/My Computer/Resources/Logo_TCE.ico</Property>
-				<Property Name="Source[0].itemID" Type="Str">{BD514AE8-F222-4EB0-A8AE-BF1BE65ECEC8}</Property>
+				<Property Name="Source[0].itemID" Type="Str">{B47A8EB2-7B4E-46EE-AF4E-BBF2A68D432F}</Property>
 				<Property Name="Source[0].type" Type="Str">Container</Property>
 				<Property Name="Source[1].destinationIndex" Type="Int">0</Property>
 				<Property Name="Source[1].itemID" Type="Ref">/My Computer/TCE.vi</Property>
@@ -631,23 +637,23 @@
 				<Property Name="Bld_excludeInlineSubVIs" Type="Bool">true</Property>
 				<Property Name="Bld_excludeLibraryItems" Type="Bool">true</Property>
 				<Property Name="Bld_excludePolymorphicVIs" Type="Bool">true</Property>
-				<Property Name="Bld_localDestDir" Type="Path">/C/Users/au540322/Documents/Projects/Ice-Nucleation/Builds/Full Build</Property>
+				<Property Name="Bld_localDestDir" Type="Path">/D/Projects/Ice-Nucleation/Builds/Full Build</Property>
 				<Property Name="Bld_modifyLibraryFile" Type="Bool">true</Property>
 				<Property Name="Bld_previewCacheID" Type="Str">{6FD33856-2380-4F94-8CB7-5581C7931DF6}</Property>
 				<Property Name="Bld_version.build" Type="Int">22</Property>
 				<Property Name="Bld_version.major" Type="Int">1</Property>
 				<Property Name="Bld_version.patch" Type="Int">2</Property>
 				<Property Name="Destination[0].destName" Type="Str">TCC.exe</Property>
-				<Property Name="Destination[0].path" Type="Path">/C/Users/au540322/Documents/Projects/Ice-Nucleation/Builds/Full Build/TCC.exe</Property>
+				<Property Name="Destination[0].path" Type="Path">/D/Projects/Ice-Nucleation/Builds/Full Build/TCC.exe</Property>
 				<Property Name="Destination[0].path.type" Type="Str">&lt;none&gt;</Property>
 				<Property Name="Destination[0].preserveHierarchy" Type="Bool">true</Property>
 				<Property Name="Destination[0].type" Type="Str">App</Property>
 				<Property Name="Destination[1].destName" Type="Str">Support Directory</Property>
-				<Property Name="Destination[1].path" Type="Path">/C/Users/au540322/Documents/Projects/Ice-Nucleation/Builds/Full Build/data</Property>
+				<Property Name="Destination[1].path" Type="Path">/D/Projects/Ice-Nucleation/Builds/Full Build/data</Property>
 				<Property Name="Destination[1].path.type" Type="Str">&lt;none&gt;</Property>
 				<Property Name="DestinationCount" Type="Int">2</Property>
 				<Property Name="Exe_iconItemID" Type="Ref">/My Computer/Resources/Logo_TCC.ico</Property>
-				<Property Name="Source[0].itemID" Type="Str">{BD514AE8-F222-4EB0-A8AE-BF1BE65ECEC8}</Property>
+				<Property Name="Source[0].itemID" Type="Str">{B47A8EB2-7B4E-46EE-AF4E-BBF2A68D432F}</Property>
 				<Property Name="Source[0].type" Type="Str">Container</Property>
 				<Property Name="Source[1].destinationIndex" Type="Int">0</Property>
 				<Property Name="Source[1].itemID" Type="Ref">/My Computer/TCC.vi</Property>
@@ -679,7 +685,7 @@
 				<Property Name="Bld_excludeInlineSubVIs" Type="Bool">true</Property>
 				<Property Name="Bld_excludeLibraryItems" Type="Bool">true</Property>
 				<Property Name="Bld_excludePolymorphicVIs" Type="Bool">true</Property>
-				<Property Name="Bld_localDestDir" Type="Path">/C/Users/au540322/Documents/Projects/Ice-Nucleation/Builds/Full Build</Property>
+				<Property Name="Bld_localDestDir" Type="Path">/D/Projects/Ice-Nucleation/Builds/Full Build</Property>
 				<Property Name="Bld_modifyLibraryFile" Type="Bool">true</Property>
 				<Property Name="Bld_previewCacheID" Type="Str">{27D8B2BC-76A3-474D-8C11-FD95C8E7081D}</Property>
 				<Property Name="Bld_version.build" Type="Int">13</Property>
@@ -687,16 +693,16 @@
 				<Property Name="Bld_version.minor" Type="Int">2</Property>
 				<Property Name="Bld_version.patch" Type="Int">6</Property>
 				<Property Name="Destination[0].destName" Type="Str">INC.exe</Property>
-				<Property Name="Destination[0].path" Type="Path">/C/Users/au540322/Documents/Projects/Ice-Nucleation/Builds/Full Build/Ice Nucleation Controller.exe</Property>
+				<Property Name="Destination[0].path" Type="Path">/D/Projects/Ice-Nucleation/Builds/Full Build/Ice Nucleation Controller.exe</Property>
 				<Property Name="Destination[0].path.type" Type="Str">&lt;none&gt;</Property>
 				<Property Name="Destination[0].preserveHierarchy" Type="Bool">true</Property>
 				<Property Name="Destination[0].type" Type="Str">App</Property>
 				<Property Name="Destination[1].destName" Type="Str">Support Directory</Property>
-				<Property Name="Destination[1].path" Type="Path">/C/Users/au540322/Documents/Projects/Ice-Nucleation/Builds/Full Build/data</Property>
+				<Property Name="Destination[1].path" Type="Path">/D/Projects/Ice-Nucleation/Builds/Full Build/data</Property>
 				<Property Name="Destination[1].path.type" Type="Str">&lt;none&gt;</Property>
 				<Property Name="DestinationCount" Type="Int">2</Property>
 				<Property Name="Exe_iconItemID" Type="Ref">/My Computer/Resources/Logo.ico</Property>
-				<Property Name="Source[0].itemID" Type="Str">{BD514AE8-F222-4EB0-A8AE-BF1BE65ECEC8}</Property>
+				<Property Name="Source[0].itemID" Type="Str">{B47A8EB2-7B4E-46EE-AF4E-BBF2A68D432F}</Property>
 				<Property Name="Source[0].type" Type="Str">Container</Property>
 				<Property Name="Source[1].destinationIndex" Type="Int">0</Property>
 				<Property Name="Source[1].itemID" Type="Ref">/My Computer/main.vi</Property>
@@ -730,24 +736,24 @@
 				<Property Name="Destination[2].unlock" Type="Bool">true</Property>
 				<Property Name="DestinationCount" Type="Int">3</Property>
 				<Property Name="DistPart[0].flavorID" Type="Str">DefaultFull</Property>
-				<Property Name="DistPart[0].productID" Type="Str">{57C41B25-A232-4945-B942-D7EC8ECBE6EF}</Property>
-				<Property Name="DistPart[0].productName" Type="Str">NI Vision Common Resources 2020</Property>
+				<Property Name="DistPart[0].productID" Type="Str">{9D67591A-4B74-4CD1-87CF-976FD6F6C484}</Property>
+				<Property Name="DistPart[0].productName" Type="Str">NI Vision Common Resources 2020 SP2</Property>
 				<Property Name="DistPart[0].upgradeCode" Type="Str">{409BEFA9-EB3E-472F-AD77-271A4A1D5927}</Property>
 				<Property Name="DistPart[1].flavorID" Type="Str">DefaultFull</Property>
-				<Property Name="DistPart[1].productID" Type="Str">{633A1550-642D-4DAB-A449-234FEFC53097}</Property>
-				<Property Name="DistPart[1].productName" Type="Str">NI Vision Runtime 2020</Property>
+				<Property Name="DistPart[1].productID" Type="Str">{13B38F6E-AF24-442E-8326-9B8B085C4992}</Property>
+				<Property Name="DistPart[1].productName" Type="Str">NI Vision Runtime 2020 SP1</Property>
 				<Property Name="DistPart[1].upgradeCode" Type="Str">{63DF74E5-A5C9-11D4-814E-005004D6CDD6}</Property>
 				<Property Name="DistPart[2].flavorID" Type="Str">_full_</Property>
 				<Property Name="DistPart[2].productID" Type="Str">{CB6C2533-4926-42B8-AC21-04BB9679F818}</Property>
 				<Property Name="DistPart[2].productName" Type="Str">NI-488.2 Runtime 20.0</Property>
 				<Property Name="DistPart[2].upgradeCode" Type="Str">{357F6618-C660-41A2-A185-5578CC876D1D}</Property>
 				<Property Name="DistPart[3].flavorID" Type="Str">_full_</Property>
-				<Property Name="DistPart[3].productID" Type="Str">{990D2361-0AD6-4071-B4CB-E32698D4FC64}</Property>
-				<Property Name="DistPart[3].productName" Type="Str">NI-DAQmx Runtime 20.0</Property>
+				<Property Name="DistPart[3].productID" Type="Str">{B1A6D301-109F-4899-85D2-BA79C10034D4}</Property>
+				<Property Name="DistPart[3].productName" Type="Str">NI-DAQmx Runtime 20.7</Property>
 				<Property Name="DistPart[3].upgradeCode" Type="Str">{923C9CD5-A0D8-4147-9A8D-998780E30763}</Property>
 				<Property Name="DistPart[4].flavorID" Type="Str">DefaultFull</Property>
-				<Property Name="DistPart[4].productID" Type="Str">{2A34BA62-42F5-4FA3-BE08-862AC6C2F628}</Property>
-				<Property Name="DistPart[4].productName" Type="Str">NI-IMAQdx Runtime 20.0</Property>
+				<Property Name="DistPart[4].productID" Type="Str">{06CE04CA-A6D6-4353-B169-328BE6B7046C}</Property>
+				<Property Name="DistPart[4].productName" Type="Str">NI-IMAQdx Runtime 20.6</Property>
 				<Property Name="DistPart[4].upgradeCode" Type="Str">{3D104AB3-CE10-43C0-B647-07600754072C}</Property>
 				<Property Name="DistPart[5].flavorID" Type="Str">_full_</Property>
 				<Property Name="DistPart[5].productID" Type="Str">{F12C6F92-5B1C-4EAB-9364-96026CE1920D}</Property>
@@ -758,8 +764,8 @@
 				<Property Name="DistPart[6].productName" Type="Str">NI-VISA Runtime 20.0</Property>
 				<Property Name="DistPart[6].upgradeCode" Type="Str">{8627993A-3F66-483C-A562-0D3BA3F267B1}</Property>
 				<Property Name="DistPart[7].flavorID" Type="Str">DefaultFull</Property>
-				<Property Name="DistPart[7].productID" Type="Str">{CED05116-2329-4D0D-92CA-CEC520182EB0}</Property>
-				<Property Name="DistPart[7].productName" Type="Str">NI LabVIEW Runtime 2020 f1</Property>
+				<Property Name="DistPart[7].productID" Type="Str">{6B440D80-3B0D-43B2-8A06-E2E939AA1006}</Property>
+				<Property Name="DistPart[7].productName" Type="Str">NI LabVIEW Runtime 2020 SP1</Property>
 				<Property Name="DistPart[7].SoftDep[0].exclude" Type="Bool">false</Property>
 				<Property Name="DistPart[7].SoftDep[0].productName" Type="Str">NI ActiveX Container</Property>
 				<Property Name="DistPart[7].SoftDep[0].upgradeCode" Type="Str">{1038A887-23E1-4289-B0BD-0C4B83C6BA21}</Property>
@@ -779,7 +785,7 @@
 				<Property Name="DistPart[7].SoftDep[3].productName" Type="Str">NI LabVIEW Real-Time NBFifo 2020</Property>
 				<Property Name="DistPart[7].SoftDep[3].upgradeCode" Type="Str">{00D0B680-F876-4E42-A25F-52B65418C2A6}</Property>
 				<Property Name="DistPart[7].SoftDep[4].exclude" Type="Bool">false</Property>
-				<Property Name="DistPart[7].SoftDep[4].productName" Type="Str">NI LabVIEW Runtime 2020 Non-English Support.</Property>
+				<Property Name="DistPart[7].SoftDep[4].productName" Type="Str">NI LabVIEW Runtime 2020 SP1 Non-English Support.</Property>
 				<Property Name="DistPart[7].SoftDep[4].upgradeCode" Type="Str">{61FCC73D-8092-457D-8905-27C0060D88E1}</Property>
 				<Property Name="DistPart[7].SoftDep[5].exclude" Type="Bool">false</Property>
 				<Property Name="DistPart[7].SoftDep[5].productName" Type="Str">NI Logos 20.0</Property>
@@ -801,14 +807,14 @@
 				<Property Name="DistPartCount" Type="Int">8</Property>
 				<Property Name="INST_author" Type="Str">Aarhus University</Property>
 				<Property Name="INST_autoIncrement" Type="Bool">true</Property>
-				<Property Name="INST_buildLocation" Type="Path">/C/Users/au540322/Documents/Projects/Ice-Nucleation/Builds/Installer</Property>
+				<Property Name="INST_buildLocation" Type="Path">/D/Projects/Ice-Nucleation/Builds/Installer</Property>
 				<Property Name="INST_buildSpecName" Type="Str">Installer</Property>
 				<Property Name="INST_defaultDir" Type="Str">{4B7C7F5D-6E6D-4786-BBED-E06C37A5A212}</Property>
 				<Property Name="INST_installerName" Type="Str">install.exe</Property>
 				<Property Name="INST_productName" Type="Str">Ice Nucleation Controller</Property>
 				<Property Name="INST_productVersion" Type="Str">1.0.12</Property>
 				<Property Name="InstSpecBitness" Type="Str">32-bit</Property>
-				<Property Name="InstSpecVersion" Type="Str">20008014</Property>
+				<Property Name="InstSpecVersion" Type="Str">20018000</Property>
 				<Property Name="MSI_arpCompany" Type="Str">Aarhus University</Property>
 				<Property Name="MSI_arpContact" Type="Str">Mads Rosenhøj Jeppesen</Property>
 				<Property Name="MSI_arpPhone" Type="Str">+45 20 89 43 32</Property>
