@@ -37,6 +37,7 @@
 			<Item Name="Arduino" Type="Folder">
 				<Item Name="Arduino_Initialize.vi" Type="VI" URL="../Arduino_Initialize.vi"/>
 				<Item Name="Arduino_Mode.vi" Type="VI" URL="../Arduino_Mode.vi"/>
+				<Item Name="Arduino_Resend_Heat_Timeout.vi" Type="VI" URL="../Arduino_Resend_Heat_Timeout.vi"/>
 			</Item>
 			<Item Name="Thermal Camera" Type="Folder">
 				<Item Name="Processing" Type="Folder">
@@ -245,7 +246,6 @@
 		<Item Name="main.vi" Type="VI" URL="../main.vi"/>
 		<Item Name="TCC.vi" Type="VI" URL="../TCC.vi"/>
 		<Item Name="TCE.vi" Type="VI" URL="../TCE.vi"/>
-		<Item Name="Arduino_Resend_Heat_Timeout.vi" Type="VI" URL="../Arduino_Resend_Heat_Timeout.vi"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="vi.lib" Type="Folder">
 				<Item Name="Add State(s) to Queue__JKI_lib_State_Machine.vi" Type="VI" URL="/&lt;vilib&gt;/addons/_JKI Toolkits/State Machine/_JKI_lib_State_Machine.llb/Add State(s) to Queue__JKI_lib_State_Machine.vi"/>
