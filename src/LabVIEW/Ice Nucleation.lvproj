@@ -149,6 +149,9 @@
 				<Item Name="RunTimeMenu.rtm" Type="Document" URL="../RunTimeMenu.rtm"/>
 				<Item Name="RunTimeMenu_Partition.rtm" Type="Document" URL="../RunTimeMenu_Partition.rtm"/>
 				<Item Name="RunTimeMenu_TCE.rtm" Type="Document" URL="../RunTimeMenu_TCE.rtm"/>
+				<Item Name="DataAcquisitionState.vi" Type="VI" URL="../DataAcquisitionState.vi"/>
+				<Item Name="CPU_Overload.vi" Type="VI" URL="../CPU_Overload.vi"/>
+				<Item Name="DAQ_Control.vi" Type="VI" URL="../DAQ_Control.vi"/>
 			</Item>
 			<Item Name="UI" Type="Folder">
 				<Item Name="Connections" Type="Folder">
@@ -246,6 +249,7 @@
 		<Item Name="main.vi" Type="VI" URL="../main.vi"/>
 		<Item Name="TCC.vi" Type="VI" URL="../TCC.vi"/>
 		<Item Name="TCE.vi" Type="VI" URL="../TCE.vi"/>
+		<Item Name="RollingGradient.vi" Type="VI" URL="../RollingGradient.vi"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="vi.lib" Type="Folder">
 				<Item Name="Add State(s) to Queue__JKI_lib_State_Machine.vi" Type="VI" URL="/&lt;vilib&gt;/addons/_JKI Toolkits/State Machine/_JKI_lib_State_Machine.llb/Add State(s) to Queue__JKI_lib_State_Machine.vi"/>
@@ -467,15 +471,10 @@
 				<Item Name="LVRowAndColumnTypeDef.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/miscctls.llb/LVRowAndColumnTypeDef.ctl"/>
 				<Item Name="MoveMemory.vi" Type="VI" URL="/&lt;vilib&gt;/Platform/fileVersionInfo.llb/MoveMemory.vi"/>
 				<Item Name="NI_AALBase.lvlib" Type="Library" URL="/&lt;vilib&gt;/Analysis/NI_AALBase.lvlib"/>
-				<Item Name="NI_AALPro.lvlib" Type="Library" URL="/&lt;vilib&gt;/Analysis/NI_AALPro.lvlib"/>
-				<Item Name="NI_AdvCtrl_continuous linear.lvlib" Type="Library" URL="/&lt;vilib&gt;/addons/control/advanced/NI_AdvCtrl_continuous linear.lvlib"/>
-				<Item Name="NI_AdvCtrl_nonlinear.lvlib" Type="Library" URL="/&lt;vilib&gt;/addons/control/advanced/NI_AdvCtrl_nonlinear.lvlib"/>
 				<Item Name="NI_FileType.lvlib" Type="Library" URL="/&lt;vilib&gt;/Utility/lvfile.llb/NI_FileType.lvlib"/>
-				<Item Name="NI_Matrix.lvlib" Type="Library" URL="/&lt;vilib&gt;/Analysis/Matrix/NI_Matrix.lvlib"/>
 				<Item Name="NI_PackedLibraryUtility.lvlib" Type="Library" URL="/&lt;vilib&gt;/Utility/LVLibp/NI_PackedLibraryUtility.lvlib"/>
 				<Item Name="NI_PID_autopid.lvlib" Type="Library" URL="/&lt;vilib&gt;/addons/control/pid/NI_PID_autopid.lvlib"/>
 				<Item Name="NI_PID_pid.lvlib" Type="Library" URL="/&lt;vilib&gt;/addons/control/pid/NI_PID_pid.lvlib"/>
-				<Item Name="NI_PtbyPt.lvlib" Type="Library" URL="/&lt;vilib&gt;/ptbypt/NI_PtbyPt.lvlib"/>
 				<Item Name="NI_Vision_Acquisition_Software.lvlib" Type="Library" URL="/&lt;vilib&gt;/vision/driver/NI_Vision_Acquisition_Software.lvlib"/>
 				<Item Name="NI_Vision_Development_Module.lvlib" Type="Library" URL="/&lt;vilib&gt;/vision/NI_Vision_Development_Module.lvlib"/>
 				<Item Name="Not Found Dialog.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Not Found Dialog.vi"/>
@@ -535,6 +534,9 @@
 				<Item Name="VISA Configure Serial Port" Type="VI" URL="/&lt;vilib&gt;/Instr/_visa.llb/VISA Configure Serial Port"/>
 				<Item Name="VISA Find Search Mode.ctl" Type="VI" URL="/&lt;vilib&gt;/Instr/_visa.llb/VISA Find Search Mode.ctl"/>
 				<Item Name="Beep.vi" Type="VI" URL="/&lt;vilib&gt;/Platform/system.llb/Beep.vi"/>
+				<Item Name="NI_PID__prctrl compat.lvlib" Type="Library" URL="/&lt;vilib&gt;/addons/control/pid/NI_PID__prctrl compat.lvlib"/>
+				<Item Name="lvpidtkt.dll" Type="Document" URL="/&lt;vilib&gt;/addons/control/pid/lvpidtkt.dll"/>
+				<Item Name="NI_AALPro.lvlib" Type="Library" URL="/&lt;vilib&gt;/Analysis/NI_AALPro.lvlib"/>
 			</Item>
 			<Item Name="_ChannelSupport.lvlib" Type="Library" URL="/&lt;resource&gt;/ChannelSupport/_ChannelSupport/_ChannelSupport.lvlib"/>
 			<Item Name="ChannelProbePositionAndTitle.vi" Type="VI" URL="/&lt;resource&gt;/ChannelSupport/_ChannelSupport/ChannelProbePositionAndTitle.vi"/>
@@ -590,7 +592,7 @@
 				<Property Name="Bld_localDestDir" Type="Path">/C/Users/au540322/Documents/Projects/Ice-Nucleation/Builds/Full Build</Property>
 				<Property Name="Bld_modifyLibraryFile" Type="Bool">true</Property>
 				<Property Name="Bld_previewCacheID" Type="Str">{95EEF059-8F91-49DB-A57E-FF38AF6547AD}</Property>
-				<Property Name="Bld_version.build" Type="Int">22</Property>
+				<Property Name="Bld_version.build" Type="Int">24</Property>
 				<Property Name="Bld_version.minor" Type="Int">8</Property>
 				<Property Name="Bld_version.patch" Type="Int">3</Property>
 				<Property Name="Destination[0].destName" Type="Str">TCE.exe</Property>
@@ -603,7 +605,7 @@
 				<Property Name="Destination[1].path.type" Type="Str">&lt;none&gt;</Property>
 				<Property Name="DestinationCount" Type="Int">2</Property>
 				<Property Name="Exe_iconItemID" Type="Ref">/My Computer/Resources/Logo_TCE.ico</Property>
-				<Property Name="Source[0].itemID" Type="Str">{9F7AEDA5-5439-43CD-9083-DBE4FE776E5A}</Property>
+				<Property Name="Source[0].itemID" Type="Str">{C2CDB64D-E84C-47D5-8670-488B739C8F82}</Property>
 				<Property Name="Source[0].type" Type="Str">Container</Property>
 				<Property Name="Source[1].destinationIndex" Type="Int">0</Property>
 				<Property Name="Source[1].itemID" Type="Ref">/My Computer/TCE.vi</Property>
@@ -634,7 +636,7 @@
 				<Property Name="Bld_localDestDir" Type="Path">/C/Users/au540322/Documents/Projects/Ice-Nucleation/Builds/Full Build</Property>
 				<Property Name="Bld_modifyLibraryFile" Type="Bool">true</Property>
 				<Property Name="Bld_previewCacheID" Type="Str">{6FD33856-2380-4F94-8CB7-5581C7931DF6}</Property>
-				<Property Name="Bld_version.build" Type="Int">24</Property>
+				<Property Name="Bld_version.build" Type="Int">26</Property>
 				<Property Name="Bld_version.major" Type="Int">1</Property>
 				<Property Name="Bld_version.patch" Type="Int">2</Property>
 				<Property Name="Destination[0].destName" Type="Str">TCC.exe</Property>
@@ -647,7 +649,7 @@
 				<Property Name="Destination[1].path.type" Type="Str">&lt;none&gt;</Property>
 				<Property Name="DestinationCount" Type="Int">2</Property>
 				<Property Name="Exe_iconItemID" Type="Ref">/My Computer/Resources/Logo_TCC.ico</Property>
-				<Property Name="Source[0].itemID" Type="Str">{9F7AEDA5-5439-43CD-9083-DBE4FE776E5A}</Property>
+				<Property Name="Source[0].itemID" Type="Str">{C2CDB64D-E84C-47D5-8670-488B739C8F82}</Property>
 				<Property Name="Source[0].type" Type="Str">Container</Property>
 				<Property Name="Source[1].destinationIndex" Type="Int">0</Property>
 				<Property Name="Source[1].itemID" Type="Ref">/My Computer/TCC.vi</Property>
@@ -682,10 +684,10 @@
 				<Property Name="Bld_localDestDir" Type="Path">/C/Users/au540322/Documents/Projects/Ice-Nucleation/Builds/Full Build</Property>
 				<Property Name="Bld_modifyLibraryFile" Type="Bool">true</Property>
 				<Property Name="Bld_previewCacheID" Type="Str">{27D8B2BC-76A3-474D-8C11-FD95C8E7081D}</Property>
-				<Property Name="Bld_version.build" Type="Int">13</Property>
+				<Property Name="Bld_version.build" Type="Int">55</Property>
 				<Property Name="Bld_version.major" Type="Int">1</Property>
 				<Property Name="Bld_version.minor" Type="Int">2</Property>
-				<Property Name="Bld_version.patch" Type="Int">8</Property>
+				<Property Name="Bld_version.patch" Type="Int">9</Property>
 				<Property Name="Destination[0].destName" Type="Str">INC.exe</Property>
 				<Property Name="Destination[0].path" Type="Path">/C/Users/au540322/Documents/Projects/Ice-Nucleation/Builds/Full Build/Ice Nucleation Controller.exe</Property>
 				<Property Name="Destination[0].path.type" Type="Str">&lt;none&gt;</Property>
@@ -696,7 +698,7 @@
 				<Property Name="Destination[1].path.type" Type="Str">&lt;none&gt;</Property>
 				<Property Name="DestinationCount" Type="Int">2</Property>
 				<Property Name="Exe_iconItemID" Type="Ref">/My Computer/Resources/Logo.ico</Property>
-				<Property Name="Source[0].itemID" Type="Str">{9F7AEDA5-5439-43CD-9083-DBE4FE776E5A}</Property>
+				<Property Name="Source[0].itemID" Type="Str">{C2CDB64D-E84C-47D5-8670-488B739C8F82}</Property>
 				<Property Name="Source[0].type" Type="Str">Container</Property>
 				<Property Name="Source[1].destinationIndex" Type="Int">0</Property>
 				<Property Name="Source[1].itemID" Type="Ref">/My Computer/main.vi</Property>
