@@ -51,6 +51,7 @@ void loop() {
     if (CMD == CMD_COOL)
     {
       digitalWrite(RELAY_PIN, LOW);
+      HEATING = false;
       Serial.println("OK");
     }
 
