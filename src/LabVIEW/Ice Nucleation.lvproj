@@ -40,37 +40,6 @@
 				<Item Name="Arduino_Resend_Heat_Timeout.vi" Type="VI" URL="../Arduino_Resend_Heat_Timeout.vi"/>
 			</Item>
 			<Item Name="Thermal Camera" Type="Folder">
-				<Item Name="TCE" Type="Folder">
-					<Item Name="Config" Type="Folder">
-						<Item Name="TCE_Config_Load.vi" Type="VI" URL="../TCE_Config_Load.vi"/>
-						<Item Name="TCE_Config_Save.vi" Type="VI" URL="../TCE_Config_Save.vi"/>
-					</Item>
-					<Item Name="Partition" Type="Folder">
-						<Item Name="WellPartition_Index.vi" Type="VI" URL="../WellPartition_Index.vi"/>
-						<Item Name="Partition_Sort_Reorder.vi" Type="VI" URL="../Partition_Sort_Reorder.vi"/>
-						<Item Name="Partition_Sort.vi" Type="VI" URL="../Partition_Sort.vi"/>
-					</Item>
-					<Item Name="Frozen Fraction" Type="Folder">
-						<Item Name="FrozenFraction_Calcualte.vi" Type="VI" URL="../FrozenFraction_Calcualte.vi"/>
-						<Item Name="FrozenFraction_Extraction.vi" Type="VI" URL="../FrozenFraction_Extraction.vi"/>
-						<Item Name="FrozenFraction_Concatinate.vi" Type="VI" URL="../FrozenFraction_Concatinate.vi"/>
-					</Item>
-					<Item Name="Temps" Type="Folder">
-						<Item Name="TCam_WellCalculater.vi" Type="VI" URL="../TCam_WellCalculater.vi"/>
-						<Item Name="TCam_WellTemp.vi" Type="VI" URL="../TCam_WellTemp.vi"/>
-						<Item Name="TCam_WellPixels.vi" Type="VI" URL="../TCam_WellPixels.vi"/>
-						<Item Name="TCam_IMGTempExtract.vi" Type="VI" URL="../TCam_IMGTempExtract.vi"/>
-						<Item Name="TCam_ArrayTempExtract.vi" Type="VI" URL="../TCam_ArrayTempExtract.vi"/>
-						<Item Name="TCam_PointCalculator.vi" Type="VI" URL="../TCam_PointCalculator.vi"/>
-						<Item Name="TCam_FixpointTemps.vi" Type="VI" URL="../TCam_FixpointTemps.vi"/>
-					</Item>
-					<Item Name="UI" Type="Folder">
-						<Item Name="TCE_Config.vi" Type="VI" URL="../TCE_Config.vi"/>
-					</Item>
-					<Item Name="DataArray_SaveSelection.vi" Type="VI" URL="../DataArray_SaveSelection.vi"/>
-					<Item Name="TCE_SaveConfiguration.vi" Type="VI" URL="../TCE_SaveConfiguration.vi"/>
-					<Item Name="RunTimeMenu_TCE.rtm" Type="Document" URL="../RunTimeMenu_TCE.rtm"/>
-				</Item>
 				<Item Name="UI" Type="Folder">
 					<Item Name="TCam_CenterArray.vi" Type="VI" URL="../TCam_CenterArray.vi"/>
 					<Item Name="TCam_HorizontalLines.vi" Type="VI" URL="../TCam_HorizontalLines.vi"/>
@@ -199,6 +168,37 @@
 				<Item Name="Manual_Cool_Heat_V2.vi" Type="VI" URL="../Manual_Cool_Heat_V2.vi"/>
 				<Item Name="Manual_Cool_Heat.vi" Type="VI" URL="../Manual_Cool_Heat.vi"/>
 				<Item Name="Manual_Cool_Heat_Converter.vi" Type="VI" URL="../Manual_Cool_Heat_Converter.vi"/>
+			</Item>
+			<Item Name="TCE" Type="Folder">
+				<Item Name="Config" Type="Folder">
+					<Item Name="TCE_Config_Load.vi" Type="VI" URL="../TCE_Config_Load.vi"/>
+					<Item Name="TCE_Config_Save.vi" Type="VI" URL="../TCE_Config_Save.vi"/>
+				</Item>
+				<Item Name="Partition" Type="Folder">
+					<Item Name="WellPartition_Index.vi" Type="VI" URL="../WellPartition_Index.vi"/>
+					<Item Name="Partition_Sort_Reorder.vi" Type="VI" URL="../Partition_Sort_Reorder.vi"/>
+					<Item Name="Partition_Sort.vi" Type="VI" URL="../Partition_Sort.vi"/>
+				</Item>
+				<Item Name="Frozen Fraction" Type="Folder">
+					<Item Name="FrozenFraction_Calcualte.vi" Type="VI" URL="../FrozenFraction_Calcualte.vi"/>
+					<Item Name="FrozenFraction_Extraction.vi" Type="VI" URL="../FrozenFraction_Extraction.vi"/>
+					<Item Name="FrozenFraction_Concatinate.vi" Type="VI" URL="../FrozenFraction_Concatinate.vi"/>
+				</Item>
+				<Item Name="Temps" Type="Folder">
+					<Item Name="TCam_WellCalculater.vi" Type="VI" URL="../TCam_WellCalculater.vi"/>
+					<Item Name="TCam_WellTemp.vi" Type="VI" URL="../TCam_WellTemp.vi"/>
+					<Item Name="TCam_WellPixels.vi" Type="VI" URL="../TCam_WellPixels.vi"/>
+					<Item Name="TCam_IMGTempExtract.vi" Type="VI" URL="../TCam_IMGTempExtract.vi"/>
+					<Item Name="TCam_ArrayTempExtract.vi" Type="VI" URL="../TCam_ArrayTempExtract.vi"/>
+					<Item Name="TCam_PointCalculator.vi" Type="VI" URL="../TCam_PointCalculator.vi"/>
+					<Item Name="TCam_FixpointTemps.vi" Type="VI" URL="../TCam_FixpointTemps.vi"/>
+				</Item>
+				<Item Name="UI" Type="Folder">
+					<Item Name="TCE_Config.vi" Type="VI" URL="../TCE_Config.vi"/>
+				</Item>
+				<Item Name="DataArray_SaveSelection.vi" Type="VI" URL="../DataArray_SaveSelection.vi"/>
+				<Item Name="TCE_SaveConfiguration.vi" Type="VI" URL="../TCE_SaveConfiguration.vi"/>
+				<Item Name="RunTimeMenu_TCE.rtm" Type="Document" URL="../RunTimeMenu_TCE.rtm"/>
 			</Item>
 		</Item>
 		<Item Name="Test Functions" Type="Folder">
@@ -632,7 +632,7 @@
 				<Property Name="Bld_localDestDir" Type="Path">/D/Projects/Ice-Nucleation/Builds/Full Build</Property>
 				<Property Name="Bld_modifyLibraryFile" Type="Bool">true</Property>
 				<Property Name="Bld_previewCacheID" Type="Str">{95EEF059-8F91-49DB-A57E-FF38AF6547AD}</Property>
-				<Property Name="Bld_version.build" Type="Int">22</Property>
+				<Property Name="Bld_version.build" Type="Int">24</Property>
 				<Property Name="Bld_version.major" Type="Int">1</Property>
 				<Property Name="Bld_version.minor" Type="Int">1</Property>
 				<Property Name="Bld_version.patch" Type="Int">3</Property>
@@ -677,7 +677,7 @@
 				<Property Name="Bld_localDestDir" Type="Path">/D/Projects/Ice-Nucleation/Builds/Full Build</Property>
 				<Property Name="Bld_modifyLibraryFile" Type="Bool">true</Property>
 				<Property Name="Bld_previewCacheID" Type="Str">{6FD33856-2380-4F94-8CB7-5581C7931DF6}</Property>
-				<Property Name="Bld_version.build" Type="Int">29</Property>
+				<Property Name="Bld_version.build" Type="Int">30</Property>
 				<Property Name="Bld_version.major" Type="Int">1</Property>
 				<Property Name="Bld_version.patch" Type="Int">2</Property>
 				<Property Name="Destination[0].destName" Type="Str">TCC.exe</Property>
@@ -725,7 +725,7 @@
 				<Property Name="Bld_localDestDir" Type="Path">/D/Projects/Ice-Nucleation/Builds/Full Build</Property>
 				<Property Name="Bld_modifyLibraryFile" Type="Bool">true</Property>
 				<Property Name="Bld_previewCacheID" Type="Str">{27D8B2BC-76A3-474D-8C11-FD95C8E7081D}</Property>
-				<Property Name="Bld_version.build" Type="Int">52</Property>
+				<Property Name="Bld_version.build" Type="Int">53</Property>
 				<Property Name="Bld_version.major" Type="Int">1</Property>
 				<Property Name="Bld_version.minor" Type="Int">2</Property>
 				<Property Name="Bld_version.patch" Type="Int">11</Property>
@@ -739,7 +739,7 @@
 				<Property Name="Destination[1].path.type" Type="Str">&lt;none&gt;</Property>
 				<Property Name="DestinationCount" Type="Int">2</Property>
 				<Property Name="Exe_iconItemID" Type="Ref">/My Computer/Assets/Logo.ico</Property>
-				<Property Name="Source[0].itemID" Type="Str">{96121879-88C1-4867-A786-76683257CE83}</Property>
+				<Property Name="Source[0].itemID" Type="Str">{78ADCAA6-158B-4D83-86CE-367E035EE720}</Property>
 				<Property Name="Source[0].type" Type="Str">Container</Property>
 				<Property Name="Source[1].destinationIndex" Type="Int">0</Property>
 				<Property Name="Source[1].itemID" Type="Ref">/My Computer/main.vi</Property>
@@ -849,7 +849,7 @@
 				<Property Name="INST_defaultDir" Type="Str">{4B7C7F5D-6E6D-4786-BBED-E06C37A5A212}</Property>
 				<Property Name="INST_installerName" Type="Str">install.exe</Property>
 				<Property Name="INST_productName" Type="Str">Ice Nucleation Controller</Property>
-				<Property Name="INST_productVersion" Type="Str">1.0.17</Property>
+				<Property Name="INST_productVersion" Type="Str">1.0.18</Property>
 				<Property Name="InstSpecBitness" Type="Str">32-bit</Property>
 				<Property Name="InstSpecVersion" Type="Str">20018000</Property>
 				<Property Name="MSI_arpCompany" Type="Str">Aarhus University</Property>
