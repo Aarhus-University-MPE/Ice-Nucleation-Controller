@@ -632,10 +632,10 @@
 				<Property Name="Bld_localDestDir" Type="Path">/D/Projects/Ice-Nucleation/Builds/Full Build</Property>
 				<Property Name="Bld_modifyLibraryFile" Type="Bool">true</Property>
 				<Property Name="Bld_previewCacheID" Type="Str">{95EEF059-8F91-49DB-A57E-FF38AF6547AD}</Property>
-				<Property Name="Bld_version.build" Type="Int">25</Property>
+				<Property Name="Bld_version.build" Type="Int">12</Property>
 				<Property Name="Bld_version.major" Type="Int">1</Property>
 				<Property Name="Bld_version.minor" Type="Int">1</Property>
-				<Property Name="Bld_version.patch" Type="Int">3</Property>
+				<Property Name="Bld_version.patch" Type="Int">4</Property>
 				<Property Name="Destination[0].destName" Type="Str">TCE.exe</Property>
 				<Property Name="Destination[0].path" Type="Path">/D/Projects/Ice-Nucleation/Builds/Full Build/TCE.exe</Property>
 				<Property Name="Destination[0].path.type" Type="Str">&lt;none&gt;</Property>
@@ -646,7 +646,7 @@
 				<Property Name="Destination[1].path.type" Type="Str">&lt;none&gt;</Property>
 				<Property Name="DestinationCount" Type="Int">2</Property>
 				<Property Name="Exe_iconItemID" Type="Ref">/My Computer/Assets/Logo_TCE.ico</Property>
-				<Property Name="Source[0].itemID" Type="Str">{96121879-88C1-4867-A786-76683257CE83}</Property>
+				<Property Name="Source[0].itemID" Type="Str">{AF19B5BE-016F-4DD9-848F-D62EAB7E71F7}</Property>
 				<Property Name="Source[0].type" Type="Str">Container</Property>
 				<Property Name="Source[1].destinationIndex" Type="Int">0</Property>
 				<Property Name="Source[1].itemID" Type="Ref">/My Computer/TCE.vi</Property>
@@ -677,7 +677,7 @@
 				<Property Name="Bld_localDestDir" Type="Path">/D/Projects/Ice-Nucleation/Builds/Full Build</Property>
 				<Property Name="Bld_modifyLibraryFile" Type="Bool">true</Property>
 				<Property Name="Bld_previewCacheID" Type="Str">{6FD33856-2380-4F94-8CB7-5581C7931DF6}</Property>
-				<Property Name="Bld_version.build" Type="Int">30</Property>
+				<Property Name="Bld_version.build" Type="Int">31</Property>
 				<Property Name="Bld_version.major" Type="Int">1</Property>
 				<Property Name="Bld_version.patch" Type="Int">2</Property>
 				<Property Name="Destination[0].destName" Type="Str">TCC.exe</Property>
@@ -725,10 +725,10 @@
 				<Property Name="Bld_localDestDir" Type="Path">/D/Projects/Ice-Nucleation/Builds/Full Build</Property>
 				<Property Name="Bld_modifyLibraryFile" Type="Bool">true</Property>
 				<Property Name="Bld_previewCacheID" Type="Str">{27D8B2BC-76A3-474D-8C11-FD95C8E7081D}</Property>
-				<Property Name="Bld_version.build" Type="Int">53</Property>
+				<Property Name="Bld_version.build" Type="Int">14</Property>
 				<Property Name="Bld_version.major" Type="Int">1</Property>
 				<Property Name="Bld_version.minor" Type="Int">2</Property>
-				<Property Name="Bld_version.patch" Type="Int">11</Property>
+				<Property Name="Bld_version.patch" Type="Int">12</Property>
 				<Property Name="Destination[0].destName" Type="Str">INC.exe</Property>
 				<Property Name="Destination[0].path" Type="Path">/D/Projects/Ice-Nucleation/Builds/Full Build/Ice Nucleation Controller.exe</Property>
 				<Property Name="Destination[0].path.type" Type="Str">&lt;none&gt;</Property>
@@ -739,7 +739,7 @@
 				<Property Name="Destination[1].path.type" Type="Str">&lt;none&gt;</Property>
 				<Property Name="DestinationCount" Type="Int">2</Property>
 				<Property Name="Exe_iconItemID" Type="Ref">/My Computer/Assets/Logo.ico</Property>
-				<Property Name="Source[0].itemID" Type="Str">{78ADCAA6-158B-4D83-86CE-367E035EE720}</Property>
+				<Property Name="Source[0].itemID" Type="Str">{AF19B5BE-016F-4DD9-848F-D62EAB7E71F7}</Property>
 				<Property Name="Source[0].type" Type="Str">Container</Property>
 				<Property Name="Source[1].destinationIndex" Type="Int">0</Property>
 				<Property Name="Source[1].itemID" Type="Ref">/My Computer/main.vi</Property>
@@ -849,7 +849,7 @@
 				<Property Name="INST_defaultDir" Type="Str">{4B7C7F5D-6E6D-4786-BBED-E06C37A5A212}</Property>
 				<Property Name="INST_installerName" Type="Str">install.exe</Property>
 				<Property Name="INST_productName" Type="Str">Ice Nucleation Controller</Property>
-				<Property Name="INST_productVersion" Type="Str">1.0.19</Property>
+				<Property Name="INST_productVersion" Type="Str">1.0.20</Property>
 				<Property Name="InstSpecBitness" Type="Str">32-bit</Property>
 				<Property Name="InstSpecVersion" Type="Str">20018000</Property>
 				<Property Name="MSI_arpCompany" Type="Str">Aarhus University</Property>
