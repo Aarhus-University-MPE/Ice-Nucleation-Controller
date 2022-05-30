@@ -1,8 +1,7 @@
-name: "🐛 Bug report"
+name: "⚠️ Bug report"
 description: Report errors or unexpected behavior
 labels: 
-- Issue-Bug
-- Needs-Triage
+- Bug
 body:
 - type: markdown
   attributes:
@@ -10,18 +9,18 @@ body:
       Please make sure to [search for existing issues](https://github.com/microsoft/PowerToys/issues) before filing a new one!
 - type: input
   attributes:
-    label: Microsoft PowerToys version
+    label: Ice-Nucleation-Controller version
     placeholder: |
-      "0.53.0"
+      0.53.0
     description: |
-      Hover over system tray icon or look at Settings
+      Check software description
   validations:
     required: true
 
 - type: checkboxes
   attributes:
     label: Running as admin
-    description: Are you running PowerToys as Admin?
+    description: Are you running INC as Admin?
     options:
       - label: "Yes"
 
