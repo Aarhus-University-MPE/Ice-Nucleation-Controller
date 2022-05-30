@@ -17,13 +17,6 @@ body:
   validations:
     required: true
 
-- type: checkboxes
-  attributes:
-    label: Running as admin
-    description: Are you running INC as Admin?
-    options:
-      - label: "Yes"
-
 - type: dropdown
   attributes:
     label: Area(s) with issue?
