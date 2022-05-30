@@ -6,12 +6,12 @@ body:
 - type: markdown
   attributes:
     value: |
-      Please make sure to [search for existing issues](https://github.com/microsoft/PowerToys/issues) before filing a new one!
+      Please make sure to [search for existing issues](https://github.com/Aarhus-University-MPE/Ice-Nucleation-Controller/issues) before filing a new one!
 - type: input
   attributes:
     label: Ice-Nucleation-Controller version
     placeholder: |
-      0.53.0
+      1.2.12
     description: |
       Check software description
   validations:
@@ -31,31 +31,13 @@ body:
     multiple: true
     options:
       - General
-      - Always on Top
-      - Awake
-      - ColorPicker
-      - Developer file preview
-      - FancyZones
-      - FancyZones Editor 
-      - Image Resizer
-      - Keyboard Manager
-      - MD Preview
-      - Mouse Utilities
-      - PDF Preview
-      - PDF Thumbnail
-      - G-code Preview
-      - G-code Thumbnail
-      - PowerRename
-      - PowerToys Run
-      - Shortcut Guide
-      - STL Thumbnail
-      - SVG Preview
-      - SVG Thumbnail
-      - Settings
-      - Video Conference Mute
-      - Welcome / PowerToys Tour window
-      - System tray interaction
-      - Installer
+      - Ice Nucleation Controller
+      - Thermal Camera Evaluation
+      - Thermal Camera Calibration
+      - Hardware Issue
+      - Freezing Point Detection
+      - Temperature Controller
+      - Performance
   validations:
     required: true
 
@@ -78,16 +60,5 @@ body:
   attributes:
     label: ❌ Actual Behavior
     placeholder: What happened instead?
-  validations:
-    required: false
-
-- type: textarea
-  attributes:
-    label: Other Software
-    description: If you're reporting a bug about our interaction with other software, what software? What versions?
-    placeholder: |
-      vim 8.2 (inside WSL)
-      OpenSSH_for_Windows_8.1p1
-      My Cool Application v0.3 (include a code snippet if it would help!)
   validations:
     required: false
