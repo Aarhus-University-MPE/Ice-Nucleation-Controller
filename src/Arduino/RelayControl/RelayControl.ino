@@ -13,14 +13,15 @@
 //--------------------------------------//
 
 // Request ID's
-#define CMD_COOL      101               // Switch to Relays to Cooling Position (POS1) - Default
-#define CMD_HEAT      102               // Switch to Relays to Heating Position (POS2)
+#define CMD_COOL  101  // Switch to Relays to Cooling Position (POS1) - Default
+#define CMD_HEAT  102  // Switch to Relays to Heating Position (POS2)
 
-#define RELAY_PIN     7
+#define RELAY_PIN 7
 
-bool HEATING =        false;
-long HEAT_STARTTIME = 0;
-const long  TIMEOUT = 60000;              // Timeout period in ms
+bool HEATING             = false;
+long HEAT_STARTTIME      = 0;
+const long TIMEOUT       = 60000;  // Timeout period in ms
+const long TIMEOUT_DELAY = 15000;  // Timeout period in ms
 
 //--------------------------------------//
 //                SETUP                 //
@@ -32,7 +33,7 @@ void setup() {
 
   Serial.begin(9600);
   while (!Serial) {
-    ; // wait for serial port to connect.
+    ;  // wait for serial port to connect.
   }
 }
 
@@ -47,26 +48,30 @@ void loop() {
   if (Serial.available()) {
     int CMD = Serial.parseInt();
 
-    // Close
-    if (CMD == CMD_COOL)
-    {
+    // Cooling
+    if (CMD == CMD_COOL) {
       digitalWrite(RELAY_PIN, LOW);
       HEATING = false;
       Serial.println("OK");
     }
 
-    // Open
-    else if (CMD == CMD_HEAT)
-    {
+    // Heating
+    else if (CMD == CMD_HEAT) {
       digitalWrite(RELAY_PIN, HIGH);
-      HEATING = true;
+      HEATING        = true;
       HEAT_STARTTIME = millis();
       Serial.println("OK");
     }
   }
-  if(HEATING && millis() - HEAT_STARTTIME > TIMEOUT){
+
+  // Send timeout message
+  if (HEATING && millis() - HEAT_STARTTIME > TIMEOUT) {
+    Serial.println("TIMEOUT");
+  }
+
+  // Timeout
+  if (HEATING && millis() - HEAT_STARTTIME > TIMEOUT + TIMEOUT_DELAY) {
     digitalWrite(RELAY_PIN, LOW);
     HEATING = false;
-    Serial.println("TIMEOUT");
   }
 }
