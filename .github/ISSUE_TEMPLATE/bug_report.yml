@@ -18,11 +18,11 @@ body:
     required: true
 
 - type: dropdown
+  id: issueAreas
   attributes:
     label: Area(s) with issue?
     description: What things had an issue?  Check all that apply.
     multiple: true
-    id: issueAreas
     options:
       - General
       - Ice Nucleation Controller
