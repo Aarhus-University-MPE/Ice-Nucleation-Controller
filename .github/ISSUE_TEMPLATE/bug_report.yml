@@ -1,7 +1,7 @@
 name: "⚠️ Bug report"
 description: Report errors or unexpected behavior
 labels: 
-- bug
+- bug,issueAreas
 body:
 - type: markdown
   attributes:
@@ -22,6 +22,7 @@ body:
     label: Area(s) with issue?
     description: What things had an issue?  Check all that apply.
     multiple: true
+    id: issueAreas
     options:
       - General
       - Ice Nucleation Controller
@@ -31,6 +32,7 @@ body:
       - Freezing Point Detection
       - Temperature Controller
       - Performance
+      - Other
   validations:
     required: true
 
