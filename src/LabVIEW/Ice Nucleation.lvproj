@@ -670,9 +670,10 @@
 				<Property Name="Bld_localDestDir" Type="Path">/D/Projects/Ice-Nucleation/Builds/Full Build</Property>
 				<Property Name="Bld_modifyLibraryFile" Type="Bool">true</Property>
 				<Property Name="Bld_previewCacheID" Type="Str">{95EEF059-8F91-49DB-A57E-FF38AF6547AD}</Property>
-				<Property Name="Bld_version.build" Type="Int">12</Property>
+				<Property Name="Bld_version.build" Type="Int">19</Property>
 				<Property Name="Bld_version.major" Type="Int">1</Property>
 				<Property Name="Bld_version.minor" Type="Int">2</Property>
+				<Property Name="Bld_version.patch" Type="Int">1</Property>
 				<Property Name="Destination[0].destName" Type="Str">TCE.exe</Property>
 				<Property Name="Destination[0].path" Type="Path">/D/Projects/Ice-Nucleation/Builds/Full Build/TCE.exe</Property>
 				<Property Name="Destination[0].path.type" Type="Str">&lt;none&gt;</Property>
@@ -683,7 +684,7 @@
 				<Property Name="Destination[1].path.type" Type="Str">&lt;none&gt;</Property>
 				<Property Name="DestinationCount" Type="Int">2</Property>
 				<Property Name="Exe_iconItemID" Type="Ref">/My Computer/Assets/Logo_TCE.ico</Property>
-				<Property Name="Source[0].itemID" Type="Str">{FCD8D588-7BA9-4DFF-B545-47E0C98540FA}</Property>
+				<Property Name="Source[0].itemID" Type="Str">{3BA909F6-C24E-4E2F-BF2A-B6AA0D98B566}</Property>
 				<Property Name="Source[0].type" Type="Str">Container</Property>
 				<Property Name="Source[1].destinationIndex" Type="Int">0</Property>
 				<Property Name="Source[1].itemID" Type="Ref">/My Computer/TCE.vi</Property>
@@ -714,7 +715,7 @@
 				<Property Name="Bld_localDestDir" Type="Path">/D/Projects/Ice-Nucleation/Builds/Full Build</Property>
 				<Property Name="Bld_modifyLibraryFile" Type="Bool">true</Property>
 				<Property Name="Bld_previewCacheID" Type="Str">{6FD33856-2380-4F94-8CB7-5581C7931DF6}</Property>
-				<Property Name="Bld_version.build" Type="Int">31</Property>
+				<Property Name="Bld_version.build" Type="Int">32</Property>
 				<Property Name="Bld_version.major" Type="Int">1</Property>
 				<Property Name="Bld_version.patch" Type="Int">2</Property>
 				<Property Name="Destination[0].destName" Type="Str">TCC.exe</Property>
@@ -727,7 +728,7 @@
 				<Property Name="Destination[1].path.type" Type="Str">&lt;none&gt;</Property>
 				<Property Name="DestinationCount" Type="Int">2</Property>
 				<Property Name="Exe_iconItemID" Type="Ref">/My Computer/Assets/Logo_TCC.ico</Property>
-				<Property Name="Source[0].itemID" Type="Str">{114D770D-1B4C-449A-AB70-AC6016F37988}</Property>
+				<Property Name="Source[0].itemID" Type="Str">{3BA909F6-C24E-4E2F-BF2A-B6AA0D98B566}</Property>
 				<Property Name="Source[0].type" Type="Str">Container</Property>
 				<Property Name="Source[1].destinationIndex" Type="Int">0</Property>
 				<Property Name="Source[1].itemID" Type="Ref">/My Computer/TCC.vi</Property>
@@ -750,7 +751,6 @@
 				<Property Name="App_INI_GUID" Type="Str">{BD6AEBFB-191F-424A-B98F-B2609A5B1AAB}</Property>
 				<Property Name="App_serverConfig.httpPort" Type="Int">8002</Property>
 				<Property Name="App_serverType" Type="Int">0</Property>
-				<Property Name="Bld_autoIncrement" Type="Bool">true</Property>
 				<Property Name="Bld_buildCacheID" Type="Str">{33F274C5-765A-4CC4-96AB-55991902EFC2}</Property>
 				<Property Name="Bld_buildSpecDescription" Type="Str">Ice Nucleation Controller</Property>
 				<Property Name="Bld_buildSpecName" Type="Str">Ice Nucleation Controller</Property>
@@ -765,7 +765,7 @@
 				<Property Name="Bld_version.build" Type="Int">14</Property>
 				<Property Name="Bld_version.major" Type="Int">1</Property>
 				<Property Name="Bld_version.minor" Type="Int">2</Property>
-				<Property Name="Bld_version.patch" Type="Int">12</Property>
+				<Property Name="Bld_version.patch" Type="Int">13</Property>
 				<Property Name="Destination[0].destName" Type="Str">INC.exe</Property>
 				<Property Name="Destination[0].path" Type="Path">/D/Projects/Ice-Nucleation/Builds/Full Build/Ice Nucleation Controller.exe</Property>
 				<Property Name="Destination[0].path.type" Type="Str">&lt;none&gt;</Property>
@@ -776,7 +776,7 @@
 				<Property Name="Destination[1].path.type" Type="Str">&lt;none&gt;</Property>
 				<Property Name="DestinationCount" Type="Int">2</Property>
 				<Property Name="Exe_iconItemID" Type="Ref">/My Computer/Assets/Logo.ico</Property>
-				<Property Name="Source[0].itemID" Type="Str">{AF19B5BE-016F-4DD9-848F-D62EAB7E71F7}</Property>
+				<Property Name="Source[0].itemID" Type="Str">{3BA909F6-C24E-4E2F-BF2A-B6AA0D98B566}</Property>
 				<Property Name="Source[0].type" Type="Str">Container</Property>
 				<Property Name="Source[1].destinationIndex" Type="Int">0</Property>
 				<Property Name="Source[1].itemID" Type="Ref">/My Computer/main.vi</Property>
@@ -810,32 +810,32 @@
 				<Property Name="Destination[2].unlock" Type="Bool">true</Property>
 				<Property Name="DestinationCount" Type="Int">3</Property>
 				<Property Name="DistPart[0].flavorID" Type="Str">DefaultFull</Property>
-				<Property Name="DistPart[0].productID" Type="Str">{9D67591A-4B74-4CD1-87CF-976FD6F6C484}</Property>
-				<Property Name="DistPart[0].productName" Type="Str">NI Vision Common Resources 2020 SP2</Property>
+				<Property Name="DistPart[0].productID" Type="Str">{0C3CAF31-4F7C-4135-A5BD-44701BEC0CBE}</Property>
+				<Property Name="DistPart[0].productName" Type="Str">NI Vision Common Resources 2022 Q3</Property>
 				<Property Name="DistPart[0].upgradeCode" Type="Str">{409BEFA9-EB3E-472F-AD77-271A4A1D5927}</Property>
 				<Property Name="DistPart[1].flavorID" Type="Str">DefaultFull</Property>
-				<Property Name="DistPart[1].productID" Type="Str">{13B38F6E-AF24-442E-8326-9B8B085C4992}</Property>
-				<Property Name="DistPart[1].productName" Type="Str">NI Vision Runtime 2020 SP1</Property>
+				<Property Name="DistPart[1].productID" Type="Str">{4A099A0F-EEAB-4E52-8721-5515D0162D04}</Property>
+				<Property Name="DistPart[1].productName" Type="Str">NI Vision Runtime 2022 Q3</Property>
 				<Property Name="DistPart[1].upgradeCode" Type="Str">{63DF74E5-A5C9-11D4-814E-005004D6CDD6}</Property>
 				<Property Name="DistPart[2].flavorID" Type="Str">_full_</Property>
-				<Property Name="DistPart[2].productID" Type="Str">{CB6C2533-4926-42B8-AC21-04BB9679F818}</Property>
-				<Property Name="DistPart[2].productName" Type="Str">NI-488.2 Runtime 20.0</Property>
+				<Property Name="DistPart[2].productID" Type="Str">{F19060DD-AA3B-4C3D-8E47-5792E36DFF3A}</Property>
+				<Property Name="DistPart[2].productName" Type="Str">NI-488.2 Runtime 21.5</Property>
 				<Property Name="DistPart[2].upgradeCode" Type="Str">{357F6618-C660-41A2-A185-5578CC876D1D}</Property>
 				<Property Name="DistPart[3].flavorID" Type="Str">_full_</Property>
-				<Property Name="DistPart[3].productID" Type="Str">{B1A6D301-109F-4899-85D2-BA79C10034D4}</Property>
-				<Property Name="DistPart[3].productName" Type="Str">NI-DAQmx Runtime 20.7</Property>
+				<Property Name="DistPart[3].productID" Type="Str">{FB6A85DD-B936-4E9B-B820-DE0CDE8C2916}</Property>
+				<Property Name="DistPart[3].productName" Type="Str">NI-DAQmx Runtime 22.5</Property>
 				<Property Name="DistPart[3].upgradeCode" Type="Str">{923C9CD5-A0D8-4147-9A8D-998780E30763}</Property>
 				<Property Name="DistPart[4].flavorID" Type="Str">DefaultFull</Property>
-				<Property Name="DistPart[4].productID" Type="Str">{06CE04CA-A6D6-4353-B169-328BE6B7046C}</Property>
-				<Property Name="DistPart[4].productName" Type="Str">NI-IMAQdx Runtime 20.6</Property>
+				<Property Name="DistPart[4].productID" Type="Str">{DD57CE9F-9633-4315-A200-EFCF37011AFF}</Property>
+				<Property Name="DistPart[4].productName" Type="Str">NI-IMAQdx Runtime 22.5</Property>
 				<Property Name="DistPart[4].upgradeCode" Type="Str">{3D104AB3-CE10-43C0-B647-07600754072C}</Property>
 				<Property Name="DistPart[5].flavorID" Type="Str">_full_</Property>
-				<Property Name="DistPart[5].productID" Type="Str">{F12C6F92-5B1C-4EAB-9364-96026CE1920D}</Property>
-				<Property Name="DistPart[5].productName" Type="Str">NI-Serial Runtime 20.0</Property>
+				<Property Name="DistPart[5].productID" Type="Str">{32AD5200-879B-4D23-9785-747C4B19067E}</Property>
+				<Property Name="DistPart[5].productName" Type="Str">NI-Serial Runtime 21.5</Property>
 				<Property Name="DistPart[5].upgradeCode" Type="Str">{01D82F43-B48D-46FF-8601-FC4FAAE20F41}</Property>
 				<Property Name="DistPart[6].flavorID" Type="Str">_deployment_</Property>
-				<Property Name="DistPart[6].productID" Type="Str">{944CC86F-BDFB-4850-878C-370B9A7FF12C}</Property>
-				<Property Name="DistPart[6].productName" Type="Str">NI-VISA Runtime 20.0</Property>
+				<Property Name="DistPart[6].productID" Type="Str">{016644E7-BFD9-410F-902D-962614CB4E72}</Property>
+				<Property Name="DistPart[6].productName" Type="Str">NI-VISA Runtime 22.5</Property>
 				<Property Name="DistPart[6].upgradeCode" Type="Str">{8627993A-3F66-483C-A562-0D3BA3F267B1}</Property>
 				<Property Name="DistPart[7].flavorID" Type="Str">DefaultFull</Property>
 				<Property Name="DistPart[7].productID" Type="Str">{C3D70637-8D8E-42F8-B1DD-B234C817D122}</Property>
@@ -844,24 +844,36 @@
 				<Property Name="DistPart[7].SoftDep[0].productName" Type="Str">NI ActiveX Container (64-bit)</Property>
 				<Property Name="DistPart[7].SoftDep[0].upgradeCode" Type="Str">{1038A887-23E1-4289-B0BD-0C4B83C6BA21}</Property>
 				<Property Name="DistPart[7].SoftDep[1].exclude" Type="Bool">false</Property>
-				<Property Name="DistPart[7].SoftDep[1].productName" Type="Str">NI Logos 22.3</Property>
-				<Property Name="DistPart[7].SoftDep[1].upgradeCode" Type="Str">{5E4A4CE3-4D06-11D4-8B22-006008C16337}</Property>
+				<Property Name="DistPart[7].SoftDep[1].productName" Type="Str">NI Deployment Framework 2022 (64-bit)</Property>
+				<Property Name="DistPart[7].SoftDep[1].upgradeCode" Type="Str">{E0D3C7F9-4512-438F-8123-E2050457972B}</Property>
+				<Property Name="DistPart[7].SoftDep[10].exclude" Type="Bool">false</Property>
+				<Property Name="DistPart[7].SoftDep[10].productName" Type="Str">NI TDM Streaming 22.3</Property>
+				<Property Name="DistPart[7].SoftDep[10].upgradeCode" Type="Str">{4CD11BE6-6BB7-4082-8A27-C13771BC309B}</Property>
 				<Property Name="DistPart[7].SoftDep[2].exclude" Type="Bool">false</Property>
-				<Property Name="DistPart[7].SoftDep[2].productName" Type="Str">NI mDNS Responder 22.5</Property>
-				<Property Name="DistPart[7].SoftDep[2].upgradeCode" Type="Str">{9607874B-4BB3-42CB-B450-A2F5EF60BA3B}</Property>
+				<Property Name="DistPart[7].SoftDep[2].productName" Type="Str">NI Error Reporting 2020 (64-bit)</Property>
+				<Property Name="DistPart[7].SoftDep[2].upgradeCode" Type="Str">{785BE224-E5B2-46A5-ADCB-55C949B5C9C7}</Property>
 				<Property Name="DistPart[7].SoftDep[3].exclude" Type="Bool">false</Property>
-				<Property Name="DistPart[7].SoftDep[3].productName" Type="Str">Math Kernel Libraries 2017</Property>
-				<Property Name="DistPart[7].SoftDep[3].upgradeCode" Type="Str">{699C1AC5-2CF2-4745-9674-B19536EBA8A3}</Property>
+				<Property Name="DistPart[7].SoftDep[3].productName" Type="Str">NI LabVIEW Real-Time NBFifo 2022</Property>
+				<Property Name="DistPart[7].SoftDep[3].upgradeCode" Type="Str">{68688466-B146-325C-AC08-D6ADFE5A4205}</Property>
 				<Property Name="DistPart[7].SoftDep[4].exclude" Type="Bool">false</Property>
-				<Property Name="DistPart[7].SoftDep[4].productName" Type="Str">Math Kernel Libraries 2020</Property>
-				<Property Name="DistPart[7].SoftDep[4].upgradeCode" Type="Str">{9872BBBA-FB96-42A4-80A2-9605AC5CBCF1}</Property>
+				<Property Name="DistPart[7].SoftDep[4].productName" Type="Str">NI Logos 22.3</Property>
+				<Property Name="DistPart[7].SoftDep[4].upgradeCode" Type="Str">{5E4A4CE3-4D06-11D4-8B22-006008C16337}</Property>
 				<Property Name="DistPart[7].SoftDep[5].exclude" Type="Bool">false</Property>
-				<Property Name="DistPart[7].SoftDep[5].productName" Type="Str">NI VC2015 Runtime</Property>
-				<Property Name="DistPart[7].SoftDep[5].upgradeCode" Type="Str">{D42E7BAE-6589-4570-B6A3-3E28889392E7}</Property>
+				<Property Name="DistPart[7].SoftDep[5].productName" Type="Str">NI LabVIEW Web Server 2022 (64-bit)</Property>
+				<Property Name="DistPart[7].SoftDep[5].upgradeCode" Type="Str">{5F449D4C-83B9-492E-986B-6B85A29C431D}</Property>
 				<Property Name="DistPart[7].SoftDep[6].exclude" Type="Bool">false</Property>
-				<Property Name="DistPart[7].SoftDep[6].productName" Type="Str">NI TDM Streaming 22.3</Property>
-				<Property Name="DistPart[7].SoftDep[6].upgradeCode" Type="Str">{4CD11BE6-6BB7-4082-8A27-C13771BC309B}</Property>
-				<Property Name="DistPart[7].SoftDepCount" Type="Int">7</Property>
+				<Property Name="DistPart[7].SoftDep[6].productName" Type="Str">NI mDNS Responder 22.5</Property>
+				<Property Name="DistPart[7].SoftDep[6].upgradeCode" Type="Str">{9607874B-4BB3-42CB-B450-A2F5EF60BA3B}</Property>
+				<Property Name="DistPart[7].SoftDep[7].exclude" Type="Bool">false</Property>
+				<Property Name="DistPart[7].SoftDep[7].productName" Type="Str">Math Kernel Libraries 2017</Property>
+				<Property Name="DistPart[7].SoftDep[7].upgradeCode" Type="Str">{699C1AC5-2CF2-4745-9674-B19536EBA8A3}</Property>
+				<Property Name="DistPart[7].SoftDep[8].exclude" Type="Bool">false</Property>
+				<Property Name="DistPart[7].SoftDep[8].productName" Type="Str">Math Kernel Libraries 2020</Property>
+				<Property Name="DistPart[7].SoftDep[8].upgradeCode" Type="Str">{9872BBBA-FB96-42A4-80A2-9605AC5CBCF1}</Property>
+				<Property Name="DistPart[7].SoftDep[9].exclude" Type="Bool">false</Property>
+				<Property Name="DistPart[7].SoftDep[9].productName" Type="Str">NI VC2015 Runtime</Property>
+				<Property Name="DistPart[7].SoftDep[9].upgradeCode" Type="Str">{D42E7BAE-6589-4570-B6A3-3E28889392E7}</Property>
+				<Property Name="DistPart[7].SoftDepCount" Type="Int">11</Property>
 				<Property Name="DistPart[7].upgradeCode" Type="Str">{FB80C6B7-18E1-3FF4-99A2-719F62FACAD8}</Property>
 				<Property Name="DistPartCount" Type="Int">8</Property>
 				<Property Name="INST_author" Type="Str">Aarhus University</Property>
@@ -871,7 +883,7 @@
 				<Property Name="INST_defaultDir" Type="Str">{4B7C7F5D-6E6D-4786-BBED-E06C37A5A212}</Property>
 				<Property Name="INST_installerName" Type="Str">install.exe</Property>
 				<Property Name="INST_productName" Type="Str">Ice Nucleation Controller</Property>
-				<Property Name="INST_productVersion" Type="Str">1.0.20</Property>
+				<Property Name="INST_productVersion" Type="Str">1.0.21</Property>
 				<Property Name="InstSpecBitness" Type="Str">64-bit</Property>
 				<Property Name="InstSpecVersion" Type="Str">22308000</Property>
 				<Property Name="MSI_arpCompany" Type="Str">Aarhus University</Property>
