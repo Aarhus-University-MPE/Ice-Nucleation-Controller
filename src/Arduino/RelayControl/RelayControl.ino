@@ -13,19 +13,22 @@
 //--------------------------------------//
 
 // Request ID's
-#define CMD_COOL  101  // Switch to Relays to Cooling Position (POS1) - Default
-#define CMD_HEAT  102  // Switch to Relays to Heating Position (POS2)
-#define CMD_OFF   103  // Switch to Relays to No Output Position (POS3)
+#define CMD_COOL       101  // Switch to Relays to Cooling (Relay1 & 2)
+#define CMD_HEAT       102  // Switch to Relays to Heating (Relay3 & 4)
+#define CMD_OFF        103  // Switch to Relays to No Output (All relays off)
+#define CMD_REPEAT     104  // Reset timeout period
 
 #define RELAY_PIN_HEAT 7
 #define RELAY_PIN_COOL 4
 
-bool HEATING             = false;
-long HEAT_STARTTIME      = 0;
-const long TIMEOUT       = 60000;  // Timeout period in ms
-const long TIMEOUT_DELAY = 15000;  // Timeout period in ms
+bool active               = false;
+unsigned long activeStart = 0;
 
+const long TIMEOUT            = 60000;  // Timeout period in ms
+const long TIMEOUT_DELAY      = 15000;  // Timeout period in ms
 unsigned long lastTimeoutSent = 0;
+
+int lastCommand = 0;
 
 //--------------------------------------//
 //                SETUP                 //
@@ -54,46 +57,59 @@ void loop() {
   if (Serial.available()) {
     int CMD = Serial.parseInt();
 
-    // Cooling
-    if (CMD == CMD_COOL) {
-      digitalWrite(RELAY_PIN_HEAT, LOW);
-      delay(10);
-      digitalWrite(RELAY_PIN_COOL, HIGH);
-      HEATING = false;
-      Serial.println("OK");
-    }
+    switch (CMD) {
+      // Cooling Relays
+      case CMD_COOL:
+        lastCommand = CMD;
+        digitalWrite(RELAY_PIN_HEAT, LOW);
+        delay(10);
+        digitalWrite(RELAY_PIN_COOL, HIGH);
+        activeStart = millis();
+        active      = true;
+        Serial.println("OK");
+        break;
 
-    // Heating
-    else if (CMD == CMD_HEAT) {
-      digitalWrite(RELAY_PIN_COOL, LOW);
-      delay(10);
-      digitalWrite(RELAY_PIN_HEAT, HIGH);
-      HEATING        = true;
-      HEAT_STARTTIME = millis();
-      Serial.println("OK");
-    }
+      // Heating Relays
+      case CMD_HEAT:
+        lastCommand = CMD;
+        digitalWrite(RELAY_PIN_COOL, LOW);
+        delay(10);
+        digitalWrite(RELAY_PIN_HEAT, HIGH);
+        active      = true;
+        activeStart = millis();
+        Serial.println("OK");
+        break;
 
-    // No OutputHeating
-    else if (CMD == CMD_OFF) {
-      digitalWrite(RELAY_PIN_COOL, LOW);
-      digitalWrite(RELAY_PIN_HEAT, LOW);
-      HEATING        = false;
-      Serial.println("OK");
+      // Disable Relays
+      case CMD_OFF:
+        digitalWrite(RELAY_PIN_COOL, LOW);
+        digitalWrite(RELAY_PIN_HEAT, LOW);
+        active = false;
+        Serial.println("OK");
+        break;
+
+      // Reset timeout period
+      case CMD_REPEAT:
+        activeStart = millis();
+        break;
+
+      default:
+        break;
     }
   }
 
   // Send timeout message
-  if (HEATING && millis() - HEAT_STARTTIME > TIMEOUT) {
-    if ( millis() - lastTimeoutSent > 2000) {
+  if (active && millis() - activeStart > TIMEOUT) {
+    if (millis() - lastTimeoutSent > 2000) {
       lastTimeoutSent = millis();
       Serial.println("TIMEOUT");
     }
   }
 
   // Timeout
-  if (HEATING && millis() - HEAT_STARTTIME > TIMEOUT + TIMEOUT_DELAY) {
+  if (active && millis() - activeStart > TIMEOUT + TIMEOUT_DELAY) {
     digitalWrite(RELAY_PIN_HEAT, LOW);
     digitalWrite(RELAY_PIN_COOL, LOW);
-    HEATING = false;
+    active = false;
   }
 }
