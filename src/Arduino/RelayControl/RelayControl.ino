@@ -91,6 +91,7 @@ void loop() {
       // Reset timeout period
       case CMD_REPEAT:
         activeStart = millis();
+        Serial.println("OK");
         break;
 
       default:
