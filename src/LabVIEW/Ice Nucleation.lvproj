@@ -54,6 +54,7 @@
 					<Item Name="TCam_Scan.vi" Type="VI" URL="../TCam_Scan.vi"/>
 					<Item Name="TCam_Focus.vi" Type="VI" URL="../TCam_Focus.vi"/>
 					<Item Name="TCam_Config.vi" Type="VI" URL="../TCam_Config.vi"/>
+					<Item Name="TCam_AutoFocus.vi" Type="VI" URL="../TCam_AutoFocus.vi"/>
 				</Item>
 				<Item Name="System" Type="Folder">
 					<Item Name="TCam_CalibrationLoad.vi" Type="VI" URL="../TCam_CalibrationLoad.vi"/>
@@ -639,7 +640,7 @@
 				<Property Name="Bld_localDestDir" Type="Path">/D/Projects/Ice-Nucleation-Controller/Builds/Full Build</Property>
 				<Property Name="Bld_modifyLibraryFile" Type="Bool">true</Property>
 				<Property Name="Bld_previewCacheID" Type="Str">{95EEF059-8F91-49DB-A57E-FF38AF6547AD}</Property>
-				<Property Name="Bld_version.build" Type="Int">5</Property>
+				<Property Name="Bld_version.build" Type="Int">6</Property>
 				<Property Name="Bld_version.major" Type="Int">1</Property>
 				<Property Name="Bld_version.minor" Type="Int">2</Property>
 				<Property Name="Bld_version.patch" Type="Int">3</Property>
@@ -690,7 +691,7 @@
 				<Property Name="Bld_localDestDir" Type="Path">/D/Projects/Ice-Nucleation-Controller/Builds/Full Build</Property>
 				<Property Name="Bld_modifyLibraryFile" Type="Bool">true</Property>
 				<Property Name="Bld_previewCacheID" Type="Str">{6FD33856-2380-4F94-8CB7-5581C7931DF6}</Property>
-				<Property Name="Bld_version.build" Type="Int">40</Property>
+				<Property Name="Bld_version.build" Type="Int">41</Property>
 				<Property Name="Bld_version.major" Type="Int">1</Property>
 				<Property Name="Bld_version.patch" Type="Int">2</Property>
 				<Property Name="Destination[0].destName" Type="Str">TCC.exe</Property>
@@ -741,7 +742,7 @@
 				<Property Name="Bld_localDestDir" Type="Path">/D/Projects/Ice-Nucleation-Controller/Builds/Full Build</Property>
 				<Property Name="Bld_modifyLibraryFile" Type="Bool">true</Property>
 				<Property Name="Bld_previewCacheID" Type="Str">{27D8B2BC-76A3-474D-8C11-FD95C8E7081D}</Property>
-				<Property Name="Bld_version.build" Type="Int">6</Property>
+				<Property Name="Bld_version.build" Type="Int">10</Property>
 				<Property Name="Bld_version.major" Type="Int">1</Property>
 				<Property Name="Bld_version.minor" Type="Int">2</Property>
 				<Property Name="Bld_version.patch" Type="Int">15</Property>
@@ -755,7 +756,7 @@
 				<Property Name="Destination[1].path.type" Type="Str">&lt;none&gt;</Property>
 				<Property Name="DestinationCount" Type="Int">2</Property>
 				<Property Name="Exe_iconItemID" Type="Ref">/My Computer/Assets/Logo.ico</Property>
-				<Property Name="Source[0].itemID" Type="Str">{BAD18EF6-AC6B-433F-BCB2-0985F63AACEE}</Property>
+				<Property Name="Source[0].itemID" Type="Str">{A68784A8-F35B-486F-AC48-28F8D59F9246}</Property>
 				<Property Name="Source[0].type" Type="Str">Container</Property>
 				<Property Name="Source[1].destinationIndex" Type="Int">0</Property>
 				<Property Name="Source[1].itemID" Type="Ref">/My Computer/main.vi</Property>
@@ -1033,7 +1034,15 @@
 				<Property Name="DistPart[7].SoftDep[9].upgradeCode" Type="Str">{D42E7BAE-6589-4570-B6A3-3E28889392E7}</Property>
 				<Property Name="DistPart[7].SoftDepCount" Type="Int">11</Property>
 				<Property Name="DistPart[7].upgradeCode" Type="Str">{FB80C6B7-18E1-3FF4-99A2-719F62FACAD8}</Property>
-				<Property Name="DistPartCount" Type="Int">8</Property>
+				<Property Name="DistPart[8].flavorID" Type="Str">_full_</Property>
+				<Property Name="DistPart[8].productID" Type="Str">{91132DC4-67E5-4CA9-8B74-479FF83EBF21}</Property>
+				<Property Name="DistPart[8].productName" Type="Str">NI Measurement &amp; Automation Explorer 22.5</Property>
+				<Property Name="DistPart[8].SoftDep[0].exclude" Type="Bool">false</Property>
+				<Property Name="DistPart[8].SoftDep[0].productName" Type="Str">NI Error Reporting</Property>
+				<Property Name="DistPart[8].SoftDep[0].upgradeCode" Type="Str">{42E818C6-2B08-4DE7-BD91-B0FD704C119A}</Property>
+				<Property Name="DistPart[8].SoftDepCount" Type="Int">1</Property>
+				<Property Name="DistPart[8].upgradeCode" Type="Str">{AE940F24-CC0E-4148-9A96-10FB04D9796D}</Property>
+				<Property Name="DistPartCount" Type="Int">9</Property>
 				<Property Name="INST_author" Type="Str">Aarhus University</Property>
 				<Property Name="INST_autoIncrement" Type="Bool">true</Property>
 				<Property Name="INST_buildLocation" Type="Path">/D/Projects/Ice-Nucleation-Controller/Builds/Installer</Property>
@@ -1041,15 +1050,13 @@
 				<Property Name="INST_defaultDir" Type="Str">{4B7C7F5D-6E6D-4786-BBED-E06C37A5A212}</Property>
 				<Property Name="INST_installerName" Type="Str">install.exe</Property>
 				<Property Name="INST_productName" Type="Str">Ice Nucleation Controller</Property>
-				<Property Name="INST_productVersion" Type="Str">1.0.28</Property>
+				<Property Name="INST_productVersion" Type="Str">1.0.29</Property>
 				<Property Name="InstSpecBitness" Type="Str">64-bit</Property>
 				<Property Name="InstSpecVersion" Type="Str">22308000</Property>
 				<Property Name="MSI_arpCompany" Type="Str">Aarhus University</Property>
 				<Property Name="MSI_arpContact" Type="Str">Mads Rosenhøj Jeppesen</Property>
 				<Property Name="MSI_arpPhone" Type="Str">+45 20 89 43 32</Property>
-				<Property Name="MSI_autoselectDrivers" Type="Bool">true</Property>
 				<Property Name="MSI_distID" Type="Str">{755E61CD-97BF-483B-B739-AB4A2FAC3198}</Property>
-				<Property Name="MSI_hideNonRuntimes" Type="Bool">true</Property>
 				<Property Name="MSI_osCheck" Type="Int">0</Property>
 				<Property Name="MSI_upgradeCode" Type="Str">{5940FEEC-89CB-4DDF-8C4E-0C318B508615}</Property>
 				<Property Name="MSI_windowMessage" Type="Str">Install INC software</Property>
@@ -1061,6 +1068,177 @@
 				<Property Name="Source[0].dest" Type="Str">{4B7C7F5D-6E6D-4786-BBED-E06C37A5A212}</Property>
 				<Property Name="Source[0].File[0].dest" Type="Str">{4B7C7F5D-6E6D-4786-BBED-E06C37A5A212}</Property>
 				<Property Name="Source[0].File[0].name" Type="Str">INC.exe</Property>
+				<Property Name="Source[0].File[0].Shortcut[0].destIndex" Type="Int">0</Property>
+				<Property Name="Source[0].File[0].Shortcut[0].name" Type="Str">Ice Nucleation Controller</Property>
+				<Property Name="Source[0].File[0].Shortcut[0].subDir" Type="Str">Ice Nucleation Controller</Property>
+				<Property Name="Source[0].File[0].ShortcutCount" Type="Int">1</Property>
+				<Property Name="Source[0].File[0].tag" Type="Str">{58C928C1-8473-4CEF-96B2-F9CFB2EAA16B}</Property>
+				<Property Name="Source[0].FileCount" Type="Int">1</Property>
+				<Property Name="Source[0].name" Type="Str">Ice Nucleation Controller</Property>
+				<Property Name="Source[0].tag" Type="Ref">/My Computer/Build Specifications/Ice Nucleation Controller</Property>
+				<Property Name="Source[0].type" Type="Str">EXE</Property>
+				<Property Name="Source[1].dest" Type="Str">{4B7C7F5D-6E6D-4786-BBED-E06C37A5A212}</Property>
+				<Property Name="Source[1].name" Type="Str">TCam.ini</Property>
+				<Property Name="Source[1].tag" Type="Ref">/My Computer/Build files/TCam.ini</Property>
+				<Property Name="Source[1].type" Type="Str">File</Property>
+				<Property Name="Source[1].unlock" Type="Bool">true</Property>
+				<Property Name="Source[2].dest" Type="Str">{4B7C7F5D-6E6D-4786-BBED-E06C37A5A212}</Property>
+				<Property Name="Source[2].name" Type="Str">settings.ini</Property>
+				<Property Name="Source[2].tag" Type="Ref">/My Computer/Build files/settings.ini</Property>
+				<Property Name="Source[2].type" Type="Str">File</Property>
+				<Property Name="Source[2].unlock" Type="Bool">true</Property>
+				<Property Name="Source[3].dest" Type="Str">{4B7C7F5D-6E6D-4786-BBED-E06C37A5A212}</Property>
+				<Property Name="Source[3].name" Type="Str">camera_placeholder.png</Property>
+				<Property Name="Source[3].tag" Type="Ref">/My Computer/Build files/camera_placeholder.png</Property>
+				<Property Name="Source[3].type" Type="Str">File</Property>
+				<Property Name="Source[4].dest" Type="Str">{4B7C7F5D-6E6D-4786-BBED-E06C37A5A212}</Property>
+				<Property Name="Source[4].File[0].dest" Type="Str">{4B7C7F5D-6E6D-4786-BBED-E06C37A5A212}</Property>
+				<Property Name="Source[4].File[0].name" Type="Str">TCE.exe</Property>
+				<Property Name="Source[4].File[0].Shortcut[0].destIndex" Type="Int">0</Property>
+				<Property Name="Source[4].File[0].Shortcut[0].name" Type="Str">Thermal Camera Evaluation</Property>
+				<Property Name="Source[4].File[0].Shortcut[0].subDir" Type="Str">Ice Nucleation Controller</Property>
+				<Property Name="Source[4].File[0].ShortcutCount" Type="Int">1</Property>
+				<Property Name="Source[4].File[0].tag" Type="Str">{765937FA-2BBA-4638-A757-5D4AB3FD30F3}</Property>
+				<Property Name="Source[4].FileCount" Type="Int">1</Property>
+				<Property Name="Source[4].name" Type="Str">Thermal Camera Evaluation</Property>
+				<Property Name="Source[4].tag" Type="Ref">/My Computer/Build Specifications/Thermal Camera Evaluation</Property>
+				<Property Name="Source[4].type" Type="Str">EXE</Property>
+				<Property Name="Source[5].dest" Type="Str">{4B7C7F5D-6E6D-4786-BBED-E06C37A5A212}</Property>
+				<Property Name="Source[5].File[0].dest" Type="Str">{4B7C7F5D-6E6D-4786-BBED-E06C37A5A212}</Property>
+				<Property Name="Source[5].File[0].name" Type="Str">TCC.exe</Property>
+				<Property Name="Source[5].File[0].Shortcut[0].destIndex" Type="Int">0</Property>
+				<Property Name="Source[5].File[0].Shortcut[0].name" Type="Str">Thermal Camera Calibration</Property>
+				<Property Name="Source[5].File[0].Shortcut[0].subDir" Type="Str">Ice Nucleation Controller</Property>
+				<Property Name="Source[5].File[0].ShortcutCount" Type="Int">1</Property>
+				<Property Name="Source[5].File[0].tag" Type="Str">{4ECC90C8-5AFA-4E65-8969-5270033137DC}</Property>
+				<Property Name="Source[5].FileCount" Type="Int">1</Property>
+				<Property Name="Source[5].name" Type="Str">Thermal Camera Calibration</Property>
+				<Property Name="Source[5].tag" Type="Ref">/My Computer/Build Specifications/Thermal Camera Calibration</Property>
+				<Property Name="Source[5].type" Type="Str">EXE</Property>
+				<Property Name="Source[6].dest" Type="Str">{4B7C7F5D-6E6D-4786-BBED-E06C37A5A212}</Property>
+				<Property Name="Source[6].File[0].dest" Type="Str">{4B7C7F5D-6E6D-4786-BBED-E06C37A5A212}</Property>
+				<Property Name="Source[6].File[0].name" Type="Str">TCE.exe</Property>
+				<Property Name="Source[6].File[0].tag" Type="Str">{765937FA-2BBA-4638-A757-5D4AB3FD30F3}</Property>
+				<Property Name="Source[6].name" Type="Str">Calibration.ini</Property>
+				<Property Name="Source[6].tag" Type="Ref">/My Computer/Build files/Calibration.ini</Property>
+				<Property Name="Source[6].type" Type="Str">File</Property>
+				<Property Name="Source[6].unlock" Type="Bool">true</Property>
+				<Property Name="Source[7].dest" Type="Str">{09B5634D-F4F6-46D8-8877-756072EA0D65}</Property>
+				<Property Name="Source[7].File[0].dest" Type="Str">{4B7C7F5D-6E6D-4786-BBED-E06C37A5A212}</Property>
+				<Property Name="Source[7].File[0].name" Type="Str">TCC.exe</Property>
+				<Property Name="Source[7].File[0].tag" Type="Str">{4ECC90C8-5AFA-4E65-8969-5270033137DC}</Property>
+				<Property Name="Source[7].name" Type="Str">Big Setup.prt</Property>
+				<Property Name="Source[7].tag" Type="Ref">/My Computer/Build files/Partitions/Big Setup.prt</Property>
+				<Property Name="Source[7].type" Type="Str">File</Property>
+				<Property Name="Source[7].unlock" Type="Bool">true</Property>
+				<Property Name="Source[8].dest" Type="Str">{09B5634D-F4F6-46D8-8877-756072EA0D65}</Property>
+				<Property Name="Source[8].File[0].dest" Type="Str">{4B7C7F5D-6E6D-4786-BBED-E06C37A5A212}</Property>
+				<Property Name="Source[8].File[0].name" Type="Str">TCC.exe</Property>
+				<Property Name="Source[8].File[0].tag" Type="Str">{4ECC90C8-5AFA-4E65-8969-5270033137DC}</Property>
+				<Property Name="Source[8].name" Type="Str">Small Setup.prt</Property>
+				<Property Name="Source[8].tag" Type="Ref">/My Computer/Build files/Partitions/Small Setup.prt</Property>
+				<Property Name="Source[8].type" Type="Str">File</Property>
+				<Property Name="Source[8].unlock" Type="Bool">true</Property>
+				<Property Name="Source[9].dest" Type="Str">{4B7C7F5D-6E6D-4786-BBED-E06C37A5A212}</Property>
+				<Property Name="Source[9].name" Type="Str">TCEM.ini</Property>
+				<Property Name="Source[9].tag" Type="Ref">/My Computer/Build files/TCEM.ini</Property>
+				<Property Name="Source[9].type" Type="Str">File</Property>
+				<Property Name="SourceCount" Type="Int">10</Property>
+			</Item>
+			<Item Name="Thermal Camera Stream" Type="EXE">
+				<Property Name="App_copyErrors" Type="Bool">true</Property>
+				<Property Name="App_includeHWConfig" Type="Bool">true</Property>
+				<Property Name="App_INI_aliasGUID" Type="Str">{341566AD-1C8D-4F65-9910-439865F39330}</Property>
+				<Property Name="App_INI_GUID" Type="Str">{C740A17D-43B1-4964-9A78-53CF2041266E}</Property>
+				<Property Name="App_serverConfig.httpPort" Type="Int">8002</Property>
+				<Property Name="App_serverType" Type="Int">0</Property>
+				<Property Name="Bld_autoIncrement" Type="Bool">true</Property>
+				<Property Name="Bld_buildCacheID" Type="Str">{93248635-5073-460B-86FE-4BBEB49F6F53}</Property>
+				<Property Name="Bld_buildSpecName" Type="Str">Thermal Camera Stream</Property>
+				<Property Name="Bld_excludeInlineSubVIs" Type="Bool">true</Property>
+				<Property Name="Bld_excludeLibraryItems" Type="Bool">true</Property>
+				<Property Name="Bld_excludePolymorphicVIs" Type="Bool">true</Property>
+				<Property Name="Bld_localDestDir" Type="Path">/D/Projects/Ice-Nucleation-Controller/Builds/Full Build</Property>
+				<Property Name="Bld_modifyLibraryFile" Type="Bool">true</Property>
+				<Property Name="Bld_previewCacheID" Type="Str">{3899B6FB-14FA-4D95-B950-97469EB776F4}</Property>
+				<Property Name="Bld_version.build" Type="Int">9</Property>
+				<Property Name="Bld_version.major" Type="Int">1</Property>
+				<Property Name="Destination[0].destName" Type="Str">TCS.exe</Property>
+				<Property Name="Destination[0].path" Type="Path">/D/Projects/Ice-Nucleation-Controller/Builds/Full Build/TCS.exe</Property>
+				<Property Name="Destination[0].path.type" Type="Str">&lt;none&gt;</Property>
+				<Property Name="Destination[0].preserveHierarchy" Type="Bool">true</Property>
+				<Property Name="Destination[0].type" Type="Str">App</Property>
+				<Property Name="Destination[1].destName" Type="Str">Support Directory</Property>
+				<Property Name="Destination[1].path" Type="Path">/D/Projects/Ice-Nucleation-Controller/Builds/Full Build/data</Property>
+				<Property Name="Destination[1].path.type" Type="Str">&lt;none&gt;</Property>
+				<Property Name="DestinationCount" Type="Int">2</Property>
+				<Property Name="Source[0].itemID" Type="Str">{A68784A8-F35B-486F-AC48-28F8D59F9246}</Property>
+				<Property Name="Source[0].type" Type="Str">Container</Property>
+				<Property Name="Source[1].destinationIndex" Type="Int">0</Property>
+				<Property Name="Source[1].itemID" Type="Ref">/My Computer/Test Functions/Thermal_Camera_Stream.vi</Property>
+				<Property Name="Source[1].sourceInclusion" Type="Str">TopLevel</Property>
+				<Property Name="Source[1].type" Type="Str">VI</Property>
+				<Property Name="SourceCount" Type="Int">2</Property>
+				<Property Name="TgtF_companyName" Type="Str">Aarhus University</Property>
+				<Property Name="TgtF_enableDebugging" Type="Bool">true</Property>
+				<Property Name="TgtF_fileDescription" Type="Str">Thermal Camera Stream</Property>
+				<Property Name="TgtF_internalName" Type="Str">Thermal Camera Stream</Property>
+				<Property Name="TgtF_legalCopyright" Type="Str">Copyright © 2022 Aarhus University</Property>
+				<Property Name="TgtF_productName" Type="Str">Thermal Camera Stream</Property>
+				<Property Name="TgtF_targetfileGUID" Type="Str">{29D4B618-800F-450E-B27D-32C6EFE2D273}</Property>
+				<Property Name="TgtF_targetfileName" Type="Str">TCS.exe</Property>
+				<Property Name="TgtF_versionIndependent" Type="Bool">true</Property>
+			</Item>
+			<Item Name="Update" Type="Installer">
+				<Property Name="AB_Class_Path" Type="Path">/&lt;vilib&gt;/AppBuilder/IB_Classes/MSI/IB_MSI.lvclass</Property>
+				<Property Name="AB_Temp_Project_Path" Type="Path">/D/Projects/Ice-Nucleation-Controller/src/LabVIEW/Ice Nucleation.lvproj</Property>
+				<Property Name="AB_UIClass_Path" Type="Path">/&lt;vilib&gt;/AppBuilder/IB_Classes/Installer/UI/AB_UI_Frmwk_Installer.lvclass</Property>
+				<Property Name="Destination[0].name" Type="Str">Ice Nucleation Controller</Property>
+				<Property Name="Destination[0].parent" Type="Str">{3912416A-D2E5-411B-AFEE-B63654D690C0}</Property>
+				<Property Name="Destination[0].tag" Type="Str">{4B7C7F5D-6E6D-4786-BBED-E06C37A5A212}</Property>
+				<Property Name="Destination[0].type" Type="Str">userFolder</Property>
+				<Property Name="Destination[0].unlock" Type="Bool">true</Property>
+				<Property Name="Destination[1].name" Type="Str">Data</Property>
+				<Property Name="Destination[1].parent" Type="Str">{4B7C7F5D-6E6D-4786-BBED-E06C37A5A212}</Property>
+				<Property Name="Destination[1].tag" Type="Str">{91FD325C-AAB7-491E-AB64-7BBBE922D8DB}</Property>
+				<Property Name="Destination[1].type" Type="Str">userFolder</Property>
+				<Property Name="Destination[1].unlock" Type="Bool">true</Property>
+				<Property Name="Destination[2].name" Type="Str">Partitions</Property>
+				<Property Name="Destination[2].parent" Type="Str">{4B7C7F5D-6E6D-4786-BBED-E06C37A5A212}</Property>
+				<Property Name="Destination[2].tag" Type="Str">{09B5634D-F4F6-46D8-8877-756072EA0D65}</Property>
+				<Property Name="Destination[2].type" Type="Str">userFolder</Property>
+				<Property Name="Destination[2].unlock" Type="Bool">true</Property>
+				<Property Name="DestinationCount" Type="Int">3</Property>
+				<Property Name="INST_author" Type="Str">Aarhus University</Property>
+				<Property Name="INST_autoIncrement" Type="Bool">true</Property>
+				<Property Name="INST_buildLocation" Type="Path">/D/Projects/Ice-Nucleation-Controller/Builds/Update</Property>
+				<Property Name="INST_buildSpecName" Type="Str">Update</Property>
+				<Property Name="INST_defaultDir" Type="Str">{4B7C7F5D-6E6D-4786-BBED-E06C37A5A212}</Property>
+				<Property Name="INST_includeError" Type="Bool">false</Property>
+				<Property Name="INST_installerName" Type="Str">update.exe</Property>
+				<Property Name="INST_productName" Type="Str">Ice Nucleation Controller</Property>
+				<Property Name="INST_productVersion" Type="Str">1.0.1</Property>
+				<Property Name="InstSpecBitness" Type="Str">64-bit</Property>
+				<Property Name="InstSpecVersion" Type="Str">22308000</Property>
+				<Property Name="MSI_arpCompany" Type="Str">Aarhus University</Property>
+				<Property Name="MSI_arpContact" Type="Str">Mads Rosenhøj Jeppesen</Property>
+				<Property Name="MSI_arpPhone" Type="Str">+45 20 89 43 32</Property>
+				<Property Name="MSI_distID" Type="Str">{A42AD0A9-717B-442F-89D4-3338A88DDACB}</Property>
+				<Property Name="MSI_osCheck" Type="Int">0</Property>
+				<Property Name="MSI_upgradeCode" Type="Str">{F191BAE4-997C-4632-829B-82B481E17D43}</Property>
+				<Property Name="MSI_windowMessage" Type="Str">Update Ice Nucleation Controller software</Property>
+				<Property Name="MSI_windowTitle" Type="Str">Ice Nucleation Controller Updater</Property>
+				<Property Name="RegDest[0].dirName" Type="Str">Software</Property>
+				<Property Name="RegDest[0].dirTag" Type="Str">{DDFAFC8B-E728-4AC8-96DE-B920EBB97A86}</Property>
+				<Property Name="RegDest[0].parentTag" Type="Str">2</Property>
+				<Property Name="RegDestCount" Type="Int">1</Property>
+				<Property Name="Source[0].dest" Type="Str">{4B7C7F5D-6E6D-4786-BBED-E06C37A5A212}</Property>
+				<Property Name="Source[0].File[0].dest" Type="Str">{4B7C7F5D-6E6D-4786-BBED-E06C37A5A212}</Property>
+				<Property Name="Source[0].File[0].name" Type="Str">INC.exe</Property>
+				<Property Name="Source[0].File[0].Shortcut[0].destIndex" Type="Int">0</Property>
+				<Property Name="Source[0].File[0].Shortcut[0].name" Type="Str">Ice Nucleation Controller</Property>
+				<Property Name="Source[0].File[0].Shortcut[0].subDir" Type="Str">Ice Nucleation Controller</Property>
+				<Property Name="Source[0].File[0].ShortcutCount" Type="Int">1</Property>
 				<Property Name="Source[0].File[0].tag" Type="Str">{58C928C1-8473-4CEF-96B2-F9CFB2EAA16B}</Property>
 				<Property Name="Source[0].FileCount" Type="Int">1</Property>
 				<Property Name="Source[0].name" Type="Str">Ice Nucleation Controller</Property>
