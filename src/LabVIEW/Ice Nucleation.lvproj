@@ -607,13 +607,6 @@
 			<Item Name="Get File Info.vi" Type="VI" URL="../Get File Info.vi"/>
 			<Item Name="ColorRamp.vi" Type="VI" URL="../ColorRamp.vi"/>
 			<Item Name="CalibrationImageLoadPrompt.vi" Type="VI" URL="../CalibrationImageLoadPrompt.vi"/>
-			<Item Name="Read.vi" Type="VI" URL="/&lt;extravilib&gt;/ChannelInstances/Tag-c(bool,ref(UserDefinedRefnumTag),bool,path,bool)/Read.vi"/>
-			<Item Name="Write.vi" Type="VI" URL="/&lt;extravilib&gt;/ChannelInstances/Tag-c(bool,ref(UserDefinedRefnumTag),bool,path,bool)/Write.vi"/>
-			<Item Name="Read With Abort.vi" Type="VI" URL="/&lt;extravilib&gt;/ChannelInstances/Tag-c(bool,ref(UserDefinedRefnumTag),bool,path,bool)/Read With Abort.vi"/>
-			<Item Name="Write With Abort.vi" Type="VI" URL="/&lt;extravilib&gt;/ChannelInstances/Tag-c(bool,ref(UserDefinedRefnumTag),bool,path,bool)/Write With Abort.vi"/>
-			<Item Name="Instantiate.vi" Type="VI" URL="/&lt;extravilib&gt;/ChannelInstances/Tag-c(bool,ref(UserDefinedRefnumTag),bool,path,bool)/Instantiate.vi"/>
-			<Item Name="EndpointRead.vi" Type="VI" URL="/&lt;extravilib&gt;/ChannelInstances/Tag-c(bool,ref(UserDefinedRefnumTag),bool,path,bool)/EndpointRead.vi"/>
-			<Item Name="Endpoint.vi" Type="VI" URL="/&lt;extravilib&gt;/ChannelInstances/Tag-c(bool,ref(UserDefinedRefnumTag),bool,path,bool)/Endpoint.vi"/>
 			<Item Name="Tag-c(a[.](dbl),a[.](dbl)).lvlib" Type="Library" URL="/&lt;extravilib&gt;/ChannelInstances/Tag-c(a[.](dbl),a[.](dbl)).lvlib"/>
 			<Item Name="Stream-str.lvlib" Type="Library" URL="/&lt;extravilib&gt;/ChannelInstances/Stream-str.lvlib"/>
 			<Item Name="PipeLogic.lvclass" Type="LVClass" URL="/&lt;resource&gt;/ChannelSupport/_ChannelSupport/PipeLogic/PipeLogic.lvclass"/>
@@ -622,6 +615,7 @@
 			<Item Name="Tag-t&apos;DataCluster.ctl&apos;.lvlib" Type="Library" URL="/&lt;extravilib&gt;/ChannelInstances/Tag-t&apos;DataCluster.ctl&apos;.lvlib"/>
 			<Item Name="Stream-bool.lvlib" Type="Library" URL="/&lt;extravilib&gt;/ChannelInstances/Stream-bool.lvlib"/>
 			<Item Name="Tag-c(c(ref(LVObjVI()),bool),bool,bool,u32[Cool,Heat]).lvlib" Type="Library" URL="/&lt;extravilib&gt;/ChannelInstances/Tag-c(c(ref(LVObjVI()),bool),bool,bool,u32[Cool,Heat]).lvlib"/>
+			<Item Name="Tag-c(bool,ref(UserDefinedRefnumTag),bool,path,bool).lvlib" Type="Library" URL="/&lt;extravilib&gt;/ChannelInstances/Tag-c(bool,ref(UserDefinedRefnumTag),bool,path,bool).lvlib"/>
 		</Item>
 		<Item Name="Build Specifications" Type="Build">
 			<Item Name="Thermal Camera Evaluation" Type="EXE">
@@ -1190,9 +1184,6 @@
 				<Property Name="TgtF_versionIndependent" Type="Bool">true</Property>
 			</Item>
 			<Item Name="Update" Type="Installer">
-				<Property Name="AB_Class_Path" Type="Path">/&lt;vilib&gt;/AppBuilder/IB_Classes/MSI/IB_MSI.lvclass</Property>
-				<Property Name="AB_Temp_Project_Path" Type="Path">/D/Projects/Ice-Nucleation-Controller/src/LabVIEW/Ice Nucleation.lvproj</Property>
-				<Property Name="AB_UIClass_Path" Type="Path">/&lt;vilib&gt;/AppBuilder/IB_Classes/Installer/UI/AB_UI_Frmwk_Installer.lvclass</Property>
 				<Property Name="Destination[0].name" Type="Str">Ice Nucleation Controller</Property>
 				<Property Name="Destination[0].parent" Type="Str">{3912416A-D2E5-411B-AFEE-B63654D690C0}</Property>
 				<Property Name="Destination[0].tag" Type="Str">{4B7C7F5D-6E6D-4786-BBED-E06C37A5A212}</Property>
