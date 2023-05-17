@@ -9,7 +9,7 @@ void setup() {
   converter.begin(Serial2);
 
   // Setting both Voltage and Current to 2V and 0.1A respectively
-  converter.writeVC(2, 0.1);
+  converter.writeVC(25, 1);
 }
 
 void loop() {

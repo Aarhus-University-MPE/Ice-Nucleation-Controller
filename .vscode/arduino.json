@@ -1,7 +1,7 @@
 {
     "board": "arduino:avr:mega",
-    "sketch": "src\\Arduino\\INCField\\INCField\\INCField.ino",
-    "port": "COM6",
+    "sketch": "src\\Arduino\\INCField\\Test\\LCD\\FullLCD\\FullLCD.ino",
+    "port": "COM5",
     "programmer": "AVR ISP",
     "output": "src/arduino/out",
     "configuration": "cpu=atmega2560"

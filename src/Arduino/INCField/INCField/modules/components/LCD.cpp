@@ -9,9 +9,9 @@
 #pragma once
 
 #include "../setup/modules.h"
-#include "U8glib.h"
+#include "U8g2lib.h"
 
-U8GLIB_ST7920_128X64_1X u8g(52, 51, 41);
+U8G2_ST7920_128X64_1X u8g(52, 51, 41);
 
 unsigned long lastMillisDraw = 0;
 

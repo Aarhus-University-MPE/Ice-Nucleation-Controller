@@ -1,42 +1,21 @@
-#include "U8glib.h"
+#include "U8g2lib.h"
 
-U8GLIB_ST7920_128X64_1X u8g(52, 51, 41);  // SPI Com: SCK = en = 18, MOSI = rw = 16, CS = di = 17
+U8G2_ST7920_128X64_2_HW_SPI u8g2(U8G2_R0, 41);
 
 void draw(void) {
   // graphic commands to redraw the complete screen should be placed here
-  u8g.setFont(u8g_font_unifont);
-  // u8g.setFont(u8g_font_osb21);
-  u8g.drawStr(0, 22, "Hello World!");
+  u8g2.setFont(u8g2_font_helvR08_tf);
+  u8g2.drawUTF8(22, 22, "Temperature : -3.5 °C");
 }
 
 void setup(void) {
-  // flip screen, if required
-  // u8g.setRot180();
-
-  // set SPI backup if required
-  // u8g.setHardwareBackup(u8g_backup_avr_spi);
-
-  // assign default color value
-  if (u8g.getMode() == U8G_MODE_R3G3B2) {
-    u8g.setColorIndex(255);  // white
-  } else if (u8g.getMode() == U8G_MODE_GRAY2BIT) {
-    u8g.setColorIndex(3);  // max intensity
-  } else if (u8g.getMode() == U8G_MODE_BW) {
-    u8g.setColorIndex(1);  // pixel on
-  } else if (u8g.getMode() == U8G_MODE_HICOLOR) {
-    u8g.setHiColorByRGB(255, 255, 255);
-  }
-
-  pinMode(8, OUTPUT);
+  u8g2.begin();
 }
 
 void loop(void) {
   // picture loop
-  u8g.firstPage();
+  u8g2.firstPage();
   do {
     draw();
-  } while (u8g.nextPage());
-
-  // rebuild the picture after some delay
-  // delay(50);
+  } while (u8g2.nextPage());
 }

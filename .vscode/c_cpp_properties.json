@@ -26,7 +26,7 @@
         },
         {
             "name": "Arduino",
-            "compilerPath": "C:\\Users\\madsr\\AppData\\Local\\Arduino15\\packages\\arduino\\tools\\avr-gcc\\7.3.0-atmel3.6.1-arduino7\\bin\\avr-g++",
+            "compilerPath": "C:\\Users\\au540322\\AppData\\Local\\Arduino15\\packages\\arduino\\tools\\avr-gcc\\7.3.0-atmel3.6.1-arduino7\\bin\\avr-g++",
             "compilerArgs": [
                 "-w",
                 "-std=gnu++11",
@@ -39,21 +39,21 @@
             ],
             "intelliSenseMode": "gcc-x64",
             "includePath": [
-                "C:\\Users\\madsr\\AppData\\Local\\Arduino15\\packages\\arduino\\hardware\\avr\\1.8.5\\cores\\arduino",
-                "C:\\Users\\madsr\\AppData\\Local\\Arduino15\\packages\\arduino\\hardware\\avr\\1.8.5\\variants\\mega",
-                "C:\\Users\\madsr\\Documents\\Arduino\\libraries\\EncoderStepCounter-master",
-                "C:\\Users\\madsr\\Documents\\Arduino\\libraries\\OneButton-master\\src",
-                "C:\\Users\\madsr\\Documents\\Arduino\\libraries\\U8glib_Arduino-1.19.1\\src",
-                "C:\\Users\\madsr\\Documents\\Arduino\\libraries\\Adafruit_MAX31865-master",
-                "C:\\Users\\madsr\\Documents\\Arduino\\libraries\\Adafruit_BusIO-master",
-                "C:\\Users\\madsr\\AppData\\Local\\Arduino15\\packages\\arduino\\hardware\\avr\\1.8.5\\libraries\\SPI\\src",
-                "C:\\Users\\madsr\\AppData\\Local\\Arduino15\\packages\\arduino\\hardware\\avr\\1.8.5\\libraries\\Wire\\src",
-                "c:\\users\\madsr\\appdata\\local\\arduino15\\packages\\arduino\\tools\\avr-gcc\\7.3.0-atmel3.6.1-arduino7\\lib\\gcc\\avr\\7.3.0\\include",
-                "c:\\users\\madsr\\appdata\\local\\arduino15\\packages\\arduino\\tools\\avr-gcc\\7.3.0-atmel3.6.1-arduino7\\lib\\gcc\\avr\\7.3.0\\include-fixed",
-                "c:\\users\\madsr\\appdata\\local\\arduino15\\packages\\arduino\\tools\\avr-gcc\\7.3.0-atmel3.6.1-arduino7\\avr\\include"
+                "C:\\Users\\au540322\\AppData\\Local\\Arduino15\\packages\\arduino\\hardware\\avr\\1.8.6\\cores\\arduino",
+                "C:\\Users\\au540322\\AppData\\Local\\Arduino15\\packages\\arduino\\hardware\\avr\\1.8.6\\variants\\mega",
+                "C:\\Users\\au540322\\OneDrive - Aarhus Universitet\\Documents\\Arduino\\libraries\\Adafruit_MAX31865-master",
+                "C:\\Users\\au540322\\OneDrive - Aarhus Universitet\\Documents\\Arduino\\libraries\\Adafruit_BusIO-master",
+                "C:\\Users\\au540322\\AppData\\Local\\Arduino15\\packages\\arduino\\hardware\\avr\\1.8.6\\libraries\\SPI\\src",
+                "C:\\Users\\au540322\\OneDrive - Aarhus Universitet\\Documents\\Arduino\\libraries\\EncoderStepCounter-master",
+                "C:\\Users\\au540322\\OneDrive - Aarhus Universitet\\Documents\\Arduino\\libraries\\OneButton-master\\src",
+                "C:\\Users\\au540322\\OneDrive - Aarhus Universitet\\Documents\\Arduino\\libraries\\U8g2_Arduino-master\\src",
+                "C:\\Users\\au540322\\AppData\\Local\\Arduino15\\packages\\arduino\\hardware\\avr\\1.8.6\\libraries\\Wire\\src",
+                "c:\\users\\au540322\\appdata\\local\\arduino15\\packages\\arduino\\tools\\avr-gcc\\7.3.0-atmel3.6.1-arduino7\\lib\\gcc\\avr\\7.3.0\\include",
+                "c:\\users\\au540322\\appdata\\local\\arduino15\\packages\\arduino\\tools\\avr-gcc\\7.3.0-atmel3.6.1-arduino7\\lib\\gcc\\avr\\7.3.0\\include-fixed",
+                "c:\\users\\au540322\\appdata\\local\\arduino15\\packages\\arduino\\tools\\avr-gcc\\7.3.0-atmel3.6.1-arduino7\\avr\\include"
             ],
             "forcedInclude": [
-                "C:\\Users\\madsr\\AppData\\Local\\Arduino15\\packages\\arduino\\hardware\\avr\\1.8.5\\cores\\arduino\\Arduino.h"
+                "C:\\Users\\au540322\\AppData\\Local\\Arduino15\\packages\\arduino\\hardware\\avr\\1.8.6\\cores\\arduino\\Arduino.h"
             ],
             "cStandard": "c11",
             "cppStandard": "c++11",

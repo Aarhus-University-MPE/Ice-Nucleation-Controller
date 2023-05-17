@@ -29,6 +29,7 @@
 // LCD
 #define PO_RST_LCD     43  // Clear LCD
 #define PO_CS_LCD      41  // MISO -,  MOSI, 51, SCK 52
+#define PO_BUZZER_LCD  4
 
 // PT100 Sensor Amplifier
 #define PO_CS_PT100    42  // MISO 50, MOSI, 51, SCK 52
