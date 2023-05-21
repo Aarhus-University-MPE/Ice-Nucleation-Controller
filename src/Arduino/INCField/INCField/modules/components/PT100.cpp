@@ -14,10 +14,12 @@
 Adafruit_MAX31865 thermo = Adafruit_MAX31865(PO_CS_PT100);
 
 // The value of the Rref resistor. Use 430.0 for PT100 and 4300.0 for PT1000
-#define RREF     430.0
+#define RREF      430.0
 // The 'nominal' 0-degrees-C resistance of the sensor
 // 100.0 for PT100, 1000.0 for PT1000
-#define RNOMINAL 100.0
+#define RNOMINAL  100.0
+
+#define T0_OFFSET 0.0f  // TODO: calibrating the sensor in ice+water and 0C offset is subtracted from computed temperatures.
 
 // Initialize PT100 sensor amplifier
 void PT100Initialize() {
@@ -51,10 +53,11 @@ void CheckFaults() {
   }
 }
 
+// Returns PT100 temperature
 float GetTemperature() {
   uint16_t rtd = thermo.readRTD();
 
   CheckFaults();
 
-  return thermo.temperature(RNOMINAL, RREF);
+  return thermo.temperature(RNOMINAL, RREF) - T0_OFFSET;
 }

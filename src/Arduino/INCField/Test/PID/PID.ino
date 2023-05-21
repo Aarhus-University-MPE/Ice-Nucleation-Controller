@@ -11,9 +11,13 @@
 // Define Variables we'll be connecting to
 double Setpoint, Input, Output;
 
+double kp = 2;
+double ki = 5;
+double kd = 1;
+
 // Specify the links and initial tuning parameters
-PID myPID(&Input, &Output, &Setpoint, 2, 5, 1, P_ON_M, DIRECT);  // P_ON_M specifies that Proportional on Measurement be used
-                                                                 // P_ON_E (Proportional on Error) is the default behavior
+PID myPID(&Input, &Output, &Setpoint, kp, ki, kd, P_ON_M, DIRECT);  // P_ON_M specifies that Proportional on Measurement be used
+                                                                    // P_ON_E (Proportional on Error) is the default behavior
 
 void setup() {
   // initialize the variables we're linked to
