@@ -10,35 +10,81 @@
 
 #include "../setup/modules.h"
 
-int16_t setPoint = 0;  // TODO: add to EEPROM
-bool active      = false;
+SYSTEMSTATE systemState = SYSTEMSTATE_SPLASH;
 
-int8_t GetSetpoint() {
-  return setPoint;
-}
-
-int8_t SetSetpoint(int8_t _setpoint) {
-  setPoint = _setpoint;
-}
-
+// Returns if current
 bool GetActive() {
-  return active;
+  return systemState == SYSTEMSTATE_ACTIVE;
 }
 
-void SetActive(bool _active) {
-  active = _active;
+// Handle Clicks
+void HMIClick() {
+  switch (systemState) {
+    case SYSTEMSTATE_ACTIVE:
+      ClickActive();
+      break;
+    case SYSTEMSTATE_INPUT:
+      ClickInput();
+      break;
+
+    default:
+      break;
+  }
 }
 
+// Handle Scrolls
+void HMIScroll(int8_t value) {
+  switch (systemState) {
+    case SYSTEMSTATE_ACTIVE:
+      ScrollActive(value);
+      break;
+    case SYSTEMSTATE_INPUT:
+      ScrollInput(value);
+      break;
+
+    default:
+      break;
+  }
+}
+
+// Set LCD State
+void SetSystemState(SYSTEMSTATE _systemState) {
+  systemState = _systemState;
+
+  switch (systemState) {
+    case SYSTEMSTATE_ACTIVE:
+      InitializeActiveScreen();
+      break;
+    case SYSTEMSTATE_INPUT:
+      InitializeInputScreen();
+      break;
+    default:
+      break;
+  }
+}
+
+SYSTEMSTATE SystemState() {
+  return systemState;
+}
+
+// Initialize Input systems
 void HMIInitialize() {
-  // Initialize encoder
+  SetSystemState(SYSTEMSTATE_SPLASH);
   EncoderInitialize();
   EncoderBtnInitialize();
+  LCDInitialize();
 }
 
+// Disable all HMI process
 void HMITerminate() {
   EncoderTerminate();
+  EncoderBtnTerminate();
+  LCDReset();
 }
 
+// Primary Input process
 void HMIProcess() {
+  EncoderBtnProcess();
   EncoderProcess();
+  LCDDraw();
 }

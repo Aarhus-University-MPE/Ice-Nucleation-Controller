@@ -1,6 +1,8 @@
 #pragma once
 
 #include <Arduino.h>
+#include <DPM8600.h>
+#include <U8g2lib.h>
 
 // Config
 #include "../../config/commandlist.h"
@@ -20,7 +22,13 @@
 #include "../components/Encoder.cpp"
 #include "../components/EncoderBtn.cpp"
 #include "../components/HMI.cpp"
-#include "../components/LCD.cpp"
+#include "../components/LCDDriver.cpp"
 #include "../components/PIDController.cpp"
 #include "../components/PSU.cpp"
 #include "../components/PT100.cpp"
+#include "../components/Pump.cpp"
+
+// LCD Screens
+#include "../screens/active.cpp"
+#include "../screens/input.cpp"
+#include "../screens/splash.cpp"

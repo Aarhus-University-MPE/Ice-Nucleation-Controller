@@ -198,19 +198,6 @@ const uint8_t boxXPos = (128 - boxWidth) / 2;
 const uint8_t boxYPos = (64 - boxHeight) / 2;
 
 void DrawSelect() {
-  if (millis() - lastBlink > LCD_BLINKDURATION) {
-    lastBlink   = millis();
-    flashActive = !flashActive;
-  }
-
-  uint8_t textWidth, xPos;
-  String tempStr;
-
-  // if (!flashActive) {
-  //   DrawData();
-  //   return;
-  // }
-
   switch (menuSelection) {
     case MENU_TEMP:
       tempStr   = String(tempUI, 1);

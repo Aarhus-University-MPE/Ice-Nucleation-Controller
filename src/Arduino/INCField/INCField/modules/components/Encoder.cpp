@@ -14,8 +14,6 @@
 #define ENCODER_INT1 digitalPinToInterrupt(PT_ENC_A)
 #define ENCODER_INT2 digitalPinToInterrupt(PT_ENC_B)
 
-int16_t position = 0;
-
 // Create instance for one full step encoder
 EncoderStepCounter encoder(PT_ENC_A, PT_ENC_B);
 // Use the following for half step encoders
@@ -35,14 +33,16 @@ void EncoderInitialize() {
   attachInterrupt(ENCODER_INT2, interrupt, CHANGE);
 }
 
+// Detach Encoder
 void EncoderTerminate() {
   detachInterrupt(ENCODER_INT1);
   detachInterrupt(ENCODER_INT2);
 }
 
+// Process encoder signals
 void EncoderProcess() {
   int8_t pos = encoder.getPosition();
   if (pos == 0) return;
-  position += pos;
+  HMIScroll(pos);
   encoder.reset();
 }

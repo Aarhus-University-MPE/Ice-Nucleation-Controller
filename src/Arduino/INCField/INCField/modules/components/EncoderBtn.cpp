@@ -25,6 +25,7 @@ void checkTicks() {
 
 // this function will be called when the button was pressed 1 time only.
 void singleClick() {
+  HMIClick();
 }
 
 // this function will be called when the button was pressed 2 times in a short timeframe.
@@ -50,7 +51,7 @@ void pressStop() {
 void EncoderBtnInitialize() {
   attachInterrupt(BTN_INT, checkTicks, CHANGE);
 
-  // link the xxxclick functions to be called on xxxclick event.
+  // link the click functions to be called on click event.
   button.attachClick(singleClick);
   button.attachDoubleClick(doubleClick);
   button.attachMultiClick(multiClick);
@@ -60,6 +61,7 @@ void EncoderBtnInitialize() {
   button.attachLongPressStop(pressStop);
 }
 
+// Detach button
 void EncoderBtnTerminate() {
   detachInterrupt(BTN_INT);
 }

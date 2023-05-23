@@ -48,6 +48,16 @@
 #define LCD_DRAW_PERIOD 200
 
 // ------------------------------------------------------------ //
+//                       TEMP CONTROLLER                        //
+// ------------------------------------------------------------ //
+#define TEMP_INCREMENTS 0.5f
+#define TEMP_MAX        20
+#define TEMP_MIN        -40
+
+#define VOLTAGE_MAX     26.7f
+#define CURRENT_MAX     13.6f
+
+// ------------------------------------------------------------ //
 //                        COMMUNICATION                         //
 // ------------------------------------------------------------ //
 #define DEBUG_BAUDRATE  115200

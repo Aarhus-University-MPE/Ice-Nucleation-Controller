@@ -1,6 +1,6 @@
 {
     "board": "arduino:avr:mega",
-    "sketch": "src\\Arduino\\INCField\\Test\\LCD\\FullLCD\\FullLCD.ino",
+    "sketch": "src\\Arduino\\INCField\\INCField\\INCField.ino",
     "port": "COM5",
     "programmer": "AVR ISP",
     "output": "src/arduino/out",
