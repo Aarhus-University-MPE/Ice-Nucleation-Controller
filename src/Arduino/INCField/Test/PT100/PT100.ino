@@ -9,6 +9,30 @@ Adafruit_MAX31865 thermo = Adafruit_MAX31865(42);
 // 100.0 for PT100, 1000.0 for PT1000
 #define RNOMINAL 100.0
 
+// 4th order correction
+const float a4 = 0.0000006f;
+const float a3 = 0.000001f;
+const float a2 = -0.00008f;
+const float a1 = -0.0238f;
+const float a0 = 0.7086f;
+
+float sysTemp = 0;
+
+float TemperatureCorrection(float temp) {
+  return a4 * pow(temp, 4) + a3 * pow(temp, 3) + a2 * pow(temp, 2) + a1 * temp + a0;
+}
+
+// Read and update Temperature values
+void UpdateTemperature() {
+  uint16_t rtd   = thermo.readRTD();
+  float tempRead = thermo.temperature(RNOMINAL, RREF);
+
+  float estimateTemp   = tempRead - TemperatureCorrection(tempRead);
+  float tempCorrection = TemperatureCorrection(estimateTemp);
+
+  sysTemp = tempRead - tempCorrection;
+}
+
 void setup() {
   Serial.begin(115200);
   Serial.println("Adafruit MAX31865 PT100 Sensor Test!");
@@ -17,44 +41,17 @@ void setup() {
 }
 
 void loop() {
-  uint16_t rtd = thermo.readRTD();
+  float tempTotal = 0;
 
-  Serial.print("RTD value: ");
-  Serial.println(rtd);
-  float ratio = rtd;
-  ratio /= 32768;
-  Serial.print("Ratio = ");
-  Serial.println(ratio, 8);
-  Serial.print("Resistance = ");
-  Serial.println(RREF * ratio, 8);
-  Serial.print("Temperature = ");
-  Serial.println(thermo.temperature(RNOMINAL, RREF));
-
-  // Check and print any faults
-  uint8_t fault = thermo.readFault();
-  if (fault) {
-    Serial.print("Fault 0x");
-    Serial.println(fault, HEX);
-    if (fault & MAX31865_FAULT_HIGHTHRESH) {
-      Serial.println("RTD High Threshold");
-    }
-    if (fault & MAX31865_FAULT_LOWTHRESH) {
-      Serial.println("RTD Low Threshold");
-    }
-    if (fault & MAX31865_FAULT_REFINLOW) {
-      Serial.println("REFIN- > 0.85 x Bias");
-    }
-    if (fault & MAX31865_FAULT_REFINHIGH) {
-      Serial.println("REFIN- < 0.85 x Bias - FORCE- open");
-    }
-    if (fault & MAX31865_FAULT_RTDINLOW) {
-      Serial.println("RTDIN- < 0.85 x Bias - FORCE- open");
-    }
-    if (fault & MAX31865_FAULT_OVUV) {
-      Serial.println("Under/Over voltage");
-    }
-    thermo.clearFault();
+  for (uint8_t i = 0; i < 5; i++) {
+    UpdateTemperature();
+    tempTotal += sysTemp;
+    delay(2000);
   }
+
+  tempTotal /= 5;
+
+  Serial.print("Temperature = ");
+  Serial.println(tempTotal, 3);
   Serial.println();
-  delay(1000);
 }

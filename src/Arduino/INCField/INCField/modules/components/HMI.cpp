@@ -13,7 +13,7 @@
 SYSTEMSTATE systemState = SYSTEMSTATE_SPLASH;
 
 // Returns if current
-bool GetActive() {
+bool SystemActive() {
   return systemState == SYSTEMSTATE_ACTIVE;
 }
 
@@ -53,9 +53,11 @@ void SetSystemState(SYSTEMSTATE _systemState) {
 
   switch (systemState) {
     case SYSTEMSTATE_ACTIVE:
+      SystemEnableSecondary();
       InitializeActiveScreen();
       break;
     case SYSTEMSTATE_INPUT:
+      SystemDisableSecondary();
       InitializeInputScreen();
       break;
     default:
@@ -86,5 +88,6 @@ void HMITerminate() {
 void HMIProcess() {
   EncoderBtnProcess();
   EncoderProcess();
+
   LCDDraw();
 }

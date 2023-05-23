@@ -52,7 +52,7 @@ void UpdateActiveTargetTemperature() {
   if (uiTargetTempActive == GetTargetTemperature()) return;  // Skip if not changed
 
   // Update target temperature
-  SetActiveTargetTemperature(uiTargetTempActive);
+  SetTargetTemperature(uiTargetTempActive);
 }
 
 // Process scroll inputs based on current selection
@@ -89,9 +89,9 @@ void ClickActive() {
       break;
     case ACTIVESTATE_TEMP_SELECT:  // Save Adjusted Temperature
       UpdateActiveTargetTemperature();
+      menuSelectionActive = ACTIVESTATE_MENU_TEMP;
       break;
     case ACTIVESTATE_STOP_CONFIRM:  // Confirm Stop
-      // TODO: Stop system
       SetSystemState(SYSTEMSTATE_INPUT);
       break;
     case ACTIVESTATE_STOP_CANCEL:  // Cancel Stop
@@ -122,6 +122,7 @@ void DrawActiveDetails() {
 
 // Draw Target temperature (Setpoint)
 void DrawActiveTemperatureSetpoint() {
+  lcd.setFont(u8g2_font_helvR08_tf);
   String tempStr    = String(uiTargetTempActive, 1);
   uint8_t textWidth = lcd.getUTF8Width(tempStr.c_str());
   uint8_t xPos      = 105 - textWidth;
@@ -132,6 +133,7 @@ void DrawActiveTemperatureSetpoint() {
 
 // Draw PSU Output value
 void DrawActiveOutput() {
+  lcd.setFont(u8g2_font_helvR08_tf);
   uint8_t output    = GetPSUOutput();
   String tempStr    = String(output);
   uint8_t textWidth = lcd.getUTF8Width(tempStr.c_str());
@@ -169,6 +171,18 @@ void DrawActiveSelectionGlyph() {
       lcd.drawGlyph(3, yPos1 + 2, 0x25b7);
       lcd.drawGlyph(3, yPos3 + 2, 0x25b6);
       break;
+    case ACTIVESTATE_TEMP_SELECT:
+      lcd.drawGlyph(3, yPos1 + 2, 0x25b6);
+      lcd.drawGlyph(3, yPos3 + 2, 0x25b7);
+      break;
+    case ACTIVESTATE_STOP_CANCEL:
+      lcd.drawGlyph(3, yPos1 + 2, 0x25b7);
+      lcd.drawGlyph(3, yPos3 + 2, 0x25b6);
+      break;
+    case ACTIVESTATE_STOP_CONFIRM:
+      lcd.drawGlyph(3, yPos1 + 2, 0x25b7);
+      lcd.drawGlyph(3, yPos3 + 2, 0x25b6);
+      break;
     default:
       lcd.drawGlyph(3, yPos3 + 2, 0x25b7);
       lcd.drawGlyph(3, yPos1 + 2, 0x25b7);
@@ -178,6 +192,7 @@ void DrawActiveSelectionGlyph() {
 
 // Draw Stop Confirmation Box
 void DrawActiveStopBox() {
+  lcd.setFont(u8g2_font_helvR08_tf);
   lcd.drawBox(boxXPos, boxYPos, boxWidth, boxHeight);
   lcd.setDrawColor(0);
   lcd.drawBox(boxXPos + 1, boxYPos + 1, boxWidth - 2, boxHeight - 2);
@@ -187,6 +202,7 @@ void DrawActiveStopBox() {
 
 // Highlight selected text
 void DrawActiveTextOutline() {
+  lcd.setFont(u8g2_font_helvR08_tf);
   uint8_t textWidth, xPos;
   String tempStr;
 

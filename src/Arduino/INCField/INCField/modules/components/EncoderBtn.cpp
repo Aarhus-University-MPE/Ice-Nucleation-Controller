@@ -25,6 +25,7 @@ void checkTicks() {
 
 // this function will be called when the button was pressed 1 time only.
 void singleClick() {
+  BuzzerBeep();
   HMIClick();
 }
 

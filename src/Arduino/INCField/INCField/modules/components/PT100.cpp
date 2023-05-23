@@ -13,6 +13,15 @@
 
 Adafruit_MAX31865 thermo = Adafruit_MAX31865(PO_CS_PT100);
 
+const float a4 = 0.0000006f;
+const float a3 = 0.000001f;
+const float a2 = -0.00008f;
+const float a1 = -0.0238f;
+const float a0 = 0.7086f;
+
+float lastTemp;
+unsigned long lastTempUpdate = 0;
+
 // The value of the Rref resistor. Use 430.0 for PT100 and 4300.0 for PT1000
 #define RREF      430.0
 // The 'nominal' 0-degrees-C resistance of the sensor
@@ -53,11 +62,30 @@ void CheckFaults() {
   }
 }
 
+// Correct temperature reading
+float TemperatureCorrection(float temp) {
+  return a4 * pow(temp, 4) + a3 * pow(temp, 3) + a2 * pow(temp, 2) + a1 * temp + a0;
+}
+
+// Read and update Temperature values
+void UpdateTemperature() {
+  digitalWrite(PO_CS_LCD, true);
+  uint16_t rtd   = thermo.readRTD();
+  float tempRead = thermo.temperature(RNOMINAL, RREF);
+  digitalWrite(PO_CS_LCD, false);
+
+  float estimateTemp   = temp - TemperatureCorrection(tempRead);
+  float tempCorrection = TemperatureCorrection(estimateTemp);
+
+  lastTemp = tempRead - tempCorrection;
+}
+
 // Returns PT100 temperature
 float GetTemperature() {
-  uint16_t rtd = thermo.readRTD();
+  if (millis() - lastTempUpdate > TEMP_UPDATE_PERIOD) {
+    lastTempUpdate = millis();
+    UpdateTemperature();
+  }
 
-  CheckFaults();
-
-  return thermo.temperature(RNOMINAL, RREF) - T0_OFFSET;
+  return lastTemp;
 }

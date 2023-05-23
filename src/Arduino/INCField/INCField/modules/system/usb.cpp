@@ -15,7 +15,7 @@
 const byte numChars = 200;
 char receivedCMD[numChars];
 
-bool InitializeDebugComm() {
+bool DebugCommInitialize() {
   COM_SERIAL_DBG.begin(DEBUG_BAUDRATE);
 
   if (COM_SERIAL_DBG) {
@@ -75,6 +75,9 @@ void parseCommand() {
     case CMD_DEBUG:
       parseCommandDebug();
       break;
+    case CMD_PID:
+      parseCommandPID();
+      break;
     case '\0':
       break;
     default:
@@ -83,6 +86,7 @@ void parseCommand() {
   }
 }
 
+// Handle Debug commands
 void parseCommandDebug() {
   char *levelPtr           = receivedCMD + 2;
   char levelChar[numChars] = {0};
@@ -103,6 +107,51 @@ void parseCommandDebug() {
   }
 }
 
+// Handle PID commands
+void parseCommandPID() {
+  char *levelPtr           = receivedCMD + 2;
+  char valueChar[numChars] = {0};
+  strcpy(valueChar, levelPtr);
+
+  int integer = atoi(valueChar);
+
+  switch (receivedCMD[1]) {
+    case CMD_PID_UPDATE:
+      DEBUG_PRINTLN(F("Updating PID tunings"));
+      UpdatePIDTunings();
+      break;
+    case CMD_PID_SETKP:
+      DEBUG_PRINT(F("Transferring Kp value: "));
+      DEBUG_PRINTLN((float)integer / 10000.0f);
+      PIDSetKp((float)integer / 10000.0f);
+      break;
+    case CMD_PID_SETKI:
+      DEBUG_PRINT(F("Transferring Ki value: "));
+      DEBUG_PRINTLN((float)integer / 10000.0f);
+      PIDSetKi((float)integer / 10000.0f);
+      break;
+    case CMD_PID_SETKD:
+      DEBUG_PRINT(F("Transferring Kd value: "));
+      DEBUG_PRINTLN((float)integer / 10000.0f);
+      PIDSetKd((float)integer / 10000.0f);
+      break;
+    case CMD_PID_GETKP:
+      DEBUG_PRINT(F("PID Tuning (Kp): "));
+      DEBUG_PRINTLN(PIDGetKp());
+      break;
+    case CMD_PID_GETKI:
+      DEBUG_PRINT(F("PID Tuning (Ki): "));
+      DEBUG_PRINTLN(PIDGetKi());
+      break;
+    case CMD_PID_GETKD:
+      DEBUG_PRINT(F("PID Tuning (Kd): "));
+      DEBUG_PRINTLN(PIDGetKd());
+      break;
+    default:
+      DEBUG_PRINTLN(F("NACK"));
+      break;
+  }
+}
 void CountDownPrint() {
   DEBUG_PRINT(F("3"));
   delay(333);

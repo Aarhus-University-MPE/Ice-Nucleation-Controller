@@ -13,12 +13,12 @@ bool pumpState = false;
 
 // Enable pump power and circulation
 void PumpInitialize() {
-  pumpState = true;
+  // TODO: RPM signal (encoder.attach()?)
 }
 
 // Disable pump power and circulation
 void PumpTerminate() {
-  pumpState = false;
+  // TODO: RPM signal (encoder.detach()?)
 }
 
 // Returns current output (0-100%)
@@ -26,13 +26,27 @@ bool GetPumpState() {
   return pumpState;
 }
 
+// Start Pump
+void PumpStart() {
+  RedLED(true);
+  pumpState = true;
+  digitalWrite(PO_PUMP_EN, true);
+  analogWrite(PP_PUMP_PWM, 1);
+}
+
+// Stop Pump
+void PumpStop() {
+  RedLED(false);
+  digitalWrite(PO_PUMP_EN, false);
+  analogWrite(PP_PUMP_PWM, 0);
+  pumpState = false;
+}
+
 // Update current pump state
 void SetPumpState(bool state) {
-  pumpState = state;
-
-  if (pumpState) {
-    PumpInitialize();
+  if (state) {
+    PumpStart();
   } else {
-    PumpTerminate();
+    PumpStop();
   }
 }

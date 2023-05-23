@@ -40,24 +40,28 @@
 // ------------------------------------------------------------ //
 //                           SYSTEM                             //
 // ------------------------------------------------------------ //
-#define SystemVersion   "0.01.00"
+#define SystemVersion      "1.06.26"
 
 // ------------------------------------------------------------ //
 //                             LCD                              //
 // ------------------------------------------------------------ //
-#define LCD_DRAW_PERIOD 200
+#define LCD_DRAW_PERIOD    50
 
 // ------------------------------------------------------------ //
 //                       TEMP CONTROLLER                        //
 // ------------------------------------------------------------ //
-#define TEMP_INCREMENTS 0.5f
-#define TEMP_MAX        20
-#define TEMP_MIN        -40
+#define PID_PERIOD         1000
+#define TEMP_UPDATE_PERIOD 1000
 
-#define VOLTAGE_MAX     26.7f
-#define CURRENT_MAX     13.6f
+#define TEMP_INCREMENTS    0.5f
+#define TEMP_MAX           20
+#define TEMP_MIN           -40
+
+#define VOLTAGE_MAX        26.7f
+#define CURRENT_MAX        13.6f
 
 // ------------------------------------------------------------ //
 //                        COMMUNICATION                         //
 // ------------------------------------------------------------ //
-#define DEBUG_BAUDRATE  115200
+#define DEBUG_BAUDRATE     115200
+#define PSU_BAUDRATE       115200

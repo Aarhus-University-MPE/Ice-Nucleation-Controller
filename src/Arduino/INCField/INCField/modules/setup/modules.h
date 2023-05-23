@@ -1,7 +1,9 @@
 #pragma once
 
+// External Libraries
 #include <Arduino.h>
 #include <DPM8600.h>
+#include <EEPROM.h>
 #include <U8g2lib.h>
 
 // Config
@@ -19,10 +21,12 @@
 #include "../system/usb.cpp"
 
 // Components
+#include "../components/Buzzer.cpp"
 #include "../components/Encoder.cpp"
 #include "../components/EncoderBtn.cpp"
 #include "../components/HMI.cpp"
 #include "../components/LCDDriver.cpp"
+#include "../components/LED.cpp"
 #include "../components/PIDController.cpp"
 #include "../components/PSU.cpp"
 #include "../components/PT100.cpp"

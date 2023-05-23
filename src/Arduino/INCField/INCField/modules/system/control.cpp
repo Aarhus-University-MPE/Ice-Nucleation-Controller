@@ -11,14 +11,28 @@
 
 // Enables Primary Systems
 void SystemEnablePrimary() {
+  DBG_ONLY(DebugCommInitialize());
   InitAllPins();
+  InitializePIDEEPROMValues();
   HMIInitialize();
-}
-
-// Disable Secondary Systems
-void SystemDisableSecondary() {
+  PSUInitialize();
+  PT100Initialize();
+  BuzzerInitialize();
+  GreenLED(true);
 }
 
 // Enables Secondary Systems
 void SystemEnableSecondary() {
+  PIDInitialize();
+  PSUEnable();
+  PumpInitialize();
+  SetPumpState(true);
+}
+
+// Disable Secondary Systems
+void SystemDisableSecondary() {
+  PIDTerminate();
+  PSUTerminate();
+  PumpTerminate();
+  SetPumpState(false);
 }

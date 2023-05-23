@@ -61,7 +61,7 @@ void UpdateInputTargetTemperature() {
   if (uiTargetTempInput == GetTargetTemperature()) return;  // Skip if not changed
 
   // Update target temperature
-  SetInputTargetTemperature(uiTargetTempInput);
+  SetTargetTemperature(uiTargetTempInput);
 }
 
 // Save adjusted Pump State
@@ -87,7 +87,7 @@ void ScrollInput(int8_t value) {
       SetInputTargetTemperature(value);
       break;
     case INPUTSTATE_PUMP_SELECT:  // Adjust setState temperature (UI)
-      SetInputTargetTemperature(value);
+      ScrollInputPumpMenu(value);
       break;
     case INPUTSTATE_START_CONFIRM:  // Scroll in Start menu
       ScrollInputStartMenu(value);
@@ -114,12 +114,13 @@ void ClickInput() {
       break;
     case INPUTSTATE_TEMP_SELECT:  // Save Adjusted Temperature
       UpdateInputTargetTemperature();
+      menuSelectionInput = INPUTSTATE_MENU_TEMP;
       break;
     case INPUTSTATE_PUMP_SELECT:  // Save Adjusted Temperature
       UpdateInputPumpState();
+      menuSelectionInput = INPUTSTATE_MENU_PUMP;
       break;
     case INPUTSTATE_START_CONFIRM:  // Confirm Start
-      // TODO: Start system
       SetSystemState(SYSTEMSTATE_ACTIVE);
       break;
     case INPUTSTATE_START_CANCEL:  // Cancel Start
@@ -150,6 +151,7 @@ void DrawInputDetails() {
 
 // Draw Target temperature (Setpoint)
 void DrawInputTemperatureSetpoint() {
+  lcd.setFont(u8g2_font_helvR08_tf);
   String tempStr    = String(uiTargetTempInput, 1);
   uint8_t textWidth = lcd.getUTF8Width(tempStr.c_str());
   uint8_t xPos      = 105 - textWidth;
@@ -160,6 +162,7 @@ void DrawInputTemperatureSetpoint() {
 
 // Draw current pump state
 void DrawInputPumpData() {
+  lcd.setFont(u8g2_font_helvR08_tf);
   if (pumpStateUI) {
     lcd.drawUTF8(104, yPos2, "ON");
   } else {
@@ -180,6 +183,7 @@ void DrawInputSystemTemperature() {
 
   lcd.drawUTF8(xPos, yPos4, tempStr.c_str());
   lcd.drawUTF8(100, yPos4, "°C");
+  lcd.setFont(u8g2_font_helvR08_tf);
 }
 
 // Draw selection indicator
@@ -202,13 +206,38 @@ void DrawInputSelectionGlyph() {
       lcd.drawGlyph(3, yPos2 + 2, 0x25b7);
       lcd.drawGlyph(3, yPos3 + 2, 0x25b6);
       break;
+    case INPUTSTATE_TEMP_SELECT:
+      lcd.drawGlyph(3, yPos1 + 2, 0x25b6);
+      lcd.drawGlyph(3, yPos2 + 2, 0x25b7);
+      lcd.drawGlyph(3, yPos3 + 2, 0x25b7);
+      break;
+    case INPUTSTATE_PUMP_SELECT:
+      lcd.drawGlyph(3, yPos1 + 2, 0x25b7);
+      lcd.drawGlyph(3, yPos2 + 2, 0x25b6);
+      lcd.drawGlyph(3, yPos3 + 2, 0x25b7);
+      break;
+    case INPUTSTATE_START_CONFIRM:
+      lcd.drawGlyph(3, yPos1 + 2, 0x25b7);
+      lcd.drawGlyph(3, yPos2 + 2, 0x25b7);
+      lcd.drawGlyph(3, yPos3 + 2, 0x25b6);
+      break;
+    case INPUTSTATE_START_CANCEL:
+      lcd.drawGlyph(3, yPos1 + 2, 0x25b7);
+      lcd.drawGlyph(3, yPos2 + 2, 0x25b7);
+      lcd.drawGlyph(3, yPos3 + 2, 0x25b6);
+      break;
     default:
+      lcd.drawGlyph(3, yPos1 + 2, 0x25b7);
+      lcd.drawGlyph(3, yPos2 + 2, 0x25b7);
+      lcd.drawGlyph(3, yPos3 + 2, 0x25b7);
       break;
   }
 }
 
 // Draw Start Confirmation Box
+
 void DrawInputStartBox() {
+  lcd.setFont(u8g2_font_helvR08_tf);
   lcd.drawBox(boxXPos, boxYPos, boxWidth, boxHeight);
   lcd.setDrawColor(0);
   lcd.drawBox(boxXPos + 1, boxYPos + 1, boxWidth - 2, boxHeight - 2);
@@ -218,6 +247,7 @@ void DrawInputStartBox() {
 
 // Highlight selected text
 void DrawInputTextOutline() {
+  lcd.setFont(u8g2_font_helvR08_tf);
   uint8_t textWidth, xPos;
   String tempStr;
 

@@ -13,7 +13,7 @@
 // Startup screen
 void DrawSplash() {
   lcd.setFont(u8g2_font_helvR08_tf);
-  lcd.drawStr(22, 22, "Ice Nucleation Controller");
-  lcd.drawStr(32, 32, "version ");
-  lcd.drawStr(70, 32, SystemVersion);
+  lcd.drawStr(5, 32, "Ice Nucleation Controller");
+  lcd.drawStr(15, 42, "version ");
+  lcd.drawStr(70, 42, SystemVersion);
 }

@@ -12,11 +12,12 @@
 void setup() {
   SystemEnablePrimary();
 
-  delay(150);  // Boot time
+  SetSystemState(SYSTEMSTATE_INPUT);
 }
 
 // Primary loop
 void loop() {
+  DBG_ONLY(recvWithStartEndMarkers());
   HMIProcess();
   PIDProcess();
 }

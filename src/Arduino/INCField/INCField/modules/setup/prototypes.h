@@ -20,6 +20,11 @@ void SystemDisableSecondary();
 bool DebugCommInitialize();
 void parseCommand();
 void parseCommandDebug();
+void parseCommandPID();
+
+// LED
+void GreenLED(bool state);
+void RedLED(bool state);
 
 // Variables
 enum SYSTEMSTATE {
@@ -55,6 +60,7 @@ void HMIClick();
 int8_t GetPosition();
 bool GetClickState();
 void HMIProcess();
+bool SystemActive();
 
 // Encoder
 void EncoderBtnInitialize();
@@ -68,13 +74,34 @@ void EncoderProcess();
 void PIDProcess();
 void PIDInitialize();
 void PIDTerminate();
+void InitializePIDEEPROMValues();
+
+void UpdatePIDTunings();
+void PIDSetKp(double _Kp);
+void PIDSetKi(double _Ki);
+void PIDSetKd(double _Kd);
+double PIDGetKp();
+double PIDGetKi();
+double PIDGetKd();
 
 // Pump
 void PumpInitialize();
 void PumpTerminate();
+void PumpStart();
+void PumpStop();
+void SetPumpState(bool state);
 bool GetPumpState();
 
 // PSU
 void PSUInitialize();
 void PSUTerminate();
+void PSUEnable();
 void PSUProcess(int8_t _outputPct);
+
+// PT100
+void PT100Initialize();
+float GetTemperature();
+
+// Buzzer
+void BuzzerBeep();
+void BuzzerInitialize();

@@ -16,12 +16,6 @@ enum DURATION {
   DURATION_DELAY  = 50
 };
 
-// Initialize Buzzer
-void BuzzerInit() {
-  pinMode(PO_BUZZER_LCD, OUTPUT);
-  Buzzer2Beep();
-}
-
 // Play Buzzer tone
 void BuzzerTone(uint16_t frequency) {
   tone(PO_BUZZER_LCD, frequency);
@@ -50,5 +44,11 @@ void BuzzerLong() {
 void Buzzer2Beep() {
   BuzzerBeep();
   delay(DURATION_DELAY);
-  BuzzerBeep()
+  BuzzerBeep();
+}
+
+// Initialize Buzzer
+void BuzzerInitialize() {
+  pinMode(PO_BUZZER_LCD, OUTPUT);
+  Buzzer2Beep();
 }

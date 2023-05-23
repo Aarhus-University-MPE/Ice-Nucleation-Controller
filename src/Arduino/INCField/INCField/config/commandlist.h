@@ -25,6 +25,16 @@
 #define CMD_DEBUG_B    'B'
 #define CMD_DEBUG_C    'C'
 
+// PID Contorller
+#define CMD_PID        'P'
+#define CMD_PID_UPDATE 'U'
+#define CMD_PID_SETKP  'P'  // Kp x 10000
+#define CMD_PID_SETKI  'I'  // Ki x 10000
+#define CMD_PID_SETKD  'D'  // Kd x 10000
+#define CMD_PID_GETKP  'p'
+#define CMD_PID_GETKI  'i'
+#define CMD_PID_GETKD  'd'
+
 // ------------------------------------------------------------ //
 //                      Example Commands                        //
 // ------------------------------------------------------------ //

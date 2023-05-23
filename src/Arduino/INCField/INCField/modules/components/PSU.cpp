@@ -18,9 +18,18 @@
 uint8_t outputPct = 0;
 DPM8600 psu;
 
+// Set PSU out voltage and current
+void PSUSetOutput(float voltage, float current) {
+  voltage = constrain(voltage, 0, VOLTAGE_MAX);
+  current = constrain(current, 0, CURRENT_MAX);
+  psu.writeVC(voltage, current);
+}
+
 // Disable PSU output
 void PSUDisable() {
   psu.power(false);
+  delay(20);
+  PSUSetOutput(0, 0);
 }
 // Enable PSU output
 void PSUEnable() {
@@ -32,14 +41,10 @@ uint8_t GetPSUOutput() {
   return outputPct;
 }
 
-// Set PSU out voltage and current
-void PSUSetOutput(float voltage, float current) {
-  voltage = constrain(voltage, 0, VOLTAGE_MAX);
-  current = constrain(current, 0, CURRENT_MAX);
-  psu.writeVC(voltage, current);
+void SendVoltage(float voltage, float current) {
 }
 
-// Process PSU control (1-100% output)
+// Process PSU control (0-100% output)
 void PSUProcess(int8_t _outputPct) {
   outputPct = _outputPct;
   if (outputPct == 0) {
@@ -47,21 +52,19 @@ void PSUProcess(int8_t _outputPct) {
     return;
   }
 
-  float voltage = 0;  // conversion
+  float voltage = outputPct * (float)VOLTAGE_MAX / 100.0f;  // conversion
 
-  // Disable output while changing values
-  PSUDisable();
   PSUSetOutput(voltage, CURRENT_MAX);
-  PSUEnable();
 }
 
 // Initialize PSU communication
 void PSUInitialize() {
-  COM_SERIAL_PSU.begin(COM_PSU_BAUDRATE);
+  COM_SERIAL_PSU.begin(PSU_BAUDRATE);
 
   psu.begin(COM_SERIAL_PSU);
-  PSUDisable();
+
   PSUSetOutput(0, 0);
+  PSUDisable();
 }
 
 // Terminate PSU communication
