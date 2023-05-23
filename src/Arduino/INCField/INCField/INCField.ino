@@ -8,13 +8,14 @@
 
 #include "./modules/setup/modules.h"
 
+// System initialization
 void setup() {
-  // System initialization
   SystemEnablePrimary();
 
-  delay(150);
+  delay(150);  // Boot time
 }
 
+// Primary loop
 void loop() {
   HMIProcess();
   PIDProcess();
