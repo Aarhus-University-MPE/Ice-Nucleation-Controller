@@ -17,30 +17,27 @@
 #include "../modules/setup/modules.h"
 
 // Transistors (relays)
-#define PO_LED_GRN_EN    47
-#define PO_LED_RED_EN    48
-#define PO_PUMP_EN       49
+#define PO_LED_GRN_EN  47
+#define PO_LED_RED_EN  48
+#define PO_PUMP_EN     49
 
 // Interrupts
-#define PT_ENC_A         2   // LCD rotatry encoder A
-#define PT_ENC_B         3   // LCD rotatry encoder B
-#define PT_ENC_BTN       19  // LCD encoder press
+#define PT_ENC_A       2   // LCD rotatry encoder A
+#define PT_ENC_B       3   // LCD rotatry encoder B
+#define PT_ENC_BTN     19  // LCD encoder press
 
 // LCD
-#define PO_RST_LCD       43  // Clear LCD
-#define PO_CS_LCD        41  // MISO -,  MOSI, 51, SCK 52
-#define PO_BUZZER_LCD    4
+#define PO_RST_LCD     43  // Clear LCD
+#define PO_CS_LCD      41  // MISO -,  MOSI, 51, SCK 52
+#define PO_BUZZER_LCD  4
 
 // PT100 Sensor Amplifier
-#define PO_CS_PT100      42  // MISO 50, MOSI, 51, SCK 52
+#define PO_CS_PT100    42  // MISO 50, MOSI, 51, SCK 52
 
 // Pump
-#define PT_PUMP_RPM      18
-#define PP_PUMP_PWM      6
+#define PT_PUMP_RPM    18
+#define PP_PUMP_PWM    6
 
 // Communication
-#define COM_SERIAL_DBG   Serial   // TX 1,  RX 0
-#define COM_SERIAL_PSU   Serial2  // TX 16, RX 17
-
-#define COM_DBG_BAUDRATE 115200
-#define COM_PSU_BAUDRATE 9600
+#define COM_SERIAL_DBG Serial   // TX 1,  RX 0
+#define COM_SERIAL_PSU Serial2  // TX 16, RX 17

@@ -31,14 +31,14 @@ void PumpStart() {
   RedLED(true);
   pumpState = true;
   digitalWrite(PO_PUMP_EN, true);
-  analogWrite(PP_PUMP_PWM, 1);
+  // analogWrite(PP_PUMP_PWM, 0.5);
 }
 
 // Stop Pump
 void PumpStop() {
   RedLED(false);
   digitalWrite(PO_PUMP_EN, false);
-  analogWrite(PP_PUMP_PWM, 0);
+  // analogWrite(PP_PUMP_PWM, 0);
   pumpState = false;
 }
 

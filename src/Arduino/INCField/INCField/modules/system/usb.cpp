@@ -113,7 +113,7 @@ void parseCommandPID() {
   char valueChar[numChars] = {0};
   strcpy(valueChar, levelPtr);
 
-  int integer = atoi(valueChar);
+  long integer = atol(valueChar);
 
   switch (receivedCMD[1]) {
     case CMD_PID_UPDATE:

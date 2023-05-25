@@ -37,6 +37,8 @@ void PIDProcess() {
 
 // Initialize PID controller
 void PIDInitialize() {
+  PIDController.SetMode(MANUAL);
+  output = 0;
   PIDController.SetMode(AUTOMATIC);
   PIDController.SetOutputLimits(0, 100);  // Limit output to 0-100% cooling
   PIDController.SetSampleTime(1000);

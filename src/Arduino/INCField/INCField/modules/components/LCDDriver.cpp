@@ -41,7 +41,7 @@ void LCDInitialize() {
   // Start screen
   lcd.begin();
 
-    LCDDraw();
+  LCDDraw();
 }
 
 // Redraw LCD screen
@@ -72,5 +72,7 @@ void LCDDraw() {
   lcd.firstPage();
   do {
     DrawPage();
+    EncoderBtnProcess();
+    EncoderProcess();
   } while (lcd.nextPage());
 }
