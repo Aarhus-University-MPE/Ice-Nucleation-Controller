@@ -1,6 +1,6 @@
 ![](https://github.com/Aarhus-University-MPE/Ice-Nucleation-Controller/blob/main/docs/assets/INC_SplashLoad.png)
 
-# Ice-Nucleation
+# Ice Nucleation Controller
 
 The Ice Nucleation Controller is a system designed for conducting highly precise ice nucleation experiments within a specified temperature range of +10°C to -30°C. The system maintains a consistent temperature gradient throughout the experiments by employing a cooling circuit that incorporates a closed water loop and a pair of Peltier elements regulated by a PID controller. Temperature measurements are carried out using a FLIR A655sc thermal camera, which is corrected in real-time using a thermistor placed within a fixed calibration cavity. The freezing temperatures of each sample are estimated based on the extracted thermal camera temperatures, and these estimates can be utilized for subsequent processing.
 
