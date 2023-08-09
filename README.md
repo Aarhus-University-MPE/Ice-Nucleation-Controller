@@ -16,4 +16,4 @@ High detailed temperature data is generated using a FLIR A654sc. Images are used
 
 ![](https://github.com/Aarhus-University-MPE/Ice-Nucleation-Controller/blob/main/docs/assets/SystemData.png)
 
-![](https://github.com/Aarhus-University-MPE/Ice-Nucleation-Controller/blob/main/docs/assets/TCE_FrozenFraction.png.png)
+![](https://github.com/Aarhus-University-MPE/Ice-Nucleation-Controller/blob/main/docs/assets/TCE_FrozenFraction.png)
