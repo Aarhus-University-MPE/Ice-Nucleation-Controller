@@ -11,7 +11,7 @@ body:
   attributes:
     label: Ice-Nucleation-Controller version
     placeholder: |
-      1.2.12
+      1.2.15.8
     description: |
       Check software description
   validations:
