@@ -22,6 +22,7 @@
 			<Item Name="Calibration.ini" Type="Document" URL="../Calibration.ini"/>
 			<Item Name="camera_placeholder.png" Type="Document" URL="../resources/camera_placeholder.png"/>
 			<Item Name="TCEM.ini" Type="Document" URL="../TCEM.ini"/>
+			<Item Name="Calibration_Old.ini" Type="Document" URL="../Calibration_Old.ini"/>
 		</Item>
 		<Item Name="Functions" Type="Folder">
 			<Property Name="NI.SortType" Type="Int">3</Property>
@@ -138,6 +139,7 @@
 					<Item Name="Thermistor_Extract.vi" Type="VI" URL="../Thermistor_Extract.vi"/>
 					<Item Name="Read Exe WriteDate.vi" Type="VI" URL="../Read Exe WriteDate.vi"/>
 					<Item Name="VersionCheck.vi" Type="VI" URL="../VersionCheck.vi"/>
+					<Item Name="EnableDisable.vi" Type="VI" URL="../EnableDisable.vi"/>
 				</Item>
 				<Item Name="DataCluster.ctl" Type="VI" URL="../DataCluster.ctl"/>
 				<Item Name="TCE_Config.ctl" Type="VI" URL="../TCE_Config.ctl"/>
@@ -579,6 +581,10 @@
 				<Item Name="Trim Whitespace One-Sided.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Trim Whitespace One-Sided.vi"/>
 				<Item Name="LVPositionTypeDef.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/miscctls.llb/LVPositionTypeDef.ctl"/>
 				<Item Name="NI_Vision_Development_Module.lvlib" Type="Library" URL="/&lt;vilib&gt;/vision/NI_Vision_Development_Module.lvlib"/>
+				<Item Name="DAQmx Read (Power Wfm 1Chan 1Samp).vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/read.llb/DAQmx Read (Power Wfm 1Chan 1Samp).vi"/>
+				<Item Name="DAQmx Read (Power Wfm 1Chan NSamp).vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/read.llb/DAQmx Read (Power Wfm 1Chan NSamp).vi"/>
+				<Item Name="DAQmx Read (Power 1D Wfm NChan 1Samp).vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/read.llb/DAQmx Read (Power 1D Wfm NChan 1Samp).vi"/>
+				<Item Name="DAQmx Read (Power 1D Wfm NChan NSamp).vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/read.llb/DAQmx Read (Power 1D Wfm NChan NSamp).vi"/>
 			</Item>
 			<Item Name="_ChannelSupport.lvlib" Type="Library" URL="/&lt;resource&gt;/ChannelSupport/_ChannelSupport/_ChannelSupport.lvlib"/>
 			<Item Name="ChannelProbePositionAndTitle.vi" Type="VI" URL="/&lt;resource&gt;/ChannelSupport/_ChannelSupport/ChannelProbePositionAndTitle.vi"/>
