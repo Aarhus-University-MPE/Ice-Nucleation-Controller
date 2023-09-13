@@ -1,0 +1,5 @@
+;!@Install@!UTF-8!
+Title="Ice Nucleation Controller Installer"
+BeginPrompt="Do you want to install Ice Nucleation Controller?"
+RunProgram="./Installer/Volume/install.exe"
+;!@InstallEnd@!
