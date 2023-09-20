@@ -280,6 +280,7 @@
 		<Item Name="main.vi" Type="VI" URL="../main.vi"/>
 		<Item Name="TCC.vi" Type="VI" URL="../TCC.vi"/>
 		<Item Name="TCE.vi" Type="VI" URL="../TCE.vi"/>
+		<Item Name="OverlayTemps.vi" Type="VI" URL="../OverlayTemps.vi"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="vi.lib" Type="Folder">
 				<Item Name="Add State(s) to Queue__JKI_lib_State_Machine.vi" Type="VI" URL="/&lt;vilib&gt;/addons/_JKI Toolkits/State Machine/_JKI_lib_State_Machine.llb/Add State(s) to Queue__JKI_lib_State_Machine.vi"/>
