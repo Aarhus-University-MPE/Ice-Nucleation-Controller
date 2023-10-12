@@ -696,7 +696,7 @@
 				<Property Name="Bld_localDestDir" Type="Path">/D/Projects/Ice-Nucleation-Controller/Builds/bin/Full Build</Property>
 				<Property Name="Bld_modifyLibraryFile" Type="Bool">true</Property>
 				<Property Name="Bld_previewCacheID" Type="Str">{6FD33856-2380-4F94-8CB7-5581C7931DF6}</Property>
-				<Property Name="Bld_version.build" Type="Int">44</Property>
+				<Property Name="Bld_version.build" Type="Int">46</Property>
 				<Property Name="Bld_version.major" Type="Int">1</Property>
 				<Property Name="Bld_version.patch" Type="Int">2</Property>
 				<Property Name="Destination[0].destName" Type="Str">TCC.exe</Property>
