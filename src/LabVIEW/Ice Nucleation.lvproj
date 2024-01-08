@@ -80,6 +80,7 @@
 				</Item>
 				<Item Name="Pt100" Type="Folder">
 					<Item Name="Pt100_Conversion.vi" Type="VI" URL="../Pt100_Conversion.vi"/>
+					<Item Name="Pt100_Config.vi" Type="VI" URL="../Pt100_Config.vi"/>
 				</Item>
 				<Item Name="cDAQ_Channels.vi" Type="VI" URL="../cDAQ_Channels.vi"/>
 				<Item Name="cDAQ_Read.vi" Type="VI" URL="../cDAQ_Read.vi"/>
