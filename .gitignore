@@ -2,6 +2,7 @@
 /data/*
 /src/LabVIEW/Data
 /src/Arduino/out/*
+/src/LabVIEW/Test_Billeder/*
 *.zip
 *.7z
 *.exe
