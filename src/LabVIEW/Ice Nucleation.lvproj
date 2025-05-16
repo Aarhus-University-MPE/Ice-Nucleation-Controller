@@ -278,15 +278,24 @@
 			<Item Name="RunTimeMenu_TCE.rtm" Type="Document" URL="../RunTimeMenu_TCE.rtm"/>
 			<Item Name="OverlayTemps.vi" Type="VI" URL="../OverlayTemps.vi"/>
 		</Item>
+		<Item Name="GSFS" Type="Folder">
+			<Item Name="Tag-t&apos;DataCluster_GCFS.ctl&apos;.lvlib" Type="Library" URL="/&lt;extravilib&gt;/ChannelInstances/Tag-t&apos;DataCluster_GCFS.ctl&apos;.lvlib"/>
+			<Item Name="SaveTest.vi" Type="VI" URL="../GCFS/SaveTest.vi"/>
+			<Item Name="DataArrayTest.vi" Type="VI" URL="../DataArrayTest.vi"/>
+			<Item Name="Mono camera test.vi" Type="VI" URL="../Mono camera test.vi"/>
+			<Item Name="DataCluster_GCFS.ctl" Type="VI" URL="../DataCluster_GCFS.ctl"/>
+			<Item Name="Arduino_Initialization_GCFS.vi" Type="VI" URL="../GCFS/Arduino_Initialization_GCFS.vi"/>
+			<Item Name="Arduino_control_GCFS.vi" Type="VI" URL="../GCFS/Arduino_control_GCFS.vi"/>
+			<Item Name="Data_Collection_GCFS.vi" Type="VI" URL="../GCFS/Data_Collection_GCFS.vi"/>
+			<Item Name="Image_Pixel_Values_GCFS.vi" Type="VI" URL="../GCFS/Image_Pixel_Values_GCFS.vi"/>
+			<Item Name="DropletFile_Headers_GCFS.vi" Type="VI" URL="../GCFS/DropletFile_Headers_GCFS.vi"/>
+			<Item Name="Save_Files_GCFS.vi" Type="VI" URL="../GCFS/Save_Files_GCFS.vi"/>
+		</Item>
 		<Item Name="main.vi" Type="VI" URL="../main.vi"/>
 		<Item Name="TCC.vi" Type="VI" URL="../TCC.vi"/>
 		<Item Name="TCE.vi" Type="VI" URL="../TCE.vi"/>
 		<Item Name="Tag-t&apos;DataCluster.ctl&apos;.lvlib" Type="Library" URL="/&lt;extravilib&gt;/ChannelInstances/Tag-t&apos;DataCluster.ctl&apos;.lvlib"/>
-		<Item Name="Mono camera test.vi" Type="VI" URL="../Mono camera test.vi"/>
 		<Item Name="GCFS.vi" Type="VI" URL="../../../../BioDiscover/src/LabVIEW/SRS/GCFS.vi"/>
-		<Item Name="DataCluster_GCFS.ctl" Type="VI" URL="../DataCluster_GCFS.ctl"/>
-		<Item Name="Tag-t&apos;DataCluster_GCFS.ctl&apos;.lvlib" Type="Library" URL="/&lt;extravilib&gt;/ChannelInstances/Tag-t&apos;DataCluster_GCFS.ctl&apos;.lvlib"/>
-		<Item Name="DataArrayTest.vi" Type="VI" URL="../DataArrayTest.vi"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="vi.lib" Type="Folder">
 				<Item Name="Add State(s) to Queue__jki_lib_state_machine.vi" Type="VI" URL="/&lt;vilib&gt;/addons/_JKI Toolkits/State Machine/_JKI_lib_State_Machine.llb/Add State(s) to Queue__jki_lib_state_machine.vi"/>
@@ -616,6 +625,8 @@
 				<Item Name="Conditional State String__jki_lib_state_machine.vi" Type="VI" URL="/&lt;vilib&gt;/addons/_JKI Toolkits/State Machine/_JKI_lib_State_Machine.llb/Conditional State String__jki_lib_state_machine.vi"/>
 				<Item Name="Periodic State String__jki_lib_state_machine.vi" Type="VI" URL="/&lt;vilib&gt;/addons/_JKI Toolkits/State Machine/_JKI_lib_State_Machine.llb/Periodic State String__jki_lib_state_machine.vi"/>
 				<Item Name="LVPositionTypeDef.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/miscctls.llb/LVPositionTypeDef.ctl"/>
+				<Item Name="sub Waveform Array To Dynamic.vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/miscellaneous.llb/sub Waveform Array To Dynamic.vi"/>
+				<Item Name="Convert 1DDbl to DDT 2.vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/miscellaneous.llb/Convert 1DDbl to DDT 2.vi"/>
 			</Item>
 			<Item Name="_ChannelSupport.lvlib" Type="Library" URL="/&lt;resource&gt;/ChannelSupport/_ChannelSupport/_ChannelSupport.lvlib"/>
 			<Item Name="ChannelProbePositionAndTitle.vi" Type="VI" URL="/&lt;resource&gt;/ChannelSupport/_ChannelSupport/ChannelProbePositionAndTitle.vi"/>
@@ -658,7 +669,8 @@
 			<Item Name="ProbeFormatting.vi" Type="VI" URL="/&lt;resource&gt;/ChannelSupport/_ChannelSupport/ProbeSupport/ProbeFormatting.vi"/>
 			<Item Name="Stream-bool.lvlib" Type="Library" URL="/&lt;extravilib&gt;/ChannelInstances/Stream-bool.lvlib"/>
 			<Item Name="Tag-c(c(ref(LVObjVI()),bool),bool,bool,u32[Cool,Heat]).lvlib" Type="Library" URL="/&lt;extravilib&gt;/ChannelInstances/Tag-c(c(ref(LVObjVI()),bool),bool,bool,u32[Cool,Heat]).lvlib"/>
-			<Item Name="Stream-c(t&apos;IMAQ Image.ctl&apos;,str).lvlib" Type="Library" URL="/&lt;extravilib&gt;/ChannelInstances/Stream-c(t&apos;IMAQ Image.ctl&apos;,str).lvlib"/>
+			<Item Name="Stream-c(t&apos;IMAQ Image.ctl&apos;,str,a[.,.](str),a[.,.](str),bool).lvlib" Type="Library" URL="/&lt;extravilib&gt;/ChannelInstances/Stream-c(t&apos;IMAQ Image.ctl&apos;,str,a[.,.](str),a[.,.](str),bool).lvlib"/>
+			<Item Name="Stream-c(a[.,.](str),a[.,.](str),bool).lvlib" Type="Library" URL="/&lt;extravilib&gt;/ChannelInstances/Stream-c(a[.,.](str),a[.,.](str),bool).lvlib"/>
 		</Item>
 		<Item Name="Build Specifications" Type="Build">
 			<Item Name="Thermal Camera Evaluation" Type="EXE">
