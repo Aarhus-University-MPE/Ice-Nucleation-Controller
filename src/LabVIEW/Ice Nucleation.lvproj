@@ -16,175 +16,175 @@
 				<Item Name="Big Setup.prt" Type="Document" URL="../Partitions/Big Setup.prt"/>
 				<Item Name="Small Setup.prt" Type="Document" URL="../Partitions/Small Setup.prt"/>
 			</Item>
-			<Item Name="TCam.ini" Type="Document" URL="../TCam.ini"/>
-			<Item Name="TCC.ini" Type="Document" URL="../TCC.ini"/>
-			<Item Name="settings.ini" Type="Document" URL="../settings.ini"/>
-			<Item Name="Calibration.ini" Type="Document" URL="../Calibration.ini"/>
+			<Item Name="TCam.ini" Type="Document" URL="../Micro/TCam.ini"/>
+			<Item Name="TCC.ini" Type="Document" URL="../Micro/TCC.ini"/>
+			<Item Name="settings.ini" Type="Document" URL="../Micro/settings.ini"/>
+			<Item Name="Calibration.ini" Type="Document" URL="../Micro/Calibration.ini"/>
 			<Item Name="camera_placeholder.png" Type="Document" URL="../resources/camera_placeholder.png"/>
-			<Item Name="TCEM.ini" Type="Document" URL="../TCEM.ini"/>
-			<Item Name="Calibration_Old.ini" Type="Document" URL="../Calibration_Old.ini"/>
+			<Item Name="TCEM.ini" Type="Document" URL="../Micro/TCEM.ini"/>
+			<Item Name="Calibration_Old.ini" Type="Document" URL="../Micro/Calibration_Old.ini"/>
 		</Item>
 		<Item Name="Functions" Type="Folder">
 			<Property Name="NI.SortType" Type="Int">3</Property>
 			<Item Name="Camera" Type="Folder">
 				<Property Name="NI.SortType" Type="Int">3</Property>
-				<Item Name="Camera_Config.vi" Type="VI" URL="../Camera_Config.vi"/>
-				<Item Name="Camera_Grab.vi" Type="VI" URL="../Camera_Grab.vi"/>
-				<Item Name="Camera_Feed.vi" Type="VI" URL="../Camera_Feed.vi"/>
-				<Item Name="Camera_Rectangle_To_ROI.vi" Type="VI" URL="../Camera_Rectangle_To_ROI.vi"/>
-				<Item Name="Camera_ROI_To_Rectangle.vi" Type="VI" URL="../Camera_ROI_To_Rectangle.vi"/>
-				<Item Name="Camera_ROI_Extract.vi" Type="VI" URL="../Camera_ROI_Extract.vi"/>
+				<Item Name="Camera_Config.vi" Type="VI" URL="../Micro/Camera_Config.vi"/>
+				<Item Name="Camera_Grab.vi" Type="VI" URL="../Micro/Camera_Grab.vi"/>
+				<Item Name="Camera_Feed.vi" Type="VI" URL="../Micro/Camera_Feed.vi"/>
+				<Item Name="Camera_Rectangle_To_ROI.vi" Type="VI" URL="../Micro/Camera_Rectangle_To_ROI.vi"/>
+				<Item Name="Camera_ROI_To_Rectangle.vi" Type="VI" URL="../Micro/Camera_ROI_To_Rectangle.vi"/>
+				<Item Name="Camera_ROI_Extract.vi" Type="VI" URL="../Micro/Camera_ROI_Extract.vi"/>
 			</Item>
 			<Item Name="Arduino" Type="Folder">
-				<Item Name="Arduino_Initialize.vi" Type="VI" URL="../Arduino_Initialize.vi"/>
-				<Item Name="Arduino_Mode.vi" Type="VI" URL="../Arduino_Mode.vi"/>
-				<Item Name="Arduino_Resend_Heat_Timeout.vi" Type="VI" URL="../Arduino_Resend_Heat_Timeout.vi"/>
+				<Item Name="Arduino_Initialize.vi" Type="VI" URL="../Micro/Arduino_Initialize.vi"/>
+				<Item Name="Arduino_Mode.vi" Type="VI" URL="../Micro/Arduino_Mode.vi"/>
+				<Item Name="Arduino_Resend_Heat_Timeout.vi" Type="VI" URL="../Micro/Arduino_Resend_Heat_Timeout.vi"/>
 			</Item>
 			<Item Name="Thermal Camera" Type="Folder">
 				<Item Name="UI" Type="Folder">
-					<Item Name="TCam_CenterArray.vi" Type="VI" URL="../TCam_CenterArray.vi"/>
-					<Item Name="TCam_HorizontalLines.vi" Type="VI" URL="../TCam_HorizontalLines.vi"/>
-					<Item Name="TCam_VerticalLines.vi" Type="VI" URL="../TCam_VerticalLines.vi"/>
-					<Item Name="TCam_Overlay_Fixedpoint.vi" Type="VI" URL="../TCam_Overlay_Fixedpoint.vi"/>
-					<Item Name="RunTimeMenu_Initialize_TCE.vi" Type="VI" URL="../RunTimeMenu_Initialize_TCE.vi"/>
-					<Item Name="RunTimeMenu_Save_State_TCE.vi" Type="VI" URL="../RunTimeMenu_Save_State_TCE.vi"/>
-					<Item Name="RunTimeMenu_TCE_RecentInsert.vi" Type="VI" URL="../RunTimeMenu_TCE_RecentInsert.vi"/>
-					<Item Name="OverlayFreezeRange.vi" Type="VI" URL="../OverlayFreezeRange.vi"/>
+					<Item Name="TCam_CenterArray.vi" Type="VI" URL="../Micro/TCam_CenterArray.vi"/>
+					<Item Name="TCam_HorizontalLines.vi" Type="VI" URL="../Micro/TCam_HorizontalLines.vi"/>
+					<Item Name="TCam_VerticalLines.vi" Type="VI" URL="../Micro/TCam_VerticalLines.vi"/>
+					<Item Name="TCam_Overlay_Fixedpoint.vi" Type="VI" URL="../Micro/TCam_Overlay_Fixedpoint.vi"/>
+					<Item Name="RunTimeMenu_Initialize_TCE.vi" Type="VI" URL="../Micro/RunTimeMenu_Initialize_TCE.vi"/>
+					<Item Name="RunTimeMenu_Save_State_TCE.vi" Type="VI" URL="../Micro/RunTimeMenu_Save_State_TCE.vi"/>
+					<Item Name="RunTimeMenu_TCE_RecentInsert.vi" Type="VI" URL="../Micro/RunTimeMenu_TCE_RecentInsert.vi"/>
+					<Item Name="OverlayFreezeRange.vi" Type="VI" URL="../Micro/OverlayFreezeRange.vi"/>
 				</Item>
 				<Item Name="Hardware" Type="Folder">
-					<Item Name="TCam_Scan.vi" Type="VI" URL="../TCam_Scan.vi"/>
-					<Item Name="TCam_Focus.vi" Type="VI" URL="../TCam_Focus.vi"/>
-					<Item Name="TCam_Config.vi" Type="VI" URL="../TCam_Config.vi"/>
-					<Item Name="TCam_AutoFocus.vi" Type="VI" URL="../TCam_AutoFocus.vi"/>
-					<Item Name="TCam_NUC.vi" Type="VI" URL="../TCam_NUC.vi"/>
-					<Item Name="TCam_NUC_SET.vi" Type="VI" URL="../TCam_NUC_SET.vi"/>
+					<Item Name="TCam_Scan.vi" Type="VI" URL="../Micro/TCam_Scan.vi"/>
+					<Item Name="TCam_Focus.vi" Type="VI" URL="../Micro/TCam_Focus.vi"/>
+					<Item Name="TCam_Config.vi" Type="VI" URL="../Micro/TCam_Config.vi"/>
+					<Item Name="TCam_AutoFocus.vi" Type="VI" URL="../Micro/TCam_AutoFocus.vi"/>
+					<Item Name="TCam_NUC.vi" Type="VI" URL="../Micro/TCam_NUC.vi"/>
+					<Item Name="TCam_NUC_SET.vi" Type="VI" URL="../Micro/TCam_NUC_SET.vi"/>
 				</Item>
 				<Item Name="System" Type="Folder">
-					<Item Name="TCam_CalibrationLoad.vi" Type="VI" URL="../TCam_CalibrationLoad.vi"/>
-					<Item Name="TCam_Calibration_LoadSettings.vi" Type="VI" URL="../TCam_Calibration_LoadSettings.vi"/>
-					<Item Name="DataArray_Reformatter.vi" Type="VI" URL="../DataArray_Reformatter.vi"/>
-					<Item Name="SingleTempUpdater.vi" Type="VI" URL="../SingleTempUpdater.vi"/>
-					<Item Name="SingleWellUpdater.vi" Type="VI" URL="../SingleWellUpdater.vi"/>
-					<Item Name="WellCoordinateChecker.vi" Type="VI" URL="../WellCoordinateChecker.vi"/>
+					<Item Name="TCam_CalibrationLoad.vi" Type="VI" URL="../Micro/TCam_CalibrationLoad.vi"/>
+					<Item Name="TCam_Calibration_LoadSettings.vi" Type="VI" URL="../Micro/TCam_Calibration_LoadSettings.vi"/>
+					<Item Name="DataArray_Reformatter.vi" Type="VI" URL="../Micro/DataArray_Reformatter.vi"/>
+					<Item Name="SingleTempUpdater.vi" Type="VI" URL="../Micro/SingleTempUpdater.vi"/>
+					<Item Name="SingleWellUpdater.vi" Type="VI" URL="../Micro/SingleWellUpdater.vi"/>
+					<Item Name="WellCoordinateChecker.vi" Type="VI" URL="../Micro/WellCoordinateChecker.vi"/>
 				</Item>
-				<Item Name="DataCluster_TCAL.ctl" Type="VI" URL="../DataCluster_TCAL.ctl"/>
+				<Item Name="DataCluster_TCAL.ctl" Type="VI" URL="../Micro/DataCluster_TCAL.ctl"/>
 			</Item>
 			<Item Name="cDAQ" Type="Folder">
 				<Item Name="Thermistor" Type="Folder">
-					<Item Name="Thermistor_Callibration.vi" Type="VI" URL="../Thermistor_Callibration.vi"/>
-					<Item Name="Thermistor_Callibration_Load.vi" Type="VI" URL="../Thermistor_Callibration_Load.vi"/>
-					<Item Name="Thermistor_Callibration_Save.vi" Type="VI" URL="../Thermistor_Callibration_Save.vi"/>
-					<Item Name="Thermistor_Conversion.vi" Type="VI" URL="../Thermistor_Conversion.vi"/>
-					<Item Name="Thermistor_Manual_Read.vi" Type="VI" URL="../Thermistor_Manual_Read.vi"/>
-					<Item Name="Thermistor_Temp_Stamp.vi" Type="VI" URL="../Thermistor_Temp_Stamp.vi"/>
+					<Item Name="Thermistor_Callibration.vi" Type="VI" URL="../Micro/Thermistor_Callibration.vi"/>
+					<Item Name="Thermistor_Callibration_Load.vi" Type="VI" URL="../Micro/Thermistor_Callibration_Load.vi"/>
+					<Item Name="Thermistor_Callibration_Save.vi" Type="VI" URL="../Micro/Thermistor_Callibration_Save.vi"/>
+					<Item Name="Thermistor_Conversion.vi" Type="VI" URL="../Micro/Thermistor_Conversion.vi"/>
+					<Item Name="Thermistor_Manual_Read.vi" Type="VI" URL="../Micro/Thermistor_Manual_Read.vi"/>
+					<Item Name="Thermistor_Temp_Stamp.vi" Type="VI" URL="../Micro/Thermistor_Temp_Stamp.vi"/>
 				</Item>
-				<Item Name="cDAQ_Channels.vi" Type="VI" URL="../cDAQ_Channels.vi"/>
-				<Item Name="cDAQ_Read.vi" Type="VI" URL="../cDAQ_Read.vi"/>
-				<Item Name="CDAQ_Scan.vi" Type="VI" URL="../CDAQ_Scan.vi"/>
-				<Item Name="RollingGradient.vi" Type="VI" URL="../RollingGradient.vi"/>
+				<Item Name="cDAQ_Channels.vi" Type="VI" URL="../Micro/cDAQ_Channels.vi"/>
+				<Item Name="cDAQ_Read.vi" Type="VI" URL="../Micro/cDAQ_Read.vi"/>
+				<Item Name="CDAQ_Scan.vi" Type="VI" URL="../Micro/CDAQ_Scan.vi"/>
+				<Item Name="RollingGradient.vi" Type="VI" URL="../Micro/RollingGradient.vi"/>
 			</Item>
 			<Item Name="Data Logging" Type="Folder">
 				<Property Name="NI.SortType" Type="Int">3</Property>
-				<Item Name="DataFile_Create.vi" Type="VI" URL="../DataFile_Create.vi"/>
-				<Item Name="DataFile_Append.vi" Type="VI" URL="../DataFile_Append.vi"/>
-				<Item Name="Label_Check.vi" Type="VI" URL="../Label_Check.vi"/>
-				<Item Name="Label_Increment.vi" Type="VI" URL="../Label_Increment.vi"/>
-				<Item Name="Partition_Format.vi" Type="VI" URL="../Partition_Format.vi"/>
-				<Item Name="SetupFile_Create.vi" Type="VI" URL="../SetupFile_Create.vi"/>
-				<Item Name="SetupFile_Format.vi" Type="VI" URL="../SetupFile_Format.vi"/>
-				<Item Name="SetupFile_Stamp.vi" Type="VI" URL="../SetupFile_Stamp.vi"/>
-				<Item Name="SetupFile_GetElapsedDuration.vi" Type="VI" URL="../SetupFile_GetElapsedDuration.vi"/>
-				<Item Name="Buffer_Initialize.vi" Type="VI" URL="../Buffer_Initialize.vi"/>
-				<Item Name="Buffer_Append.vi" Type="VI" URL="../Buffer_Append.vi"/>
-				<Item Name="DAQ_Status_Read.vi" Type="VI" URL="../DAQ_Status_Read.vi"/>
-				<Item Name="DAQ_Package.vi" Type="VI" URL="../DAQ_Package.vi"/>
+				<Item Name="DataFile_Create.vi" Type="VI" URL="../Micro/DataFile_Create.vi"/>
+				<Item Name="DataFile_Append.vi" Type="VI" URL="../Micro/DataFile_Append.vi"/>
+				<Item Name="Label_Check.vi" Type="VI" URL="../Micro/Label_Check.vi"/>
+				<Item Name="Label_Increment.vi" Type="VI" URL="../Micro/Label_Increment.vi"/>
+				<Item Name="Partition_Format.vi" Type="VI" URL="../Micro/Partition_Format.vi"/>
+				<Item Name="SetupFile_Create.vi" Type="VI" URL="../Micro/SetupFile_Create.vi"/>
+				<Item Name="SetupFile_Format.vi" Type="VI" URL="../Micro/SetupFile_Format.vi"/>
+				<Item Name="SetupFile_Stamp.vi" Type="VI" URL="../Micro/SetupFile_Stamp.vi"/>
+				<Item Name="SetupFile_GetElapsedDuration.vi" Type="VI" URL="../Micro/SetupFile_GetElapsedDuration.vi"/>
+				<Item Name="Buffer_Initialize.vi" Type="VI" URL="../Micro/Buffer_Initialize.vi"/>
+				<Item Name="Buffer_Append.vi" Type="VI" URL="../Micro/Buffer_Append.vi"/>
+				<Item Name="DAQ_Status_Read.vi" Type="VI" URL="../Micro/DAQ_Status_Read.vi"/>
+				<Item Name="DAQ_Package.vi" Type="VI" URL="../Micro/DAQ_Package.vi"/>
 			</Item>
 			<Item Name="Freeze" Type="Folder">
-				<Item Name="Freeze_Check.vi" Type="VI" URL="../Freeze_Check.vi"/>
-				<Item Name="Freeze_Threshold.vi" Type="VI" URL="../Freeze_Threshold.vi"/>
+				<Item Name="Freeze_Check.vi" Type="VI" URL="../Micro/Freeze_Check.vi"/>
+				<Item Name="Freeze_Threshold.vi" Type="VI" URL="../Micro/Freeze_Threshold.vi"/>
 			</Item>
 			<Item Name="PID" Type="Folder">
-				<Item Name="PID_Calculate.vi" Type="VI" URL="../PID_Calculate.vi"/>
-				<Item Name="PID_Control.vi" Type="VI" URL="../PID_Control.vi"/>
-				<Item Name="AutoPID.vi" Type="VI" URL="../AutoPID.vi"/>
+				<Item Name="PID_Calculate.vi" Type="VI" URL="../Micro/PID_Calculate.vi"/>
+				<Item Name="PID_Control.vi" Type="VI" URL="../Micro/PID_Control.vi"/>
+				<Item Name="AutoPID.vi" Type="VI" URL="../Micro/AutoPID.vi"/>
 			</Item>
 			<Item Name="PSU" Type="Folder">
-				<Item Name="PSU_Command.vi" Type="VI" URL="../PSU_Command.vi"/>
-				<Item Name="PSU_Output.vi" Type="VI" URL="../PSU_Output.vi"/>
-				<Item Name="PSU_State.vi" Type="VI" URL="../PSU_State.vi"/>
-				<Item Name="PSU_VOUT_Converter.vi" Type="VI" URL="../PSU_VOUT_Converter.vi"/>
-				<Item Name="VISA_Scan.vi" Type="VI" URL="../VISA_Scan.vi"/>
+				<Item Name="PSU_Command.vi" Type="VI" URL="../Micro/PSU_Command.vi"/>
+				<Item Name="PSU_Output.vi" Type="VI" URL="../Micro/PSU_Output.vi"/>
+				<Item Name="PSU_State.vi" Type="VI" URL="../Micro/PSU_State.vi"/>
+				<Item Name="PSU_VOUT_Converter.vi" Type="VI" URL="../Micro/PSU_VOUT_Converter.vi"/>
+				<Item Name="VISA_Scan.vi" Type="VI" URL="../Micro/VISA_Scan.vi"/>
 			</Item>
 			<Item Name="Settings" Type="Folder">
-				<Item Name="Options.vi" Type="VI" URL="../Options.vi"/>
-				<Item Name="Partition_Setup.vi" Type="VI" URL="../Partition_Setup.vi"/>
-				<Item Name="Settings_Config.vi" Type="VI" URL="../Settings_Config.vi"/>
-				<Item Name="Settings_Load.vi" Type="VI" URL="../Settings_Load.vi"/>
-				<Item Name="Settings_Save.vi" Type="VI" URL="../Settings_Save.vi"/>
+				<Item Name="Options.vi" Type="VI" URL="../Micro/Options.vi"/>
+				<Item Name="Partition_Setup.vi" Type="VI" URL="../Micro/Partition_Setup.vi"/>
+				<Item Name="Settings_Config.vi" Type="VI" URL="../Micro/Settings_Config.vi"/>
+				<Item Name="Settings_Load.vi" Type="VI" URL="../Micro/Settings_Load.vi"/>
+				<Item Name="Settings_Save.vi" Type="VI" URL="../Micro/Settings_Save.vi"/>
 			</Item>
 			<Item Name="System" Type="Folder">
 				<Property Name="NI.SortType" Type="Int">3</Property>
 				<Item Name="Misc" Type="Folder">
-					<Item Name="SystemActive.vi" Type="VI" URL="../SystemActive.vi"/>
-					<Item Name="Camera_Frequency.vi" Type="VI" URL="../Camera_Frequency.vi"/>
-					<Item Name="SampleRate_Convert.vi" Type="VI" URL="../SampleRate_Convert.vi"/>
-					<Item Name="Image_Folder_Path_Checker.vi" Type="VI" URL="../Image_Folder_Path_Checker.vi"/>
-					<Item Name="Calibration_Converter.vi" Type="VI" URL="../Calibration_Converter.vi"/>
-					<Item Name="Points to Oval.vi" Type="VI" URL="../Points to Oval.vi"/>
-					<Item Name="timeleft_stamp.vi" Type="VI" URL="../timeleft_stamp.vi"/>
-					<Item Name="IntToLetter.vi" Type="VI" URL="../IntToLetter.vi"/>
-					<Item Name="Letter2Number.vi" Type="VI" URL="../Letter2Number.vi"/>
-					<Item Name="PCRNameArray.vi" Type="VI" URL="../PCRNameArray.vi"/>
-					<Item Name="Partition_Extract.vi" Type="VI" URL="../Partition_Extract.vi"/>
-					<Item Name="DataArray_Formatter.vi" Type="VI" URL="../DataArray_Formatter.vi"/>
-					<Item Name="PCRSize.vi" Type="VI" URL="../PCRSize.vi"/>
-					<Item Name="Thermistor_Extract.vi" Type="VI" URL="../Thermistor_Extract.vi"/>
-					<Item Name="Read Exe WriteDate.vi" Type="VI" URL="../Read Exe WriteDate.vi"/>
-					<Item Name="VersionCheck.vi" Type="VI" URL="../VersionCheck.vi"/>
-					<Item Name="EnableDisable.vi" Type="VI" URL="../EnableDisable.vi"/>
-					<Item Name="CleanString.vi" Type="VI" URL="../CleanString.vi"/>
+					<Item Name="SystemActive.vi" Type="VI" URL="../Micro/SystemActive.vi"/>
+					<Item Name="Camera_Frequency.vi" Type="VI" URL="../Micro/Camera_Frequency.vi"/>
+					<Item Name="SampleRate_Convert.vi" Type="VI" URL="../Micro/SampleRate_Convert.vi"/>
+					<Item Name="Image_Folder_Path_Checker.vi" Type="VI" URL="../Micro/Image_Folder_Path_Checker.vi"/>
+					<Item Name="Calibration_Converter.vi" Type="VI" URL="../Micro/Calibration_Converter.vi"/>
+					<Item Name="Points to Oval.vi" Type="VI" URL="../Micro/Points to Oval.vi"/>
+					<Item Name="timeleft_stamp.vi" Type="VI" URL="../Micro/timeleft_stamp.vi"/>
+					<Item Name="IntToLetter.vi" Type="VI" URL="../Micro/IntToLetter.vi"/>
+					<Item Name="Letter2Number.vi" Type="VI" URL="../Micro/Letter2Number.vi"/>
+					<Item Name="PCRNameArray.vi" Type="VI" URL="../Micro/PCRNameArray.vi"/>
+					<Item Name="Partition_Extract.vi" Type="VI" URL="../Micro/Partition_Extract.vi"/>
+					<Item Name="DataArray_Formatter.vi" Type="VI" URL="../Micro/DataArray_Formatter.vi"/>
+					<Item Name="PCRSize.vi" Type="VI" URL="../Micro/PCRSize.vi"/>
+					<Item Name="Thermistor_Extract.vi" Type="VI" URL="../Micro/Thermistor_Extract.vi"/>
+					<Item Name="Read Exe WriteDate.vi" Type="VI" URL="../Micro/Read Exe WriteDate.vi"/>
+					<Item Name="VersionCheck.vi" Type="VI" URL="../Micro/VersionCheck.vi"/>
+					<Item Name="EnableDisable.vi" Type="VI" URL="../Micro/EnableDisable.vi"/>
+					<Item Name="CleanString.vi" Type="VI" URL="../Micro/CleanString.vi"/>
 				</Item>
-				<Item Name="DataCluster.ctl" Type="VI" URL="../DataCluster.ctl"/>
-				<Item Name="TCE_Config.ctl" Type="VI" URL="../TCE_Config.ctl"/>
-				<Item Name="RunTimeMenu.rtm" Type="Document" URL="../RunTimeMenu.rtm"/>
-				<Item Name="RunTimeMenu_Partition.rtm" Type="Document" URL="../RunTimeMenu_Partition.rtm"/>
-				<Item Name="RunTimeMenu_TCC.rtm" Type="Document" URL="../RunTimeMenu_TCC.rtm"/>
-				<Item Name="DataAcquisitionState.vi" Type="VI" URL="../DataAcquisitionState.vi"/>
-				<Item Name="CPU_Overload.vi" Type="VI" URL="../CPU_Overload.vi"/>
-				<Item Name="DAQ_Control.vi" Type="VI" URL="../DAQ_Control.vi"/>
+				<Item Name="DataCluster.ctl" Type="VI" URL="../Micro/DataCluster.ctl"/>
+				<Item Name="TCE_Config.ctl" Type="VI" URL="../Micro/TCE_Config.ctl"/>
+				<Item Name="RunTimeMenu.rtm" Type="Document" URL="../Micro/RunTimeMenu.rtm"/>
+				<Item Name="RunTimeMenu_Partition.rtm" Type="Document" URL="../Micro/RunTimeMenu_Partition.rtm"/>
+				<Item Name="RunTimeMenu_TCC.rtm" Type="Document" URL="../Micro/RunTimeMenu_TCC.rtm"/>
+				<Item Name="DataAcquisitionState.vi" Type="VI" URL="../Micro/DataAcquisitionState.vi"/>
+				<Item Name="CPU_Overload.vi" Type="VI" URL="../Micro/CPU_Overload.vi"/>
+				<Item Name="DAQ_Control.vi" Type="VI" URL="../Micro/DAQ_Control.vi"/>
 			</Item>
 			<Item Name="UI" Type="Folder">
 				<Item Name="Connections" Type="Folder">
-					<Item Name="ConnectionStatus.vi" Type="VI" URL="../ConnectionStatus.vi"/>
+					<Item Name="ConnectionStatus.vi" Type="VI" URL="../Micro/ConnectionStatus.vi"/>
 				</Item>
-				<Item Name="Chart_Data_Packer.vi" Type="VI" URL="../Chart_Data_Packer.vi"/>
-				<Item Name="Chart_Updater.vi" Type="VI" URL="../Chart_Updater.vi"/>
-				<Item Name="Read Exe Version.vi" Type="VI" URL="../Read Exe Version.vi"/>
-				<Item Name="RunTimeMenu_ThermoCouple.rtm" Type="Document" URL="../RunTimeMenu_ThermoCouple.rtm"/>
-				<Item Name="LoadingWindow_Stream.vi" Type="VI" URL="../LoadingWindow_Stream.vi"/>
-				<Item Name="LoadingWindow.vi" Type="VI" URL="../LoadingWindow.vi"/>
-				<Item Name="TCam_Overlay.vi" Type="VI" URL="../TCam_Overlay.vi"/>
-				<Item Name="ResultSavePrompt.vi" Type="VI" URL="../ResultSavePrompt.vi"/>
-				<Item Name="ResultLoadPrompt.vi" Type="VI" URL="../ResultLoadPrompt.vi"/>
-				<Item Name="CalibrationSavePrompt.vi" Type="VI" URL="../CalibrationSavePrompt.vi"/>
-				<Item Name="CalibrationLoadPrompt.vi" Type="VI" URL="../CalibrationLoadPrompt.vi"/>
-				<Item Name="ShowHideSplit.vi" Type="VI" URL="../ShowHideSplit.vi"/>
+				<Item Name="Chart_Data_Packer.vi" Type="VI" URL="../Micro/Chart_Data_Packer.vi"/>
+				<Item Name="Chart_Updater.vi" Type="VI" URL="../Micro/Chart_Updater.vi"/>
+				<Item Name="Read Exe Version.vi" Type="VI" URL="../Micro/Read Exe Version.vi"/>
+				<Item Name="RunTimeMenu_ThermoCouple.rtm" Type="Document" URL="../Micro/RunTimeMenu_ThermoCouple.rtm"/>
+				<Item Name="LoadingWindow_Stream.vi" Type="VI" URL="../Micro/LoadingWindow_Stream.vi"/>
+				<Item Name="LoadingWindow.vi" Type="VI" URL="../Micro/LoadingWindow.vi"/>
+				<Item Name="TCam_Overlay.vi" Type="VI" URL="../Micro/TCam_Overlay.vi"/>
+				<Item Name="ResultSavePrompt.vi" Type="VI" URL="../Micro/ResultSavePrompt.vi"/>
+				<Item Name="ResultLoadPrompt.vi" Type="VI" URL="../Micro/ResultLoadPrompt.vi"/>
+				<Item Name="CalibrationSavePrompt.vi" Type="VI" URL="../Micro/CalibrationSavePrompt.vi"/>
+				<Item Name="CalibrationLoadPrompt.vi" Type="VI" URL="../Micro/CalibrationLoadPrompt.vi"/>
+				<Item Name="ShowHideSplit.vi" Type="VI" URL="../Micro/ShowHideSplit.vi"/>
 			</Item>
 			<Item Name="Temperature Control" Type="Folder">
-				<Item Name="Manual_Cool_Control.vi" Type="VI" URL="../Manual_Cool_Control.vi"/>
-				<Item Name="Manual_Cool_Heat_V2.vi" Type="VI" URL="../Manual_Cool_Heat_V2.vi"/>
-				<Item Name="Manual_Cool_Heat.vi" Type="VI" URL="../Manual_Cool_Heat.vi"/>
-				<Item Name="Manual_Cool_Heat_Converter.vi" Type="VI" URL="../Manual_Cool_Heat_Converter.vi"/>
+				<Item Name="Manual_Cool_Control.vi" Type="VI" URL="../Micro/Manual_Cool_Control.vi"/>
+				<Item Name="Manual_Cool_Heat_V2.vi" Type="VI" URL="../Micro/Manual_Cool_Heat_V2.vi"/>
+				<Item Name="Manual_Cool_Heat.vi" Type="VI" URL="../Micro/Manual_Cool_Heat.vi"/>
+				<Item Name="Manual_Cool_Heat_Converter.vi" Type="VI" URL="../Micro/Manual_Cool_Heat_Converter.vi"/>
 			</Item>
 		</Item>
 		<Item Name="Test Functions" Type="Folder">
 			<Property Name="NI.SortType" Type="Int">3</Property>
 			<Item Name="ThermoCouple" Type="Folder">
-				<Item Name="ThermoCouple_DAQ.vi" Type="VI" URL="../ThermoCouple_DAQ.vi"/>
-				<Item Name="ThermoCouple_Datafile_Append.vi" Type="VI" URL="../ThermoCouple_Datafile_Append.vi"/>
-				<Item Name="ThermoCouple_Datafile_Create.vi" Type="VI" URL="../ThermoCouple_Datafile_Create.vi"/>
-				<Item Name="ThermoCouple_Packer.vi" Type="VI" URL="../ThermoCouple_Packer.vi"/>
-				<Item Name="ThermoCouple_Read.vi" Type="VI" URL="../ThermoCouple_Read.vi"/>
+				<Item Name="ThermoCouple_DAQ.vi" Type="VI" URL="../Micro/ThermoCouple_DAQ.vi"/>
+				<Item Name="ThermoCouple_Datafile_Append.vi" Type="VI" URL="../Micro/ThermoCouple_Datafile_Append.vi"/>
+				<Item Name="ThermoCouple_Datafile_Create.vi" Type="VI" URL="../Micro/ThermoCouple_Datafile_Create.vi"/>
+				<Item Name="ThermoCouple_Packer.vi" Type="VI" URL="../Micro/ThermoCouple_Packer.vi"/>
+				<Item Name="ThermoCouple_Read.vi" Type="VI" URL="../Micro/ThermoCouple_Read.vi"/>
 				<Item Name="ProjectTemperatureChannel_0" Type="NI-DAQmx Channel">
 					<Property Name="AI.ADCTimingMode" Type="Str">High Speed</Property>
 					<Property Name="AI.AutoZeroMode" Type="Str">None</Property>
@@ -233,13 +233,13 @@
 					<Property Name="PhysicalChanName" Type="Str">cDAQ2Mod1/ai0</Property>
 				</Item>
 			</Item>
-			<Item Name="ThermoCouple_Logger.vi" Type="VI" URL="../ThermoCouple_Logger.vi"/>
-			<Item Name="Channel_Detect.vi" Type="VI" URL="../Channel_Detect.vi"/>
-			<Item Name="PSU_Command_Test.vi" Type="VI" URL="../PSU_Command_Test.vi"/>
-			<Item Name="Thermal_Camera_Stream.vi" Type="VI" URL="../Thermal_Camera_Stream.vi"/>
-			<Item Name="CameraAttributeTest.vi" Type="VI" URL="../CameraAttributeTest.vi"/>
-			<Item Name="CameraAttributeSearch.vi" Type="VI" URL="../CameraAttributeSearch.vi"/>
-			<Item Name="ThermalVideoStream.vi" Type="VI" URL="../ThermalVideoStream.vi"/>
+			<Item Name="ThermoCouple_Logger.vi" Type="VI" URL="../Micro/ThermoCouple_Logger.vi"/>
+			<Item Name="Channel_Detect.vi" Type="VI" URL="../Micro/Channel_Detect.vi"/>
+			<Item Name="PSU_Command_Test.vi" Type="VI" URL="../Micro/PSU_Command_Test.vi"/>
+			<Item Name="Thermal_Camera_Stream.vi" Type="VI" URL="../Micro/Thermal_Camera_Stream.vi"/>
+			<Item Name="CameraAttributeTest.vi" Type="VI" URL="../Micro/CameraAttributeTest.vi"/>
+			<Item Name="CameraAttributeSearch.vi" Type="VI" URL="../Micro/CameraAttributeSearch.vi"/>
+			<Item Name="ThermalVideoStream.vi" Type="VI" URL="../Micro/ThermalVideoStream.vi"/>
 		</Item>
 		<Item Name="Assets" Type="Folder">
 			<Item Name="Logo.ico" Type="Document" URL="../resources/Logo.ico"/>
@@ -249,57 +249,56 @@
 		</Item>
 		<Item Name="TCE" Type="Folder">
 			<Item Name="Config" Type="Folder">
-				<Item Name="TCE_Config_Load.vi" Type="VI" URL="../TCE_Config_Load.vi"/>
-				<Item Name="TCE_Config_Save.vi" Type="VI" URL="../TCE_Config_Save.vi"/>
+				<Item Name="TCE_Config_Load.vi" Type="VI" URL="../Micro/TCE_Config_Load.vi"/>
+				<Item Name="TCE_Config_Save.vi" Type="VI" URL="../Micro/TCE_Config_Save.vi"/>
 			</Item>
 			<Item Name="Partition" Type="Folder">
-				<Item Name="WellPartition_Index.vi" Type="VI" URL="../WellPartition_Index.vi"/>
-				<Item Name="Partition_Sort_Reorder.vi" Type="VI" URL="../Partition_Sort_Reorder.vi"/>
-				<Item Name="Partition_Sort.vi" Type="VI" URL="../Partition_Sort.vi"/>
+				<Item Name="WellPartition_Index.vi" Type="VI" URL="../Micro/WellPartition_Index.vi"/>
+				<Item Name="Partition_Sort_Reorder.vi" Type="VI" URL="../Micro/Partition_Sort_Reorder.vi"/>
+				<Item Name="Partition_Sort.vi" Type="VI" URL="../Micro/Partition_Sort.vi"/>
 			</Item>
 			<Item Name="Frozen Fraction" Type="Folder">
-				<Item Name="FrozenFraction_Calcualte.vi" Type="VI" URL="../FrozenFraction_Calcualte.vi"/>
-				<Item Name="FrozenFraction_Extraction.vi" Type="VI" URL="../FrozenFraction_Extraction.vi"/>
-				<Item Name="FrozenFraction_Concatinate.vi" Type="VI" URL="../FrozenFraction_Concatinate.vi"/>
+				<Item Name="FrozenFraction_Calcualte.vi" Type="VI" URL="../Micro/FrozenFraction_Calcualte.vi"/>
+				<Item Name="FrozenFraction_Extraction.vi" Type="VI" URL="../Micro/FrozenFraction_Extraction.vi"/>
+				<Item Name="FrozenFraction_Concatinate.vi" Type="VI" URL="../Micro/FrozenFraction_Concatinate.vi"/>
 			</Item>
 			<Item Name="Temps" Type="Folder">
-				<Item Name="TCam_WellCalculater.vi" Type="VI" URL="../TCam_WellCalculater.vi"/>
-				<Item Name="TCam_WellTemp.vi" Type="VI" URL="../TCam_WellTemp.vi"/>
-				<Item Name="TCam_WellPixels.vi" Type="VI" URL="../TCam_WellPixels.vi"/>
-				<Item Name="TCam_IMGTempExtract.vi" Type="VI" URL="../TCam_IMGTempExtract.vi"/>
-				<Item Name="TCam_ArrayTempExtract.vi" Type="VI" URL="../TCam_ArrayTempExtract.vi"/>
-				<Item Name="TCam_PointCalculator.vi" Type="VI" URL="../TCam_PointCalculator.vi"/>
-				<Item Name="TCam_FixpointTemps.vi" Type="VI" URL="../TCam_FixpointTemps.vi"/>
+				<Item Name="TCam_WellCalculater.vi" Type="VI" URL="../Micro/TCam_WellCalculater.vi"/>
+				<Item Name="TCam_WellTemp.vi" Type="VI" URL="../Micro/TCam_WellTemp.vi"/>
+				<Item Name="TCam_WellPixels.vi" Type="VI" URL="../Micro/TCam_WellPixels.vi"/>
+				<Item Name="TCam_IMGTempExtract.vi" Type="VI" URL="../Micro/TCam_IMGTempExtract.vi"/>
+				<Item Name="TCam_ArrayTempExtract.vi" Type="VI" URL="../Micro/TCam_ArrayTempExtract.vi"/>
+				<Item Name="TCam_PointCalculator.vi" Type="VI" URL="../Micro/TCam_PointCalculator.vi"/>
+				<Item Name="TCam_FixpointTemps.vi" Type="VI" URL="../Micro/TCam_FixpointTemps.vi"/>
 			</Item>
 			<Item Name="UI" Type="Folder">
-				<Item Name="TCE_Config.vi" Type="VI" URL="../TCE_Config.vi"/>
+				<Item Name="TCE_Config.vi" Type="VI" URL="../Micro/TCE_Config.vi"/>
 			</Item>
-			<Item Name="DataArray_SaveSelection.vi" Type="VI" URL="../DataArray_SaveSelection.vi"/>
-			<Item Name="TCE_SaveConfiguration.vi" Type="VI" URL="../TCE_SaveConfiguration.vi"/>
-			<Item Name="RunTimeMenu_TCE.rtm" Type="Document" URL="../RunTimeMenu_TCE.rtm"/>
-			<Item Name="OverlayTemps.vi" Type="VI" URL="../OverlayTemps.vi"/>
+			<Item Name="DataArray_SaveSelection.vi" Type="VI" URL="../Micro/DataArray_SaveSelection.vi"/>
+			<Item Name="TCE_SaveConfiguration.vi" Type="VI" URL="../Micro/TCE_SaveConfiguration.vi"/>
+			<Item Name="RunTimeMenu_TCE.rtm" Type="Document" URL="../Micro/RunTimeMenu_TCE.rtm"/>
+			<Item Name="OverlayTemps.vi" Type="VI" URL="../Micro/OverlayTemps.vi"/>
 		</Item>
-		<Item Name="GSFS" Type="Folder">
+		<Item Name="GCFS" Type="Folder">
 			<Item Name="Tag-t&apos;DataCluster_GCFS.ctl&apos;.lvlib" Type="Library" URL="/&lt;extravilib&gt;/ChannelInstances/Tag-t&apos;DataCluster_GCFS.ctl&apos;.lvlib"/>
-			<Item Name="SaveTest.vi" Type="VI" URL="../GCFS/SaveTest.vi"/>
-			<Item Name="DataArrayTest.vi" Type="VI" URL="../DataArrayTest.vi"/>
-			<Item Name="Mono camera test.vi" Type="VI" URL="../Mono camera test.vi"/>
-			<Item Name="DataCluster_GCFS.ctl" Type="VI" URL="../DataCluster_GCFS.ctl"/>
-			<Item Name="Arduino_Initialization_GCFS.vi" Type="VI" URL="../GCFS/Arduino_Initialization_GCFS.vi"/>
-			<Item Name="Arduino_control_GCFS.vi" Type="VI" URL="../GCFS/Arduino_control_GCFS.vi"/>
-			<Item Name="Data_Collection_GCFS.vi" Type="VI" URL="../GCFS/Data_Collection_GCFS.vi"/>
-			<Item Name="Image_Pixel_Values_GCFS.vi" Type="VI" URL="../GCFS/Image_Pixel_Values_GCFS.vi"/>
-			<Item Name="DropletFile_Headers_GCFS.vi" Type="VI" URL="../GCFS/DropletFile_Headers_GCFS.vi"/>
-			<Item Name="Save_Files_GCFS.vi" Type="VI" URL="../GCFS/Save_Files_GCFS.vi"/>
-			<Item Name="PID_TempControl_GCFS.vi" Type="VI" URL="../GCFS/PID_TempControl_GCFS.vi"/>
-			<Item Name="Connect_PSU_GCFS.vi" Type="VI" URL="../GCFS/Connect_PSU_GCFS.vi"/>
-			<Item Name="Timing_GCFS.vi" Type="VI" URL="../GCFS/Timing_GCFS.vi"/>
+			<Item Name="SaveTest.vi" Type="VI" URL="../Nano/SaveTest.vi"/>
+			<Item Name="DataArrayTest.vi" Type="VI" URL="../Micro/DataArrayTest.vi"/>
+			<Item Name="Mono camera test.vi" Type="VI" URL="../Micro/Mono camera test.vi"/>
+			<Item Name="DataCluster_GCFS.ctl" Type="VI" URL="../Micro/DataCluster_GCFS.ctl"/>
+			<Item Name="Arduino_Initialization_GCFS.vi" Type="VI" URL="../Nano/Arduino_Initialization_GCFS.vi"/>
+			<Item Name="Arduino_control_GCFS.vi" Type="VI" URL="../Nano/Arduino_control_GCFS.vi"/>
+			<Item Name="Image_Pixel_Values_GCFS.vi" Type="VI" URL="../Nano/Image_Pixel_Values_GCFS.vi"/>
+			<Item Name="DropletFile_Headers_GCFS.vi" Type="VI" URL="../Nano/DropletFile_Headers_GCFS.vi"/>
+			<Item Name="Save_Files_GCFS.vi" Type="VI" URL="../Nano/Save_Files_GCFS.vi"/>
+			<Item Name="PID_TempControl_GCFS.vi" Type="VI" URL="../Nano/PID_TempControl_GCFS.vi"/>
+			<Item Name="Connect_PSU_GCFS.vi" Type="VI" URL="../Nano/Connect_PSU_GCFS.vi"/>
+			<Item Name="Timing_GCFS.vi" Type="VI" URL="../Nano/Timing_GCFS.vi"/>
 		</Item>
-		<Item Name="main.vi" Type="VI" URL="../main.vi"/>
-		<Item Name="TCC.vi" Type="VI" URL="../TCC.vi"/>
-		<Item Name="TCE.vi" Type="VI" URL="../TCE.vi"/>
+		<Item Name="main.vi" Type="VI" URL="../Micro/main.vi"/>
+		<Item Name="TCC.vi" Type="VI" URL="../Micro/TCC.vi"/>
+		<Item Name="TCE.vi" Type="VI" URL="../Micro/TCE.vi"/>
 		<Item Name="Tag-t&apos;DataCluster.ctl&apos;.lvlib" Type="Library" URL="/&lt;extravilib&gt;/ChannelInstances/Tag-t&apos;DataCluster.ctl&apos;.lvlib"/>
-		<Item Name="GCFS.vi" Type="VI" URL="../GCFS.vi"/>
+		<Item Name="GCFS.vi" Type="VI" URL="../Nano/GCFS.vi"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="vi.lib" Type="Folder">
 				<Item Name="Add State(s) to Queue__jki_lib_state_machine.vi" Type="VI" URL="/&lt;vilib&gt;/addons/_JKI Toolkits/State Machine/_JKI_lib_State_Machine.llb/Add State(s) to Queue__jki_lib_state_machine.vi"/>
@@ -629,10 +628,10 @@
 				<Item Name="Conditional State String__jki_lib_state_machine.vi" Type="VI" URL="/&lt;vilib&gt;/addons/_JKI Toolkits/State Machine/_JKI_lib_State_Machine.llb/Conditional State String__jki_lib_state_machine.vi"/>
 				<Item Name="Periodic State String__jki_lib_state_machine.vi" Type="VI" URL="/&lt;vilib&gt;/addons/_JKI Toolkits/State Machine/_JKI_lib_State_Machine.llb/Periodic State String__jki_lib_state_machine.vi"/>
 				<Item Name="LVPositionTypeDef.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/miscctls.llb/LVPositionTypeDef.ctl"/>
-				<Item Name="sub Waveform Array To Dynamic.vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/miscellaneous.llb/sub Waveform Array To Dynamic.vi"/>
-				<Item Name="Convert 1DDbl to DDT 2.vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/miscellaneous.llb/Convert 1DDbl to DDT 2.vi"/>
 				<Item Name="Cast Image 2 Method.ctl" Type="VI" URL="/&lt;vilib&gt;/vision/Management.llb/Cast Image 2 Method.ctl"/>
 				<Item Name="IMAQ Cast Image 2" Type="VI" URL="/&lt;vilib&gt;/vision/Management.llb/IMAQ Cast Image 2"/>
+				<Item Name="Convert 1DDbl to DDT 2.vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/miscellaneous.llb/Convert 1DDbl to DDT 2.vi"/>
+				<Item Name="sub Waveform Array To Dynamic.vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/miscellaneous.llb/sub Waveform Array To Dynamic.vi"/>
 			</Item>
 			<Item Name="_ChannelSupport.lvlib" Type="Library" URL="/&lt;resource&gt;/ChannelSupport/_ChannelSupport/_ChannelSupport.lvlib"/>
 			<Item Name="ChannelProbePositionAndTitle.vi" Type="VI" URL="/&lt;resource&gt;/ChannelSupport/_ChannelSupport/ChannelProbePositionAndTitle.vi"/>
@@ -656,17 +655,10 @@
 			<Item Name="version.dll" Type="Document" URL="version.dll">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
-			<Item Name="Windows SYSTEMTIME to String.vi" Type="VI" URL="../Windows SYSTEMTIME to String.vi"/>
-			<Item Name="Get File Info.vi" Type="VI" URL="../Get File Info.vi"/>
-			<Item Name="ColorRamp.vi" Type="VI" URL="../ColorRamp.vi"/>
-			<Item Name="CalibrationImageLoadPrompt.vi" Type="VI" URL="../CalibrationImageLoadPrompt.vi"/>
-			<Item Name="Read.vi" Type="VI" URL="/&lt;extravilib&gt;/ChannelInstances/Tag-c(bool,ref(UserDefinedRefnumTag),bool,path,bool)/Read.vi"/>
-			<Item Name="Write.vi" Type="VI" URL="/&lt;extravilib&gt;/ChannelInstances/Tag-c(bool,ref(UserDefinedRefnumTag),bool,path,bool)/Write.vi"/>
-			<Item Name="Read With Abort.vi" Type="VI" URL="/&lt;extravilib&gt;/ChannelInstances/Tag-c(bool,ref(UserDefinedRefnumTag),bool,path,bool)/Read With Abort.vi"/>
-			<Item Name="Write With Abort.vi" Type="VI" URL="/&lt;extravilib&gt;/ChannelInstances/Tag-c(bool,ref(UserDefinedRefnumTag),bool,path,bool)/Write With Abort.vi"/>
-			<Item Name="Instantiate.vi" Type="VI" URL="/&lt;extravilib&gt;/ChannelInstances/Tag-c(bool,ref(UserDefinedRefnumTag),bool,path,bool)/Instantiate.vi"/>
-			<Item Name="EndpointRead.vi" Type="VI" URL="/&lt;extravilib&gt;/ChannelInstances/Tag-c(bool,ref(UserDefinedRefnumTag),bool,path,bool)/EndpointRead.vi"/>
-			<Item Name="Endpoint.vi" Type="VI" URL="/&lt;extravilib&gt;/ChannelInstances/Tag-c(bool,ref(UserDefinedRefnumTag),bool,path,bool)/Endpoint.vi"/>
+			<Item Name="Windows SYSTEMTIME to String.vi" Type="VI" URL="../Micro/Windows SYSTEMTIME to String.vi"/>
+			<Item Name="Get File Info.vi" Type="VI" URL="../Micro/Get File Info.vi"/>
+			<Item Name="ColorRamp.vi" Type="VI" URL="../Micro/ColorRamp.vi"/>
+			<Item Name="CalibrationImageLoadPrompt.vi" Type="VI" URL="../Micro/CalibrationImageLoadPrompt.vi"/>
 			<Item Name="Tag-bool.lvlib" Type="Library" URL="/&lt;extravilib&gt;/ChannelInstances/Tag-bool.lvlib"/>
 			<Item Name="Tag-c(a[.](dbl),a[.](dbl)).lvlib" Type="Library" URL="/&lt;extravilib&gt;/ChannelInstances/Tag-c(a[.](dbl),a[.](dbl)).lvlib"/>
 			<Item Name="Stream-str.lvlib" Type="Library" URL="/&lt;extravilib&gt;/ChannelInstances/Stream-str.lvlib"/>
@@ -676,6 +668,9 @@
 			<Item Name="Stream-bool.lvlib" Type="Library" URL="/&lt;extravilib&gt;/ChannelInstances/Stream-bool.lvlib"/>
 			<Item Name="Tag-c(c(ref(LVObjVI()),bool),bool,bool,u32[Cool,Heat]).lvlib" Type="Library" URL="/&lt;extravilib&gt;/ChannelInstances/Tag-c(c(ref(LVObjVI()),bool),bool,bool,u32[Cool,Heat]).lvlib"/>
 			<Item Name="Stream-c(t&apos;IMAQ Image.ctl&apos;,str,a[.,.](str),a[.,.](str),bool).lvlib" Type="Library" URL="/&lt;extravilib&gt;/ChannelInstances/Stream-c(t&apos;IMAQ Image.ctl&apos;,str,a[.,.](str),a[.,.](str),bool).lvlib"/>
+			<Item Name="RunTimeMenu_ThermoCouple.rtm" Type="Document" URL="../RunTimeMenu_ThermoCouple.rtm"/>
+			<Item Name="Tag-c(bool,ref(UserDefinedRefnumTag),bool,path,bool).lvlib" Type="Library" URL="/&lt;extravilib&gt;/ChannelInstances/Tag-c(bool,ref(UserDefinedRefnumTag),bool,path,bool).lvlib"/>
+			<Item Name="Data_Collection_GCFS.vi" Type="VI" URL="../Nano/Data_Collection_GCFS.vi"/>
 			<Item Name="Stream-c(a[.,.](str),a[.,.](str),bool).lvlib" Type="Library" URL="/&lt;extravilib&gt;/ChannelInstances/Stream-c(a[.,.](str),a[.,.](str),bool).lvlib"/>
 		</Item>
 		<Item Name="Build Specifications" Type="Build">
