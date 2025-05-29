@@ -293,12 +293,15 @@
 			<Item Name="PID_TempControl_GCFS.vi" Type="VI" URL="../Nano/PID_TempControl_GCFS.vi"/>
 			<Item Name="Connect_PSU_GCFS.vi" Type="VI" URL="../Nano/Connect_PSU_GCFS.vi"/>
 			<Item Name="Timing_GCFS.vi" Type="VI" URL="../Nano/Timing_GCFS.vi"/>
+			<Item Name="RerunCluster_GCFS.ctl" Type="VI" URL="../Nano/RerunCluster_GCFS.ctl"/>
+			<Item Name="Data_Recollection_GCFS.vi" Type="VI" URL="../Nano/Data_Recollection_GCFS.vi"/>
 		</Item>
 		<Item Name="main.vi" Type="VI" URL="../Micro/main.vi"/>
 		<Item Name="TCC.vi" Type="VI" URL="../Micro/TCC.vi"/>
 		<Item Name="TCE.vi" Type="VI" URL="../Micro/TCE.vi"/>
 		<Item Name="Tag-t&apos;DataCluster.ctl&apos;.lvlib" Type="Library" URL="/&lt;extravilib&gt;/ChannelInstances/Tag-t&apos;DataCluster.ctl&apos;.lvlib"/>
 		<Item Name="GCFS.vi" Type="VI" URL="../Nano/GCFS.vi"/>
+		<Item Name="Rerun_GCFS.vi" Type="VI" URL="../Nano/Rerun_GCFS.vi"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="vi.lib" Type="Folder">
 				<Item Name="Add State(s) to Queue__jki_lib_state_machine.vi" Type="VI" URL="/&lt;vilib&gt;/addons/_JKI Toolkits/State Machine/_JKI_lib_State_Machine.llb/Add State(s) to Queue__jki_lib_state_machine.vi"/>
@@ -628,10 +631,12 @@
 				<Item Name="Conditional State String__jki_lib_state_machine.vi" Type="VI" URL="/&lt;vilib&gt;/addons/_JKI Toolkits/State Machine/_JKI_lib_State_Machine.llb/Conditional State String__jki_lib_state_machine.vi"/>
 				<Item Name="Periodic State String__jki_lib_state_machine.vi" Type="VI" URL="/&lt;vilib&gt;/addons/_JKI Toolkits/State Machine/_JKI_lib_State_Machine.llb/Periodic State String__jki_lib_state_machine.vi"/>
 				<Item Name="LVPositionTypeDef.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/miscctls.llb/LVPositionTypeDef.ctl"/>
-				<Item Name="Cast Image 2 Method.ctl" Type="VI" URL="/&lt;vilib&gt;/vision/Management.llb/Cast Image 2 Method.ctl"/>
-				<Item Name="IMAQ Cast Image 2" Type="VI" URL="/&lt;vilib&gt;/vision/Management.llb/IMAQ Cast Image 2"/>
 				<Item Name="Convert 1DDbl to DDT 2.vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/miscellaneous.llb/Convert 1DDbl to DDT 2.vi"/>
 				<Item Name="sub Waveform Array To Dynamic.vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/miscellaneous.llb/sub Waveform Array To Dynamic.vi"/>
+				<Item Name="IMAQ Merge Overlay" Type="VI" URL="/&lt;vilib&gt;/vision/Overlay.llb/IMAQ Merge Overlay"/>
+				<Item Name="Overlay Property.ctl" Type="VI" URL="/&lt;vilib&gt;/vision/Image Controls.llb/Overlay Property.ctl"/>
+				<Item Name="IMAQ Get Overlay Properties" Type="VI" URL="/&lt;vilib&gt;/vision/Overlay.llb/IMAQ Get Overlay Properties"/>
+				<Item Name="IMAQ Set Overlay Properties" Type="VI" URL="/&lt;vilib&gt;/vision/Overlay.llb/IMAQ Set Overlay Properties"/>
 			</Item>
 			<Item Name="_ChannelSupport.lvlib" Type="Library" URL="/&lt;resource&gt;/ChannelSupport/_ChannelSupport/_ChannelSupport.lvlib"/>
 			<Item Name="ChannelProbePositionAndTitle.vi" Type="VI" URL="/&lt;resource&gt;/ChannelSupport/_ChannelSupport/ChannelProbePositionAndTitle.vi"/>
@@ -672,6 +677,7 @@
 			<Item Name="Tag-c(bool,ref(UserDefinedRefnumTag),bool,path,bool).lvlib" Type="Library" URL="/&lt;extravilib&gt;/ChannelInstances/Tag-c(bool,ref(UserDefinedRefnumTag),bool,path,bool).lvlib"/>
 			<Item Name="Data_Collection_GCFS.vi" Type="VI" URL="../Nano/Data_Collection_GCFS.vi"/>
 			<Item Name="Stream-c(a[.,.](str),a[.,.](str),bool).lvlib" Type="Library" URL="/&lt;extravilib&gt;/ChannelInstances/Stream-c(a[.,.](str),a[.,.](str),bool).lvlib"/>
+			<Item Name="Tag-t&apos;RerunCluster_GCFS.ctl&apos;.lvlib" Type="Library" URL="/&lt;extravilib&gt;/ChannelInstances/Tag-t&apos;RerunCluster_GCFS.ctl&apos;.lvlib"/>
 		</Item>
 		<Item Name="Build Specifications" Type="Build">
 			<Item Name="Thermal Camera Evaluation" Type="EXE">
