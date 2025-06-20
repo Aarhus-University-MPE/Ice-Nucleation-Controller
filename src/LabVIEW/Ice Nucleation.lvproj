@@ -240,6 +240,7 @@
 			<Item Name="CameraAttributeTest.vi" Type="VI" URL="../Micro/CameraAttributeTest.vi"/>
 			<Item Name="CameraAttributeSearch.vi" Type="VI" URL="../Micro/CameraAttributeSearch.vi"/>
 			<Item Name="ThermalVideoStream.vi" Type="VI" URL="../Micro/ThermalVideoStream.vi"/>
+			<Item Name="Serial connection test.vi" Type="VI" URL="../Nano/Serial connection test.vi"/>
 		</Item>
 		<Item Name="Assets" Type="Folder">
 			<Item Name="Logo.ico" Type="Document" URL="../resources/Logo.ico"/>
@@ -295,6 +296,7 @@
 			<Item Name="Timing_GCFS.vi" Type="VI" URL="../Nano/Timing_GCFS.vi"/>
 			<Item Name="RerunCluster_GCFS.ctl" Type="VI" URL="../Nano/RerunCluster_GCFS.ctl"/>
 			<Item Name="Data_Recollection_GCFS.vi" Type="VI" URL="../Nano/Data_Recollection_GCFS.vi"/>
+			<Item Name="PSUController_GCFS.vi" Type="VI" URL="../Nano/PSUController_GCFS.vi"/>
 		</Item>
 		<Item Name="main.vi" Type="VI" URL="../Micro/main.vi"/>
 		<Item Name="TCC.vi" Type="VI" URL="../Micro/TCC.vi"/>
@@ -892,6 +894,49 @@
 				<Property Name="TgtF_targetfileName" Type="Str">GCFS.exe</Property>
 				<Property Name="TgtF_versionIndependent" Type="Bool">true</Property>
 			</Item>
+			<Item Name="Rerun Grayscale Cam Flat Surface" Type="EXE">
+				<Property Name="App_copyErrors" Type="Bool">true</Property>
+				<Property Name="App_includeHWConfig" Type="Bool">true</Property>
+				<Property Name="App_INI_aliasGUID" Type="Str">{7C1B2C69-BDB7-4007-93EA-DC8E348ABB63}</Property>
+				<Property Name="App_INI_GUID" Type="Str">{A18E89F9-3E20-4C35-8A7E-0B58109344E4}</Property>
+				<Property Name="App_serverConfig.httpPort" Type="Int">8002</Property>
+				<Property Name="App_serverType" Type="Int">0</Property>
+				<Property Name="Bld_autoIncrement" Type="Bool">true</Property>
+				<Property Name="Bld_buildCacheID" Type="Str">{F1EBA23F-54D8-4068-8815-5F03D1A6A5B1}</Property>
+				<Property Name="Bld_buildSpecDescription" Type="Str">Rerun Grayscale Cam Flat Surface Ice Nucleation Controller</Property>
+				<Property Name="Bld_buildSpecName" Type="Str">Rerun Grayscale Cam Flat Surface</Property>
+				<Property Name="Bld_excludeInlineSubVIs" Type="Bool">true</Property>
+				<Property Name="Bld_excludeLibraryItems" Type="Bool">true</Property>
+				<Property Name="Bld_excludePolymorphicVIs" Type="Bool">true</Property>
+				<Property Name="Bld_localDestDir" Type="Path">/C/Projects/Ice-Nucleation-Controller/Builds/bin/Full Build/Nano</Property>
+				<Property Name="Bld_modifyLibraryFile" Type="Bool">true</Property>
+				<Property Name="Bld_previewCacheID" Type="Str">{EB6F3D74-C9A3-4008-9A78-C79815EDF029}</Property>
+				<Property Name="Bld_version.build" Type="Int">1</Property>
+				<Property Name="Bld_version.major" Type="Int">1</Property>
+				<Property Name="Destination[0].destName" Type="Str">Rerun_GCFS.exe</Property>
+				<Property Name="Destination[0].path" Type="Path">/C/Projects/Ice-Nucleation-Controller/Builds/bin/Full Build/Nano/Rerun_GCFS.exe</Property>
+				<Property Name="Destination[0].path.type" Type="Str">&lt;none&gt;</Property>
+				<Property Name="Destination[0].preserveHierarchy" Type="Bool">true</Property>
+				<Property Name="Destination[0].type" Type="Str">App</Property>
+				<Property Name="Destination[1].destName" Type="Str">Support Directory</Property>
+				<Property Name="Destination[1].path" Type="Path">/C/Projects/Ice-Nucleation-Controller/Builds/bin/Full Build/Nano/data</Property>
+				<Property Name="Destination[1].path.type" Type="Str">&lt;none&gt;</Property>
+				<Property Name="DestinationCount" Type="Int">2</Property>
+				<Property Name="Source[0].itemID" Type="Str">{7126234D-0789-4BB4-9A47-C4991EDD9B2A}</Property>
+				<Property Name="Source[0].type" Type="Str">Container</Property>
+				<Property Name="Source[1].destinationIndex" Type="Int">0</Property>
+				<Property Name="Source[1].itemID" Type="Ref">/My Computer/Rerun_GCFS.vi</Property>
+				<Property Name="Source[1].sourceInclusion" Type="Str">TopLevel</Property>
+				<Property Name="Source[1].type" Type="Str">VI</Property>
+				<Property Name="SourceCount" Type="Int">2</Property>
+				<Property Name="TgtF_fileDescription" Type="Str">Rerun Grayscale Cam Flat Surface</Property>
+				<Property Name="TgtF_internalName" Type="Str">Rerun Grayscale Cam Flat Surface</Property>
+				<Property Name="TgtF_legalCopyright" Type="Str">Copyright © 2025 </Property>
+				<Property Name="TgtF_productName" Type="Str">Rerun Grayscale Cam Flat Surface</Property>
+				<Property Name="TgtF_targetfileGUID" Type="Str">{1F824445-CFA3-47FE-B308-C504A5A6F3A8}</Property>
+				<Property Name="TgtF_targetfileName" Type="Str">Rerun_GCFS.exe</Property>
+				<Property Name="TgtF_versionIndependent" Type="Bool">true</Property>
+			</Item>
 			<Item Name="Installer" Type="Installer">
 				<Property Name="Destination[0].name" Type="Str">Ice Nucleation Controller</Property>
 				<Property Name="Destination[0].parent" Type="Str">{3912416A-D2E5-411B-AFEE-B63654D690C0}</Property>
@@ -979,7 +1024,7 @@
 				<Property Name="INST_defaultDir" Type="Str">{4B7C7F5D-6E6D-4786-BBED-E06C37A5A212}</Property>
 				<Property Name="INST_installerName" Type="Str">install.exe</Property>
 				<Property Name="INST_productName" Type="Str">Ice Nucleation Controller</Property>
-				<Property Name="INST_productVersion" Type="Str">1.0.37</Property>
+				<Property Name="INST_productVersion" Type="Str">1.0.38</Property>
 				<Property Name="InstSpecBitness" Type="Str">64-bit</Property>
 				<Property Name="InstSpecVersion" Type="Str">24118001</Property>
 				<Property Name="MSI_arpCompany" Type="Str">Aarhus University</Property>
@@ -1024,6 +1069,18 @@
 				<Property Name="Source[10].name" Type="Str">Grayscale Cam Flat Surface</Property>
 				<Property Name="Source[10].tag" Type="Ref">/My Computer/Build Specifications/Grayscale Cam Flat Surface</Property>
 				<Property Name="Source[10].type" Type="Str">EXE</Property>
+				<Property Name="Source[11].dest" Type="Str">{4B7C7F5D-6E6D-4786-BBED-E06C37A5A212}</Property>
+				<Property Name="Source[11].File[0].dest" Type="Str">{4B7C7F5D-6E6D-4786-BBED-E06C37A5A212}</Property>
+				<Property Name="Source[11].File[0].name" Type="Str">Rerun_GCFS.exe</Property>
+				<Property Name="Source[11].File[0].Shortcut[0].destIndex" Type="Int">0</Property>
+				<Property Name="Source[11].File[0].Shortcut[0].name" Type="Str">Rerun_GCFS</Property>
+				<Property Name="Source[11].File[0].Shortcut[0].subDir" Type="Str">Ice Nucleation Controller</Property>
+				<Property Name="Source[11].File[0].ShortcutCount" Type="Int">1</Property>
+				<Property Name="Source[11].File[0].tag" Type="Str">{1F824445-CFA3-47FE-B308-C504A5A6F3A8}</Property>
+				<Property Name="Source[11].FileCount" Type="Int">1</Property>
+				<Property Name="Source[11].name" Type="Str">Rerun Grayscale Cam Flat Surface</Property>
+				<Property Name="Source[11].tag" Type="Ref">/My Computer/Build Specifications/Rerun Grayscale Cam Flat Surface</Property>
+				<Property Name="Source[11].type" Type="Str">EXE</Property>
 				<Property Name="Source[2].dest" Type="Str">{4B7C7F5D-6E6D-4786-BBED-E06C37A5A212}</Property>
 				<Property Name="Source[2].name" Type="Str">settings.ini</Property>
 				<Property Name="Source[2].tag" Type="Ref">/My Computer/Build files/settings.ini</Property>
@@ -1085,7 +1142,7 @@
 				<Property Name="Source[9].name" Type="Str">TCEM.ini</Property>
 				<Property Name="Source[9].tag" Type="Ref">/My Computer/Build files/TCEM.ini</Property>
 				<Property Name="Source[9].type" Type="Str">File</Property>
-				<Property Name="SourceCount" Type="Int">11</Property>
+				<Property Name="SourceCount" Type="Int">12</Property>
 			</Item>
 			<Item Name="Update" Type="Installer">
 				<Property Name="Destination[0].name" Type="Str">Ice Nucleation Controller</Property>
