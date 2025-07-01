@@ -297,6 +297,8 @@
 			<Item Name="RerunCluster_GCFS.ctl" Type="VI" URL="../Nano/RerunCluster_GCFS.ctl"/>
 			<Item Name="Data_Recollection_GCFS.vi" Type="VI" URL="../Nano/Data_Recollection_GCFS.vi"/>
 			<Item Name="PSUController_GCFS.vi" Type="VI" URL="../Nano/PSUController_GCFS.vi"/>
+			<Item Name="Que_elements_GCFS.vi" Type="VI" URL="../Nano/Que_elements_GCFS.vi"/>
+			<Item Name="Sensors_GCFS.vi" Type="VI" URL="../Nano/Sensors_GCFS.vi"/>
 		</Item>
 		<Item Name="main.vi" Type="VI" URL="../Micro/main.vi"/>
 		<Item Name="TCC.vi" Type="VI" URL="../Micro/TCC.vi"/>
