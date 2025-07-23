@@ -300,6 +300,7 @@
 			<Item Name="Que_elements_GCFS.vi" Type="VI" URL="../Nano/Que_elements_GCFS.vi"/>
 			<Item Name="Sensors_GCFS.vi" Type="VI" URL="../Nano/Sensors_GCFS.vi"/>
 			<Item Name="Temp_reading2_GCFS.vi" Type="VI" URL="../Nano/Temp_reading2_GCFS.vi"/>
+			<Item Name="PSU_CMD_GCFS.vi" Type="VI" URL="../Nano/PSU_CMD_GCFS.vi"/>
 		</Item>
 		<Item Name="main.vi" Type="VI" URL="../Micro/main.vi"/>
 		<Item Name="TCC.vi" Type="VI" URL="../Micro/TCC.vi"/>
