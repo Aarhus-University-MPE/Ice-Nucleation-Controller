@@ -700,7 +700,7 @@
 				<Property Name="Bld_localDestDir" Type="Path">/C/Projects/Ice-Nucleation-Controller/Builds/bin/Full Build/Micro</Property>
 				<Property Name="Bld_modifyLibraryFile" Type="Bool">true</Property>
 				<Property Name="Bld_previewCacheID" Type="Str">{95EEF059-8F91-49DB-A57E-FF38AF6547AD}</Property>
-				<Property Name="Bld_version.build" Type="Int">21</Property>
+				<Property Name="Bld_version.build" Type="Int">24</Property>
 				<Property Name="Bld_version.major" Type="Int">1</Property>
 				<Property Name="Bld_version.minor" Type="Int">2</Property>
 				<Property Name="Bld_version.patch" Type="Int">3</Property>
@@ -751,7 +751,7 @@
 				<Property Name="Bld_localDestDir" Type="Path">/C/Projects/Ice-Nucleation-Controller/Builds/bin/Full Build/Micro</Property>
 				<Property Name="Bld_modifyLibraryFile" Type="Bool">true</Property>
 				<Property Name="Bld_previewCacheID" Type="Str">{6FD33856-2380-4F94-8CB7-5581C7931DF6}</Property>
-				<Property Name="Bld_version.build" Type="Int">53</Property>
+				<Property Name="Bld_version.build" Type="Int">56</Property>
 				<Property Name="Bld_version.major" Type="Int">1</Property>
 				<Property Name="Bld_version.patch" Type="Int">2</Property>
 				<Property Name="Destination[0].destName" Type="Str">TCC.exe</Property>
@@ -802,7 +802,7 @@
 				<Property Name="Bld_localDestDir" Type="Path">/C/Projects/Ice-Nucleation-Controller/Builds/bin/Full Build/Micro</Property>
 				<Property Name="Bld_modifyLibraryFile" Type="Bool">true</Property>
 				<Property Name="Bld_previewCacheID" Type="Str">{27D8B2BC-76A3-474D-8C11-FD95C8E7081D}</Property>
-				<Property Name="Bld_version.build" Type="Int">24</Property>
+				<Property Name="Bld_version.build" Type="Int">26</Property>
 				<Property Name="Bld_version.major" Type="Int">1</Property>
 				<Property Name="Bld_version.minor" Type="Int">3</Property>
 				<Property Name="Bld_version.patch" Type="Int">1</Property>
@@ -869,7 +869,7 @@
 				<Property Name="Bld_localDestDir" Type="Path">/C/Projects/Ice-Nucleation-Controller/Builds/bin/Full Build/Nano</Property>
 				<Property Name="Bld_modifyLibraryFile" Type="Bool">true</Property>
 				<Property Name="Bld_previewCacheID" Type="Str">{F322C2E9-F267-47DD-B6D5-38E721B29B3B}</Property>
-				<Property Name="Bld_version.build" Type="Int">10</Property>
+				<Property Name="Bld_version.build" Type="Int">12</Property>
 				<Property Name="Bld_version.major" Type="Int">1</Property>
 				<Property Name="Destination[0].destName" Type="Str">GCFS.exe</Property>
 				<Property Name="Destination[0].path" Type="Path">/C/Projects/Ice-Nucleation-Controller/Builds/bin/Full Build/Nano/GCFS.exe</Property>
@@ -881,16 +881,17 @@
 				<Property Name="Destination[1].path.type" Type="Str">&lt;none&gt;</Property>
 				<Property Name="DestinationCount" Type="Int">2</Property>
 				<Property Name="Exe_iconItemID" Type="Ref">/My Computer/Assets/GCFS Logo.ico</Property>
-				<Property Name="Source[0].itemID" Type="Str">{B34750F8-F51E-4386-BDF4-171B2C0BD3EA}</Property>
+				<Property Name="Source[0].itemID" Type="Str">{CD7051DB-692A-4532-99EC-A49A24C0F55F}</Property>
 				<Property Name="Source[0].type" Type="Str">Container</Property>
 				<Property Name="Source[1].destinationIndex" Type="Int">0</Property>
 				<Property Name="Source[1].itemID" Type="Ref">/My Computer/GCFS.vi</Property>
 				<Property Name="Source[1].sourceInclusion" Type="Str">TopLevel</Property>
 				<Property Name="Source[1].type" Type="Str">VI</Property>
 				<Property Name="SourceCount" Type="Int">2</Property>
+				<Property Name="TgtF_companyName" Type="Str">Aarhus University</Property>
 				<Property Name="TgtF_fileDescription" Type="Str">Grayscale Cam Flat Surface</Property>
 				<Property Name="TgtF_internalName" Type="Str">Grayscale Cam Flat Surface</Property>
-				<Property Name="TgtF_legalCopyright" Type="Str">Copyright © 2025 </Property>
+				<Property Name="TgtF_legalCopyright" Type="Str">Copyright © 2021 Aarhus University</Property>
 				<Property Name="TgtF_productName" Type="Str">Grayscale Cam Flat Surface</Property>
 				<Property Name="TgtF_targetfileGUID" Type="Str">{FE022810-6704-4083-B68C-8C638E37A7A9}</Property>
 				<Property Name="TgtF_targetfileName" Type="Str">GCFS.exe</Property>
@@ -913,7 +914,7 @@
 				<Property Name="Bld_localDestDir" Type="Path">/C/Projects/Ice-Nucleation-Controller/Builds/bin/Full Build/Nano</Property>
 				<Property Name="Bld_modifyLibraryFile" Type="Bool">true</Property>
 				<Property Name="Bld_previewCacheID" Type="Str">{EB6F3D74-C9A3-4008-9A78-C79815EDF029}</Property>
-				<Property Name="Bld_version.build" Type="Int">1</Property>
+				<Property Name="Bld_version.build" Type="Int">2</Property>
 				<Property Name="Bld_version.major" Type="Int">1</Property>
 				<Property Name="Destination[0].destName" Type="Str">Rerun_GCFS.exe</Property>
 				<Property Name="Destination[0].path" Type="Path">/C/Projects/Ice-Nucleation-Controller/Builds/bin/Full Build/Nano/Rerun_GCFS.exe</Property>
@@ -924,16 +925,17 @@
 				<Property Name="Destination[1].path" Type="Path">/C/Projects/Ice-Nucleation-Controller/Builds/bin/Full Build/Nano/data</Property>
 				<Property Name="Destination[1].path.type" Type="Str">&lt;none&gt;</Property>
 				<Property Name="DestinationCount" Type="Int">2</Property>
-				<Property Name="Source[0].itemID" Type="Str">{7126234D-0789-4BB4-9A47-C4991EDD9B2A}</Property>
+				<Property Name="Source[0].itemID" Type="Str">{CD7051DB-692A-4532-99EC-A49A24C0F55F}</Property>
 				<Property Name="Source[0].type" Type="Str">Container</Property>
 				<Property Name="Source[1].destinationIndex" Type="Int">0</Property>
 				<Property Name="Source[1].itemID" Type="Ref">/My Computer/Rerun_GCFS.vi</Property>
 				<Property Name="Source[1].sourceInclusion" Type="Str">TopLevel</Property>
 				<Property Name="Source[1].type" Type="Str">VI</Property>
 				<Property Name="SourceCount" Type="Int">2</Property>
+				<Property Name="TgtF_companyName" Type="Str">Aarhus University</Property>
 				<Property Name="TgtF_fileDescription" Type="Str">Rerun Grayscale Cam Flat Surface</Property>
 				<Property Name="TgtF_internalName" Type="Str">Rerun Grayscale Cam Flat Surface</Property>
-				<Property Name="TgtF_legalCopyright" Type="Str">Copyright © 2025 </Property>
+				<Property Name="TgtF_legalCopyright" Type="Str">Copyright © 2021 Aarhus University</Property>
 				<Property Name="TgtF_productName" Type="Str">Rerun Grayscale Cam Flat Surface</Property>
 				<Property Name="TgtF_targetfileGUID" Type="Str">{1F824445-CFA3-47FE-B308-C504A5A6F3A8}</Property>
 				<Property Name="TgtF_targetfileName" Type="Str">Rerun_GCFS.exe</Property>
@@ -1026,7 +1028,7 @@
 				<Property Name="INST_defaultDir" Type="Str">{4B7C7F5D-6E6D-4786-BBED-E06C37A5A212}</Property>
 				<Property Name="INST_installerName" Type="Str">install.exe</Property>
 				<Property Name="INST_productName" Type="Str">Ice Nucleation Controller</Property>
-				<Property Name="INST_productVersion" Type="Str">1.0.38</Property>
+				<Property Name="INST_productVersion" Type="Str">1.0.39</Property>
 				<Property Name="InstSpecBitness" Type="Str">64-bit</Property>
 				<Property Name="InstSpecVersion" Type="Str">24118001</Property>
 				<Property Name="MSI_arpCompany" Type="Str">Aarhus University</Property>
@@ -1171,7 +1173,7 @@
 				<Property Name="INST_includeError" Type="Bool">false</Property>
 				<Property Name="INST_installerName" Type="Str">update.exe</Property>
 				<Property Name="INST_productName" Type="Str">Ice Nucleation Controller</Property>
-				<Property Name="INST_productVersion" Type="Str">1.0.10</Property>
+				<Property Name="INST_productVersion" Type="Str">1.0.11</Property>
 				<Property Name="InstSpecBitness" Type="Str">64-bit</Property>
 				<Property Name="InstSpecVersion" Type="Str">24118001</Property>
 				<Property Name="MSI_arpCompany" Type="Str">Aarhus University</Property>
