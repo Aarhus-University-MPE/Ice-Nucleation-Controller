@@ -1,6 +1,7 @@
 /Builds/bin/
 /data/*
 /src/LabVIEW/Data
+/src/LabVIEW/Flat Surface Images
 /src/Arduino/out/*
 *.zip
 *.7z
