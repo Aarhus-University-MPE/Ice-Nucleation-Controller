@@ -3,6 +3,9 @@
 /src/LabVIEW/Data
 /src/LabVIEW/Flat Surface Images
 /src/Arduino/out/*
+/src/LabVIEW/Test_Billeder/*
+/src/LabVIEW/Flat Surface Images/
+/src/LabVIEW/TestFiles/
 *.zip
 *.7z
 *.exe
