@@ -24,7 +24,7 @@
 			<Item Name="TCEM.ini" Type="Document" URL="../TCEM.ini"/>
 			<Item Name="Calibration_Old.ini" Type="Document" URL="../Calibration_Old.ini"/>
 		</Item>
-		<Item Name="Functions" Type="Folder">
+		<Item Name="src" Type="Folder">
 			<Property Name="NI.SortType" Type="Int">3</Property>
 			<Item Name="Camera" Type="Folder">
 				<Property Name="NI.SortType" Type="Int">3</Property>
@@ -77,6 +77,10 @@
 					<Item Name="Thermistor_Conversion.vi" Type="VI" URL="../Thermistor_Conversion.vi"/>
 					<Item Name="Thermistor_Manual_Read.vi" Type="VI" URL="../Thermistor_Manual_Read.vi"/>
 					<Item Name="Thermistor_Temp_Stamp.vi" Type="VI" URL="../Thermistor_Temp_Stamp.vi"/>
+				</Item>
+				<Item Name="Pt100" Type="Folder">
+					<Item Name="Pt100_Conversion.vi" Type="VI" URL="../Pt100_Conversion.vi"/>
+					<Item Name="Pt100_Config.vi" Type="VI" URL="../Pt100_Config.vi"/>
 				</Item>
 				<Item Name="cDAQ_Channels.vi" Type="VI" URL="../cDAQ_Channels.vi"/>
 				<Item Name="cDAQ_Read.vi" Type="VI" URL="../cDAQ_Read.vi"/>
@@ -281,7 +285,6 @@
 		<Item Name="main.vi" Type="VI" URL="../main.vi"/>
 		<Item Name="TCC.vi" Type="VI" URL="../TCC.vi"/>
 		<Item Name="TCE.vi" Type="VI" URL="../TCE.vi"/>
-		<Item Name="Tag-t&apos;DataCluster.ctl&apos;.lvlib" Type="Library" URL="/&lt;extravilib&gt;/ChannelInstances/Tag-t&apos;DataCluster.ctl&apos;.lvlib"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="vi.lib" Type="Folder">
 				<Item Name="Add State(s) to Queue__JKI_lib_State_Machine.vi" Type="VI" URL="/&lt;vilib&gt;/addons/_JKI Toolkits/State Machine/_JKI_lib_State_Machine.llb/Add State(s) to Queue__JKI_lib_State_Machine.vi"/>
@@ -623,6 +626,7 @@
 			<Item Name="Stream-bool.lvlib" Type="Library" URL="/&lt;extravilib&gt;/ChannelInstances/Stream-bool.lvlib"/>
 			<Item Name="Tag-c(c(ref(LVObjVI()),bool),bool,bool,u32[Cool,Heat]).lvlib" Type="Library" URL="/&lt;extravilib&gt;/ChannelInstances/Tag-c(c(ref(LVObjVI()),bool),bool,bool,u32[Cool,Heat]).lvlib"/>
 			<Item Name="Tag-c(bool,ref(UserDefinedRefnumTag),bool,path,bool).lvlib" Type="Library" URL="/&lt;extravilib&gt;/ChannelInstances/Tag-c(bool,ref(UserDefinedRefnumTag),bool,path,bool).lvlib"/>
+			<Item Name="Tag-t&apos;DataCluster.ctl&apos;.lvlib" Type="Library" URL="/&lt;extravilib&gt;/ChannelInstances/Tag-t&apos;DataCluster.ctl&apos;.lvlib"/>
 		</Item>
 		<Item Name="Build Specifications" Type="Build">
 			<Item Name="Thermal Camera Evaluation" Type="EXE">
@@ -641,7 +645,7 @@
 				<Property Name="Bld_localDestDir" Type="Path">/C/Projects/Ice-Nucleation-Controller/Builds/bin/Full Build</Property>
 				<Property Name="Bld_modifyLibraryFile" Type="Bool">true</Property>
 				<Property Name="Bld_previewCacheID" Type="Str">{95EEF059-8F91-49DB-A57E-FF38AF6547AD}</Property>
-				<Property Name="Bld_version.build" Type="Int">11</Property>
+				<Property Name="Bld_version.build" Type="Int">16</Property>
 				<Property Name="Bld_version.major" Type="Int">1</Property>
 				<Property Name="Bld_version.minor" Type="Int">2</Property>
 				<Property Name="Bld_version.patch" Type="Int">3</Property>
@@ -655,7 +659,7 @@
 				<Property Name="Destination[1].path.type" Type="Str">&lt;none&gt;</Property>
 				<Property Name="DestinationCount" Type="Int">2</Property>
 				<Property Name="Exe_iconItemID" Type="Ref">/My Computer/Assets/Logo_TCE.ico</Property>
-				<Property Name="Source[0].itemID" Type="Str">{4120B56A-2779-4FCB-88D5-4527C8775479}</Property>
+				<Property Name="Source[0].itemID" Type="Str">{1A329158-51C3-47E3-B04E-CE6C15B50C15}</Property>
 				<Property Name="Source[0].type" Type="Str">Container</Property>
 				<Property Name="Source[1].destinationIndex" Type="Int">0</Property>
 				<Property Name="Source[1].itemID" Type="Ref">/My Computer/TCE.vi</Property>
@@ -692,7 +696,7 @@
 				<Property Name="Bld_localDestDir" Type="Path">/C/Projects/Ice-Nucleation-Controller/Builds/bin/Full Build</Property>
 				<Property Name="Bld_modifyLibraryFile" Type="Bool">true</Property>
 				<Property Name="Bld_previewCacheID" Type="Str">{6FD33856-2380-4F94-8CB7-5581C7931DF6}</Property>
-				<Property Name="Bld_version.build" Type="Int">47</Property>
+				<Property Name="Bld_version.build" Type="Int">52</Property>
 				<Property Name="Bld_version.major" Type="Int">1</Property>
 				<Property Name="Bld_version.patch" Type="Int">2</Property>
 				<Property Name="Destination[0].destName" Type="Str">TCC.exe</Property>
@@ -705,7 +709,7 @@
 				<Property Name="Destination[1].path.type" Type="Str">&lt;none&gt;</Property>
 				<Property Name="DestinationCount" Type="Int">2</Property>
 				<Property Name="Exe_iconItemID" Type="Ref">/My Computer/Assets/Logo_TCC.ico</Property>
-				<Property Name="Source[0].itemID" Type="Str">{4120B56A-2779-4FCB-88D5-4527C8775479}</Property>
+				<Property Name="Source[0].itemID" Type="Str">{1A329158-51C3-47E3-B04E-CE6C15B50C15}</Property>
 				<Property Name="Source[0].type" Type="Str">Container</Property>
 				<Property Name="Source[1].destinationIndex" Type="Int">0</Property>
 				<Property Name="Source[1].itemID" Type="Ref">/My Computer/TCC.vi</Property>
@@ -743,10 +747,9 @@
 				<Property Name="Bld_localDestDir" Type="Path">/C/Projects/Ice-Nucleation-Controller/Builds/bin/Full Build</Property>
 				<Property Name="Bld_modifyLibraryFile" Type="Bool">true</Property>
 				<Property Name="Bld_previewCacheID" Type="Str">{27D8B2BC-76A3-474D-8C11-FD95C8E7081D}</Property>
-				<Property Name="Bld_version.build" Type="Int">18</Property>
+				<Property Name="Bld_version.build" Type="Int">14</Property>
 				<Property Name="Bld_version.major" Type="Int">1</Property>
-				<Property Name="Bld_version.minor" Type="Int">3</Property>
-				<Property Name="Bld_version.patch" Type="Int">1</Property>
+				<Property Name="Bld_version.minor" Type="Int">4</Property>
 				<Property Name="Destination[0].destName" Type="Str">INC.exe</Property>
 				<Property Name="Destination[0].path" Type="Path">/C/Projects/Ice-Nucleation-Controller/Builds/bin/Full Build/INC.exe</Property>
 				<Property Name="Destination[0].path.type" Type="Str">&lt;none&gt;</Property>
@@ -757,7 +760,7 @@
 				<Property Name="Destination[1].path.type" Type="Str">&lt;none&gt;</Property>
 				<Property Name="DestinationCount" Type="Int">2</Property>
 				<Property Name="Exe_iconItemID" Type="Ref">/My Computer/Assets/Logo.ico</Property>
-				<Property Name="Source[0].itemID" Type="Str">{4120B56A-2779-4FCB-88D5-4527C8775479}</Property>
+				<Property Name="Source[0].itemID" Type="Str">{1A329158-51C3-47E3-B04E-CE6C15B50C15}</Property>
 				<Property Name="Source[0].type" Type="Str">Container</Property>
 				<Property Name="Source[1].destinationIndex" Type="Int">0</Property>
 				<Property Name="Source[1].itemID" Type="Ref">/My Computer/main.vi</Property>
@@ -893,7 +896,7 @@
 				<Property Name="INST_defaultDir" Type="Str">{4B7C7F5D-6E6D-4786-BBED-E06C37A5A212}</Property>
 				<Property Name="INST_installerName" Type="Str">install.exe</Property>
 				<Property Name="INST_productName" Type="Str">Ice Nucleation Controller</Property>
-				<Property Name="INST_productVersion" Type="Str">1.0.36</Property>
+				<Property Name="INST_productVersion" Type="Str">1.0.39</Property>
 				<Property Name="InstSpecBitness" Type="Str">64-bit</Property>
 				<Property Name="InstSpecVersion" Type="Str">22308000</Property>
 				<Property Name="MSI_arpCompany" Type="Str">Aarhus University</Property>
@@ -1013,9 +1016,9 @@
 				<Property Name="INST_includeError" Type="Bool">false</Property>
 				<Property Name="INST_installerName" Type="Str">update.exe</Property>
 				<Property Name="INST_productName" Type="Str">Ice Nucleation Controller</Property>
-				<Property Name="INST_productVersion" Type="Str">1.0.9</Property>
+				<Property Name="INST_productVersion" Type="Str">1.0.12</Property>
 				<Property Name="InstSpecBitness" Type="Str">64-bit</Property>
-				<Property Name="InstSpecVersion" Type="Str">22308000</Property>
+				<Property Name="InstSpecVersion" Type="Str">22318008</Property>
 				<Property Name="MSI_arpCompany" Type="Str">Aarhus University</Property>
 				<Property Name="MSI_arpContact" Type="Str">Mads Rosenhøj Jeppesen</Property>
 				<Property Name="MSI_arpPhone" Type="Str">+45 20 89 43 32</Property>
