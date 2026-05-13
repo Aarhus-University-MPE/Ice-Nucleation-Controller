@@ -221,6 +221,7 @@
 			<Item Name="CameraAttributeTest.vi" Type="VI" URL="../Micro/CameraAttributeTest.vi"/>
 			<Item Name="CameraAttributeSearch.vi" Type="VI" URL="../Micro/CameraAttributeSearch.vi"/>
 			<Item Name="ThermalVideoStream.vi" Type="VI" URL="../Micro/ThermalVideoStream.vi"/>
+			<Item Name="Save Extra data.vi" Type="VI" URL="../Micro/Save Extra data.vi"/>
 		</Item>
 		<Item Name="Assets" Type="Folder">
 			<Item Name="Logo.ico" Type="Document" URL="../resources/Logo.ico"/>
