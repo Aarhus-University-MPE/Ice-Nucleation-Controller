@@ -707,7 +707,7 @@
 				<Property Name="Bld_localDestDir" Type="Path">/C/Projects/Ice-Nucleation-Controller/Builds/bin/Full Build</Property>
 				<Property Name="Bld_modifyLibraryFile" Type="Bool">true</Property>
 				<Property Name="Bld_previewCacheID" Type="Str">{95EEF059-8F91-49DB-A57E-FF38AF6547AD}</Property>
-				<Property Name="Bld_version.build" Type="Int">32</Property>
+				<Property Name="Bld_version.build" Type="Int">33</Property>
 				<Property Name="Bld_version.major" Type="Int">1</Property>
 				<Property Name="Bld_version.minor" Type="Int">2</Property>
 				<Property Name="Bld_version.patch" Type="Int">3</Property>
@@ -758,7 +758,7 @@
 				<Property Name="Bld_localDestDir" Type="Path">/C/Projects/Ice-Nucleation-Controller/Builds/bin/Full Build</Property>
 				<Property Name="Bld_modifyLibraryFile" Type="Bool">true</Property>
 				<Property Name="Bld_previewCacheID" Type="Str">{6FD33856-2380-4F94-8CB7-5581C7931DF6}</Property>
-				<Property Name="Bld_version.build" Type="Int">66</Property>
+				<Property Name="Bld_version.build" Type="Int">67</Property>
 				<Property Name="Bld_version.major" Type="Int">1</Property>
 				<Property Name="Bld_version.patch" Type="Int">2</Property>
 				<Property Name="Destination[0].destName" Type="Str">TCC.exe</Property>
@@ -809,7 +809,7 @@
 				<Property Name="Bld_localDestDir" Type="Path">/C/Projects/Ice-Nucleation-Controller/Builds/bin/Full Build</Property>
 				<Property Name="Bld_modifyLibraryFile" Type="Bool">true</Property>
 				<Property Name="Bld_previewCacheID" Type="Str">{27D8B2BC-76A3-474D-8C11-FD95C8E7081D}</Property>
-				<Property Name="Bld_version.build" Type="Int">28</Property>
+				<Property Name="Bld_version.build" Type="Int">29</Property>
 				<Property Name="Bld_version.major" Type="Int">1</Property>
 				<Property Name="Bld_version.minor" Type="Int">4</Property>
 				<Property Name="Destination[0].destName" Type="Str">INC.exe</Property>
@@ -876,7 +876,7 @@
 				<Property Name="Bld_localDestDir" Type="Path">/C/Projects/Ice-Nucleation-Controller/Builds/bin/Full Build/Nano</Property>
 				<Property Name="Bld_modifyLibraryFile" Type="Bool">true</Property>
 				<Property Name="Bld_previewCacheID" Type="Str">{A9CB767D-5960-4C95-9B85-B2D6A2A64AB9}</Property>
-				<Property Name="Bld_version.build" Type="Int">12</Property>
+				<Property Name="Bld_version.build" Type="Int">13</Property>
 				<Property Name="Bld_version.major" Type="Int">1</Property>
 				<Property Name="Destination[0].destName" Type="Str">GCFS.exe</Property>
 				<Property Name="Destination[0].path" Type="Path">/C/Projects/Ice-Nucleation-Controller/Builds/bin/Full Build/Nano/GCFS.exe</Property>
@@ -991,7 +991,7 @@
 				<Property Name="INST_defaultDir" Type="Str">{4B7C7F5D-6E6D-4786-BBED-E06C37A5A212}</Property>
 				<Property Name="INST_installerName" Type="Str">install.exe</Property>
 				<Property Name="INST_productName" Type="Str">Ice Nucleation Controller</Property>
-				<Property Name="INST_productVersion" Type="Str">1.0.52</Property>
+				<Property Name="INST_productVersion" Type="Str">1.0.53</Property>
 				<Property Name="InstSpecBitness" Type="Str">64-bit</Property>
 				<Property Name="InstSpecVersion" Type="Str">24118001</Property>
 				<Property Name="MSI_arpCompany" Type="Str">Aarhus University</Property>
@@ -1124,7 +1124,7 @@
 				<Property Name="INST_includeError" Type="Bool">false</Property>
 				<Property Name="INST_installerName" Type="Str">update.exe</Property>
 				<Property Name="INST_productName" Type="Str">Ice Nucleation Controller</Property>
-				<Property Name="INST_productVersion" Type="Str">1.0.24</Property>
+				<Property Name="INST_productVersion" Type="Str">1.0.25</Property>
 				<Property Name="InstSpecBitness" Type="Str">64-bit</Property>
 				<Property Name="InstSpecVersion" Type="Str">24118001</Property>
 				<Property Name="MSI_arpCompany" Type="Str">Aarhus University</Property>
