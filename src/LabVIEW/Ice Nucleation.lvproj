@@ -259,6 +259,7 @@
 			<Item Name="TCE_SaveConfiguration.vi" Type="VI" URL="../Micro/TCE_SaveConfiguration.vi"/>
 			<Item Name="RunTimeMenu_TCE.rtm" Type="Document" URL="../RunTimeMenu_TCE.rtm"/>
 			<Item Name="OverlayTemps.vi" Type="VI" URL="../Micro/OverlayTemps.vi"/>
+			<Item Name="Validation_Data.vi" Type="VI" URL="../Micro/Validation_Data.vi"/>
 		</Item>
 		<Item Name="GCFS" Type="Folder">
 			<Item Name="Arduino_control_GCFS.vi" Type="VI" URL="../Nano/Arduino_control_GCFS.vi"/>
@@ -289,6 +290,7 @@
 		<Item Name="GCFS.vi" Type="VI" URL="../Nano/GCFS.vi"/>
 		<Item Name="Rerun_GCFS.vi" Type="VI" URL="../Nano/Rerun_GCFS.vi"/>
 		<Item Name="Chart_Data_Packer.vi" Type="VI" URL="../Micro/Chart_Data_Packer.vi"/>
+		<Item Name="Tag-t&apos;DataCluster.ctl&apos;.lvlib" Type="Library" URL="/&lt;extravilib&gt;/ChannelInstances/Tag-t&apos;DataCluster.ctl&apos;.lvlib"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="vi.lib" Type="Folder">
 				<Item Name="IMAQ Image.ctl" Type="VI" URL="/&lt;vilib&gt;/vision/Image Controls.llb/IMAQ Image.ctl"/>
@@ -625,7 +627,6 @@
 			<Item Name="PipeLogic.lvclass" Type="LVClass" URL="/&lt;resource&gt;/ChannelSupport/_ChannelSupport/PipeLogic/PipeLogic.lvclass"/>
 			<Item Name="Stream-str.lvlib" Type="Library" URL="/&lt;extravilib&gt;/ChannelInstances/Stream-str.lvlib"/>
 			<Item Name="Tag-c(a[.](dbl),a[.](dbl)).lvlib" Type="Library" URL="/&lt;extravilib&gt;/ChannelInstances/Tag-c(a[.](dbl),a[.](dbl)).lvlib"/>
-			<Item Name="Tag-t&apos;DataCluster.ctl&apos;.lvlib" Type="Library" URL="/&lt;extravilib&gt;/ChannelInstances/Tag-t&apos;DataCluster.ctl&apos;.lvlib"/>
 			<Item Name="Tag-c(c(ref(LVObjVI()),bool),bool,bool,u32[Cool,Heat]).lvlib" Type="Library" URL="/&lt;extravilib&gt;/ChannelInstances/Tag-c(c(ref(LVObjVI()),bool),bool,bool,u32[Cool,Heat]).lvlib"/>
 			<Item Name="Tag-bool.lvlib" Type="Library" URL="/&lt;extravilib&gt;/ChannelInstances/Tag-bool.lvlib"/>
 			<Item Name="Stream-bool.lvlib" Type="Library" URL="/&lt;extravilib&gt;/ChannelInstances/Stream-bool.lvlib"/>
